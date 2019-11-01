@@ -26,9 +26,11 @@ namespace List_Operations
                 }
                 else if (commandToArray[0] == "Insert")
                 {
-                    if (int.Parse(commandToArray[2]) >= 0 && int.Parse(commandToArray[2]) <= numbers.Count)
+                    if (int.Parse(commandToArray[2]) >= 0 
+                        && int.Parse(commandToArray[2]) <= numbers.Count)
                     {
-                        numbers.Insert(int.Parse(commandToArray[2]), int.Parse(commandToArray[1]));
+                        numbers.Insert(int.Parse(commandToArray[2]), 
+                            int.Parse(commandToArray[1]));
                     }
                     else
                     {
@@ -37,7 +39,8 @@ namespace List_Operations
                 }
                 else if (commandToArray[0] == "Remove")
                 {
-                    if (int.Parse(commandToArray[1]) < numbers.Count && int.Parse(commandToArray[1]) >= 0)
+                    if (int.Parse(commandToArray[1]) < numbers.Count 
+                        && int.Parse(commandToArray[1]) >= 0)
                     {
                         numbers.RemoveAt(int.Parse(commandToArray[1]));
                     }
