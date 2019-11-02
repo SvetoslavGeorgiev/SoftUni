@@ -15,7 +15,6 @@ namespace Big_Factorial
             {
                 result = result * i;
             }
-
             Console.WriteLine(result);
         }
     }
