@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Day_of_Week
 {
@@ -6,7 +7,11 @@ namespace Day_of_Week
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string date = Console.ReadLine();
+
+            var obj = DateTime.ParseExact(date, "d-M-yyyy", CultureInfo.InvariantCulture);
+
+            Console.WriteLine(obj.DayOfWeek);
         }
     }
 }
