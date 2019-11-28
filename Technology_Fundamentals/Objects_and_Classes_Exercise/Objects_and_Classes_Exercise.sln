@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Advertisement_Message", "Ad
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Articles", "Articles\Articles.csproj", "{7C6ACCBE-2D73-410E-BFD7-77C3A3926549}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Articles 2.0", "Articles 2.0\Articles 2.0.csproj", "{7FFDEF2E-31EC-46C3-8388-60CC14C4DE2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Articles 2.0", "Articles 2.0\Articles 2.0.csproj", "{7FFDEF2E-31EC-46C3-8388-60CC14C4DE2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Students", "Students\Students.csproj", "{919A7514-99A5-4840-8F22-C9FD38B7DB65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Students", "Students\Students.csproj", "{919A7514-99A5-4840-8F22-C9FD38B7DB65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teamwork_Projects", "Teamwork_Projects\Teamwork_Projects.csproj", "{9DA271D9-95F1-40E8-8178-0A808841D07D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{919A7514-99A5-4840-8F22-C9FD38B7DB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{919A7514-99A5-4840-8F22-C9FD38B7DB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{919A7514-99A5-4840-8F22-C9FD38B7DB65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DA271D9-95F1-40E8-8178-0A808841D07D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA271D9-95F1-40E8-8178-0A808841D07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA271D9-95F1-40E8-8178-0A808841D07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA271D9-95F1-40E8-8178-0A808841D07D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
