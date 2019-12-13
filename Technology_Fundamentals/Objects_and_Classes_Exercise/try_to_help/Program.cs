@@ -44,7 +44,7 @@ public class Program
                 .Select(x => x.TeamName).Contains(currentTeamNeme);
 
             bool isCreatorExist = allTeam
-                .Any(x => x.CreatorName == currentTeamNeme);
+                .Any(x => x.CreatorName == currentCreator);
 
             // проверка дали Инициаторът на Тийма вече не е създал тийм. 
             // Съобщение, ако вече е създал

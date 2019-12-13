@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Teamwork_Projects", "Teamwo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "try_to_help", "try_to_help\try_to_help.csproj", "{7F90BDE0-B951-4E19-9EA3-D96C981ADCE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{493E9D48-41C7-4D9F-9874-9D24CDD88896}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicle Catalogue", "ConsoleApp1\Vehicle Catalogue.csproj", "{493E9D48-41C7-4D9F-9874-9D24CDD88896}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
