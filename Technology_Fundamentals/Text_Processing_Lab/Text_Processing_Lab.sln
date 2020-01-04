@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repeat_Strings", "Repeat_St
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Substring", "Substring\Substring.csproj", "{DC7EB044-BF31-4E59-BD5D-7752463C09B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text_Filter", "Text_Filter\Text_Filter.csproj", "{8ACB10A6-DEC6-4644-96FC-F2FE07AD6E2B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Text_Filter", "Text_Filter\Text_Filter.csproj", "{8ACB10A6-DEC6-4644-96FC-F2FE07AD6E2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digits_Letters_and_Other", "Digits_Letters_and_Other\Digits_Letters_and_Other.csproj", "{F884A1C8-5ADA-42E9-B020-268E47000E87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8ACB10A6-DEC6-4644-96FC-F2FE07AD6E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8ACB10A6-DEC6-4644-96FC-F2FE07AD6E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8ACB10A6-DEC6-4644-96FC-F2FE07AD6E2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F884A1C8-5ADA-42E9-B020-268E47000E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F884A1C8-5ADA-42E9-B020-268E47000E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F884A1C8-5ADA-42E9-B020-268E47000E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F884A1C8-5ADA-42E9-B020-268E47000E87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
