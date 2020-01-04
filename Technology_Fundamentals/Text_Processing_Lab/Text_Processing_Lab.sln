@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Text_Filter", "Text_Filter\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digits_Letters_and_Other", "Digits_Letters_and_Other\Digits_Letters_and_Other.csproj", "{F884A1C8-5ADA-42E9-B020-268E47000E87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Match_Full_Name", "Match_Full_Name\Match_Full_Name.csproj", "{C7D163FF-EA8B-4764-BD14-62394BFDC426}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F884A1C8-5ADA-42E9-B020-268E47000E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F884A1C8-5ADA-42E9-B020-268E47000E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F884A1C8-5ADA-42E9-B020-268E47000E87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7D163FF-EA8B-4764-BD14-62394BFDC426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7D163FF-EA8B-4764-BD14-62394BFDC426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7D163FF-EA8B-4764-BD14-62394BFDC426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7D163FF-EA8B-4764-BD14-62394BFDC426}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
