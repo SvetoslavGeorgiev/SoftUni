@@ -13,7 +13,7 @@ namespace Match_Phone_Number
 
             var input = Console.ReadLine();
 
-            var matches = Regex.Matches(input, @"[+]359([- ])\d{1,2}\1\d{3}\1\d{4}\b");
+            var matches = Regex.Matches(input, @"[+]359([- ])2\1\d{3}\1\d{4}\b"); // (?<!\d)[+]359([- ])2\1\d{3}\1\d{4}\b works as well!!
             List<string> list = matches
                 .Cast<Match>()
                 .Select(x => x.Value.Trim())
