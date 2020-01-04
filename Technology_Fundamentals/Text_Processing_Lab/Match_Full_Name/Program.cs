@@ -19,6 +19,5 @@ namespace Match_Full_Name
                 Console.Write($"{match.Value} ");
             }
         }
-
     }
 }
