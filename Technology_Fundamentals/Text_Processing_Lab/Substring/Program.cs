@@ -9,15 +9,15 @@ namespace Substring
     {
         static void Main(string[] args)
         {
-            string word = Console.ReadLine().ToLower();
+            string word = Console.ReadLine();
 
             var input = Console.ReadLine();
 
             var length = word.Length;
 
-            while (input.Contains(word))
+            while (input.Contains(word, StringComparison.CurrentCultureIgnoreCase))
             {
-                var index = input.IndexOf(word);
+                var index = input.IndexOf(word, StringComparison.CurrentCultureIgnoreCase);
 
                 input = input.Remove(index, length);
             }

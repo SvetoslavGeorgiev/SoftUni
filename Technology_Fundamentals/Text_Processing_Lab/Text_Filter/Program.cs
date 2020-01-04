@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Linq;
 
 namespace Text_Filter
 {
@@ -6,7 +9,16 @@ namespace Text_Filter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string[] bannedWords = Console.ReadLine().Split(", ");
+
+            string text = Console.ReadLine();
+
+            foreach (var words in bannedWords)
+            {
+                text = text.Replace(words, new string('*', words.Length));
+            }
+
+            Console.WriteLine(text);
         }
     }
 }
