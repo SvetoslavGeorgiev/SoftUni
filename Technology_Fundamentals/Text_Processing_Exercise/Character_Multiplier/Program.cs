@@ -13,7 +13,7 @@ namespace Character_Multiplier
 
             StringBuilder firstString = new StringBuilder(input[0]);
             StringBuilder secondString = new StringBuilder(input[1]);
-            
+
 
             int sum = TotalSumOFMultipliedChars(firstString, secondString);
 
