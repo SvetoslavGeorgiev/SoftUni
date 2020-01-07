@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Valid_Usernames", "Valid_Usernames\Valid_Usernames.csproj", "{07B3222C-4DB2-468A-944A-67A264C87844}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Character Multiplier", "Character Multiplier\Character Multiplier.csproj", "{EECEE6C3-988B-4F8F-93EC-9D825985775F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Character Multiplier", "Character Multiplier\Character Multiplier.csproj", "{EECEE6C3-988B-4F8F-93EC-9D825985775F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extract_File", "Extract_File\Extract_File.csproj", "{E2045904-54E7-4577-80C0-07218AD064AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EECEE6C3-988B-4F8F-93EC-9D825985775F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EECEE6C3-988B-4F8F-93EC-9D825985775F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EECEE6C3-988B-4F8F-93EC-9D825985775F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2045904-54E7-4577-80C0-07218AD064AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2045904-54E7-4577-80C0-07218AD064AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2045904-54E7-4577-80C0-07218AD064AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2045904-54E7-4577-80C0-07218AD064AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
