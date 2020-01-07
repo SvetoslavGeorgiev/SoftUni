@@ -1,0 +1,11 @@
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Character Multiplier\bin\Debug\netcoreapp3.1\Character Multiplier.exe
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Character Multiplier\bin\Debug\netcoreapp3.1\Character Multiplier.deps.json
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Character Multiplier\bin\Debug\netcoreapp3.1\Character Multiplier.runtimeconfig.json
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Character Multiplier\bin\Debug\netcoreapp3.1\Character Multiplier.runtimeconfig.dev.json
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Character Multiplier\bin\Debug\netcoreapp3.1\Character Multiplier.dll
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Character Multiplier\bin\Debug\netcoreapp3.1\Character Multiplier.pdb
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Character Multiplier\obj\Debug\netcoreapp3.1\Character Multiplier.csprojAssemblyReference.cache
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Character Multiplier\obj\Debug\netcoreapp3.1\Character Multiplier.AssemblyInfoInputs.cache
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Character Multiplier\obj\Debug\netcoreapp3.1\Character Multiplier.AssemblyInfo.cs
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Character Multiplier\obj\Debug\netcoreapp3.1\Character Multiplier.dll
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Character Multiplier\obj\Debug\netcoreapp3.1\Character Multiplier.pdb

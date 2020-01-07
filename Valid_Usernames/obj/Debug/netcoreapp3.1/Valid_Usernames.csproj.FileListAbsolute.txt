@@ -1,0 +1,33 @@
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Regular_Expressions_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.exe
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Regular_Expressions_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.deps.json
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Regular_Expressions_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.runtimeconfig.json
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Regular_Expressions_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.runtimeconfig.dev.json
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Regular_Expressions_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.dll
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Regular_Expressions_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.pdb
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Regular_Expressions_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.csprojAssemblyReference.cache
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Regular_Expressions_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.AssemblyInfoInputs.cache
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Regular_Expressions_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.AssemblyInfo.cs
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Regular_Expressions_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.dll
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Regular_Expressions_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.pdb
+C:\Users\sveto\Desktop\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.exe
+C:\Users\sveto\Desktop\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.deps.json
+C:\Users\sveto\Desktop\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.runtimeconfig.json
+C:\Users\sveto\Desktop\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.runtimeconfig.dev.json
+C:\Users\sveto\Desktop\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.dll
+C:\Users\sveto\Desktop\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.pdb
+C:\Users\sveto\Desktop\Text_Processing_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.csprojAssemblyReference.cache
+C:\Users\sveto\Desktop\Text_Processing_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.AssemblyInfoInputs.cache
+C:\Users\sveto\Desktop\Text_Processing_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.AssemblyInfo.cs
+C:\Users\sveto\Desktop\Text_Processing_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.dll
+C:\Users\sveto\Desktop\Text_Processing_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.pdb
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.exe
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.deps.json
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.runtimeconfig.json
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.runtimeconfig.dev.json
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.dll
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Valid_Usernames\bin\Debug\netcoreapp3.1\Valid_Usernames.pdb
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.csprojAssemblyReference.cache
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.AssemblyInfoInputs.cache
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.AssemblyInfo.cs
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.dll
+C:\Visual Studio projects\SoftUni\Technology_Fundamentals\Text_Processing_Exercise\Valid_Usernames\obj\Debug\netcoreapp3.1\Valid_Usernames.pdb
