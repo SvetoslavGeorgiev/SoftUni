@@ -11,13 +11,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Legendary_Farming", "Legend
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders", "Orders\Orders.csproj", "{83349083-CDF4-46DE-B0B7-E16BBD006062}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUni_Parking", "SoftUni_Parking\SoftUni_Parking.csproj", "{A676AE1E-B5C8-4099-8AB8-EFE9FDA54C3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoftUni_Parking", "SoftUni_Parking\SoftUni_Parking.csproj", "{A676AE1E-B5C8-4099-8AB8-EFE9FDA54C3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Courses", "Courses\Courses.csproj", "{CBE1A3B1-8F89-42EE-9979-3A156FDB3B4F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Courses", "Courses\Courses.csproj", "{CBE1A3B1-8F89-42EE-9979-3A156FDB3B4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student_Academy", "Student_Academy\Student_Academy.csproj", "{F1928CC0-4A60-4D63-8FA6-C57F268D46D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Student_Academy", "Student_Academy\Student_Academy.csproj", "{F1928CC0-4A60-4D63-8FA6-C57F268D46D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company_Users", "Company_Users\Company_Users.csproj", "{2B8A77A3-F8C8-48B6-83C8-9FD4BCB034EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company_Users", "Company_Users\Company_Users.csproj", "{2B8A77A3-F8C8-48B6-83C8-9FD4BCB034EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForceBook", "ForceBook\ForceBook.csproj", "{E9952D4D-90CD-499E-9173-3C9DDDDEA886}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForceBook2", "ForceBook2\ForceBook2.csproj", "{F58C9383-D9CE-41CD-B260-D20AEF4DE5F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUni_Exam_Results", "SoftUni_Exam_Results\SoftUni_Exam_Results.csproj", "{E0A08A4E-FA72-48E8-BA1B-A3A72866161B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUni_Exam_Results2", "SoftUni_Exam_Results2\SoftUni_Exam_Results2.csproj", "{8A81397A-14E7-4A58-9AD0-EAD9934ED6A9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +65,22 @@ Global
 		{2B8A77A3-F8C8-48B6-83C8-9FD4BCB034EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B8A77A3-F8C8-48B6-83C8-9FD4BCB034EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B8A77A3-F8C8-48B6-83C8-9FD4BCB034EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9952D4D-90CD-499E-9173-3C9DDDDEA886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9952D4D-90CD-499E-9173-3C9DDDDEA886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9952D4D-90CD-499E-9173-3C9DDDDEA886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9952D4D-90CD-499E-9173-3C9DDDDEA886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F58C9383-D9CE-41CD-B260-D20AEF4DE5F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F58C9383-D9CE-41CD-B260-D20AEF4DE5F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F58C9383-D9CE-41CD-B260-D20AEF4DE5F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F58C9383-D9CE-41CD-B260-D20AEF4DE5F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A08A4E-FA72-48E8-BA1B-A3A72866161B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A08A4E-FA72-48E8-BA1B-A3A72866161B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A08A4E-FA72-48E8-BA1B-A3A72866161B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A08A4E-FA72-48E8-BA1B-A3A72866161B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A81397A-14E7-4A58-9AD0-EAD9934ED6A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A81397A-14E7-4A58-9AD0-EAD9934ED6A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A81397A-14E7-4A58-9AD0-EAD9934ED6A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A81397A-14E7-4A58-9AD0-EAD9934ED6A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

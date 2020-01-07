@@ -8,6 +8,7 @@ namespace Vehicle_Catalogue
     {
         static void Main(string[] args)
         {
+			
             var command = string.Empty;
             Catalog catalog = new Catalog();
 
