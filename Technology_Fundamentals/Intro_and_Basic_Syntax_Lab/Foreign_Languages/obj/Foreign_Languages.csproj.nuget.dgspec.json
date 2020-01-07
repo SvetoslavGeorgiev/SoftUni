@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Foreign_Languages\\Foreign_Languages.csproj": {}
+    "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Foreign_Languages\\Foreign_Languages.csproj": {}
   },
   "projects": {
-    "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Foreign_Languages\\Foreign_Languages.csproj": {
+    "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Foreign_Languages\\Foreign_Languages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Foreign_Languages\\Foreign_Languages.csproj",
+        "projectUniqueName": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Foreign_Languages\\Foreign_Languages.csproj",
         "projectName": "Foreign_Languages",
-        "projectPath": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Foreign_Languages\\Foreign_Languages.csproj",
+        "projectPath": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Foreign_Languages\\Foreign_Languages.csproj",
         "packagesPath": "C:\\Users\\sveto\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Foreign_Languages\\obj\\",
+        "outputPath": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Foreign_Languages\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

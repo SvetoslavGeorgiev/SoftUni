@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Sum_of_Odd_Numberss\\Sum_of_Odd_Numberss.csproj": {}
+    "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Sum_of_Odd_Numberss\\Sum_of_Odd_Numberss.csproj": {}
   },
   "projects": {
-    "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Sum_of_Odd_Numberss\\Sum_of_Odd_Numberss.csproj": {
+    "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Sum_of_Odd_Numberss\\Sum_of_Odd_Numberss.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Sum_of_Odd_Numberss\\Sum_of_Odd_Numberss.csproj",
+        "projectUniqueName": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Sum_of_Odd_Numberss\\Sum_of_Odd_Numberss.csproj",
         "projectName": "Sum_of_Odd_Numberss",
-        "projectPath": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Sum_of_Odd_Numberss\\Sum_of_Odd_Numberss.csproj",
+        "projectPath": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Sum_of_Odd_Numberss\\Sum_of_Odd_Numberss.csproj",
         "packagesPath": "C:\\Users\\sveto\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Sum_of_Odd_Numberss\\obj\\",
+        "outputPath": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Sum_of_Odd_Numberss\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

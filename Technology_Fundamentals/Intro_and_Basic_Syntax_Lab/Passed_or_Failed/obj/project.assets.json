@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Passed_or_Failed\\Passed_or_Failed.csproj",
+      "projectUniqueName": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Passed_or_Failed\\Passed_or_Failed.csproj",
       "projectName": "Passed_or_Failed",
-      "projectPath": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Passed_or_Failed\\Passed_or_Failed.csproj",
+      "projectPath": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Passed_or_Failed\\Passed_or_Failed.csproj",
       "packagesPath": "C:\\Users\\sveto\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Passed_or_Failed\\obj\\",
+      "outputPath": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Passed_or_Failed\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

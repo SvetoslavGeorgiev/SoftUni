@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Theatre_Promotion\\Theatre_Promotion.csproj": {}
+    "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Theatre_Promotion\\Theatre_Promotion.csproj": {}
   },
   "projects": {
-    "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Theatre_Promotion\\Theatre_Promotion.csproj": {
+    "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Theatre_Promotion\\Theatre_Promotion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Theatre_Promotion\\Theatre_Promotion.csproj",
+        "projectUniqueName": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Theatre_Promotion\\Theatre_Promotion.csproj",
         "projectName": "Theatre_Promotion",
-        "projectPath": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Theatre_Promotion\\Theatre_Promotion.csproj",
+        "projectPath": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Theatre_Promotion\\Theatre_Promotion.csproj",
         "packagesPath": "C:\\Users\\sveto\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents SoftUni\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\SoftUni-28f4e684e2877efee642357c5a07dd482c7de849\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Theatre_Promotion\\obj\\",
+        "outputPath": "C:\\Visual Studio projects\\SoftUni\\Technology_Fundamentals\\Intro_and_Basic_Syntax_Lab\\Theatre_Promotion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
