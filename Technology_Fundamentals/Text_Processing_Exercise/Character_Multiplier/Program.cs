@@ -8,12 +8,14 @@ namespace Character_Multiplier
     {
         static void Main(string[] args)
         {
-            var input = Console.ReadLine().Split().ToList();
+            var input = Console.ReadLine()
+                .Split()
+                .ToList();
 
 
             StringBuilder firstString = new StringBuilder(input[0]);
             StringBuilder secondString = new StringBuilder(input[1]);
-            
+
 
             int sum = TotalSumOFMultipliedChars(firstString, secondString);
 

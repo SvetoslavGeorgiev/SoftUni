@@ -7,8 +7,11 @@ namespace Valid_Usernames
     {
         static void Main(string[] args)
         {
-            var input = Console.ReadLine().Split(", ").ToList();
-            var IsValid = false;
+            var input = Console.ReadLine()
+                .Split(", ")
+                .ToList();
+
+            var isValid = false;
 
             foreach (var validUserName in input)
             {
@@ -18,24 +21,24 @@ namespace Valid_Usernames
                     {
                         if (char.IsLetterOrDigit(letterOrDigit))
                         {
-                            IsValid = true;
+                            isValid = true;
                         }
                         else if (letterOrDigit == '-' || letterOrDigit == '_')
                         {
-                            IsValid = true;
+                            isValid = true;
                         }
                         else
                         {
-                            IsValid = false;
+                            isValid = false;
                             break;
                         }
                     }
                 }
-                if (IsValid)
+                if (isValid)
                 {
                     Console.WriteLine(validUserName);
                 }
-                IsValid = false;
+                isValid = false;
             }
         }   
     }
