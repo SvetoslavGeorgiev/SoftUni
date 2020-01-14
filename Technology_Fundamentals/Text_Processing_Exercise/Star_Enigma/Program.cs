@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Linq;
 
 namespace Star_Enigma
 {
@@ -54,7 +55,8 @@ namespace Star_Enigma
                     }
                 }
             }
-
+            attackedPlanets.Sort();
+            destroyedPlanets.Sort();
             Console.WriteLine($"Attacked planets: {attackedPlanets.Count}");
             if (attackedPlanets.Count >= 1)
             {
