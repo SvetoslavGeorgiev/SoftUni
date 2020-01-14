@@ -9,6 +9,7 @@ namespace Furniture
     {
         static void Main(string[] args)
         {
+            //Just because doesn't need a Dictionary,it's give me a runTime error and that why i have _v2!! 
             var command = string.Empty;
 
             var matches = new Dictionary<string, Dictionary<double, int>>();
