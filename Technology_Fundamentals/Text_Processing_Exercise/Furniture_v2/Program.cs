@@ -11,7 +11,7 @@ namespace Furniture
         {
             var command = string.Empty;
 
-            var matches = new Dictionary<string, Dictionary<double, int>>();
+            var furnitures = new List<string>();
 
             double sum = 0;
 
@@ -23,24 +23,16 @@ namespace Furniture
                 foreach (Match item in match)
                 {
                     string name = item.Groups["name"].ToString();
-                    matches.Add(name, new Dictionary<double, int>());
+                    furnitures.Add(name);
                     var price = double.Parse(item.Groups["price"].ToString());
                     var quantity = int.Parse(item.Groups["quantity"].ToString());
                     sum += price * quantity;
-                    matches[name].Add(price, quantity);
                 }
-                //var list = match.Cast<Match>().SelectMany(x => x.Groups.Cast<Capture>().Skip(1).Select(c => c.Value));
-
-
-                //foreach (var item in list)
-                //{
-                //    Console.WriteLine(item);
-                //}
             }
             Console.WriteLine("Bought furniture:");
-            foreach (var item in matches)
+            foreach (var item in furnitures)
             {
-                Console.WriteLine($"{item.Key}");
+                Console.WriteLine($"{item}");
             }
             Console.WriteLine($"Total money spend: {sum:F2}");
         }
