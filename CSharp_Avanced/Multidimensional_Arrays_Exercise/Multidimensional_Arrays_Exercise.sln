@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diagonal Difference", "Diag
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squares_in_Matrix", "Squares_in_Matrix\Squares_in_Matrix.csproj", "{44E0A12F-3E73-4618-A706-28C219260AB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maximal_Sum", "Maximal_Sum\Maximal_Sum.csproj", "{6AA82D63-8C76-476E-8F1A-272DC333A388}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maximal_Sum", "Maximal_Sum\Maximal_Sum.csproj", "{6AA82D63-8C76-476E-8F1A-272DC333A388}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix_Shuffling", "Matrix_Shuffling\Matrix_Shuffling.csproj", "{1706C1B0-32E6-4E2F-B873-C226DF80ED62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matrix_Shuffling", "Matrix_Shuffling\Matrix_Shuffling.csproj", "{1706C1B0-32E6-4E2F-B873-C226DF80ED62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snake_Moves", "Snake_Moves\Snake_Moves.csproj", "{A6C44EC0-3700-4365-BC4C-B313719CC126}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1706C1B0-32E6-4E2F-B873-C226DF80ED62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1706C1B0-32E6-4E2F-B873-C226DF80ED62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1706C1B0-32E6-4E2F-B873-C226DF80ED62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C44EC0-3700-4365-BC4C-B313719CC126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C44EC0-3700-4365-BC4C-B313719CC126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C44EC0-3700-4365-BC4C-B313719CC126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C44EC0-3700-4365-BC4C-B313719CC126}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
