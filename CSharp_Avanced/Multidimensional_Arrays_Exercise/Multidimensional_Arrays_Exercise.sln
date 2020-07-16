@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Matrix_Shuffling", "Matrix_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snake_Moves", "Snake_Moves\Snake_Moves.csproj", "{A6C44EC0-3700-4365-BC4C-B313719CC126}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knight_Game", "Knight_Game\Knight_Game.csproj", "{BA43EC17-BC2F-4BE7-9EE6-550889CCC1AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Knight_Game", "Knight_Game\Knight_Game.csproj", "{BA43EC17-BC2F-4BE7-9EE6-550889CCC1AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bombs", "Bombs\Bombs.csproj", "{869C0092-EDC8-4BEA-B3F3-72D047F76E19}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Miner", "Miner\Miner.csproj", "{0FECA40E-A275-44FE-B8FD-42D7D188C0A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radioactive_Mutant_Vampire_Bunnies", "Radioactive_Mutant_Vampire_Bunnies\Radioactive_Mutant_Vampire_Bunnies.csproj", "{A07D7CC7-258C-4B51-82B2-5BEAA941BD87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{BA43EC17-BC2F-4BE7-9EE6-550889CCC1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA43EC17-BC2F-4BE7-9EE6-550889CCC1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA43EC17-BC2F-4BE7-9EE6-550889CCC1AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{869C0092-EDC8-4BEA-B3F3-72D047F76E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{869C0092-EDC8-4BEA-B3F3-72D047F76E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{869C0092-EDC8-4BEA-B3F3-72D047F76E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{869C0092-EDC8-4BEA-B3F3-72D047F76E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FECA40E-A275-44FE-B8FD-42D7D188C0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FECA40E-A275-44FE-B8FD-42D7D188C0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FECA40E-A275-44FE-B8FD-42D7D188C0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FECA40E-A275-44FE-B8FD-42D7D188C0A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07D7CC7-258C-4B51-82B2-5BEAA941BD87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07D7CC7-258C-4B51-82B2-5BEAA941BD87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07D7CC7-258C-4B51-82B2-5BEAA941BD87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07D7CC7-258C-4B51-82B2-5BEAA941BD87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
