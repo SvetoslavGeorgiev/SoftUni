@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Hello_SoftUni", "Hello_SoftUni\Hello_SoftUni.pyproj", "{D1F14F5D-52CE-412A-85D6-7497A72B7867}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Nums_1_to_10", "Nums_1_to_10\Nums_1_to_10.pyproj", "{5DBF40F8-6859-44B3-A80B-C3B86CABFDE2}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Square_Area", "Square_Area\Square_Area.pyproj", "{7D87D49C-09D3-414E-BBC9-56BF21E5D888}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1F14F5D-52CE-412A-85D6-7497A72B7867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F14F5D-52CE-412A-85D6-7497A72B7867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBF40F8-6859-44B3-A80B-C3B86CABFDE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBF40F8-6859-44B3-A80B-C3B86CABFDE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D87D49C-09D3-414E-BBC9-56BF21E5D888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D87D49C-09D3-414E-BBC9-56BF21E5D888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AD75C9D-E413-4B3C-9367-B65BB8A662AB}
+	EndGlobalSection
+EndGlobal
