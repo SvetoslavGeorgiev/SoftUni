@@ -9,6 +9,18 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Nums_1_to_10", "Nums_1_to_1
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Square_Area", "Square_Area\Square_Area.pyproj", "{7D87D49C-09D3-414E-BBC9-56BF21E5D888}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Inches_to_Centimeters", "Inches_to_Centimeters\Inches_to_Centimeters.pyproj", "{4EBD1003-7B7B-4B6F-8E86-8EDA87213024}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Greeting_by_Name", "Greeting_by_Name\Greeting_by_Name.pyproj", "{B597C516-2BB4-496C-B0D0-617089F74657}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Concatenate_Data", "Concatenate_Data\Concatenate_Data.pyproj", "{5E10D381-B4C7-44BB-BD09-05CF5AC8A2D2}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Projects_Creation", "Projects_Creation\Projects_Creation.pyproj", "{1C150BFE-B2E8-4193-8E27-252E6DE60FEB}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Pet_Shop", "Pet_Shop\Pet_Shop.pyproj", "{B1482940-7D09-4108-8DC3-7C1857717EC4}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Yard_Greening", "Yard_Greening\Yard_Greening.pyproj", "{A3DE1298-F25E-4BB6-9340-0762BBC2F5D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +33,18 @@ Global
 		{5DBF40F8-6859-44B3-A80B-C3B86CABFDE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D87D49C-09D3-414E-BBC9-56BF21E5D888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7D87D49C-09D3-414E-BBC9-56BF21E5D888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EBD1003-7B7B-4B6F-8E86-8EDA87213024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EBD1003-7B7B-4B6F-8E86-8EDA87213024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B597C516-2BB4-496C-B0D0-617089F74657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B597C516-2BB4-496C-B0D0-617089F74657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E10D381-B4C7-44BB-BD09-05CF5AC8A2D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E10D381-B4C7-44BB-BD09-05CF5AC8A2D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C150BFE-B2E8-4193-8E27-252E6DE60FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C150BFE-B2E8-4193-8E27-252E6DE60FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1482940-7D09-4108-8DC3-7C1857717EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1482940-7D09-4108-8DC3-7C1857717EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3DE1298-F25E-4BB6-9340-0762BBC2F5D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3DE1298-F25E-4BB6-9340-0762BBC2F5D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
