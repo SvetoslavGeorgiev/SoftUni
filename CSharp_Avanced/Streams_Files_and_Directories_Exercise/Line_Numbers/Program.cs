@@ -26,21 +26,20 @@ namespace Line_Numbers
                     while ((currentLine = reader.ReadLine()) != null)
                     {
                         counter++;
-                        var whiteSpace = 0;
+                        var allChars = 0;
                         var symbolCount = 0;
 
                         foreach (var @char in currentLine)
                         {
-                            if (char.IsWhiteSpace(@char))
+                            if (char.IsLetterOrDigit(@char))
                             {
-                                whiteSpace++;
+                                allChars++;
                             }
-                            else if (!char.IsLetterOrDigit(@char))
+                            else if (char.IsPunctuation(@char))
                             {
                                 symbolCount++;
                             }
                         }
-                        var allChars = currentLine.Length - whiteSpace - symbolCount;
 
                         writer.WriteLine($"Line {counter}: {currentLine} ({allChars})({symbolCount})");
                     }
