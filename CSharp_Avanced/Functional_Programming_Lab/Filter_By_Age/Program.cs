@@ -2,48 +2,74 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Reflection.PortableExecutable;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Filter_By_Age
 {
+    public class Person
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            var numberOfInputs = int.Parse(Console.ReadLine());
+            var numberOPeoples = int.Parse(Console.ReadLine());
 
-            var people = new Dictionary<string, int>();
+            var people = new List<Person>();
 
-            for (int i = 0; i < numberOfInputs; i++)
+            for (int i = 0; i < numberOPeoples; i++)
             {
                 var person = Console.ReadLine()
                 .Split(", ", StringSplitOptions.RemoveEmptyEntries)
                 .ToList();
 
-                people.Add(person[0], int.Parse(person[1]));
+                people.Add(new Person
+                {
+                    Name = person[0],
+                    Age = int.Parse(person[1])
+                });
             }
 
             var condition = Console.ReadLine();
             var age = int.Parse(Console.ReadLine());
-            var format = Console.ReadLine()
-                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
-                .ToList();
+            var format = Console.ReadLine();
 
-            Func<Dictionary<string, int>, string, int, Dictionary<string, int>> filter = FilterAllPeopleByTheCondition(people, condition, age);
+            Func<Person, bool> tester = CreateTester(condition, age);
 
-            var newListPleople = 
+            Action<Person> printer = CreatePrint(format);
 
-
-
+            people.Where(tester).ToList().ForEach(printer);
         }
 
-        private static Func<Dictionary<string, int>, string, int, Dictionary<string, int>> FilterAllPeopleByTheCondition(Dictionary<string, int> people, string condition, int age)
+        private static Action<Person> CreatePrint(string format)
+        {
+            switch (format)
+            {
+                case "name":
+                    return person => Console.WriteLine(person.Name);
+                case "age":
+                    return person => Console.WriteLine(person.Age);
+                case "name age":
+                    return person => Console.WriteLine($"{person.Name} - {person.Age}");
+                default:
+                    return null;
+            }
+        }
+
+        private static Func<Person, bool> CreateTester(string condition, int age)
         {
             switch (condition)
             {
                 case "younger":
-                    return x => x < age;
-
+                    return x => x.Age < age;
+                case "older":
+                    return x => x.Age >= age;
+                default:
+                    return null;
             }
         }
     }

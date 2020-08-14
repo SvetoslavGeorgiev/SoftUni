@@ -17,6 +17,13 @@ namespace Count_Uppercase_Words
             {
                 Console.WriteLine(word);
             }
+
+            // SECOND VARIANT OF THE SOLUTION
+            //Console.ReadLine()
+            //    .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+            //    .Where(x => char.IsUpper[x[0]))
+            //    .ToList()
+            //    .ForEach(Console.WriteLine);
         }
     }
 }
