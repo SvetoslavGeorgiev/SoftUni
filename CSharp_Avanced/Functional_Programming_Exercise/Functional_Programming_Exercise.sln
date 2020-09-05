@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Applied_Arithmetics", "Appl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverse_and_Exclude", "Reverse_and_Exclude\Reverse_and_Exclude.csproj", "{4FE7F16F-1971-4B4A-BC09-5D79F9B970BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Predicate_For_Names", "Predicate_For_Names\Predicate_For_Names.csproj", "{0BE5BF76-4957-4E97-A2BE-9C982549E023}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Predicate_For_Names", "Predicate_For_Names\Predicate_For_Names.csproj", "{0BE5BF76-4957-4E97-A2BE-9C982549E023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom_Comparator", "Custom_Comparator\Custom_Comparator.csproj", "{EAE0FA79-B7DD-4FAF-9F39-8695BE4F907F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{0BE5BF76-4957-4E97-A2BE-9C982549E023}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BE5BF76-4957-4E97-A2BE-9C982549E023}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BE5BF76-4957-4E97-A2BE-9C982549E023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAE0FA79-B7DD-4FAF-9F39-8695BE4F907F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAE0FA79-B7DD-4FAF-9F39-8695BE4F907F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAE0FA79-B7DD-4FAF-9F39-8695BE4F907F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAE0FA79-B7DD-4FAF-9F39-8695BE4F907F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

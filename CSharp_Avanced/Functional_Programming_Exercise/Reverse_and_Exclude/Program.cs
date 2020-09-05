@@ -22,7 +22,6 @@ namespace Reverse_and_Exclude
             Console.WriteLine(string.Join(" ", reversedListv));
 
 
-
         }
     }
 }
