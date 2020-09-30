@@ -35,6 +35,7 @@ namespace Custom_Comparator
             oddNumbers.Sort();
             oddNumbers.ForEach(x => allNumbers.Add(x));
 
+            Console.WriteLine(string.Join(" ", allNumbers));
         }
     }
 }
