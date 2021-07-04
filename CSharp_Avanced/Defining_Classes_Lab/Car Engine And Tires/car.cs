@@ -57,6 +57,7 @@ namespace CarManufacturer
         public double FuelConsumption { get; set; }
 
         public Engine Engine { get; set; }
+
         public Tire[] Tires { get; set; }
 
     }
