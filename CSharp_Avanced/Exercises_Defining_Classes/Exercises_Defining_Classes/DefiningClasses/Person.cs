@@ -10,39 +10,57 @@ namespace DefiningClasses
         private string name;
 
         private int age;
+
+
+
+        //public Person(string name, int age)
+        //{
+        //    Name = name;
+        //    Age = age;
+        //}
+
+        //public Person(int age) : this("No name", age)
+        //{
+        //}
+
+        //public Person() : this("No name", 1)
+        //{
+        //}
+
+
+
+
         public Person()
         {
             Name = "No name";
             Age = 1;
-
         }
 
-        public Person(string name)
-        {
-
-            Name = name;
-        }
-
-        public Person(string name, int age):this(name)
+        public Person(int age) : this()
         {
             Age = age;
         }
 
-        public string Name
+        public Person(string name, int age) : this(age)
         {
-            get { return this.name; }
-            set
-            {
-                if (value.Length <= 2)
-                {
-                    throw new ArgumentException("Name should be more than 2 symbols");
-                }
-
-                this.name = value;
-            }
+            Name = name;
         }
-        public int Age { get; set; }
 
+        ////public string Name
+        ////{
+        ////    get { return this.name; }
+        ////    set
+        ////    {
+        ////        if (value.Length <= 2)
+        ////        {
+        ////            throw new ArgumentException("Name should be more than 2 symbols");
+        ////        }
+
+        ////        this.name = value;
+        ////    }
+        ////}
+        public string Name { get; set; }
+        public int Age { get; set; }
 
     }
 }
