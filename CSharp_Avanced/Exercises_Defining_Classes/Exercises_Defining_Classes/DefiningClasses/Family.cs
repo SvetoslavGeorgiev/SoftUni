@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace DefiningClasses
@@ -20,20 +21,20 @@ namespace DefiningClasses
 
         public void AddMember(Person newMember)
         {
-            this.familyMembers.Add(newMember);
+            this.FamilyMembers.Add(newMember);
         }
 
-        public Person GetOldestMember(List<Person> family)
+        public Person GetOldestMember()
         {
-            Person oldestOne = new Person();
+            Person oldestOne = FamilyMembers.OrderByDescending(x => x.Age).FirstOrDefault();
 
-            foreach (var member in family)
-            {
-                if (member.Age >= oldestOne.Age)
-                {
-                    oldestOne = member;
-                }
-            }
+            //foreach (var member in family)
+            //{
+            //    if (member.Age >= oldestOne.Age)
+            //    {
+            //        oldestOne = member;
+            //    }
+            //}
 
             return oldestOne ;
         }

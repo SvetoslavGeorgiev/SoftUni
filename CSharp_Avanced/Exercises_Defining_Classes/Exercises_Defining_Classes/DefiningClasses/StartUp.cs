@@ -15,7 +15,6 @@ namespace DefiningClasses
 
             var family = new Family();
 
-            var familyMember = new Person();
 
             for (int i = 0; i < numberOfInputs; i++)
             {
@@ -27,14 +26,12 @@ namespace DefiningClasses
                 var name = newMember[0];
                 var age = int.Parse(newMember[1]);
 
-
-                familyMember.Name = name;
-                familyMember.Age = age;
+                var familyMember = new Person(name, age);
 
                 family.AddMember(familyMember);
             }
             
-            var theOldestOneInTheFamily = family.GetOldestMember(family.FamilyMembers);
+            var theOldestOneInTheFamily = family.GetOldestMember();
 
             Console.WriteLine($"{theOldestOneInTheFamily.Name} {theOldestOneInTheFamily.Age}");
             //var user = new Person();
