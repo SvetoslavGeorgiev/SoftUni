@@ -24,19 +24,10 @@ namespace DefiningClasses
             this.FamilyMembers.Add(newMember);
         }
 
-        public Person GetOldestMember()
+        public void GetAllMembersOver30(List<Person> family)
         {
-            Person oldestOne = FamilyMembers.OrderByDescending(x => x.Age).FirstOrDefault();
+            family.Where(m => m.Age > 30).OrderBy(m => m.Name).ToList().ForEach(m => Console.WriteLine($"{m.Name} - {m.Age}"));
 
-            //foreach (var member in family)
-            //{
-            //    if (member.Age >= oldestOne.Age)
-            //    {
-            //        oldestOne = member;
-            //    }
-            //}
-
-            return oldestOne ;
         }
     }
 }

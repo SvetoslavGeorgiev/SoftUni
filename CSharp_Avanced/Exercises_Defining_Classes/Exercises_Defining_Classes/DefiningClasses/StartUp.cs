@@ -30,10 +30,10 @@ namespace DefiningClasses
 
                 family.AddMember(familyMember);
             }
-            
-            var theOldestOneInTheFamily = family.GetOldestMember();
 
-            Console.WriteLine($"{theOldestOneInTheFamily.Name} {theOldestOneInTheFamily.Age}");
+            family.GetAllMembersOver30(family.FamilyMembers);
+
+            
             //var user = new Person();
 
             //user.Age = 21;
