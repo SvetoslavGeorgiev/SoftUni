@@ -6,7 +6,7 @@ namespace Student_Information
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("test");
         }
     }
 }
