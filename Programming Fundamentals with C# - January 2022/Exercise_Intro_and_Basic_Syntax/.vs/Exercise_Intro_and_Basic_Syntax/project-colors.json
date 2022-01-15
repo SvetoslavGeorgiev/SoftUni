@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2ea3c985-7019-46cf-81ae-20634b1a862f": {
+      "ProjectGuid": "2ea3c985-7019-46cf-81ae-20634b1a862f",
+      "DisplayName": "01_Ages",
+      "ColorIndex": 0
+    },
+    "e33e9352-02f8-43c3-854b-a5830e679937": {
+      "ProjectGuid": "e33e9352-02f8-43c3-854b-a5830e679937",
+      "DisplayName": "02_Division",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
