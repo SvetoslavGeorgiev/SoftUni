@@ -5,7 +5,22 @@
       "ProjectGuid": "eb5b47da-8b6a-4878-80f2-4314ef5403bc",
       "DisplayName": "Student_Information",
       "ColorIndex": 0
+    },
+    "b1818af9-5d72-4f01-a13d-bd4816e7f3f4": {
+      "ProjectGuid": "b1818af9-5d72-4f01-a13d-bd4816e7f3f4",
+      "DisplayName": "Passed",
+      "ColorIndex": 1
+    },
+    "d34f2772-3273-4a41-957f-d3a948ee540f": {
+      "ProjectGuid": "d34f2772-3273-4a41-957f-d3a948ee540f",
+      "DisplayName": "Passed_or_Failed",
+      "ColorIndex": 2
+    },
+    "e6d51e2f-a790-48e9-887a-d561f769c06b": {
+      "ProjectGuid": "e6d51e2f-a790-48e9-887a-d561f769c06b",
+      "DisplayName": "Back_in_30_Minutes",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 4
 }
