@@ -10,7 +10,27 @@
       "ProjectGuid": "e33e9352-02f8-43c3-854b-a5830e679937",
       "DisplayName": "02_Division",
       "ColorIndex": 1
+    },
+    "a79c1d57-209c-4370-a766-0a18075ae1fd": {
+      "ProjectGuid": "a79c1d57-209c-4370-a766-0a18075ae1fd",
+      "DisplayName": "03_Vacation",
+      "ColorIndex": 2
+    },
+    "c4dd3eee-ef33-4767-b196-6ac51384ed1d": {
+      "ProjectGuid": "c4dd3eee-ef33-4767-b196-6ac51384ed1d",
+      "DisplayName": "04_Print_and_sum",
+      "ColorIndex": 3
+    },
+    "be37c96d-d6a9-4a8d-8e1d-064d389e1ff4": {
+      "ProjectGuid": "be37c96d-d6a9-4a8d-8e1d-064d389e1ff4",
+      "DisplayName": "05_Login",
+      "ColorIndex": 4
+    },
+    "1d6e83d3-c900-409f-af63-ae44a6802f12": {
+      "ProjectGuid": "1d6e83d3-c900-409f-af63-ae44a6802f12",
+      "DisplayName": "06_Strong_number",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 6
 }
