@@ -30,7 +30,22 @@
       "ProjectGuid": "1d6e83d3-c900-409f-af63-ae44a6802f12",
       "DisplayName": "06_Strong_number",
       "ColorIndex": 5
+    },
+    "62c40c30-7b62-4938-93a1-91096e799b35": {
+      "ProjectGuid": "62c40c30-7b62-4938-93a1-91096e799b35",
+      "DisplayName": "07_Vending_Machine",
+      "ColorIndex": 6
+    },
+    "d518c85c-a9cf-4226-8f49-a86cc5f47644": {
+      "ProjectGuid": "d518c85c-a9cf-4226-8f49-a86cc5f47644",
+      "DisplayName": "08_Triangle_of_Numbers",
+      "ColorIndex": 7
+    },
+    "75ec55fe-159c-406d-b575-813e6c62fb63": {
+      "ProjectGuid": "75ec55fe-159c-406d-b575-813e6c62fb63",
+      "DisplayName": "09_Padawan_Equipment",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 9
 }
