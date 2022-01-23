@@ -45,7 +45,17 @@
       "ProjectGuid": "75ec55fe-159c-406d-b575-813e6c62fb63",
       "DisplayName": "09_Padawan_Equipment",
       "ColorIndex": 8
+    },
+    "7e5d4804-b15a-43e3-90c1-af83c9cd8f5f": {
+      "ProjectGuid": "7e5d4804-b15a-43e3-90c1-af83c9cd8f5f",
+      "DisplayName": "10_Rage_Expenses",
+      "ColorIndex": 9
+    },
+    "7cbc7eee-9b64-4b53-a58f-6c4b949ba411": {
+      "ProjectGuid": "7cbc7eee-9b64-4b53-a58f-6c4b949ba411",
+      "DisplayName": "11_Orders",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 11
 }
