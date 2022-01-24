@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1ed2ced1-14c9-43ac-a520-23b7e166624e": {
+      "ProjectGuid": "1ed2ced1-14c9-43ac-a520-23b7e166624e",
+      "DisplayName": "01_Convert_Meters_to_Kilometers",
+      "ColorIndex": 0
+    },
+    "8e2c2c2b-996d-4752-8c8d-b6fb9c86746e": {
+      "ProjectGuid": "8e2c2c2b-996d-4752-8c8d-b6fb9c86746e",
+      "DisplayName": "02_Pounds_to_Dollars",
+      "ColorIndex": 1
+    },
+    "65498d8b-2c9b-4efc-ac90-aa29d24b074e": {
+      "ProjectGuid": "65498d8b-2c9b-4efc-ac90-aa29d24b074e",
+      "DisplayName": "03_Exact_Sum_of_Real_Numbers",
+      "ColorIndex": 2
+    },
+    "0d2c7e6d-cab4-41a2-963c-7848163dfa14": {
+      "ProjectGuid": "0d2c7e6d-cab4-41a2-963c-7848163dfa14",
+      "DisplayName": "04_Centuries_to_Minutes",
+      "ColorIndex": 3
+    },
+    "4bed9b8e-a98a-49ce-8b2b-507b783b3b5e": {
+      "ProjectGuid": "4bed9b8e-a98a-49ce-8b2b-507b783b3b5e",
+      "DisplayName": "05_Special_Numbers",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
