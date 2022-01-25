@@ -25,7 +25,42 @@
       "ProjectGuid": "4bed9b8e-a98a-49ce-8b2b-507b783b3b5e",
       "DisplayName": "05_Special_Numbers",
       "ColorIndex": 4
+    },
+    "0d358111-2333-4892-8931-17be03ef6176": {
+      "ProjectGuid": "0d358111-2333-4892-8931-17be03ef6176",
+      "DisplayName": "06_Reversed_Chars",
+      "ColorIndex": 5
+    },
+    "e9eeaeb6-6793-4f76-ade3-7563ed4b9b0d": {
+      "ProjectGuid": "e9eeaeb6-6793-4f76-ade3-7563ed4b9b0d",
+      "DisplayName": "07_Concat_Names",
+      "ColorIndex": 6
+    },
+    "ea1caa67-e9f2-405b-925b-cad9877b473d": {
+      "ProjectGuid": "ea1caa67-e9f2-405b-925b-cad9877b473d",
+      "DisplayName": "08_Town_Info",
+      "ColorIndex": 7
+    },
+    "4cc452f4-abbb-499b-8f81-733a05a3f948": {
+      "ProjectGuid": "4cc452f4-abbb-499b-8f81-733a05a3f948",
+      "DisplayName": "09_Chars_to_String",
+      "ColorIndex": 8
+    },
+    "e543b120-aae0-464f-a2ef-b018c565d273": {
+      "ProjectGuid": "e543b120-aae0-464f-a2ef-b018c565d273",
+      "DisplayName": "10_Lower_or_Upper",
+      "ColorIndex": 9
+    },
+    "e00d07cf-e5d8-4e1a-a9ca-f418f8b52a92": {
+      "ProjectGuid": "e00d07cf-e5d8-4e1a-a9ca-f418f8b52a92",
+      "DisplayName": "11_Refactor_Volume_of_Pyramid",
+      "ColorIndex": 10
+    },
+    "7b31421f-42cb-4792-88ff-b1fdf9f3e626": {
+      "ProjectGuid": "7b31421f-42cb-4792-88ff-b1fdf9f3e626",
+      "DisplayName": "12_Refactor_Special_Numbers",
+      "ColorIndex": 11
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 12
 }
