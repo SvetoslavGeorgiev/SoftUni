@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "786e3be0-ec7c-47de-b2a5-7fd546a82695": {
+      "ProjectGuid": "786e3be0-ec7c-47de-b2a5-7fd546a82695",
+      "DisplayName": "01_Integer_Operations",
+      "ColorIndex": 0
+    },
+    "09b278bc-e02b-4aec-b301-5846601a5ee0": {
+      "ProjectGuid": "09b278bc-e02b-4aec-b301-5846601a5ee0",
+      "DisplayName": "02_Sum_Digits",
+      "ColorIndex": 1
+    },
+    "fb55771c-0bba-4cdf-b634-3e9a6e0c2eec": {
+      "ProjectGuid": "fb55771c-0bba-4cdf-b634-3e9a6e0c2eec",
+      "DisplayName": "03_Elevator",
+      "ColorIndex": 2
+    },
+    "17fc1de6-5c2f-47ed-af62-6bc4bfb9ee7a": {
+      "ProjectGuid": "17fc1de6-5c2f-47ed-af62-6bc4bfb9ee7a",
+      "DisplayName": "04_Sum_of_Chars",
+      "ColorIndex": 3
+    },
+    "f25c3a64-e0b3-4056-82c3-c4a3a1f9ae74": {
+      "ProjectGuid": "f25c3a64-e0b3-4056-82c3-c4a3a1f9ae74",
+      "DisplayName": "05_Print_Part_Of_ASCII_Table",
+      "ColorIndex": 4
+    },
+    "e8fd3598-a751-42a6-82d6-fe0614fd0e22": {
+      "ProjectGuid": "e8fd3598-a751-42a6-82d6-fe0614fd0e22",
+      "DisplayName": "06_Triples_of_Latin_Letters",
+      "ColorIndex": 5
+    },
+    "ba7b71d3-8d12-421b-bc08-9546d9386b06": {
+      "ProjectGuid": "ba7b71d3-8d12-421b-bc08-9546d9386b06",
+      "DisplayName": "07_Water_Overflow",
+      "ColorIndex": 6
+    },
+    "a36e8a73-8d2f-4b64-907f-d5319652946e": {
+      "ProjectGuid": "a36e8a73-8d2f-4b64-907f-d5319652946e",
+      "DisplayName": "08_Beer_Kegs",
+      "ColorIndex": 7
+    },
+    "7a9dc417-d3fb-46c1-9a62-f640e2f65da6": {
+      "ProjectGuid": "7a9dc417-d3fb-46c1-9a62-f640e2f65da6",
+      "DisplayName": "09_Spice_Must_Flow",
+      "ColorIndex": 8
+    },
+    "9a6a9e33-10f5-4a70-9b97-8d0cb0e252b0": {
+      "ProjectGuid": "9a6a9e33-10f5-4a70-9b97-8d0cb0e252b0",
+      "DisplayName": "10_Poke_Mon",
+      "ColorIndex": 9
+    }
+  },
+  "NextColorIndex": 10
+}
