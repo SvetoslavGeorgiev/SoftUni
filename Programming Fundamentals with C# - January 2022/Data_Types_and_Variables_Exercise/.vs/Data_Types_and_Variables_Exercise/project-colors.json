@@ -50,7 +50,12 @@
       "ProjectGuid": "9a6a9e33-10f5-4a70-9b97-8d0cb0e252b0",
       "DisplayName": "10_Poke_Mon",
       "ColorIndex": 9
+    },
+    "912e67b4-c102-4548-bfda-7d596eb60424": {
+      "ProjectGuid": "912e67b4-c102-4548-bfda-7d596eb60424",
+      "DisplayName": "11_Snowballs",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 10
+  "NextColorIndex": 11
 }
