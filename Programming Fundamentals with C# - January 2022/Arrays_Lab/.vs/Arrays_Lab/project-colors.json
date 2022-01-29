@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a33d10b2-5798-4366-9119-4b8789ff0e59": {
+      "ProjectGuid": "a33d10b2-5798-4366-9119-4b8789ff0e59",
+      "DisplayName": "01_Day_of_Week",
+      "ColorIndex": 0
+    },
+    "8a7accd7-8e44-4598-8367-8df72e532c45": {
+      "ProjectGuid": "8a7accd7-8e44-4598-8367-8df72e532c45",
+      "DisplayName": "02_Print_Numbers_in_Reverse_Order",
+      "ColorIndex": 1
+    },
+    "c8f2ee2c-c64c-43b5-8596-9e8e29fa8138": {
+      "ProjectGuid": "c8f2ee2c-c64c-43b5-8596-9e8e29fa8138",
+      "DisplayName": "03_Rounding_Numbers",
+      "ColorIndex": 2
+    },
+    "e99c90ff-02d2-44bf-b6ec-2e7250b5e555": {
+      "ProjectGuid": "e99c90ff-02d2-44bf-b6ec-2e7250b5e555",
+      "DisplayName": "04_Reverse_Array_of_Strings",
+      "ColorIndex": 3
+    },
+    "182dc776-a310-4b91-a30e-a48afc0d1b90": {
+      "ProjectGuid": "182dc776-a310-4b91-a30e-a48afc0d1b90",
+      "DisplayName": "05_Sum_Even_Numbers",
+      "ColorIndex": 4
+    },
+    "4868c048-2736-408f-b589-781ebb91d441": {
+      "ProjectGuid": "4868c048-2736-408f-b589-781ebb91d441",
+      "DisplayName": "06_Even_and_Odd_Subtraction",
+      "ColorIndex": 5
+    },
+    "9b76da4a-7614-43dd-873a-4254c062dc72": {
+      "ProjectGuid": "9b76da4a-7614-43dd-873a-4254c062dc72",
+      "DisplayName": "07_Equal_Arrays",
+      "ColorIndex": 6
+    },
+    "99b0960b-9d0d-4272-a49c-b51d8f739e07": {
+      "ProjectGuid": "99b0960b-9d0d-4272-a49c-b51d8f739e07",
+      "DisplayName": "08_Condense_Array_to_Number",
+      "ColorIndex": 7
+    }
+  },
+  "NextColorIndex": 8
+}
