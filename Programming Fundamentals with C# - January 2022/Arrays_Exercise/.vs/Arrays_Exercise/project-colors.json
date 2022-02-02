@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "577ba538-4c81-4641-9142-d7df4dae4aeb": {
+      "ProjectGuid": "577ba538-4c81-4641-9142-d7df4dae4aeb",
+      "DisplayName": "04_Array_Rotation",
+      "ColorIndex": 0
+    },
+    "c28f1548-7c97-4341-8ae6-00ffd335f2a6": {
+      "ProjectGuid": "c28f1548-7c97-4341-8ae6-00ffd335f2a6",
+      "DisplayName": "03_Zig-Zag_Arrays",
+      "ColorIndex": 1
+    },
+    "35c175e4-3dad-460b-b090-86999dffde94": {
+      "ProjectGuid": "35c175e4-3dad-460b-b090-86999dffde94",
+      "DisplayName": "05_Top_Integers",
+      "ColorIndex": 2
+    },
+    "f113c3fa-576e-4713-95fb-29924f134707": {
+      "ProjectGuid": "f113c3fa-576e-4713-95fb-29924f134707",
+      "DisplayName": "06_Equal_Sum",
+      "ColorIndex": 3
+    },
+    "62e2102f-3cd6-4d06-92cc-3b700c7ffd38": {
+      "ProjectGuid": "62e2102f-3cd6-4d06-92cc-3b700c7ffd38",
+      "DisplayName": "07_Max_Sequence_of_Equal_Elements",
+      "ColorIndex": 4
+    },
+    "71626550-8935-46d2-a39a-82fc0f05b344": {
+      "ProjectGuid": "71626550-8935-46d2-a39a-82fc0f05b344",
+      "DisplayName": "08_Magic_Sum",
+      "ColorIndex": 5
+    },
+    "a8b9d2d1-8b58-4fdf-bec2-a82a3347d09e": {
+      "ProjectGuid": "a8b9d2d1-8b58-4fdf-bec2-a82a3347d09e",
+      "DisplayName": "09_Kamino_Factory",
+      "ColorIndex": 6
+    },
+    "3b80a219-4ec5-46d5-a58f-6f84444900b2": {
+      "ProjectGuid": "3b80a219-4ec5-46d5-a58f-6f84444900b2",
+      "DisplayName": "10_LadyBugs",
+      "ColorIndex": 7
+    }
+  },
+  "NextColorIndex": 8
+}

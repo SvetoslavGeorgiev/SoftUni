@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bdd2c179-3d04-44d8-a937-f810e2687859": {
+      "ProjectGuid": "bdd2c179-3d04-44d8-a937-f810e2687859",
+      "DisplayName": "01_Encrypt_Sort_and_Print_Array",
+      "ColorIndex": 0
+    },
+    "adeff59f-36de-451f-ad90-06253cad7ca4": {
+      "ProjectGuid": "adeff59f-36de-451f-ad90-06253cad7ca4",
+      "DisplayName": "02_Pascal_Triangle",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
