@@ -25,7 +25,37 @@
       "ProjectGuid": "689c0b2f-4070-466d-8da1-ad8f1348010e",
       "DisplayName": "05_Orders",
       "ColorIndex": 4
+    },
+    "14e7f19b-04e9-4fbb-a9c1-8f9526d21dd1": {
+      "ProjectGuid": "14e7f19b-04e9-4fbb-a9c1-8f9526d21dd1",
+      "DisplayName": "06_Calculate_Rectangle_Area",
+      "ColorIndex": 5
+    },
+    "b380ac96-62d5-42ff-ac93-2602b7ebbdc5": {
+      "ProjectGuid": "b380ac96-62d5-42ff-ac93-2602b7ebbdc5",
+      "DisplayName": "07_Repeat_String",
+      "ColorIndex": 6
+    },
+    "36b64e3e-342b-4b05-9074-26b7e503b772": {
+      "ProjectGuid": "36b64e3e-342b-4b05-9074-26b7e503b772",
+      "DisplayName": "08_Math_Power",
+      "ColorIndex": 7
+    },
+    "7597d2ef-7866-4f1b-af14-3548ff9f14ea": {
+      "ProjectGuid": "7597d2ef-7866-4f1b-af14-3548ff9f14ea",
+      "DisplayName": "09_Greater_of_Two_Values",
+      "ColorIndex": 8
+    },
+    "dc1969e3-14ee-47bb-9446-72c4950a9ba7": {
+      "ProjectGuid": "dc1969e3-14ee-47bb-9446-72c4950a9ba7",
+      "DisplayName": "10_Multiply_Evens_by_Odds",
+      "ColorIndex": 9
+    },
+    "7df5110e-906e-47a2-a7b8-b53bca31eda1": {
+      "ProjectGuid": "7df5110e-906e-47a2-a7b8-b53bca31eda1",
+      "DisplayName": "11_Math_operations",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 11
 }
