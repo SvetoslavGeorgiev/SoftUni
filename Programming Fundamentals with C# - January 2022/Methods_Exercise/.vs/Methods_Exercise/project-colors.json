@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3c342dec-8416-4c70-8bec-c8170e4c7219": {
+      "ProjectGuid": "3c342dec-8416-4c70-8bec-c8170e4c7219",
+      "DisplayName": "01_Smallest_of_Three_Numbers",
+      "ColorIndex": 0
+    },
+    "aef35d5a-8949-467c-8e89-e0a9b9ab2825": {
+      "ProjectGuid": "aef35d5a-8949-467c-8e89-e0a9b9ab2825",
+      "DisplayName": "02_Vowels_Count",
+      "ColorIndex": 1
+    },
+    "8dbb0f88-3227-4049-b1ae-4f57bf28556f": {
+      "ProjectGuid": "8dbb0f88-3227-4049-b1ae-4f57bf28556f",
+      "DisplayName": "03_Characters_in_Range",
+      "ColorIndex": 2
+    },
+    "e436424f-3cb6-4913-ac2e-2cdf74537d7a": {
+      "ProjectGuid": "e436424f-3cb6-4913-ac2e-2cdf74537d7a",
+      "DisplayName": "04_Password_Validator",
+      "ColorIndex": 3
+    },
+    "fe8bb340-a1ce-4bdb-b6aa-c75c0c594c85": {
+      "ProjectGuid": "fe8bb340-a1ce-4bdb-b6aa-c75c0c594c85",
+      "DisplayName": "05_Add_and_Subtract",
+      "ColorIndex": 4
+    },
+    "ce87e79a-0571-45a8-9053-bff9ef3068da": {
+      "ProjectGuid": "ce87e79a-0571-45a8-9053-bff9ef3068da",
+      "DisplayName": "06_Middle_Characters",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
