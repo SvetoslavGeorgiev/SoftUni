@@ -30,7 +30,32 @@
       "ProjectGuid": "ce87e79a-0571-45a8-9053-bff9ef3068da",
       "DisplayName": "06_Middle_Characters",
       "ColorIndex": 5
+    },
+    "c698e0dd-aaeb-49a6-868c-fd5bdd5f0cef": {
+      "ProjectGuid": "c698e0dd-aaeb-49a6-868c-fd5bdd5f0cef",
+      "DisplayName": "07_NxN_Matrix",
+      "ColorIndex": 6
+    },
+    "b05a8245-57a4-4960-b007-3ffc1343caca": {
+      "ProjectGuid": "b05a8245-57a4-4960-b007-3ffc1343caca",
+      "DisplayName": "08_Factorial_Division",
+      "ColorIndex": 7
+    },
+    "bf515791-3dee-4723-98a5-c59bb9070637": {
+      "ProjectGuid": "bf515791-3dee-4723-98a5-c59bb9070637",
+      "DisplayName": "09_Palindrome_Integers",
+      "ColorIndex": 8
+    },
+    "5885d981-04bb-4c72-b845-4b8d75d99bec": {
+      "ProjectGuid": "5885d981-04bb-4c72-b845-4b8d75d99bec",
+      "DisplayName": "10_Top_Number",
+      "ColorIndex": 9
+    },
+    "241597a4-ac4b-436a-a0ed-8463a36cb094": {
+      "ProjectGuid": "241597a4-ac4b-436a-a0ed-8463a36cb094",
+      "DisplayName": "11_Array_Manipulator",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 11
 }
