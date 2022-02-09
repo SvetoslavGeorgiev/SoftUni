@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f507e368-063a-4a2f-b8ec-a29778060b2b": {
+      "ProjectGuid": "f507e368-063a-4a2f-b8ec-a29778060b2b",
+      "DisplayName": "01_Sum_Adjacent_Equal_Numbers",
+      "ColorIndex": 0
+    },
+    "49e922d5-659d-4473-8f36-de962a562fa8": {
+      "ProjectGuid": "49e922d5-659d-4473-8f36-de962a562fa8",
+      "DisplayName": "02_Gauss_Trick",
+      "ColorIndex": 1
+    },
+    "c1ae8ce7-ab24-43b0-8d28-a06ee21a04a7": {
+      "ProjectGuid": "c1ae8ce7-ab24-43b0-8d28-a06ee21a04a7",
+      "DisplayName": "03_Merging_Lists",
+      "ColorIndex": 2
+    },
+    "502b7e59-96f6-48f2-b648-ed06061af188": {
+      "ProjectGuid": "502b7e59-96f6-48f2-b648-ed06061af188",
+      "DisplayName": "04_List_of_Products",
+      "ColorIndex": 3
+    },
+    "5d16a42d-e90f-480e-a4dc-4fddc9526646": {
+      "ProjectGuid": "5d16a42d-e90f-480e-a4dc-4fddc9526646",
+      "DisplayName": "05_Remove_Negatives_and_Reverse",
+      "ColorIndex": 4
+    },
+    "61196108-e2bb-4511-8bdb-36d9766f1461": {
+      "ProjectGuid": "61196108-e2bb-4511-8bdb-36d9766f1461",
+      "DisplayName": "06_List_Manipulation_Basics",
+      "ColorIndex": 5
+    },
+    "02a90ab0-c9c5-412e-b4f3-5b613633a880": {
+      "ProjectGuid": "02a90ab0-c9c5-412e-b4f3-5b613633a880",
+      "DisplayName": "07_List_Manipulation_Advanced",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}

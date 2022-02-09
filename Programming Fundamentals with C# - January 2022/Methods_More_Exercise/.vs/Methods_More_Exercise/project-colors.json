@@ -5,7 +5,12 @@
       "ProjectGuid": "e55e9443-4e93-44df-aa8f-7bd8b74988fe",
       "DisplayName": "01_Data_Types",
       "ColorIndex": 0
+    },
+    "c7eeda9e-0f82-41e0-bb02-eec2f89bac13": {
+      "ProjectGuid": "c7eeda9e-0f82-41e0-bb02-eec2f89bac13",
+      "DisplayName": "03_Longer_Line",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
