@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "307dc383-1285-4d44-b2f3-45a4a7e28f74": {
+      "ProjectGuid": "307dc383-1285-4d44-b2f3-45a4a7e28f74",
+      "DisplayName": "01_Train",
+      "ColorIndex": 0
+    },
+    "2ad2c33d-7ef1-4931-862e-d5ff12a58e41": {
+      "ProjectGuid": "2ad2c33d-7ef1-4931-862e-d5ff12a58e41",
+      "DisplayName": "02_Change_List",
+      "ColorIndex": 1
+    },
+    "78ef06eb-403e-4879-8fc1-c65926c03911": {
+      "ProjectGuid": "78ef06eb-403e-4879-8fc1-c65926c03911",
+      "DisplayName": "03_House_Party",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
