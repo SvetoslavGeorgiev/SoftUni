@@ -15,7 +15,37 @@
       "ProjectGuid": "78ef06eb-403e-4879-8fc1-c65926c03911",
       "DisplayName": "03_House_Party",
       "ColorIndex": 2
+    },
+    "a0508777-154f-4ef9-9671-3655730a2a5f": {
+      "ProjectGuid": "a0508777-154f-4ef9-9671-3655730a2a5f",
+      "DisplayName": "04_List_Operations",
+      "ColorIndex": 3
+    },
+    "b30766a8-de48-47e8-b89c-d1d007c6a075": {
+      "ProjectGuid": "b30766a8-de48-47e8-b89c-d1d007c6a075",
+      "DisplayName": "05_Bomb_Numbers",
+      "ColorIndex": 4
+    },
+    "efb3682e-54b4-40b3-94c1-cdd71f50a114": {
+      "ProjectGuid": "efb3682e-54b4-40b3-94c1-cdd71f50a114",
+      "DisplayName": "06_Cards_Game",
+      "ColorIndex": 5
+    },
+    "acc1e384-830a-4b9d-829f-8fb6b800f54d": {
+      "ProjectGuid": "acc1e384-830a-4b9d-829f-8fb6b800f54d",
+      "DisplayName": "07_Append_Arrays",
+      "ColorIndex": 6
+    },
+    "123b1ddc-cdc6-4b9b-befc-c29d92176a68": {
+      "ProjectGuid": "123b1ddc-cdc6-4b9b-befc-c29d92176a68",
+      "DisplayName": "08_Anonymous_Threat",
+      "ColorIndex": 7
+    },
+    "75de9aed-0f87-479b-80b2-bb79cc0edc07": {
+      "ProjectGuid": "75de9aed-0f87-479b-80b2-bb79cc0edc07",
+      "DisplayName": "09_Pokemon_Don't_Go",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 9
 }
