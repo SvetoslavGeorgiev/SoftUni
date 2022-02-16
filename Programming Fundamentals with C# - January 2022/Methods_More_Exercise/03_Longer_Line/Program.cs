@@ -23,8 +23,9 @@ namespace _03_Longer_Line
 
         private static void PrintLongerLineBetweenTwoPointInCoordinates(double x1, double x2, double x3, double x4, double y1, double y2, double y3, double y4)
         {
-            var laneOne = Math.Abs(Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2)));
-            var laneTwo = Math.Abs(Math.Sqrt(Math.Pow((x4 - x3), 2) + Math.Pow((y4 - y4), 2)));
+            
+            var laneOne = Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));  
+            var laneTwo = Math.Sqrt((x4 - x3) * (x4 - x3) + (y4 - y3) * (y4 - y3));
 
             if (laneOne >= laneTwo)
             {
@@ -37,7 +38,7 @@ namespace _03_Longer_Line
                 {
                     Console.WriteLine($"({x2}, {y2})({x1}, {y1})");
                 }
-                
+
             }
             else
             {
@@ -56,7 +57,7 @@ namespace _03_Longer_Line
         {
             double c1 = Math.Sqrt((x1 * x1) + (y1 * y1));
             double c2 = Math.Sqrt((x2 * x2) + (y2 * y2));
-            
+
 
             if (c1 <= c2)
             {
