@@ -27,10 +27,15 @@ namespace _05_Bomb_Numbers
                     var end = 0;
                     if (numbers[i] == bomb)
                     {
+                        
                         count = power * 2 + 1;
                         end = numbers.Count - 1 - i;
                         var countToEnd = power + 1 + end;
                         startIndex = Math.Max(0, i - power);
+                        if (i - power < 0)
+                        {
+                            count += i - power;
+                        }
                         count = Math.Min(count, countToEnd);
                         count = Math.Min(count, numbers.Count);
                         numbers.RemoveRange(startIndex, count);
