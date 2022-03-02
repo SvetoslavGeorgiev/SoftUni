@@ -3,15 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Advertisement_Message", "01_Advertisement_Message\01_Advertisement_Message.csproj", "{0459C08E-BBA2-4C4F-BC0F-135399085C04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Advertisement_Message", "01_Advertisement_Message\01_Advertisement_Message.csproj", "{0459C08E-BBA2-4C4F-BC0F-135399085C04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Articles", "02_Articles\02_Articles.csproj", "{378E1B5E-7236-4F83-A962-52F49F612C57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Articles", "02_Articles\02_Articles.csproj", "{378E1B5E-7236-4F83-A962-52F49F612C57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Articles_2.0", "03_Articles_2.0\03_Articles_2.0.csproj", "{3E30B949-E025-45DD-9DD6-DA6113C22185}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Articles_2.0", "03_Articles_2.0\03_Articles_2.0.csproj", "{3E30B949-E025-45DD-9DD6-DA6113C22185}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Students", "04_Students\04_Students.csproj", "{C48FCD68-8DCE-4769-8B83-410DF96C48A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_Students", "04_Students\04_Students.csproj", "{C48FCD68-8DCE-4769-8B83-410DF96C48A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Teamwork_Projects", "05_Teamwork_Projects\05_Teamwork_Projects.csproj", "{50502B39-D597-489F-9344-D5BE6F24EE50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Teamwork_Projects", "05_Teamwork_Projects\05_Teamwork_Projects.csproj", "{50502B39-D597-489F-9344-D5BE6F24EE50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Vehicle_Catalogue", "06_Vehicle_Catalogue\06_Vehicle_Catalogue.csproj", "{BEE0E76D-B973-48FD-9133-26AEEA7C2216}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Order_by_Age", "07_Order_by_Age\07_Order_by_Age.csproj", "{2F6518F3-8329-4D8E-A693-B8348123029C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{50502B39-D597-489F-9344-D5BE6F24EE50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50502B39-D597-489F-9344-D5BE6F24EE50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50502B39-D597-489F-9344-D5BE6F24EE50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE0E76D-B973-48FD-9133-26AEEA7C2216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE0E76D-B973-48FD-9133-26AEEA7C2216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE0E76D-B973-48FD-9133-26AEEA7C2216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE0E76D-B973-48FD-9133-26AEEA7C2216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F6518F3-8329-4D8E-A693-B8348123029C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6518F3-8329-4D8E-A693-B8348123029C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6518F3-8329-4D8E-A693-B8348123029C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6518F3-8329-4D8E-A693-B8348123029C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
