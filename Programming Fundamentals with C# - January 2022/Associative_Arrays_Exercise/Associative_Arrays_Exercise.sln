@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_Count_Chars_in_a_String", "P01_Count_Chars_in_a_String\P01_Count_Chars_in_a_String.csproj", "{2980DE19-AF98-4842-B651-CFDF6EA4317C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_Count_Chars_in_a_String", "P01_Count_Chars_in_a_String\P01_Count_Chars_in_a_String.csproj", "{2980DE19-AF98-4842-B651-CFDF6EA4317C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_A_Miner_Task", "P02_A_Miner_Task\P02_A_Miner_Task.csproj", "{E49ACEC7-2556-4145-9787-1DEB16B1C791}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_A_Miner_Task", "P02_A_Miner_Task\P02_A_Miner_Task.csproj", "{E49ACEC7-2556-4145-9787-1DEB16B1C791}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Legendary_Farming", "P03_Legendary_Farming\P03_Legendary_Farming.csproj", "{A79D5935-F3C9-4489-AB20-0BF23EE6543B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_Legendary_Farming", "P03_Legendary_Farming\P03_Legendary_Farming.csproj", "{A79D5935-F3C9-4489-AB20-0BF23EE6543B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Orders", "P04_Orders\P04_Orders.csproj", "{40011648-AE85-49E6-B616-ABB351615637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_SoftUni_Parking", "P05_SoftUni_Parking\P05_SoftUni_Parking.csproj", "{8B56BC45-84B8-4E6F-9D28-CA3465643C53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_Courses", "P06_Courses\P06_Courses.csproj", "{6F1F9BC3-A22B-428A-A239-74E0926ADAB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07_Student_Academy", "P07_Student_Academy\P07_Student_Academy.csproj", "{269B7C69-529D-4882-B7D4-EF8E2B0DC5B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08_Company_Users", "P08_Company_Users\P08_Company_Users.csproj", "{20E5385C-F2C0-4FAA-81FA-85A3B51DA0D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +37,26 @@ Global
 		{A79D5935-F3C9-4489-AB20-0BF23EE6543B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A79D5935-F3C9-4489-AB20-0BF23EE6543B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A79D5935-F3C9-4489-AB20-0BF23EE6543B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40011648-AE85-49E6-B616-ABB351615637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40011648-AE85-49E6-B616-ABB351615637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40011648-AE85-49E6-B616-ABB351615637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40011648-AE85-49E6-B616-ABB351615637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B56BC45-84B8-4E6F-9D28-CA3465643C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B56BC45-84B8-4E6F-9D28-CA3465643C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B56BC45-84B8-4E6F-9D28-CA3465643C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B56BC45-84B8-4E6F-9D28-CA3465643C53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1F9BC3-A22B-428A-A239-74E0926ADAB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1F9BC3-A22B-428A-A239-74E0926ADAB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1F9BC3-A22B-428A-A239-74E0926ADAB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1F9BC3-A22B-428A-A239-74E0926ADAB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{269B7C69-529D-4882-B7D4-EF8E2B0DC5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{269B7C69-529D-4882-B7D4-EF8E2B0DC5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{269B7C69-529D-4882-B7D4-EF8E2B0DC5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{269B7C69-529D-4882-B7D4-EF8E2B0DC5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20E5385C-F2C0-4FAA-81FA-85A3B51DA0D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20E5385C-F2C0-4FAA-81FA-85A3B51DA0D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20E5385C-F2C0-4FAA-81FA-85A3B51DA0D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20E5385C-F2C0-4FAA-81FA-85A3B51DA0D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
