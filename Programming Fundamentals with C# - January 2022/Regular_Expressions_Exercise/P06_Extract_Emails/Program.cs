@@ -9,10 +9,7 @@ namespace P06_Extract_Emails
         {
             var input = Console.ReadLine();
 
-
-            var patern = @"([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)";
-
-            var matches = Regex.Matches(input, patern);
+            var matches = Regex.Matches(input, @"((?<user>(?<=\n| )[a-zA-Z0-9]([\w\.\-]*)(?<!-))@(?<host>[\w\-]+)(\.(\w){2,}([\.-][\w]{2,})?))");
 
 
             foreach (Match match in matches)
