@@ -116,7 +116,7 @@ namespace P01_Ranking
 
 
             Console.WriteLine($"Best candidate is {bestCandidate} with total {bestPoints} points.");
-            Console.WriteLine("Ranking:");
+            Console.WriteLine("Ranking: ");
             foreach (var kvp in dataForPrint.OrderBy(x => x.Key))
             {
 
@@ -124,7 +124,7 @@ namespace P01_Ranking
 
                 foreach (var item in kvp.Value.OrderByDescending(x => x.Value))
                 {
-                    Console.WriteLine($"{item.Key} -> {item.Value}");
+                    Console.WriteLine($"#  {item.Key} -> {item.Value}");
                 }
             }
         }

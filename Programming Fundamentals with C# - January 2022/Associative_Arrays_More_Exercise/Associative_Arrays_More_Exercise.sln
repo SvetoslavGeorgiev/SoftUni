@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_Ranking", "P01_Ranking\P01_Ranking.csproj", "{AB80F1B1-6614-48A9-934A-B65C038F8D5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_Ranking", "P01_Ranking\P01_Ranking.csproj", "{AB80F1B1-6614-48A9-934A-B65C038F8D5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Judge", "P02_Judge\P02_Judge.csproj", "{C77D5C22-2A2E-4E13-98AC-8B695AC3D3C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{AB80F1B1-6614-48A9-934A-B65C038F8D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB80F1B1-6614-48A9-934A-B65C038F8D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB80F1B1-6614-48A9-934A-B65C038F8D5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C77D5C22-2A2E-4E13-98AC-8B695AC3D3C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C77D5C22-2A2E-4E13-98AC-8B695AC3D3C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C77D5C22-2A2E-4E13-98AC-8B695AC3D3C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C77D5C22-2A2E-4E13-98AC-8B695AC3D3C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
