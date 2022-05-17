@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Maximum_and_Minimum_Ele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Fast_Food", "P04_Fast_Food\P04_Fast_Food.csproj", "{30668139-2E9B-4017-9627-9FBE2EA7DD02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Fashion_Boutique", "P05_Fashion_Boutique\P05_Fashion_Boutique.csproj", "{A9B67F64-C134-4E23-95F8-A5C0C7CA4E87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{30668139-2E9B-4017-9627-9FBE2EA7DD02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30668139-2E9B-4017-9627-9FBE2EA7DD02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30668139-2E9B-4017-9627-9FBE2EA7DD02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9B67F64-C134-4E23-95F8-A5C0C7CA4E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9B67F64-C134-4E23-95F8-A5C0C7CA4E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9B67F64-C134-4E23-95F8-A5C0C7CA4E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9B67F64-C134-4E23-95F8-A5C0C7CA4E87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
