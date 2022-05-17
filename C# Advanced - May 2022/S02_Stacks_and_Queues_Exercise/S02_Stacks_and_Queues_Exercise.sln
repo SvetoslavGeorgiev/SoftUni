@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09_Simple_Text_Editor", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10_Crossroads", "P10_Crossroads\P10_Crossroads.csproj", "{4384768E-7A1C-4475-ABC4-F9BE50C8F915}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11_Key_Revolver", "P11_Key_Revolver\P11_Key_Revolver.csproj", "{5C5CAF05-33DE-498B-A5A4-EAE3B7B11580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P12_Cups_and_Bottles", "P12_Cups_and_Bottles\P12_Cups_and_Bottles.csproj", "{6440FD0D-9DCD-418B-9383-A43BFCB3FA4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{4384768E-7A1C-4475-ABC4-F9BE50C8F915}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4384768E-7A1C-4475-ABC4-F9BE50C8F915}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4384768E-7A1C-4475-ABC4-F9BE50C8F915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C5CAF05-33DE-498B-A5A4-EAE3B7B11580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5CAF05-33DE-498B-A5A4-EAE3B7B11580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5CAF05-33DE-498B-A5A4-EAE3B7B11580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5CAF05-33DE-498B-A5A4-EAE3B7B11580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6440FD0D-9DCD-418B-9383-A43BFCB3FA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6440FD0D-9DCD-418B-9383-A43BFCB3FA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6440FD0D-9DCD-418B-9383-A43BFCB3FA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6440FD0D-9DCD-418B-9383-A43BFCB3FA4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
