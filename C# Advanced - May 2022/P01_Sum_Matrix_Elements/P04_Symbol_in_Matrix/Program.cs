@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace P04_Symbol_in_Matrix
 {
@@ -41,3 +42,4 @@ namespace P04_Symbol_in_Matrix
         }
     }
 }
+
