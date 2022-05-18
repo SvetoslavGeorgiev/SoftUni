@@ -8,13 +8,19 @@ namespace P05_Square_With_Maximum_Sum
     {
         static void Main(string[] args)
         {
-            var size = Console.ReadLine().Split(", ").Select(int.Parse).ToArray();
+            var size = Console.ReadLine()
+                .Split(", ")
+                .Select(int.Parse)
+                .ToArray();
 
             int[,] matrix = new int[size[0], size[1]];
 
             for (int row = 0; row < size[0]; row++)
             {
-                var element = new Queue<int>(Console.ReadLine().Split(", ").Select(int.Parse).ToArray());
+                var element = new Queue<int>(Console.ReadLine()
+                    .Split(", ")
+                    .Select(int.Parse)
+                    .ToArray());
 
                 for (int col = 0; col < size[1]; col++)
                 {
