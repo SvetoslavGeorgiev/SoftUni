@@ -1,14 +1,12 @@
 ### SoftUni-courses
 
 
-<br>Here i have all solutions from my time as student <a href="https://softuni.bg">@SoftUni.bg</a>
+<br/>Here i have all solutions from my time as student <a href="https://softuni.bg">@SoftUni.bg</a>
 
-
-
-<br><a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C# Advanced - May 2022</a> - This is what I am currenttly studying and all solutions form the lectures:
-<br>
+#### Advanced Carriculum List
+- <a style="color:&#x1F34E;" href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C# Advanced - May 2022</a> - This is what I am currenttly studying and all solutions form the lectures:
 <br>&#160;&#160;&#160;&#160;&#160;&#160;I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab">S01_Stacks_and_Queues_Lab</a> - First lecture
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1.<a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P01_Reverse_Strings/Program.cs">P01_Reverse_Strings</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P01_Reverse_Strings/Program.cs">P01_Reverse_Strings</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2.<a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P02_Stack_Sum/Program.cs">P02_Stack_Sum</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3.<a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P03_Simple_Calculator/Program.cs">P03_Simple_Calculator</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4.<a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P04_Matching_Brackets/Program.cs">P04_Matching_Brackets</a>
