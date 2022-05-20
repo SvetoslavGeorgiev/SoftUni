@@ -3,8 +3,8 @@
 
 <br/>Here i have all solutions from my time as student <a href="https://softuni.bg">@SoftUni.bg</a>
 
-#### Advanced Carriculum List
-- <a style="color:&#x1F34E;" href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C# Advanced - May 2022</a> - This is what I am currenttly studying and all solutions form the lectures:
+#### Advanced Curriculum List
+- <a style="color:&#x1F34E;" href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C# Advanced - May 2022</a> - This is what I am currently studying and all solutions from the lectures:
 <br>&#160;&#160;&#160;&#160;&#160;&#160;I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab">S01_Stacks_and_Queues_Lab</a> - First lecture
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P01_Reverse_Strings/Program.cs">P01_Reverse_Strings</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P02_Stack_Sum/Program.cs">P02_Stack_Sum</a>
@@ -14,7 +14,7 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P06_Supermarket/Program.cs">P06_Supermarket</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P07_Hot_Potato/Program.cs">P07_Hot_Potato</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P08_Traffic_Jam/Program.cs">P08_Traffic_Jam</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;II - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise">S02_Stacks_and_Queues_Exercise</a> - Fecond lecture:Exercise
+<br>&#160;&#160;&#160;&#160;&#160;&#160;II - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise">S02_Stacks_and_Queues_Exercise</a> - First lecture:Exercise
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P01_Basic_Stack_Operations/Program.cs">P01_Basic_Stack_Operations</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P02_Basic_Queue_Operations/Program.cs">P02_Basic_Queue_Operations</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P03_Maximum_and_Minimum_Element/Program.cs">P03_Maximum_and_Minimum_Element</a>
