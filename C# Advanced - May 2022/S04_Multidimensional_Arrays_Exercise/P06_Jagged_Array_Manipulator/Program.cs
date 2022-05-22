@@ -26,35 +26,48 @@ namespace P06_Jagged_Array_Manipulator
             {
                 if (jaggedArray[i].Length == jaggedArray[i + 1].Length)
                 {
-                    var jaggedRow = jaggedArray[i];
-                    for (int k = 0; k < jaggedRow.Length; k++)
-                    {
-                        jaggedRow[k] = jaggedRow[k] * 2;
-                    }
-                    jaggedArray[i] = jaggedRow;
+                    jaggedArray[i] = jaggedArray[i].Select(x => x * 2).ToArray();
+                    jaggedArray[i + 1] = jaggedArray[i + 1].Select(x => x * 2).ToArray();
 
-                    jaggedRow = jaggedArray[i + 1];
-                    for (int k = 0; k < jaggedArray[i + 1].Length; k++)
-                    {
-                        jaggedRow[k] = jaggedRow[k] * 2;
-                    }
-                    jaggedArray[i + 1] = jaggedRow;
+
+
+
+                    //var jaggedRow = jaggedArray[i];
+                    //for (int k = 0; k < jaggedRow.Length; k++)
+                    //{
+                    //    jaggedRow[k] = jaggedRow[k] * 2;
+                    //}
+                    //jaggedArray[i] = jaggedRow;
+
+                    //jaggedRow = jaggedArray[i + 1];
+                    //for (int k = 0; k < jaggedArray[i + 1].Length; k++)
+                    //{
+                    //    jaggedRow[k] = jaggedRow[k] * 2;
+                    //}
+                    //jaggedArray[i + 1] = jaggedRow;
                 }
                 else
                 {
-                    var jaggedRow = jaggedArray[i];
-                    for (int k = 0; k < jaggedRow.Length; k++)
-                    {
-                        jaggedRow[k] = jaggedRow[k] / 2;
-                    }
-                    jaggedArray[i] = jaggedRow;
+                    jaggedArray[i] = jaggedArray[i].Select(x => x / 2).ToArray();
+                    jaggedArray[i + 1] = jaggedArray[i + 1].Select(x => x / 2).ToArray();
 
-                    jaggedRow = jaggedArray[i + 1];
-                    for (int k = 0; k < jaggedArray[i + 1].Length; k++)
-                    {
-                        jaggedRow[k] = jaggedRow[k] / 2;
-                    }
-                    jaggedArray[i + 1] = jaggedRow;
+
+
+
+
+                    //var jaggedRow = jaggedArray[i];
+                    //for (int k = 0; k < jaggedRow.Length; k++)
+                    //{
+                    //    jaggedRow[k] = jaggedRow[k] / 2;
+                    //}
+                    //jaggedArray[i] = jaggedRow;
+
+                    //jaggedRow = jaggedArray[i + 1];
+                    //for (int k = 0; k < jaggedArray[i + 1].Length; k++)
+                    //{
+                    //    jaggedRow[k] = jaggedRow[k] / 2;
+                    //}
+                    //jaggedArray[i + 1] = jaggedRow;
                 }
             }
 

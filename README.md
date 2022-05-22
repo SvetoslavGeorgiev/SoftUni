@@ -8,7 +8,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;<a href="https://https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics">Programming_Basics</a>
+👈🏻 CLICK HERE &#160;&#160;<a href="https://https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics">Programming Basics</a>
   </summary>
   <details>
   <summary>
@@ -72,7 +72,106 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Lab/Fruit_or_Vegetable/Program.cs">P08_Fruit_or_Vegetable</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Lab/Invalid_Number/Program.cs">P09_Invalid_Number</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Lab/Fruit_Shop/Program.cs">P10_Fruit_Shop</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;11. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Lab/Scholarship/Program.cs">P11_Trade_Commissions</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;11. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Lab/Trade_Commissions/Program.cs">P11_Trade_Commissions</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 VI - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics/Nested_Conditional_Statements_Exercise">Nested_Conditional_Statements_Exercise</a> - Third lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/Cinema/Program.cs">P01_Cinema</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/Summer_Outfit/Program.cs">P02_Summer_Outfit</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/New%20House/Program.cs">P03_New_House_v1.0</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/NewHouse2/Program.cs">P03_New_House_v1.1</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/Fishing_Boat/Program.cs">P04_Fishing_Boat</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/Journey/Program.cs">P05_Journey</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/OperationsBetweenNumbers/Program.cs">P06_Operations_Between_Numbers_v1.0</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/Operations_Between_Numbers/Program.cs">P06_Operations_Between_Numbers_v1.1</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/Hotel_Room/Program.cs">P07_Hotel_Room</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/ConsoleApp1/Program.cs">P08_On_Time_for_the_Exam</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/Point_on_Rectangle_Border/Program.cs">P09_Point_on_Rectangle_Border</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Conditional_Statements_Exercise/Volleyball/Program.cs">P10_Volleyball</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 VII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics/For_Loop_Lab">For_Loop_Lab</a> - Fourth lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/For_Loop_Lab/Numbers_from1to100/Program.cs">P01_Numbers_from_1_to_100</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Lab/Numbers_N%20%201/Program.cs">P02_Numbers_N_to_1</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Lab/Numbers_1_N_with_Step_3/Program.cs">P03_Numbers_1_N_with_Step_3</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Lab/Even_Powers_of_2/Program.cs">P04_Even_Powers_of_2</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/For_Loop_Lab/MinNumber/Program.cs">P05_Min_Number</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/For_Loop_Lab/MaxNumber/Program.cs">P06_Max_Number</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/For_Loop_Lab/CleverLily/Program.cs">P07_Clever_Lily_v1.0</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/For_Loop_Lab/CleverLily2/Program.cs">P07_Clever_Lily_v1.1</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/For_Loop_Lab/LatinLetters/Program.cs">P08_Latin_Letters</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/For_Loop_Lab/VowelsSum/Program.cs">P09_Vowels_Sum</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/For_Loop_Lab/SumNumbers/Program.cs">P10_Sum_Numbers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;11. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/For_Loop_Lab/Left_and_Right_Sum/Program.cs">P11_Left_and_Right_Sum</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;12. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/For_Loop_Lab/OddEvenSum/Program.cs">P12_Odd_Even_Sum</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 VIII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics/ForLoopExercise">For_Loop_Exercise</a> - Fourth lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/ForLoopExercise/Numbers_Ending_in_7/Program.cs">P01_Numbers_Ending_in_7</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/ForLoopExercise/Half_Sum_Element/Program.cs">P02_Half_Sum_Element</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/ForLoopExercise/Histogram/Program.cs">P03_Histogram</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/ForLoopExercise/OddEvenPosition/Program.cs">P04_Odd_Even_Position_v1.0</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/ForLoopExercise/OddEvenPosition2/Program.cs">P04_Odd_Even_Position_v1.1</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/ForLoopExercise/Salary/Program.cs">P05_Salary</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/ForLoopExercise/Divide_without_remainder/Program.cs">P06_Divide_without_remainder</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/ForLoopExercise/EqualPairs/Program.cs">P07_Equal_Pairs</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/ForLoopExercise/WedingHall/Program.cs">P08_Wedding_Hall</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 IX - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics/While_Loop_Lab">While_Loop_Lab</a> - Fifth lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Lab/Number%20in%20Range%201%20%20100/Program.cs">P01_Number_in_Range_1_100</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Lab/Moving/Program.cs">P02_Moving</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Lab/Number_sequence/Program.cs">P03_Number_sequence</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Lab/Sequence%202k%2B1/Program.cs">P04_Sequence_2k+1</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Lab/Account_Balance/Program.cs">P05_Account_Balance</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Lab/Walking/Program.cs">P06_Walking</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Lab/Graduation/Program.cs">P07_Graduation_v1.0</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Lab/Graduation%20pt.2/Program.cs">P07_Graduation_v1.1</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 X - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics/While_Loop_Exercise">While_Loop_Exercise</a> - Fifth lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Exercise/Old_Books/Program.cs">P01_Old_Books</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Exercise/Exam_Preparation/Program.cs">P02_Exam_Preparation</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Exercise/Vacation/Program.cs">P03_Vacation</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Exercise/Coins/Program.cs">P04_Coins</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/While_Loop_Exercise/Cake/Program.cs">P05_Cake</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Exercise/Sum%20Prime%20Non%20Prime/Program.cs">P06_Sum_prime_Non_Prime</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 XI - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics/Nested_Loops_Lab">Nested_Loops_Lab</a> - Sixth lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Lab/Magic_Numbers/Program.cs">P01_Magic_Numbers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Lab/Name_Wars/Program.cs">P02_Name_Wars</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Lab/Combination/Program.cs">P03_Combination</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Lab/Cookie%20factory/Program.cs">P04_Cookie_factory</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Lab/Travelling/Program.cs">P05_Travelling</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Lab/Building/Program.cs">P06_Building</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 XII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics/Nested_Loops_Exercise">Nested_Loops_Exercise</a> - Sixth lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Exercise/Number_Pyramid/Program.cs">P01_Number_Pyramid</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Exercise/Equal_Sums_Even_Odd_Position/Program.cs/">P02_Equal_Sums_Even_Odd_Position</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Exercise/sum%20ptime%20not%20prime%202/Program.cs">P03_Sum_prime_Non_Prime</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Exercise/Train%20The%20Trainers/Program.cs">P04_Train_The_Trainers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Exercise/Special%20Numbers/Program.cs">P05_Special Numbers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Exercise/Matrix/Program.cs">P06_Matrix</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Exercise/Equal%20Sums%20Left%20Right%20Position/Program.cs">P07_Equal_Sums_Left_Right_Position</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Exercise/passwordGenerator/Program.cs">P08_Password_Generator</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Exercise/Coding/Program.cs">P09_Coding</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Nested_Loops_Exercise/Fishing/Program.cs">P10_Fishing</a>
   </details>
 </details>  
  
