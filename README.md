@@ -247,8 +247,23 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P03_Primary_Diagonal/Program.cs">P03_Primary_Diagonal</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P04_Symbol_in_Matrix/Program.cs">P04_Symbol_in_Matrix</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P05_Square_With_Maximum_Sum/Program.cs">P05_Square_With_Maximum_Sum</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P01_Sum_Matrix_Elements/Program.cs">P06_Jagged_Array_Modification</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P01_Sum_Matrix_Elements/Program.cs">P07_Pascal_Triangle</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P06_Jagged_Array_Modification/Program.cs">P06_Jagged_Array_Modification</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P07_Pascal_Triangle/Program.cs">P07_Pascal_Triangle</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 IV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise">S04_Multidimensional_Arrays_Exercise</a> - Second lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P01_Diagonal_Difference/Program.cs">P01_Diagonal_Difference</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P02_Squares_in_Matrix/Program.cs">P02_Squares_in_Matrix</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P03_Maximal_Sum/Program.cs">P03_Maximal_Sum</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P04_Matrix_Shuffling/Program.cs">P04_Matrix_Shuffling</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P05_Snake_Moves/Program.cs">P05_Snake_Moves</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P06_Jagged_Array_Manipulator/Program.cs">P06_Jagged_Array_Manipulator</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P07_Knight_Game/Program.cs">P07_Knight_Game</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P08_Bombs/Program.cs">P08_Bombs</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P09_Miner/Program.cs">P09_Miner</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P10_Radioactive_Mutant_Vampire_Bunnies/Program.cs">P10_Radioactive_Mutant_Vampire_Bunnies</a>
   </details>
 </details>
 
