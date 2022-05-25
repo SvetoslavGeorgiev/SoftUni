@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Largest_3_Numbers", "P0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Product_Shop", "P04_Product_Shop\P04_Product_Shop.csproj", "{DBC6233D-3C57-4339-91E5-9B3B4648C555}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Cities_by_Continent_and_Country", "P05_Cities_by_Continent_and_Country\P05_Cities_by_Continent_and_Country.csproj", "{24EF7D30-F4B2-4EF9-9861-445E3E1D2C04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DBC6233D-3C57-4339-91E5-9B3B4648C555}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBC6233D-3C57-4339-91E5-9B3B4648C555}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBC6233D-3C57-4339-91E5-9B3B4648C555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24EF7D30-F4B2-4EF9-9861-445E3E1D2C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24EF7D30-F4B2-4EF9-9861-445E3E1D2C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24EF7D30-F4B2-4EF9-9861-445E3E1D2C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24EF7D30-F4B2-4EF9-9861-445E3E1D2C04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
