@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Even_Times", "P04_Even_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Count_Symbols", "P05_Count_Symbols\P05_Count_Symbols.csproj", "{A515A0C8-96FD-43A6-801A-CBDB279DC05F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_Wardrobe", "P06_Wardrobe\P06_Wardrobe.csproj", "{53F88C6D-B1C0-4AAD-ADBF-28B52B328726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07_The_V_Logger", "P07_The_V_Logger\P07_The_V_Logger.csproj", "{E48CB41B-E681-4981-B5B5-D527F83DA63E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{A515A0C8-96FD-43A6-801A-CBDB279DC05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A515A0C8-96FD-43A6-801A-CBDB279DC05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A515A0C8-96FD-43A6-801A-CBDB279DC05F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53F88C6D-B1C0-4AAD-ADBF-28B52B328726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53F88C6D-B1C0-4AAD-ADBF-28B52B328726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53F88C6D-B1C0-4AAD-ADBF-28B52B328726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53F88C6D-B1C0-4AAD-ADBF-28B52B328726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E48CB41B-E681-4981-B5B5-D527F83DA63E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E48CB41B-E681-4981-B5B5-D527F83DA63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E48CB41B-E681-4981-B5B5-D527F83DA63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E48CB41B-E681-4981-B5B5-D527F83DA63E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
