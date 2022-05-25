@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_Count_Same_Values_in_Array", "P01_Count_Same_Values_in_Array\P01_Count_Same_Values_in_Array.csproj", "{8B174C94-3929-49ED-89F9-B6154A92B4E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_Count_Same_Values_in_Array", "P01_Count_Same_Values_in_Array\P01_Count_Same_Values_in_Array.csproj", "{8B174C94-3929-49ED-89F9-B6154A92B4E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Average_Student_Grades", "P02_Average_Student_Grades\P02_Average_Student_Grades.csproj", "{1F2F4A25-4755-47F7-99A8-A71245ADE3B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_Average_Student_Grades", "P02_Average_Student_Grades\P02_Average_Student_Grades.csproj", "{1F2F4A25-4755-47F7-99A8-A71245ADE3B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Largest_3_Numbers", "P03_Largest_3_Numbers\P03_Largest_3_Numbers.csproj", "{7B9F4ABD-870C-46AC-8370-5946D0AF69A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_Largest_3_Numbers", "P03_Largest_3_Numbers\P03_Largest_3_Numbers.csproj", "{7B9F4ABD-870C-46AC-8370-5946D0AF69A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Product_Shop", "P04_Product_Shop\P04_Product_Shop.csproj", "{DBC6233D-3C57-4339-91E5-9B3B4648C555}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04_Product_Shop", "P04_Product_Shop\P04_Product_Shop.csproj", "{DBC6233D-3C57-4339-91E5-9B3B4648C555}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Cities_by_Continent_and_Country", "P05_Cities_by_Continent_and_Country\P05_Cities_by_Continent_and_Country.csproj", "{24EF7D30-F4B2-4EF9-9861-445E3E1D2C04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05_Cities_by_Continent_and_Country", "P05_Cities_by_Continent_and_Country\P05_Cities_by_Continent_and_Country.csproj", "{24EF7D30-F4B2-4EF9-9861-445E3E1D2C04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_Record_Unique_Names", "P06_Record_Unique_Names\P06_Record_Unique_Names.csproj", "{F656F56F-4B0E-4421-BFAF-3F312E498AB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{24EF7D30-F4B2-4EF9-9861-445E3E1D2C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24EF7D30-F4B2-4EF9-9861-445E3E1D2C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24EF7D30-F4B2-4EF9-9861-445E3E1D2C04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F656F56F-4B0E-4421-BFAF-3F312E498AB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F656F56F-4B0E-4421-BFAF-3F312E498AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F656F56F-4B0E-4421-BFAF-3F312E498AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F656F56F-4B0E-4421-BFAF-3F312E498AB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
