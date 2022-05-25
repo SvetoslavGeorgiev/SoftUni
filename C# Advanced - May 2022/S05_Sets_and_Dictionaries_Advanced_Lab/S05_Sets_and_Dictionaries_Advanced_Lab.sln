@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Average_Student_Grades"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Largest_3_Numbers", "P03_Largest_3_Numbers\P03_Largest_3_Numbers.csproj", "{7B9F4ABD-870C-46AC-8370-5946D0AF69A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Product_Shop", "P04_Product_Shop\P04_Product_Shop.csproj", "{DBC6233D-3C57-4339-91E5-9B3B4648C555}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7B9F4ABD-870C-46AC-8370-5946D0AF69A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B9F4ABD-870C-46AC-8370-5946D0AF69A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B9F4ABD-870C-46AC-8370-5946D0AF69A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC6233D-3C57-4339-91E5-9B3B4648C555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC6233D-3C57-4339-91E5-9B3B4648C555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC6233D-3C57-4339-91E5-9B3B4648C555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC6233D-3C57-4339-91E5-9B3B4648C555}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
