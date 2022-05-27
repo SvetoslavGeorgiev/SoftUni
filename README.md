@@ -409,7 +409,7 @@
   </details>
   <details>
   <summary>
-👈🏻 V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise">S06_Sets_and_Dictionaries_Advanced_Exercise</a> - Third lecture: Exercise
+👈🏻 VI - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise">S06_Sets_and_Dictionaries_Advanced_Exercise</a> - Third lecture: Exercise
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P01_Unique_Usernames/P01_Unique_Usernames.cs">P01_Unique_Usernames</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P02_Sets_of_Elements/P02_Sets_of_Elements.cs">P02_Sets_of_Elements</a>
