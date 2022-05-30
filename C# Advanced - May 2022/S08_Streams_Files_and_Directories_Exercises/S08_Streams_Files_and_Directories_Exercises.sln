@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04_Directory_Traversal", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Copy_Directory", "P05_Copy_Directory\P05_Copy_Directory.csproj", "{D060279F-4024-4986-BBE2-E3F6E8C935B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_Zip_and_Extracts", "P06_Zip_and_Extracts\P06_Zip_and_Extracts.csproj", "{671DE6FF-C5CB-4994-BED5-E8B5CA6D35C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D060279F-4024-4986-BBE2-E3F6E8C935B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D060279F-4024-4986-BBE2-E3F6E8C935B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D060279F-4024-4986-BBE2-E3F6E8C935B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{671DE6FF-C5CB-4994-BED5-E8B5CA6D35C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{671DE6FF-C5CB-4994-BED5-E8B5CA6D35C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{671DE6FF-C5CB-4994-BED5-E8B5CA6D35C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{671DE6FF-C5CB-4994-BED5-E8B5CA6D35C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
