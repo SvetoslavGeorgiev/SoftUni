@@ -422,6 +422,18 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P09_SoftUni_Exam_Results/P09_SoftUni_Exam_Results.cs">P09_SoftUni_Exam_Results</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P10_ForceBook/P10_ForceBook.cs">P10_ForceBook</a>
   </details>
+<details>
+  <summary>
+👈🏻 VII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab"> S07_Streams_Files_and_Directories_Lab </a> - Fourth lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P01_Odd_Lines/Program.cs">P01_Odd_Lines</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P02_Line_Numbers/P02_Line_Numbers.cs">P02_Line_Numbers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P03_Word_Count/P03_Word_Count.cs">P03_Word_Count</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P04_Merge_Text_Files/P04_Merge_Text_Files.cs">P04_Merge_Text_Files</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P05_Extract_Special_Bytes/P05_Extract_Special_Bytes.cs">P05_Extract_Special_Bytes</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P06_Split_Merge_Binary_Files/P06_Split_Merge_Binary_Files.cs">P06_Split_Merge_Binary_Files</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P07_Folder_Size/P07_Folder_Size.cs">P07_Folder_Size</a>
+  </details>
 </details>
 
 
