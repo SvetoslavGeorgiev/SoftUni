@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_Sort_Even_Numbers", "P01_Sort_Even_Numbers\P01_Sort_Even_Numbers.csproj", "{088967A0-66AC-4343-AE49-AF89B76191B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_Sort_Even_Numbers", "P01_Sort_Even_Numbers\P01_Sort_Even_Numbers.csproj", "{088967A0-66AC-4343-AE49-AF89B76191B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Sum_Numbers", "P02_Sum_Numbers\P02_Sum_Numbers.csproj", "{FD019431-2F71-40EA-9683-479A06296331}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{088967A0-66AC-4343-AE49-AF89B76191B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{088967A0-66AC-4343-AE49-AF89B76191B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{088967A0-66AC-4343-AE49-AF89B76191B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD019431-2F71-40EA-9683-479A06296331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD019431-2F71-40EA-9683-479A06296331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD019431-2F71-40EA-9683-479A06296331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD019431-2F71-40EA-9683-479A06296331}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
