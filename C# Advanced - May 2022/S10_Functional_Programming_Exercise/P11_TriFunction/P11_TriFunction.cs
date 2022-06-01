@@ -30,7 +30,7 @@ namespace P11_TriFunction
 
             var name = names.Where(x => func(x, number));
 
-            Console.WriteLine(string.Join(" ", name));
+            Console.WriteLine(name);
         }
     }
 }
