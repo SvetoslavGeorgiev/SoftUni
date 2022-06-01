@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Count_Uppercase_Words",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Add_VAT", "P04_Add_VAT\P04_Add_VAT.csproj", "{5670ECB6-BAC5-4A83-8351-2CA5C6033B1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Filter_By_Age", "P05_Filter_By_Age\P05_Filter_By_Age.csproj", "{911B62A2-777E-4ADF-9FA7-59CD0B0F34D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5670ECB6-BAC5-4A83-8351-2CA5C6033B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5670ECB6-BAC5-4A83-8351-2CA5C6033B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5670ECB6-BAC5-4A83-8351-2CA5C6033B1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911B62A2-777E-4ADF-9FA7-59CD0B0F34D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911B62A2-777E-4ADF-9FA7-59CD0B0F34D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911B62A2-777E-4ADF-9FA7-59CD0B0F34D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911B62A2-777E-4ADF-9FA7-59CD0B0F34D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
