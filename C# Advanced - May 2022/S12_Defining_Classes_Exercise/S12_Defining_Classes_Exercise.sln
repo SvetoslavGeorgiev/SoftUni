@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_Define_a_Class_Person", "P01_Define_a_Class_Person\P01_Define_a_Class_Person.csproj", "{12ED4CAE-C5B8-4416-9901-37C36FAF77D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Creating_Constructors", "P02_Creating_Constructors\P02_Creating_Constructors.csproj", "{84D77B4C-BB41-44D7-B442-FEF3EABA9FA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{12ED4CAE-C5B8-4416-9901-37C36FAF77D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12ED4CAE-C5B8-4416-9901-37C36FAF77D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12ED4CAE-C5B8-4416-9901-37C36FAF77D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D77B4C-BB41-44D7-B442-FEF3EABA9FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D77B4C-BB41-44D7-B442-FEF3EABA9FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D77B4C-BB41-44D7-B442-FEF3EABA9FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D77B4C-BB41-44D7-B442-FEF3EABA9FA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
