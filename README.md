@@ -624,6 +624,16 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P10_The_Party_Reservation_Filter_Module/P10_The_Party_Reservation_Filter_Module.cs">P10_The_Party_Reservation_Filter_Module</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;11. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P11_TriFunction/P11_TriFunction.cs">P11_TriFunction</a>
   </details>
+  <details>
+  <summary>
+👈🏻 IX - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab">S11_Defining_Classes_Lab</a> - Fifth lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P01_Car">P01_Car</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P02_Car_Extension">P02_Car_Extension</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P03_Car_Constructors">P03_Car_Constructors</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P04_Car_Engine_And_Tires">P04_Car_Engine_And_Tires</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P05_Special_Cars">P05_Special_Cars</a>
+  </details>
 </details>
 
 
