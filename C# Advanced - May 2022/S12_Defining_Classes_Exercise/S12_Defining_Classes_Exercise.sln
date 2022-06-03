@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04_Opinion_Poll", "P04_Opi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Date_Modifier", "P05_Date_Modifier\P05_Date_Modifier.csproj", "{AD9CF03C-89CB-4B51-96C4-5D37257ADB49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_Speed_Racing", "P06_Speed_Racing\P06_Speed_Racing.csproj", "{D18011F6-0B9A-41B7-8DD7-6C2EFDD1DD18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AD9CF03C-89CB-4B51-96C4-5D37257ADB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD9CF03C-89CB-4B51-96C4-5D37257ADB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD9CF03C-89CB-4B51-96C4-5D37257ADB49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D18011F6-0B9A-41B7-8DD7-6C2EFDD1DD18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D18011F6-0B9A-41B7-8DD7-6C2EFDD1DD18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D18011F6-0B9A-41B7-8DD7-6C2EFDD1DD18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D18011F6-0B9A-41B7-8DD7-6C2EFDD1DD18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
