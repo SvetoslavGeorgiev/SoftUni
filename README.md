@@ -626,7 +626,7 @@
   </details>
   <details>
   <summary>
-👈🏻 IX - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab">S11_Defining_Classes_Lab</a> - Fifth lecture
+👈🏻 XI - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab">S11_Defining_Classes_Lab</a> - Sixth lecture
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P01_Car">P01_Car</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P02_Car_Extension">P02_Car_Extension</a>
@@ -634,6 +634,23 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P04_Car_Engine_And_Tires">P04_Car_Engine_And_Tires</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P05_Special_Cars">P05_Special_Cars</a>
   </details>
+  <details>
+  <summary>
+👈🏻 XII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise">S12_Defining_Classes_Exercise</a> - Fifth lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P01_Define_a_Class_Person">P01_Define_a_Class_Person</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P02_Creating_Constructors">P02_Creating_Constructors</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P03_Oldest_Family_Member">P03_Oldest_Family_Member</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P04_Opinion_Poll">P04_Opinion_Poll</a>
+<!--
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P05_Applied_Arithmetics/P05_Applied_Arithmetics.cs">P05_Applied_Arithmetics</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P06_Reverse_And_Exclude/P06_Reverse_And_Exclude.cs">P06_Reverse_And_Exclude</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P07_Predicate_For_Names/P07_Predicate_For_Names.cs">P07_Predicate_For_Names</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P08_List_Of_Predicates/P08_List_Of_Predicates.cs">P08_List_Of_Predicates</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P09_Predicate_Party/P09_Predicate_Party.cs">P09_Predicate_Party</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P10_The_Party_Reservation_Filter_Module/P10_The_Party_Reservation_Filter_Module.cs">P10_The_Party_Reservation_Filter_Module</a>
+ -->
+ </details>
 </details>
 
 
