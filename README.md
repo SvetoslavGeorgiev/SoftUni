@@ -636,7 +636,7 @@
   </details>
   <details>
   <summary>
-👈🏻 XII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise">S12_Defining_Classes_Exercise</a> - Fifth lecture: Exercise
+👈🏻 XII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise">S12_Defining_Classes_Exercise</a> - Sixth lecture: Exercise
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P01_Define_a_Class_Person">P01_Define_a_Class_Person</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P02_Creating_Constructors">P02_Creating_Constructors</a>
