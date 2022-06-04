@@ -7,10 +7,15 @@ namespace SoftUniParking
 {
     public class Parking
     {
+        public Parking()
+        {
+            Cars = new List<Car>(capacity);
+        }
+
         public Parking(int capacity)
         {
-            Cars = new List<Car> ();
-            Capacity = capacity;
+            Cars = new List<Car>(capacity);
+            this.capacity = capacity;
         }
 
         private List<Car> cars;
@@ -18,28 +23,20 @@ namespace SoftUniParking
 
 
         public int Count { get { return Cars.Count; } }
-
         public List<Car> Cars
         {
             get { return cars; }
             set { cars = value; }
         }
 
-        public int Capacity
-        {
-            get { return capacity; }
-            set { capacity = value; }
-        }
-
-
         public string AddCar(Car car)
         {
             if (Cars.Any(x => x.RegistrationNumber == car.RegistrationNumber))
             {
-                return "Car with that registration number, already exists";
-
+                return "Car with that registration number, already exists!";
+                
             }
-            else if (Capacity <= Cars.Count)
+            else if (Cars.Capacity <= Cars.Count)
             {
                 return "Parking is full!";
             }
@@ -77,7 +74,7 @@ namespace SoftUniParking
         {
             foreach (var reg in registrationNumbers)
             {
-                RemoveCar(reg);
+                Cars.Remove(GetCar(reg));
             }
         }
     }
