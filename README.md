@@ -773,7 +773,7 @@
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P01_World_Tour/Program.cs">P01_World_Tour</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P02_D_Mapper/Program.cs">P02_D_Mapper</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE01_CSharp_Advanced_Retake_Exam_13_April_2022/P03_Zoo">P03_Zoo</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P03PlantDiscovery/Program.cs">P03_Plant_Discovery</a>
   </details>
 </details>
 
@@ -787,7 +787,7 @@
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE01_CSharp_Advanced_Retake_Exam_13_April_2022/P01_Meal_Plan/P01_Meal_Plan.cs">P01_Meal_Plan</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE01_CSharp_Advanced_Retake_Exam_13_April_2022/P02_Truffle_Hunter/P02_Truffle_Hunter.cs">P02_Truffle_Hunter</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE01_CSharp_Advanced_Retake_Exam_13_April_2022/P02_Truffle_Hunter/P02_Truffle_Hunter.cs">P02_Truffle_Hunter</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE01_CSharp_Advanced_Retake_Exam_13_April_2022/P03_Zoo">P03_Zoo</a>
   </details>
 <!--
   <details>
