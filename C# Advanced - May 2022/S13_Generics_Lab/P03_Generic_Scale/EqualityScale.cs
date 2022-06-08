@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GenericScale
+namespace P03_Generic_Scale
 {
     public class EqualityScale<T>
     {
