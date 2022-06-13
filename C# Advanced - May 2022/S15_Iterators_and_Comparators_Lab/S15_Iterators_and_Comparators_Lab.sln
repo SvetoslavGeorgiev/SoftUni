@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorsAndComparators", "P01_Library\IteratorsAndComparators.csproj", "{98DEDAA3-514D-4734-94AF-8D2702597C14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_LibraryIterator", "P02_LibraryIterator\P02_LibraryIterator.csproj", "{67B71EDF-EF0F-465C-BC5C-B3A882DB4380}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{98DEDAA3-514D-4734-94AF-8D2702597C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98DEDAA3-514D-4734-94AF-8D2702597C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98DEDAA3-514D-4734-94AF-8D2702597C14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B71EDF-EF0F-465C-BC5C-B3A882DB4380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B71EDF-EF0F-465C-BC5C-B3A882DB4380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B71EDF-EF0F-465C-BC5C-B3A882DB4380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B71EDF-EF0F-465C-BC5C-B3A882DB4380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
