@@ -659,7 +659,7 @@
   </details>
   <details>
   <summary>
-👈🏻 XIV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise">S14_Generics_Exercise</a> - Seventh lecture: Exercise
+👈🏻 XIV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise">S14_Generics_Exercise</a> - Eight lecture
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P01_Generic_Box_of_String">P01_Generic_Box_of_String</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P02_Generic_Box_of_Integer">P02_Generic_Box_of_Integer</a>
@@ -669,6 +669,15 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P06_Generic_Count_Method_Double">P06_Generic_Count_Method_Double</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P07_Tuple">P07_Tuple</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P08_Threeuple">P08_Threeuple</a>
+ </details>
+  <details>
+  <summary>
+👈🏻 XV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab">S15_Iterators_and_Comparators_Lab</a> - Seventh lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P01_Library">P01_Library</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P02_Generic_Box_of_Integer">P02_LibraryIterator</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P03_ComparableBook">P03_ComparableBook</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P04_BookComparer">P04_BookComparer</a>
  </details>
 </details>
 
@@ -790,7 +799,7 @@
   </details>
   <details>
   <summary>
-👈🏻 II - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam">FE02_Programming_Fundamentals_Final_Exam</a>
+👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam">FE02_Programming_Fundamentals_Final_Exam</a>
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P01_World_Tour/Program.cs">P01_World_Tour</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P02_D_Mapper/Program.cs">P02_D_Mapper</a>
@@ -821,7 +830,7 @@
 <!--
   <details>
   <summary>
-👈🏻 II - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam">FE02_Programming_Fundamentals_Final_Exam</a>
+👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam">FE02_Programming_Fundamentals_Final_Exam</a>
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P01_World_Tour/Program.cs">P01_World_Tour</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P02_D_Mapper/Program.cs">P02_D_Mapper</a>
