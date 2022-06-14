@@ -659,7 +659,7 @@
   </details>
   <details>
   <summary>
-👈🏻 XIV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise">S14_Generics_Exercise</a> - Eight lecture
+👈🏻 XIV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise">S14_Generics_Exercise</a> - Seventh lecture: Exercise
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P01_Generic_Box_of_String">P01_Generic_Box_of_String</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P02_Generic_Box_of_Integer">P02_Generic_Box_of_Integer</a>
@@ -672,10 +672,10 @@
  </details>
   <details>
   <summary>
-👈🏻 XV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab">S15_Iterators_and_Comparators_Lab</a> - Seventh lecture: Exercise
+👈🏻 XV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab">S15_Iterators_and_Comparators_Lab</a> - Eight lecture
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P01_Library">P01_Library</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P02_Generic_Box_of_Integer">P02_LibraryIterator</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P02_LibraryIterator">P02_LibraryIterator</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P03_ComparableBook">P03_ComparableBook</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P04_BookComparer">P04_BookComparer</a>
  </details>
