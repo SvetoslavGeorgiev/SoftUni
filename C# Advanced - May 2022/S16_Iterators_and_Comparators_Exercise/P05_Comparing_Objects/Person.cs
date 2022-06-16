@@ -23,15 +23,18 @@ namespace P05_Comparing_Objects
         public int CompareTo(Person other)
         {
             int result = Name.CompareTo(other.Name);
+            Console.WriteLine(result);
 
             if (result == 0)
             {
                 result = Age.CompareTo(other.Age);
+                Console.WriteLine(result);
             }
 
             if (result == 0)
             {
                 result = Town.CompareTo(other.Town);
+                Console.WriteLine(result);
             }
 
             return result;
