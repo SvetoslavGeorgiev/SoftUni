@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Pawn_Wars", "P02_Pawn_Wars\P02_Pawn_Wars.csproj", "{974DCD10-278D-4980-9CE9-9EAEBA15112B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Stock_Market", "P03_Stock_Market\P03_Stock_Market.csproj", "{F1EE84D7-47B4-4F80-A7AF-A1124AA4144E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{974DCD10-278D-4980-9CE9-9EAEBA15112B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{974DCD10-278D-4980-9CE9-9EAEBA15112B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{974DCD10-278D-4980-9CE9-9EAEBA15112B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1EE84D7-47B4-4F80-A7AF-A1124AA4144E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1EE84D7-47B4-4F80-A7AF-A1124AA4144E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1EE84D7-47B4-4F80-A7AF-A1124AA4144E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1EE84D7-47B4-4F80-A7AF-A1124AA4144E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
