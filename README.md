@@ -839,7 +839,6 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE02_CSharp_Advanced_Retake_Exam_16_Dec_2021/P02_Armory/P02_Armory.cs">P02_Armory</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE02_CSharp_Advanced_Retake_Exam_16_Dec_2021/P03_Drones">P03_Drones</a>
   </details>
-<
   <details>
   <summary>
 👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE03_CSharp_Advanced_Exam_26_June_2021">PE03_CSharp_Advanced_Practice_Exam</a>
