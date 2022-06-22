@@ -839,14 +839,21 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE02_CSharp_Advanced_Retake_Exam_16_Dec_2021/P02_Armory/P02_Armory.cs">P02_Armory</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE02_CSharp_Advanced_Retake_Exam_16_Dec_2021/P03_Drones">P03_Drones</a>
   </details>
-<!--
+<
   <details>
   <summary>
-👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam">FE02_Programming_Fundamentals_Final_Exam</a>
+👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE03_CSharp_Advanced_Exam_26_June_2021">PE03_CSharp_Advanced_Practice_Exam</a>
   </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P01_World_Tour/Program.cs">P01_World_Tour</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P02_D_Mapper/Program.cs">P02_D_Mapper</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P03PlantDiscovery/Program.cs">P03_Plant_Discovery</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE03_CSharp_Advanced_Exam_26_June_2021/P01_Masterchef/P01_Masterchef.cs">P01_Masterchef</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE03_CSharp_Advanced_Exam_26_June_2021/P02_Survivor/P02_Survivor.cs">P02_Survivor</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE03_CSharp_Advanced_Exam_26_June_2021/P03_Ski_Rental">P03_Ski_Rental</a>
   </details>
--->
+  <details>
+  <summary>
+👈🏻 IV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE04_CSharp_Advanced_Exam_23_October_2021">PE04_CSharp_Advanced_Practice_Exam</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE04_CSharp_Advanced_Exam_23_October_2021/P01_Food_Finder/P01_Food_Finder.cs">P01_Food_Finder</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE04_CSharp_Advanced_Exam_23_October_2021/P02_Pawn_Wars/Program.cs">P02_Pawn_Wars</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE04_CSharp_Advanced_Exam_23_October_2021/P03_Stock_Market">P03_Stock_Market</a>
+  </details>
 </details>
