@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_Birthday_Celebration", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_The_Battle_of_5_Armies", "P02_The_Battle_of_5_Armies\P02_The_Battle_of_5_Armies.csproj", "{A635968E-3532-47DC-8250-848997CFA4D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Street_Racing", "P03_Street_Racing\P03_Street_Racing.csproj", "{6EBA2C91-9ED2-4583-8209-CC90C79C83D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A635968E-3532-47DC-8250-848997CFA4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A635968E-3532-47DC-8250-848997CFA4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A635968E-3532-47DC-8250-848997CFA4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EBA2C91-9ED2-4583-8209-CC90C79C83D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBA2C91-9ED2-4583-8209-CC90C79C83D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBA2C91-9ED2-4583-8209-CC90C79C83D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBA2C91-9ED2-4583-8209-CC90C79C83D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
