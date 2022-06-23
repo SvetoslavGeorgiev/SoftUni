@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_Birthday_Celebration", "P01_Birthday_Celebration\P01_Birthday_Celebration.csproj", "{8610581D-AC82-46C2-BB0B-79B9B6692E7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_The_Battle_of_5_Armies", "P02_The_Battle_of_5_Armies\P02_The_Battle_of_5_Armies.csproj", "{A635968E-3532-47DC-8250-848997CFA4D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8610581D-AC82-46C2-BB0B-79B9B6692E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8610581D-AC82-46C2-BB0B-79B9B6692E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8610581D-AC82-46C2-BB0B-79B9B6692E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A635968E-3532-47DC-8250-848997CFA4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A635968E-3532-47DC-8250-848997CFA4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A635968E-3532-47DC-8250-848997CFA4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A635968E-3532-47DC-8250-848997CFA4D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
