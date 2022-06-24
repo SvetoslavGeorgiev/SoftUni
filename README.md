@@ -21,7 +21,7 @@
   </details>
   <details>
   <summary>
-👈🏻 II - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics/Simple_Operations_and_Calculation_Exercise">First_Steps_In_Coding_Exercise</a> - First lecture: Exercise
+👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics/Simple_Operations_and_Calculation_Exercise">First_Steps_In_Coding_Exercise</a> - First lecture: Exercise
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Simple_Operations_and_Calculation_Exercise/USD-to-BGN/Program.cs">P01_USD-to-BGN</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Simple_Operations_and_Calculation_Exercise/2D-Rectangle%20Area/Program.cs">P02_2D-Rectangle_Area</a>
