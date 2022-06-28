@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_Recursive_Array_Sum", "P01_Recursive_Array_Sum\P01_Recursive_Array_Sum.csproj", "{967216DA-E86E-477E-9840-04C123A127DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_Recursive_Array_Sum", "P01_Recursive_Array_Sum\P01_Recursive_Array_Sum.csproj", "{967216DA-E86E-477E-9840-04C123A127DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Recursive_Factorial", "P02_Recursive_Factorial\P02_Recursive_Factorial.csproj", "{49CE55D9-8E04-4F99-843F-383C79841090}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_Recursive_Factorial", "P02_Recursive_Factorial\P02_Recursive_Factorial.csproj", "{49CE55D9-8E04-4F99-843F-383C79841090}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_Sum_of_Coins", "P03_Sum_of_Coins\P03_Sum_of_Coins.csproj", "{0A2281D0-889D-4402-977A-09C8BBC36D0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{553308F4-0F79-4BC9-A66E-CAAF39C4C93A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{49CE55D9-8E04-4F99-843F-383C79841090}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49CE55D9-8E04-4F99-843F-383C79841090}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49CE55D9-8E04-4F99-843F-383C79841090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A2281D0-889D-4402-977A-09C8BBC36D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A2281D0-889D-4402-977A-09C8BBC36D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A2281D0-889D-4402-977A-09C8BBC36D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A2281D0-889D-4402-977A-09C8BBC36D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{553308F4-0F79-4BC9-A66E-CAAF39C4C93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{553308F4-0F79-4BC9-A66E-CAAF39C4C93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{553308F4-0F79-4BC9-A66E-CAAF39C4C93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{553308F4-0F79-4BC9-A66E-CAAF39C4C93A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
