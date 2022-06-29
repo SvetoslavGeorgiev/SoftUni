@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_Recursive_Factorial", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_Sum_of_Coins", "P03_Sum_of_Coins\P03_Sum_of_Coins.csproj", "{0A2281D0-889D-4402-977A-09C8BBC36D0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{553308F4-0F79-4BC9-A66E-CAAF39C4C93A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Set_Cover", "P04_Set_Cover\P04_Set_Cover.csproj", "{5548517E-4FCC-4963-9A0B-36058F05BAA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{0A2281D0-889D-4402-977A-09C8BBC36D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A2281D0-889D-4402-977A-09C8BBC36D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A2281D0-889D-4402-977A-09C8BBC36D0A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{553308F4-0F79-4BC9-A66E-CAAF39C4C93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{553308F4-0F79-4BC9-A66E-CAAF39C4C93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{553308F4-0F79-4BC9-A66E-CAAF39C4C93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{553308F4-0F79-4BC9-A66E-CAAF39C4C93A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5548517E-4FCC-4963-9A0B-36058F05BAA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5548517E-4FCC-4963-9A0B-36058F05BAA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5548517E-4FCC-4963-9A0B-36058F05BAA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5548517E-4FCC-4963-9A0B-36058F05BAA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
