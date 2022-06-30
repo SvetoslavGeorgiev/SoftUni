@@ -488,7 +488,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C# Advanced - May 2022</a> - This is what I am currently studying.
+👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C# Advanced - May 2022</a>
   </summary>
   <details>
   <summary>
@@ -691,8 +691,239 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P06_Equality_Logic">P06_Equality_Logic</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P07_Custom_Comparator/Program.cs">P07_Custom_Comparator</a>
  </details>
+ <details>
+  <summary>
+👈🏻 XVII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise">S17_Basic_Algorithms_Exercise</a> - Ninth lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P01_Recursive_Array_Sum/P01_Recursive_Array_Sum.cs">P01_Recursive_Array_Sum</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P02_Recursive_Factorial/P02_Recursive_Factorial.cs">P02_Recursive_Factorial</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P03_Sum_of_Coins/P03_Sum_of_Coins.cs">P03_Sum_of_Coins</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P04_Set_Cover/Program.cs">P04_Set_Cover</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P05_Merge_Sort/Program.cs">P05_Merge_Sort</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P06_Quicksort/Program.cs">P06_Quicksort</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P07_Binary_Search/Program.cs">P07_Binary_Search</a>
+ </details>
 </details>
 
+<details>
+  <summary>
+👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C#_OOP_June_2022</a> - This is what I am currently studying.
+  </summary>
+  <details>
+  <summary>
+👈🏻 I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab">Inheritance_Lab</a> - First lecture
+  </summary>
+<!--
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P01_Reverse_Strings/Program.cs">P01_Reverse_Strings</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P02_Stack_Sum/Program.cs">P02_Stack_Sum</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P03_Simple_Calculator/Program.cs">P03_Simple_Calculator</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P04_Matching_Brackets/Program.cs">P04_Matching_Brackets</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P05_Print_Even_Numbers/Program.cs">P05_Print_Even_Numbers</a>
+-->
+  </details>
+<!--
+  <details>
+  <summary>
+👈🏻 II - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise">S02_Stacks_and_Queues_Exercise</a> - First lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P01_Basic_Stack_Operations/Program.cs">P01_Basic_Stack_Operations</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P02_Basic_Queue_Operations/Program.cs">P02_Basic_Queue_Operations</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P03_Maximum_and_Minimum_Element/Program.cs">P03_Maximum_and_Minimum_Element</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P04_Fast_Food/Program.cs">P04_Fast_Food</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P05_Fashion_Boutique/Program.cs">P05_Fashion_Boutique</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P06_Songs_Queue/Program.cs">P06_Songs_Queue</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P07_Truck_Tour/Program.cs">P07_Truck_Tour</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P08_Balanced_Parenthesis/Program.cs">P08_Balanced_Parenthesis</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P09_Simple_Text_Editor/Program.cs">P09_Simple_Text_Editor</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P10_Crossroads/Program.cs">P10_Crossroads</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;11. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P11_Key_Revolver/Program.cs">P11_Key_Revolver</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;12. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S02_Stacks_and_Queues_Exercise/P12_Cups_and_Bottles/Program.cs">P12_Cups_and_Bottles</a>
+  </details>
+<details>
+  <summary>
+👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab">S03_Multidimensional_Arrays_Lab</a> - Second lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P01_Sum_Matrix_Elements/Program.cs">P01_Sum_Matrix_Elements</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P02_Sum_Matrix_Columns/Program.cs">P02_Sum_Matrix_Columns</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P03_Primary_Diagonal/Program.cs">P03_Primary_Diagonal</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P04_Symbol_in_Matrix/Program.cs">P04_Symbol_in_Matrix</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P05_Square_With_Maximum_Sum/Program.cs">P05_Square_With_Maximum_Sum</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P06_Jagged_Array_Modification/Program.cs">P06_Jagged_Array_Modification</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab/P07_Pascal_Triangle/Program.cs">P07_Pascal_Triangle</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 IV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise">S04_Multidimensional_Arrays_Exercise</a> - Second lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P01_Diagonal_Difference/Program.cs">P01_Diagonal_Difference</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P02_Squares_in_Matrix/Program.cs">P02_Squares_in_Matrix</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P03_Maximal_Sum/Program.cs">P03_Maximal_Sum</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P04_Matrix_Shuffling/Program.cs">P04_Matrix_Shuffling</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P05_Snake_Moves/Program.cs">P05_Snake_Moves</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P06_Jagged_Array_Manipulator/Program.cs">P06_Jagged_Array_Manipulator</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P07_Knight_Game/Program.cs">P07_Knight_Game</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P08_Bombs/Program.cs">P08_Bombs</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P09_Miner/Program.cs">P09_Miner</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S04_Multidimensional_Arrays_Exercise/P10_Radioactive_Mutant_Vampire_Bunnies/Program.cs">P10_Radioactive_Mutant_Vampire_Bunnies</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S05_Sets_and_Dictionaries_Advanced_Lab">S05_Sets_and_Dictionaries_Advanced_Lab</a> - Third lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S05_Sets_and_Dictionaries_Advanced_Lab/P01_Count_Same_Values_in_Array/P01_Count_Same_Values_in_Array.cs">P01_Count_Same_Values_in_Array</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S05_Sets_and_Dictionaries_Advanced_Lab/P02_Average_Student_Grades/P02_Average_Student_Grades.cs">P02_Average_Student_Grades</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S05_Sets_and_Dictionaries_Advanced_Lab/P03_Largest_3_Numbers/P03_Largest_3_Numbers.cs">P03_Largest_3_Numbers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S05_Sets_and_Dictionaries_Advanced_Lab/P04_Product_Shop/P04_Product_Shop.cs">P04_Product_Shop</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S05_Sets_and_Dictionaries_Advanced_Lab/P05_Cities_by_Continent_and_Country/P05_Cities_by_Continent_and_Country.cs">P05_Cities_by_Continent_and_Country</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S05_Sets_and_Dictionaries_Advanced_Lab/P06_Record_Unique_Names/P06_Record_Unique_Names.cs">P06_Record_Unique_Names</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S05_Sets_and_Dictionaries_Advanced_Lab/P07_Parking_Lot/P07_Parking_Lot.cs">P07_Parking_Lot</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S05_Sets_and_Dictionaries_Advanced_Lab/P08_SoftUni_Party/P08_SoftUni_Party.cs">P08_SoftUni_Party</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 VI - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise">S06_Sets_and_Dictionaries_Advanced_Exercise</a> - Third lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P01_Unique_Usernames/P01_Unique_Usernames.cs">P01_Unique_Usernames</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P02_Sets_of_Elements/P02_Sets_of_Elements.cs">P02_Sets_of_Elements</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P03_Periodic_Table/P03_Periodic_Table.cs">P03_Periodic_Table</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P04_Even_Times/P04_Even_Times.cs">P04_Even_Times</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P05_Count_Symbols/P05_Count_Symbols.cs">P05_Count_Symbols</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P06_Wardrobe/P06_Wardrobe.cs">P06_Wardrobe</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P07_The_V_Logger/P07_The_V_Logger.cs">P07_The_V_Logger</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P08_Ranking/P08_Ranking.cs">P08_Ranking</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P09_SoftUni_Exam_Results/P09_SoftUni_Exam_Results.cs">P09_SoftUni_Exam_Results</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S06_Sets_and_Dictionaries_Advanced_Exercise/P10_ForceBook/P10_ForceBook.cs">P10_ForceBook</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 VII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab">S07_Streams_Files_and_Directories_Lab</a> - Fourth lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P01_Odd_Lines/Program.cs">P01_Odd_Lines</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P02_Line_Numbers/P02_Line_Numbers.cs">P02_Line_Numbers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P03_Word_Count/P03_Word_Count.cs">P03_Word_Count</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P04_Merge_Text_Files/P04_Merge_Text_Files.cs">P04_Merge_Text_Files</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P05_Extract_Special_Bytes/P05_Extract_Special_Bytes.cs">P05_Extract_Special_Bytes</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P06_Split_Merge_Binary_Files/P06_Split_Merge_Binary_Files.cs">P06_Split_Merge_Binary_Files</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P07_Folder_Size/P07_Folder_Size.cs">P07_Folder_Size</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 VIII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises">S08_Streams_Files_and_Directories_Exercises</a> - Fourth lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P01_Even_Lines/P01_Even_Lines.cs">P01_Even_Lines</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P02_Line_Numbers/P02_Line_Numbers.cs">P02_Line_Numbers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P03_Copy_Binary_File/P03_Copy_Binary_File.cs">P03_Copy_Binary_File</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P04_Directory_Traversal/P04_Directory_Traversal.cs">P04_Directory_Traversal</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P05_Copy_Directory/P05_Copy_Directory.cs">P05_Copy_Directory</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P06_Zip_and_Extracts/P06_Zip_and_Extracts.cs">P06_Zip_and_Extracts</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 IX - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab">S09_Functional_Programming_Lab</a> - Fifth lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab/P01_Sort_Even_Numbers/P01_Sort_Even_Numbers.cs">P01_Sort_Even_Numbers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab/P02_Sum_Numbers/P02_Sum_Numbers.cs">P02_Sum_Numbers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab/P03_Count_Uppercase_Words/P03_Count_Uppercase_Words.cs">P03_Count_Uppercase_Words</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab/P04_Add_VAT/P04_Add_VAT.cs">P04_Add_VAT</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab/P05_Filter_By_Age/P05_Filter_By_Age.cs">P05_Filter_By_Age</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 X - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise">S10_Functional_Programming_Exercise</a> - Fifth lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P01_Action_Print/P01_Action_Print.cs">P01_Action_Print</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P02_Knights_of_Honor/P02_Knights_of_Honor.cs">P02_Knights_of_Honor</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P03_Custom_Min_Function/P03_Custom_Min_Function.cs">P03_Custom_Min_Function</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P04_Find_Evens_or_Odds/P04_Find_Evens_or_Odds.cs">P04_Find_Evens_or_Odds</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P05_Applied_Arithmetics/P05_Applied_Arithmetics.cs">P05_Applied_Arithmetics</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P06_Reverse_And_Exclude/P06_Reverse_And_Exclude.cs">P06_Reverse_And_Exclude</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P07_Predicate_For_Names/P07_Predicate_For_Names.cs">P07_Predicate_For_Names</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P08_List_Of_Predicates/P08_List_Of_Predicates.cs">P08_List_Of_Predicates</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P09_Predicate_Party/P09_Predicate_Party.cs">P09_Predicate_Party</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P10_The_Party_Reservation_Filter_Module/P10_The_Party_Reservation_Filter_Module.cs">P10_The_Party_Reservation_Filter_Module</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;11. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise/P11_TriFunction/P11_TriFunction.cs">P11_TriFunction</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 XI - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab">S11_Defining_Classes_Lab</a> - Sixth lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P01_Car">P01_Car</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P02_Car_Extension">P02_Car_Extension</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P03_Car_Constructors">P03_Car_Constructors</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P04_Car_Engine_And_Tires">P04_Car_Engine_And_Tires</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P05_Special_Cars">P05_Special_Cars</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 XII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise">S12_Defining_Classes_Exercise</a> - Sixth lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P01_Define_a_Class_Person">P01_Define_a_Class_Person</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P02_Creating_Constructors">P02_Creating_Constructors</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P03_Oldest_Family_Member">P03_Oldest_Family_Member</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P04_Opinion_Poll">P04_Opinion_Poll</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P05_Date_Modifier">P05_Date_Modifier</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P06_Speed_Racing">P06_Speed_Racing</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P07_Raw_Data">P07_Raw_Data</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P08_Car_Salesman.cs">P08_Car_Salesman</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P09_Pokemon_Trainer">P09_Pokemon_Trainer</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P10_SoftUni_Parking">P10_SoftUni_Parking</a>
+ </details>
+ <details>
+  <summary>
+👈🏻 XIII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S13_Generics_Lab">S13_Generics_Lab</a> - Seventh lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S13_Generics_Lab/P01_Box">P01_Box</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S13_Generics_Lab/P02_Array_Creator">P02_Array_Creator</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S13_Generics_Lab/P03_Generic_Scale">P03_Generic_Scale</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 XIV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise">S14_Generics_Exercise</a> - Seventh lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P01_Generic_Box_of_String">P01_Generic_Box_of_String</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P02_Generic_Box_of_Integer">P02_Generic_Box_of_Integer</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P03_Generic_Swap_Method_String">P03_Generic_Swap_Method_String</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P04_Generic_Swap_Method_Integer">P04_Generic_Swap_Method_Integer</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P05_Generic_Count_Method_String">P05_Generic_Count_Method_String</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P06_Generic_Count_Method_Double">P06_Generic_Count_Method_Double</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P07_Tuple">P07_Tuple</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P08_Threeuple">P08_Threeuple</a>
+ </details>
+  <details>
+  <summary>
+👈🏻 XV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab">S15_Iterators_and_Comparators_Lab</a> - Eight lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P01_Library">P01_Library</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P02_LibraryIterator">P02_LibraryIterator</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P03_ComparableBook">P03_ComparableBook</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P04_BookComparer">P04_BookComparer</a>
+ </details>
+ <details>
+  <summary>
+👈🏻 XVI - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise">S16_Iterators_and_Comparators_Exercise</a> - Eight lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P01_ListyIterator">P01_ListyIterator</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P02_Collection">P02_Collection</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P03_Stack">P03_Stack</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P04_Froggy">P04_Froggy</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P05_Comparing_Objects">P05_Comparing_Objects</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P06_Equality_Logic">P06_Equality_Logic</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P07_Custom_Comparator/Program.cs">P07_Custom_Comparator</a>
+ </details>
+ <details>
+  <summary>
+👈🏻 XVII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise">S17_Basic_Algorithms_Exercise</a> - Ninth lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P01_Recursive_Array_Sum/P01_Recursive_Array_Sum.cs">P01_Recursive_Array_Sum</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P02_Recursive_Factorial/P02_Recursive_Factorial.cs">P02_Recursive_Factorial</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P03_Sum_of_Coins/P03_Sum_of_Coins.cs">P03_Sum_of_Coins</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P04_Set_Cover/Program.cs">P04_Set_Cover</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P05_Merge_Sort/Program.cs">P05_Merge_Sort</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P06_Quicksort/Program.cs">P06_Quicksort</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P07_Binary_Search/Program.cs">P07_Binary_Search</a>
+ </details>
+ -->
+</details>
 
 ## Basics Curriculum with PYTHON
 
@@ -757,6 +988,19 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/Practical_Exam_January_2022/01_String_Manipulator/Program.cs">P01_String_Manipulator</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/Practical_Exam_January_2022/P02_Message_Decrypter/Program.cs">P02_Message_Decrypter</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/Practical_Exam_January_2022/P03_Messages_Manager/Program.cs">P03_Messages_Manager</a>
+  </details>
+</details>
+<details>
+  <summary>
+👈🏻 CLICK HERE &#160;&#160;Advanced Exam
+  </summary>
+  <details>
+  <summary>
+👈🏻 I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Programming%20Basics%20Online%20Exam%20-%209%20and%2010%20March%202019">Advanced_Exam</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/E01_CSharp_Advanced_Exam_25_06_2022/P01_Tiles_Master/P01_Tiles_Master.cs">P01_Tiles_Master</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/E01_CSharp_Advanced_Exam_25_06_2022/P02_Wall_Destroyer/P02_Wall_Destroyer.cs">P02_Wall_Destroyer</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/E01_CSharp_Advanced_Exam_25_06_2022/P03_Renovators">P03_Renovators</a>
   </details>
 </details>
 
@@ -854,5 +1098,13 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE04_CSharp_Advanced_Exam_23_October_2021/P01_Food_Finder/P01_Food_Finder.cs">P01_Food_Finder</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE04_CSharp_Advanced_Exam_23_October_2021/P02_Pawn_Wars/Program.cs">P02_Pawn_Wars</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE04_CSharp_Advanced_Exam_23_October_2021/P03_Stock_Market">P03_Stock_Market</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE05_CSharp_Advanced_Retake_Exam_18_August_2021">PE05_CSharp_Advanced_Practice_Exam</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE05_CSharp_Advanced_Retake_Exam_18_August_2021/P01_Birthday_Celebration/P01_Birthday_Celebration.cs">P01_Birthday_Celebration</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE05_CSharp_Advanced_Retake_Exam_18_August_2021/P02_The_Battle_of_5_Armies/P02_The_Battle_of_5_Armies.cs">P02_The_Battle_of_5_Armies</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE05_CSharp_Advanced_Retake_Exam_18_August_2021/P03_Street_Racing">P03_Street_Racing</a>
   </details>
 </details>
