@@ -711,15 +711,13 @@
   </summary>
   <details>
   <summary>
-👈🏻 I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab">Inheritance_Lab</a> - First lecture
+👈🏻 I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S01_Inheritance_Lab">Inheritance_Lab</a> - First lecture
   </summary>
-<!--
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P01_Reverse_Strings/Program.cs">P01_Reverse_Strings</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P02_Stack_Sum/Program.cs">P02_Stack_Sum</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P03_Simple_Calculator/Program.cs">P03_Simple_Calculator</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P04_Matching_Brackets/Program.cs">P04_Matching_Brackets</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S01_Stacks_and_Queues_Lab/P05_Print_Even_Numbers/Program.cs">P05_Print_Even_Numbers</a>
--->
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S01_Inheritance_Lab/P01_Single_Inheritance">P01_Single_Inheritance</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S01_Inheritance_Lab/P02_Multiple_Inheritance">P02_Multiple_Inheritance</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S01_Inheritance_Lab/P03_Hierarchical_Inheritance">P03_Hierarchical_Inheritance</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S01_Inheritance_Lab/P04_Random_List">P04_Random_List</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S01_Inheritance_Lab/P05_Stack_of_Strings">P05_Stack_of_Strings</a>
   </details>
 <!--
   <details>
