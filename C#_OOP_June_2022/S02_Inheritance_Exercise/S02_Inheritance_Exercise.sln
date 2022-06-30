@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Zoo", "P02_Zoo\P02_Zoo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Players_and_Monsters", "P03_Players_and_Monsters\P03_Players_and_Monsters.csproj", "{59D23366-0809-41A2-BFF1-2ECE61B263D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04_Need_for_Speed", "P04_Need_for_Speed\P04_Need_for_Speed.csproj", "{16466BF0-ADBB-429C-B5BD-9BCD1E1C56E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{59D23366-0809-41A2-BFF1-2ECE61B263D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59D23366-0809-41A2-BFF1-2ECE61B263D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59D23366-0809-41A2-BFF1-2ECE61B263D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16466BF0-ADBB-429C-B5BD-9BCD1E1C56E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16466BF0-ADBB-429C-B5BD-9BCD1E1C56E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16466BF0-ADBB-429C-B5BD-9BCD1E1C56E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16466BF0-ADBB-429C-B5BD-9BCD1E1C56E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
