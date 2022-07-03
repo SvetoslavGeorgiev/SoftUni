@@ -17,11 +17,11 @@ namespace PizzaCalories
                 {
                     throw new ArgumentException("Pizza name should be between 1 and 15 symbols.");
                 }
-                var pizza = new Pizza(tokens[1]);
-                command = Console.ReadLine();
-                tokens = command.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-                var dough = new Dough(tokens[1], tokens[2], int.Parse(tokens[3]));
-                pizza.AddDough(dough);
+                
+                var command1 = Console.ReadLine();
+                var tokens1 = command1.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                var dough = new Dough(tokens1[1], tokens1[2], int.Parse(tokens1[3]));
+                var pizza = new Pizza(tokens[1], dough);
                 while ((command = Console.ReadLine()).ToLower() != "end")
                 {
 

@@ -12,24 +12,35 @@ namespace PizzaCalories
         private string name;
 
         private readonly List<Topping> toppings;
-        private readonly List<Dough> dough;
+        private Dough dough;
+        //private readonly List<Dough> dough;
 
-        public Pizza(string name)
+        public Pizza(string name, Dough dough)
         {
             Name = name;
             toppings = new List<Topping>();
-            dough = new List<Dough>();
+            Dough = dough;
         }
 
-        public IReadOnlyCollection<Dough> Dough
+
+        public Dough Dough
         {
             get { return dough; }
+            private set
+            {
+                dough = value;
+            }
         }
 
-        public void AddDough(Dough value)
-        {
-            dough.Add(value);
-        }
+        //public IReadOnlyCollection<Dough> Dough
+        //{
+        //    get { return dough; }
+        //}
+
+        //public void AddDough(Dough value)
+        //{
+        //    dough.Add(value);
+        //}
 
         public IReadOnlyCollection<Topping> Toppings
         {
@@ -65,7 +76,7 @@ namespace PizzaCalories
         public override string ToString()
         {
             
-            return $"{Name} - {dough[0].Calories + toppings.Sum(x => x.Calories):F2} Calories.";
+            return $"{Name} - {Dough.Calories + toppings.Sum(x => x.Calories):F2} Calories.";
         }
     }
 }
