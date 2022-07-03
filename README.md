@@ -729,8 +729,9 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S02_Inheritance_Exercise/P04_Need_for_Speed">P04_Need_for_Speed</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S02_Inheritance_Exercise/P05_Restaurant">P05_Restaurant</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S02_Inheritance_Exercise/P06_Animals">P06_Animals</a>
-<details>
+</details>
 <!--
+<details>
   <summary>
 👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S03_Multidimensional_Arrays_Lab">S03_Multidimensional_Arrays_Lab</a> - Second lecture
   </summary>
