@@ -7,7 +7,7 @@ namespace PizzaCalories
     {
         static void Main()
         {
-            
+
 
             try
             {
@@ -17,7 +17,7 @@ namespace PizzaCalories
                 {
                     throw new ArgumentException("Pizza name should be between 1 and 15 symbols.");
                 }
-                var pizza  = new Pizza(tokens[1]);
+                var pizza = new Pizza(tokens[1]);
                 command = Console.ReadLine();
                 tokens = command.Split(" ", StringSplitOptions.RemoveEmptyEntries);
                 var dough = new Dough(tokens[1], tokens[2], int.Parse(tokens[3]));
