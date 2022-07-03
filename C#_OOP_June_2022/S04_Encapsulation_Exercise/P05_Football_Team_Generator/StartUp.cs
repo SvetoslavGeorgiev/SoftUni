@@ -38,7 +38,6 @@ namespace P05_Football_Team_Generator
                     {
                         teams[tokens[1]].AddPlayer(player);
                     }
-                    
                 }
                 else if (tokens.Contains("Remove"))
                 {
