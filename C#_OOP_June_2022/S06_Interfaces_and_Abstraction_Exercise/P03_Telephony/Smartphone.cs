@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
-    public class Smartphone : IPhone, ISmartPhone
+    public class Smartphone : ISmartPhone
     {
         public string Browse(string email)
         {
