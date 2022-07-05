@@ -1,4 +1,4 @@
-﻿namespace BirthdayCelebrations
+﻿namespace FoodShortage.Models
 {
     using System;
     using System.Collections.Generic;
@@ -29,8 +29,8 @@
         public int Age
         {
             get => age;
-            private set 
-            { 
+            private set
+            {
                 age = value;
             }
         }
@@ -39,9 +39,9 @@
         public string Id
         {
             get => id;
-            private set 
-            { 
-                id = value; 
+            private set
+            {
+                id = value;
             }
         }
 

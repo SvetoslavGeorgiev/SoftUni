@@ -1,4 +1,4 @@
-﻿namespace BirthdayCelebrations
+﻿namespace FoodShortage.Engine
 {
     using System;
     using System.Collections.Generic;
@@ -13,8 +13,7 @@
 
             return new Command
             {
-                Name = tokens[0],
-                Arguments = tokens.Skip(1).ToArray()
+                Arguments = tokens.ToArray()
             };
         }
     }

@@ -1,7 +1,8 @@
-﻿namespace BirthdayCelebrations
+﻿namespace BirthdayCelebrations.Engine
 {
     using System;
     using System.Collections.Generic;
+    using Models;
 
     public class StartUp
     {

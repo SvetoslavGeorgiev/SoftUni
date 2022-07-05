@@ -1,4 +1,4 @@
-﻿namespace BirthdayCelebrations
+﻿namespace BirthdayCelebrations.Models
 {
     using System;
     using System.Collections.Generic;
@@ -18,9 +18,9 @@
         public string Model
         {
             get => model;
-            private set 
-            { 
-                model = value; 
+            private set
+            {
+                model = value;
             }
         }
 

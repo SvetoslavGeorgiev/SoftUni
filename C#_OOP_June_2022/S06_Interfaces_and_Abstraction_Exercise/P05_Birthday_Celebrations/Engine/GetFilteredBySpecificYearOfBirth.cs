@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BirthdayCelebrations
+﻿namespace BirthdayCelebrations.Engine
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    using Models;
     public class GetFilteredBySpecificYearOfBirth
     {
 

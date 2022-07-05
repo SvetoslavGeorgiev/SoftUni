@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace BirthdayCelebrations
+﻿namespace BirthdayCelebrations.Models
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
     public class Pet : Humanoid
     {
         private string name;

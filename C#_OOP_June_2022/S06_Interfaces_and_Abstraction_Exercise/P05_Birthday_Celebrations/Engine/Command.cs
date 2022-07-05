@@ -1,4 +1,4 @@
-﻿namespace BirthdayCelebrations
+﻿namespace BirthdayCelebrations.Engine
 {
     using System;
     using System.Collections.Generic;
