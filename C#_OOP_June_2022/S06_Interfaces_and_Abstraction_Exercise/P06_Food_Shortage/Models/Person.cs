@@ -3,28 +3,25 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
+    using Interfaces;
 
     public class Person : Humanoid
     {
-        private string name;
+        
         private int age;
         private string id;
-        public Person(string name, int age, string id, string birthdate) : base(birthdate)
+        private string birthdate;
+        public Person(string name, int age, string id, string birthdate)
         {
             Name = name;
             Age = age;
             Id = id;
+            Birthdate = birthdate;
         }
 
-        public string Name
-        {
-            get => name;
-            private set
-            {
-                name = value;
-            }
-        }
+        public string Birthdate { get; set; }
 
+        public override string Name { get; set; }
 
         public int Age
         {
@@ -45,6 +42,14 @@
             }
         }
 
+        public override int Food { get; set; } = 0;
 
+        public override void BuyFood(string name)
+        {
+            if (Name == name)
+            {
+                Food += 10;
+            }
+        }
     }
 }

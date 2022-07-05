@@ -24,7 +24,7 @@
                     var id = command.Arguments[2];
                     var birthdate = command.Arguments[3];
 
-                    var person = new Person(command.Name, age, id, birthdate);
+                    var person = new Person(name, age, id, birthdate);
 
                     humanoids.Add(person);
 
