@@ -7,7 +7,7 @@
 
     public class Person : Humanoid
     {
-        
+
         private int age;
         private string id;
         private string birthdate;
