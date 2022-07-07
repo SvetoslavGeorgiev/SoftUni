@@ -22,7 +22,7 @@
                 var firstname = command.Arguments[1];
                 var lastName = command.Arguments[2];
 
-                if (command.Arguments[0] == nameof(Spy))
+                if (command.Name == nameof(Spy))
                 {
 
                     var codeNumber = int.Parse(command.Arguments[3]);
