@@ -3,27 +3,48 @@
     using Interfaces;
     using System;
     using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
 
-    public class LieutenantGeneral : Soldier, ILieutenantGeneral
+    public class LieutenantGeneral : Soldier, ILieutenantGeneral, IPrivate
     {
-        private readonly List<Private> privates  = new List<Private>();
-        static int[] privateIds;
-        public LieutenantGeneral(int id, string firstName, string lastName, params int[] privates) : base(id, firstName, lastName)
+        private decimal salary;
+        private readonly List<Private> privates;
+        public LieutenantGeneral(int id, string firstName, string lastName, decimal salary) : base(id, firstName, lastName)
         {
-            privateIds = privates;
+            Salary = salary;
+            privates = new List<Private>();
         }
-        private IReadOnlyList<Private> FindingAndAddingPrivatesToLieutanatControl(int[] privates)
-        {
-            foreach (var item in collection)
-            {
 
+        public decimal Salary
+        {
+            get => salary;
+            private set
+            {
+                salary = value;
             }
         }
-
-        public IReadOnlyList<Private> Privates
+        public IReadOnlyCollection<Private> Privates
         {
-            get => FindingAndAddingPrivatesToLieutanatControl(privateIds);
+            get => privates;
         }
 
+        public void AddPrivateId(Private pr)
+        {
+            privates.Add(pr);
+        }
+
+        public override string ToString()
+        {
+            var sb = new StringBuilder();
+            sb.AppendLine(base.ToString() + $"Salary: {Salary:F2}");
+            sb.AppendLine("Privates:");
+            foreach (var pr in Privates)
+            {
+                sb.AppendLine($"  {pr}");
+            }
+
+            return sb.ToString().TrimEnd();
+        }
     }
 }

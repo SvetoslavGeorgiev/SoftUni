@@ -15,12 +15,15 @@
 
         public decimal Salary
         {
-            get { return salary; }
-            private set 
-            { 
-                salary = value; 
+            get => salary;
+            private set
+            {
+                salary = value;
             }
         }
-
+        public override string ToString()
+        {
+            return base.ToString() + $"Salary: {Salary:F2}";
+        }
     }
 }

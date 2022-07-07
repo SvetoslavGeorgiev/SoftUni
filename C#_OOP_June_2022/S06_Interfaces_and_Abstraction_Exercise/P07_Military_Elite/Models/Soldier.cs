@@ -20,17 +20,17 @@
         public int Id
         {
             get => id;
-            private set 
-            { 
-                id = value; 
+            private set
+            {
+                id = value;
             }
         }
 
         public string FirstName
         {
             get => firstName;
-            private set 
-            { 
+            private set
+            {
                 firstName = value;
             }
         }
@@ -38,14 +38,17 @@
         public string LastName
         {
             get => lastName;
-            private set 
-            { 
-                lastName = value; 
+            private set
+            {
+                lastName = value;
             }
         }
 
 
-
+        public override string ToString()
+        {
+            return $"Name: {firstName} {lastName} Id: {id} ";
+        }
 
     }
 }

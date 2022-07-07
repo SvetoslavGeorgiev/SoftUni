@@ -4,9 +4,8 @@
     using System.Collections.Generic;
     using System.Text;
     using Models;
-    
-public interface ILieutenantGeneral
+    public interface ISoldiers
     {
-        public IReadOnlyCollection<Private> Privates { get;}
+        public List<Soldier> ListOfSoldiers { get; set; }
     }
 }
