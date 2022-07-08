@@ -70,7 +70,8 @@
 
                         var engineer = new Engineer(id, firstname, lastName, salary, corp);
 
-                        if (command.Arguments.Length > 5)
+
+                        try
                         {
                             for (int i = 5; i < command.Arguments.Length; i += 2)
                             {
@@ -82,9 +83,15 @@
 
                             }
                         }
+                        catch (Exception)
+                        {
+
+
+                        }
+
                         soldiers.AddSoldier(engineer);
                     }
-                    
+
 
                 }
                 else if (command.Name == nameof(Commando))
@@ -97,7 +104,8 @@
 
                         var comando = new Commando(id, firstname, lastName, salary, corp);
 
-                        if (command.Arguments.Length > 5)
+
+                        try
                         {
                             for (int i = 5; i < command.Arguments.Length; i += 2)
                             {
@@ -109,10 +117,16 @@
 
                             }
                         }
+                        catch (Exception)
+                        {
+
+                            
+                        }
+
 
                         soldiers.AddSoldier(comando);
                     }
-                    
+
                 }
                 command = parser.Parse(Console.ReadLine());
             }

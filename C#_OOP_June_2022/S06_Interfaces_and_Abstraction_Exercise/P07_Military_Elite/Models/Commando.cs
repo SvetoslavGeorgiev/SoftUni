@@ -19,7 +19,7 @@
 
         public void AddMission(Mission mission)
         {
-            if (mission.MissionState == "inProgress")
+            if (mission.MissionState == "inProgress" || mission.MissionState == "Finished")
             {
                 missions.Add(mission);
             }
