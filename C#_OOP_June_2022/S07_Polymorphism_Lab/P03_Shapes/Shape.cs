@@ -9,7 +9,7 @@
 
         public virtual string Draw()
         {
-            return "";
+            return "Drawing ";
         }
 
     }
