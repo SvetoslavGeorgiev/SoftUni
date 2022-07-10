@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skeleton", "Skeleton\Skelet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skeleton.Tests", "P01_Skeleton.Tests.Axe\Skeleton.Tests.csproj", "{FEC236C3-EDAA-4133-AEAB-10ACA2DBDB23}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Skeleton.Tests.Dummy", "P02_Skeleton.Tests.Dummy\Skeleton.Tests.Dummy.csproj", "{8CBCDEB1-D3D5-4255-A030-FC130A0E8FE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FEC236C3-EDAA-4133-AEAB-10ACA2DBDB23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEC236C3-EDAA-4133-AEAB-10ACA2DBDB23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEC236C3-EDAA-4133-AEAB-10ACA2DBDB23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CBCDEB1-D3D5-4255-A030-FC130A0E8FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CBCDEB1-D3D5-4255-A030-FC130A0E8FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CBCDEB1-D3D5-4255-A030-FC130A0E8FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CBCDEB1-D3D5-4255-A030-FC130A0E8FE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
