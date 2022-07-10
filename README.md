@@ -754,8 +754,7 @@
 👈🏻 V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S05_Interfaces_and_Abstraction_Lab">S05_Interfaces_and_Abstraction_Lab</a> - Third lecture
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S05_Interfaces_and_Abstraction_Lab/P01_Shapes">P01_Shapes</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S05_Sets_and_Dictionaries_Advanced_Lab/P02_Average_Student_Grades/P02_Average_Student_Grades.cs">P02_Average_Student_Grades</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S05_Interfaces_and_Abstraction_Lab/P02_Cars">P02_Cars</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S05_Interfaces_and_Abstraction_Lab/P02_Cars">P02_Cars</a>
   </details>
   <details>
   <summary>
@@ -771,32 +770,25 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="">P08_Collection_Hierarchy</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="">P09_Explicit_Interfaces</a>
   </details>
+  <details>
+  <summary>
+👈🏻 VII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S07_Polymorphism_Lab">S07_Polymorphism_Lab</a> - Fourth lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S07_Polymorphism_Lab/P01_Math_Operations">P01_Math_Operations</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S07_Polymorphism_Lab/P02_Animals">P02_Animals</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S07_Polymorphism_Lab/P03_Shapes">P03_Shapes</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 VIII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S08_Polymorphism_Exercise">S08_Polymorphism_Exercise</a> - Fourth lecture: Exercise
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S08_Polymorphism_Exercise/P01_Vehicles">P01_Vehicles</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S08_Polymorphism_Exercise/P02_Vehicles_Extension">P02_Vehicles_Extension</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S08_Polymorphism_Exercise/P03_Raiding">P03_Raiding</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="">P04_Wild_Farm</a>
+  </details>
 <!--
   <details>
-  <summary>
-👈🏻 VII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab">S07_Streams_Files_and_Directories_Lab</a> - Fourth lecture
-  </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P01_Odd_Lines/Program.cs">P01_Odd_Lines</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P02_Line_Numbers/P02_Line_Numbers.cs">P02_Line_Numbers</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P03_Word_Count/P03_Word_Count.cs">P03_Word_Count</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P04_Merge_Text_Files/P04_Merge_Text_Files.cs">P04_Merge_Text_Files</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P05_Extract_Special_Bytes/P05_Extract_Special_Bytes.cs">P05_Extract_Special_Bytes</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P06_Split_Merge_Binary_Files/P06_Split_Merge_Binary_Files.cs">P06_Split_Merge_Binary_Files</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S07_Streams_Files_and_Directories_Lab/P07_Folder_Size/P07_Folder_Size.cs">P07_Folder_Size</a>
-  </details>
-  <details>
-  <summary>
-👈🏻 VIII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises">S08_Streams_Files_and_Directories_Exercises</a> - Fourth lecture: Exercise
-  </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P01_Even_Lines/P01_Even_Lines.cs">P01_Even_Lines</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P02_Line_Numbers/P02_Line_Numbers.cs">P02_Line_Numbers</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P03_Copy_Binary_File/P03_Copy_Binary_File.cs">P03_Copy_Binary_File</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P04_Directory_Traversal/P04_Directory_Traversal.cs">P04_Directory_Traversal</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P05_Copy_Directory/P05_Copy_Directory.cs">P05_Copy_Directory</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S08_Streams_Files_and_Directories_Exercises/P06_Zip_and_Extracts/P06_Zip_and_Extracts.cs">P06_Zip_and_Extracts</a>
-  </details>
-  <details>
-
   <summary>
 👈🏻 IX - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab">S09_Functional_Programming_Lab</a> - Fifth lecture
   </summary>
