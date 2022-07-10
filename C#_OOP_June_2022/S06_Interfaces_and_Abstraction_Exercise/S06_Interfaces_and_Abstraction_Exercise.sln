@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05_Birthday_Celebrations",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06_Food_Shortage", "P06_Food_Shortage\P06_Food_Shortage.csproj", "{33992F5A-1354-47D4-8682-10CDFCB243A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07_Military_Elite", "P07_Military_Elite\P07_Military_Elite.csproj", "{304CE945-060E-4BD4-8F81-15CD0B315F0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07_Military_Elite", "P07_Military_Elite\P07_Military_Elite.csproj", "{304CE945-060E-4BD4-8F81-15CD0B315F0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08_Collection_Hierarchy", "P08_Collection_Hierarchy\P08_Collection_Hierarchy.csproj", "{91657B9D-3A9C-444E-ACA8-5F3637657EC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{304CE945-060E-4BD4-8F81-15CD0B315F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{304CE945-060E-4BD4-8F81-15CD0B315F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{304CE945-060E-4BD4-8F81-15CD0B315F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91657B9D-3A9C-444E-ACA8-5F3637657EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91657B9D-3A9C-444E-ACA8-5F3637657EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91657B9D-3A9C-444E-ACA8-5F3637657EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91657B9D-3A9C-444E-ACA8-5F3637657EC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
