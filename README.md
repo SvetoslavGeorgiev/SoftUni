@@ -824,21 +824,15 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P04_Car_Engine_And_Tires">P04_Car_Engine_And_Tires</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S11_Defining_Classes_Lab/P05_Special_Cars">P05_Special_Cars</a>
   </details>
+-->
   <details>
   <summary>
-👈🏻 XII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise">S12_Defining_Classes_Exercise</a> - Sixth lecture: Exercise
+👈🏻 XII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S12_Unit_Testing_Lab">S12_Unit_Testing_Lab</a> - Seventh lecture
   </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P01_Define_a_Class_Person">P01_Define_a_Class_Person</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P02_Creating_Constructors">P02_Creating_Constructors</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P03_Oldest_Family_Member">P03_Oldest_Family_Member</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P04_Opinion_Poll">P04_Opinion_Poll</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P05_Date_Modifier">P05_Date_Modifier</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P06_Speed_Racing">P06_Speed_Racing</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P07_Raw_Data">P07_Raw_Data</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P08_Car_Salesman.cs">P08_Car_Salesman</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P09_Pokemon_Trainer">P09_Pokemon_Trainer</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S12_Defining_Classes_Exercise/P10_SoftUni_Parking">P10_SoftUni_Parking</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S12_Unit_Testing_Lab/P01_Skeleton.Tests.Axe">P01_Skeleton.Tests.Axe</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S12_Unit_Testing_Lab/P02_Skeleton.Tests.Dummy">P02_Skeleton.Tests.Dummy</a>
  </details>
+<!--
  <details>
   <summary>
 👈🏻 XIII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S13_Generics_Lab">S13_Generics_Lab</a> - Seventh lecture
