@@ -42,6 +42,7 @@
         public void FigthShouldThrowInvalidOperationExceptionIfAttackerNotInTheArena()
         {
             var arena = new Arena();
+
             var worrior = new Warrior("Gosho", 55, 150);
             var worrior1 = new Warrior("Pesho", 55, 35);
             var worrior2 = new Warrior("Ivan", 55, 65);
