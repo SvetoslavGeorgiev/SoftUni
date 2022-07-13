@@ -27,6 +27,8 @@ namespace CarManager
             this.FuelCapacity = fuelCapacity;
         }
 
+        
+
         public string Make
         {
             get
