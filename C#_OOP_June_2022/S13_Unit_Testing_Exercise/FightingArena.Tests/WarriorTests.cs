@@ -50,7 +50,9 @@ namespace FightingArena.Tests
             var worrior1 = new Warrior("Pesho", 55, 150);
 
             Assert.AreEqual(worrior.Name, worrior1.Name);
+
             Assert.AreEqual(worrior.HP, worrior1.HP);
+
             Assert.AreEqual(worrior.Damage, worrior1.Damage);
         }
 
