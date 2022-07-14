@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_Square_Root", "P01_Square_Root\P01_Square_Root.csproj", "{6AFB7415-6D24-4884-AD4D-D53BD94D276F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Enter_Numbers", "P02_Enter_Numbers\P02_Enter_Numbers.csproj", "{C12D13CF-1AFD-4D73-A857-22723930FA7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_Enter_Numbers", "P02_Enter_Numbers\P02_Enter_Numbers.csproj", "{C12D13CF-1AFD-4D73-A857-22723930FA7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Cards", "P03_Cards\P03_Cards.csproj", "{6249FA45-A984-4202-A415-26355962339A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C12D13CF-1AFD-4D73-A857-22723930FA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C12D13CF-1AFD-4D73-A857-22723930FA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C12D13CF-1AFD-4D73-A857-22723930FA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6249FA45-A984-4202-A415-26355962339A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6249FA45-A984-4202-A415-26355962339A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6249FA45-A984-4202-A415-26355962339A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6249FA45-A984-4202-A415-26355962339A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
