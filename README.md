@@ -787,17 +787,18 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S08_Polymorphism_Exercise/P03_Raiding">P03_Raiding</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S08_Polymorphism_Exercise/P04_Wild_Farm">P04_Wild_Farm</a>
   </details>
-<!--
   <details>
   <summary>
-👈🏻 IX - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab">S09_Functional_Programming_Lab</a> - Fifth lecture
+👈🏻 IX - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S09_Exceptions_and_Error_Handling_Lab">S09_Exceptions_and_Error_Handling_Lab</a> - Fifth lecture
   </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab/P01_Sort_Even_Numbers/P01_Sort_Even_Numbers.cs">P01_Sort_Even_Numbers</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab/P02_Sum_Numbers/P02_Sum_Numbers.cs">P02_Sum_Numbers</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab/P03_Count_Uppercase_Words/P03_Count_Uppercase_Words.cs">P03_Count_Uppercase_Words</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab/P04_Add_VAT/P04_Add_VAT.cs">P04_Add_VAT</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S09_Functional_Programming_Lab/P05_Filter_By_Age/P05_Filter_By_Age.cs">P05_Filter_By_Age</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23_OOP_June_2022/S09_Exceptions_and_Error_Handling_Lab/P01_Square_Root/StartUp.cs">P01_Square_Root</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23_OOP_June_2022/S09_Exceptions_and_Error_Handling_Lab/P02_Enter_Numbers/StartUp.cs">P02_Enter_Numbers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23_OOP_June_2022/S09_Exceptions_and_Error_Handling_Lab/P03_Cards/StartUp.cs">P03_Cards</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23_OOP_June_2022/S09_Exceptions_and_Error_Handling_Lab/P04_Sum_of_Integers/StartUp.cs">P04_Sum_of_Integers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23_OOP_June_2022/S09_Exceptions_and_Error_Handling_Lab/P05_Play_Catch/StartUp.cs">P05_Play_Catch</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23_OOP_June_2022/S09_Exceptions_and_Error_Handling_Lab/P06_Money_Transactions/StartUp.cs">P06_Money_Transactions</a>
   </details>
+  <!--
   <details>
   <summary>
 👈🏻 X - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S10_Functional_Programming_Exercise">S10_Functional_Programming_Exercise</a> - Fifth lecture: Exercise
