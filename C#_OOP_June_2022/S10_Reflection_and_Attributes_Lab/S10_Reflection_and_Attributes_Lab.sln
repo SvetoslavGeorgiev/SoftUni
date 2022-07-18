@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_Stealer", "P01_Stealer\P01_Stealer.csproj", "{11A5D05B-B6BD-4B47-9FDE-CAA407C30C54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_High_Quality_Mistakes", "P02_High_Quality_Mistakes\P02_High_Quality_Mistakes.csproj", "{C7170376-8E7E-4AC7-B030-A560C816DA10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_High_Quality_Mistakes", "P02_High_Quality_Mistakes\P02_High_Quality_Mistakes.csproj", "{C7170376-8E7E-4AC7-B030-A560C816DA10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03_Mission_Private_Impossible", "P03_Mission_Private_Impossible\P03_Mission_Private_Impossible.csproj", "{5D1E6A83-A78D-441C-A99E-3702A6AC83F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C7170376-8E7E-4AC7-B030-A560C816DA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7170376-8E7E-4AC7-B030-A560C816DA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7170376-8E7E-4AC7-B030-A560C816DA10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D1E6A83-A78D-441C-A99E-3702A6AC83F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D1E6A83-A78D-441C-A99E-3702A6AC83F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D1E6A83-A78D-441C-A99E-3702A6AC83F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D1E6A83-A78D-441C-A99E-3702A6AC83F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
