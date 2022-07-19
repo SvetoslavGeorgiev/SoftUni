@@ -60,21 +60,22 @@
         public string CreateWeapon(string type, string name, int durability)
         {
             IWeapon weapon = null;
+            if (type != nameof(Mace) && type != nameof(Claymore))
+            {
+                throw new InvalidOperationException("Invalid weapon type.");
+            }
             if (type == nameof(Mace))
             {
                 weapon = new Mace(name, durability);
                 weapons.Add(weapon);
                 return $"A {type.ToLower()} {weapon.Name} is added to the collection.";
             }
-            else if (type == nameof(Claymore))
+            else// if (type == nameof(Claymore))
             {
                 weapon = new Claymore(name, durability);
                 weapons.Add(weapon);
                 return $"A {type.ToLower()} {weapon.Name} is added to the collection.";
             }
-
-            throw new InvalidOperationException("Invalid hero type.");
-
         }
 
         public string HeroReport()
