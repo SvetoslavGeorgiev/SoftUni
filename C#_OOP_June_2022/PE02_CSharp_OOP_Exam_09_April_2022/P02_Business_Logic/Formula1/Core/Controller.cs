@@ -26,7 +26,7 @@
         public string AddCarToPilot(string pilotName, string carModel)
         {
             var pilot = pilotRepository.FindByName(pilotName);
-            if (pilot == null)
+            if (pilot == null || pilot.Car != null)
             {
                 throw new InvalidOperationException($"Pilot {pilotName} does not exist or has a car.");
             }

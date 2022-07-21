@@ -34,12 +34,12 @@
             models.Add(car);
         }
 
-        public IFormulaOneCar FindByName(string model)
+        public IFormulaOneCar FindByName(string name)
         {
-            var car = models.FirstOrDefault(x => x.Model == model);
+            var car = models.FirstOrDefault(x => x.Model == name);
             if (car == null)
             {
-                throw new NullReferenceException($"Car {model} does not exist.");
+                throw new NullReferenceException($"Car {name} does not exist.");
             }
             return car;
         }
