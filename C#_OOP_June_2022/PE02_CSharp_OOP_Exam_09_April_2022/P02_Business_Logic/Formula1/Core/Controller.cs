@@ -121,26 +121,15 @@
 
             var sb = new StringBuilder();
 
-            var first = race.Pilots.OrderByDescending(x => x.Car.RaceScoreCalculator(race.NumberOfLaps)).FirstOrDefault();
-            first.WinRace();
-            sb.AppendLine($"Pilot {first.FullName} wins the {raceName} race.");
+            var winner = race.Pilots.OrderByDescending(x => x.Car.RaceScoreCalculator(race.NumberOfLaps)).FirstOrDefault();
+            winner.WinRace();
+            sb.AppendLine($"Pilot {winner.FullName} wins the {raceName} race.");
 
-            var sortedRace = race.Pilots.OrderByDescending(x => x.Car.RaceScoreCalculator(race.NumberOfLaps));
-            var counter = 0;
+            var secondPlace = race.Pilots.OrderByDescending(x => x.Car.RaceScoreCalculator(race.NumberOfLaps)).Skip(1).First();
+            sb.AppendLine($"Pilot {secondPlace.FullName} is second in the {raceName} race.");
 
-            var winners = new List<IPilot>();
-            foreach (var pilot in sortedRace)
-            {
-                counter++;
-                winners.Add(pilot);
-                if (counter == 3)
-                {
-                    break;
-                }
-
-            }
-            sb.AppendLine($"Pilot {winners[1].FullName} is second in the {raceName} race.");
-            sb.AppendLine($"Pilot {winners[2].FullName} is third in the {raceName} race.");
+            var thirdPlace = race.Pilots.OrderByDescending(x => x.Car.RaceScoreCalculator(race.NumberOfLaps)).Skip(2).First();
+            sb.AppendLine($"Pilot {thirdPlace.FullName} is third in the {raceName} race.");
 
             race.TookPlace = true;
 
