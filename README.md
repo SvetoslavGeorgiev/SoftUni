@@ -953,7 +953,7 @@
   </summary>
   <details>
   <summary>
-👈🏻 I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming_Basics/Programming%20Basics%20Online%20Exam%20-%209%20and%2010%20March%202019">Advanced_Exam</a>
+👈🏻 I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/E01_CSharp_Advanced_Exam_25_06_2022">Advanced_Exam</a>
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/E01_CSharp_Advanced_Exam_25_06_2022/P01_Tiles_Master/P01_Tiles_Master.cs">P01_Tiles_Master</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/E01_CSharp_Advanced_Exam_25_06_2022/P02_Wall_Destroyer/P02_Wall_Destroyer.cs">P02_Wall_Destroyer</a>
