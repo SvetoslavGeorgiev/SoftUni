@@ -78,7 +78,7 @@ namespace SmartphoneShop.Tests
         }
 
         [Test]
-        public void RemoveShouldRemoveAnExistingPhoneAndReduceCapacity()
+        public void RemoveShouldRemoveAnExistingPhoneAndReduceCount()
         {
 
             var shop = new Shop(2);
