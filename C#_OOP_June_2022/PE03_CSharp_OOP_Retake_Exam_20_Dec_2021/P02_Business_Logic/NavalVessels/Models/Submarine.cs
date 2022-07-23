@@ -29,7 +29,7 @@
             if (ArmorThickness < submarineArmorThicknes)
             {
 
-                ArmorThickness = 200.00;
+                ArmorThickness = submarineArmorThicknes;
 
             }
         }

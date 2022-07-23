@@ -12,7 +12,7 @@
         private ICaptain captain;
         private double mainWeaponCaliber;
         private double speed;
-        private ICollection<string> targets = new List<string>();
+        private readonly ICollection<string> targets;
 
 
         protected Vessel(string name, double mainWeaponCaliber, double speed, double armorThickness)
@@ -21,6 +21,8 @@
             MainWeaponCaliber = mainWeaponCaliber;
             Speed = speed;
             ArmorThickness = armorThickness;
+            targets = new List<string>();
+            captain = null;
         }
 
 
@@ -66,11 +68,8 @@
             }
         }
 
-        public ICollection<string> Targets
-        {
-            get => targets;
-            private set => targets = value;
-        }
+        public ICollection<string> Targets => targets;
+
 
         public void Attack(IVessel target)
         {

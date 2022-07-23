@@ -29,7 +29,7 @@
             if (ArmorThickness < battleshipArmorThickness)
             {
 
-                ArmorThickness = 300.00;
+                ArmorThickness = battleshipArmorThickness;
 
             }
         }

@@ -10,12 +10,14 @@
     public class Captain : ICaptain
     {
         private string fullName;
-        private int combatExperience = 0;
-        private readonly ICollection<IVessel> vessels = new List<IVessel>(); 
+        private int combatExperience;
+        private readonly ICollection<IVessel> vessels;
 
         public Captain(string fullName)
         {
-            this.fullName = fullName;
+            FullName = fullName;
+            CombatExperience = 0;
+            vessels = new List<IVessel>();
         }
         public string FullName
         {
@@ -43,10 +45,7 @@
             }
         }
 
-        public ICollection<IVessel> Vessels
-        {
-            get => vessels;
-        }
+        public ICollection<IVessel> Vessels => vessels;
 
 
         public void AddVessel(IVessel vessel)
