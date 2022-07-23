@@ -100,20 +100,7 @@
 
         }
 
-        public virtual void RepairVessel()
-        {
-            
-
-            if (this.GetType().Name == typeof(Submarine).Name)
-            {
-                ArmorThickness = 200.00;
-            }
-            else
-            {
-                ArmorThickness = 300.00;
-            }
-            
-        }
+        public abstract void RepairVessel();
 
         public override string ToString()
         {

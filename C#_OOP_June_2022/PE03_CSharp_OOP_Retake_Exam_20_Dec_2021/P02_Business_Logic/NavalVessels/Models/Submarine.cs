@@ -7,12 +7,12 @@
 
     public class Submarine : Vessel, ISubmarine
     {
-        private bool submergeMode = false;
+        private bool submergeMode;
         private const double submarineArmorThicknes = 200.00;
-        public Submarine(string name, double mainWeaponCaliber, double speed) 
+        public Submarine(string name, double mainWeaponCaliber, double speed)
             : base(name, mainWeaponCaliber, speed, submarineArmorThicknes)
         {
-            
+            SubmergeMode = false;
         }
 
         public bool SubmergeMode
@@ -28,7 +28,9 @@
         {
             if (ArmorThickness < submarineArmorThicknes)
             {
-                base.RepairVessel();
+
+                ArmorThickness = 200.00;
+
             }
         }
 

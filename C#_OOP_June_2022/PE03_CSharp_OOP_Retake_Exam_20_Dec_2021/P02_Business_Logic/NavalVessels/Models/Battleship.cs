@@ -7,20 +7,20 @@
 
     public class Battleship : Vessel, IBattleship
     {
-        private bool sonarMode = false;
+        private bool sonarMode;
         private const double battleshipArmorThickness = 300.00;
-        public Battleship(string name, double mainWeaponCaliber, double speed) 
+        public Battleship(string name, double mainWeaponCaliber, double speed)
             : base(name, mainWeaponCaliber, speed, battleshipArmorThickness)
         {
-            
+            SonarMode = false;
         }
 
         public bool SonarMode
         {
             get => sonarMode;
-            private set 
-            { 
-                sonarMode = value; 
+            private set
+            {
+                sonarMode = value;
             }
         }
 
@@ -28,7 +28,9 @@
         {
             if (ArmorThickness < battleshipArmorThickness)
             {
-                base.RepairVessel();
+
+                ArmorThickness = 300.00;
+
             }
         }
 
