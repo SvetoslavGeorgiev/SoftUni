@@ -846,39 +846,6 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P07_Tuple">P07_Tuple</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P08_Threeuple">P08_Threeuple</a>
  </details>
-  <details>
-  <summary>
-👈🏻 XV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab">S15_Iterators_and_Comparators_Lab</a> - Eight lecture
-  </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P01_Library">P01_Library</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P02_LibraryIterator">P02_LibraryIterator</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P03_ComparableBook">P03_ComparableBook</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S15_Iterators_and_Comparators_Lab/P04_BookComparer">P04_BookComparer</a>
- </details>
- <details>
-  <summary>
-👈🏻 XVI - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise">S16_Iterators_and_Comparators_Exercise</a> - Eight lecture: Exercise
-  </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P01_ListyIterator">P01_ListyIterator</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P02_Collection">P02_Collection</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P03_Stack">P03_Stack</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P04_Froggy">P04_Froggy</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P05_Comparing_Objects">P05_Comparing_Objects</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P06_Equality_Logic">P06_Equality_Logic</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S16_Iterators_and_Comparators_Exercise/P07_Custom_Comparator/Program.cs">P07_Custom_Comparator</a>
- </details>
- <details>
-  <summary>
-👈🏻 XVII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise">S17_Basic_Algorithms_Exercise</a> - Ninth lecture
-  </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P01_Recursive_Array_Sum/P01_Recursive_Array_Sum.cs">P01_Recursive_Array_Sum</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P02_Recursive_Factorial/P02_Recursive_Factorial.cs">P02_Recursive_Factorial</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P03_Sum_of_Coins/P03_Sum_of_Coins.cs">P03_Sum_of_Coins</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P04_Set_Cover/Program.cs">P04_Set_Cover</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P05_Merge_Sort/Program.cs">P05_Merge_Sort</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P06_Quicksort/Program.cs">P06_Quicksort</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/S17_Basic_Algorithms_Exercise/P07_Binary_Search/Program.cs">P07_Binary_Search</a>
- </details>
  -->
 </details>
 
@@ -1086,30 +1053,30 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE02_CSharp_OOP_Exam_09_April_2022/P02_Business_Logic">P02_Business_Logic</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE02_CSharp_OOP_Exam_09_April_2022/P03_Unit_Tests">P03_Unit_Tests</a>
   </details>
+  <details>
+  <summary>
+👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE03_CSharp_OOP_Retake_Exam_20_Dec_2021">PE03_CSharp_OOP_Retake_Exam_20_Dec_2021</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE03_CSharp_OOP_Retake_Exam_20_Dec_2021/P01_Structure">P01_Structure</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE03_CSharp_OOP_Retake_Exam_20_Dec_2021/P02_Business_Logic">P02_Business_Logic</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE03_CSharp_OOP_Retake_Exam_20_Dec_2021/P03_Unit_Tests">P03_Unit_Tests</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 IV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE04_CSharp_OOP_Exam_11_December_2021">PE04_CSharp_OOP_Exam_11_December_2021</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE04_CSharp_OOP_Exam_11_December_2021/P01_Structure">P01_Structure</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE04_CSharp_OOP_Exam_11_December_2021/P02_Business_Logic">P02_Business_Logic</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE04_CSharp_OOP_Exam_11_December_2021/P03_Unit_Tests">P03_Unit_Tests</a>
+  </details>
 <!--
   <details>
   <summary>
-👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE03_CSharp_Advanced_Exam_26_June_2021">PE03_CSharp_Advanced_Practice_Exam</a>
+👈🏻 V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Exam_15_August_2021">PE05_CSharp_OOP_Exam_15_August_2021</a>
   </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE03_CSharp_Advanced_Exam_26_June_2021/P01_Masterchef/P01_Masterchef.cs">P01_Masterchef</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE03_CSharp_Advanced_Exam_26_June_2021/P02_Survivor/P02_Survivor.cs">P02_Survivor</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE03_CSharp_Advanced_Exam_26_June_2021/P03_Ski_Rental">P03_Ski_Rental</a>
-  </details>
-  <details>
-  <summary>
-👈🏻 IV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE04_CSharp_Advanced_Exam_23_October_2021">PE04_CSharp_Advanced_Practice_Exam</a>
-  </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE04_CSharp_Advanced_Exam_23_October_2021/P01_Food_Finder/P01_Food_Finder.cs">P01_Food_Finder</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE04_CSharp_Advanced_Exam_23_October_2021/P02_Pawn_Wars/Program.cs">P02_Pawn_Wars</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE04_CSharp_Advanced_Exam_23_October_2021/P03_Stock_Market">P03_Stock_Market</a>
-  </details>
-  <details>
-  <summary>
-👈🏻 V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE05_CSharp_Advanced_Retake_Exam_18_August_2021">PE05_CSharp_Advanced_Practice_Exam</a>
-  </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE05_CSharp_Advanced_Retake_Exam_18_August_2021/P01_Birthday_Celebration/P01_Birthday_Celebration.cs">P01_Birthday_Celebration</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/C%23%20Advanced%20-%20May%202022/PE05_CSharp_Advanced_Retake_Exam_18_August_2021/P02_The_Battle_of_5_Armies/P02_The_Battle_of_5_Armies.cs">P02_The_Battle_of_5_Armies</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/PE05_CSharp_Advanced_Retake_Exam_18_August_2021/P03_Street_Racing">P03_Street_Racing</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Exam_15_August_2021/P01_Structure">P01_Structure</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Exam_15_August_2021/P02_Business_Logic">P02_Business_Logic</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Exam_15_August_2021/P03_Unit_Tests">P03_Unit_Tests</a>
   </details>
 -->
 </details>
