@@ -55,7 +55,6 @@
 
         public virtual void AddAthlete(IAthlete athlete)
         {
-            // to check it=f need to be the field ot=r can be like this(property)
             Athletes.Add(athlete);
         }
 
