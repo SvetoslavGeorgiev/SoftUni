@@ -166,3 +166,109 @@ SELECT * FROM [Users]
 
 --Problem 9.	Change Primary Key
 
+ALTER TABLE 
+[Users] DROP CONSTRAINT [PK__Users__3214EC07D3B56B0D]
+
+
+
+ALTER TABLE [Users]
+  ADD CONSTRAINT [Pk_Users] PRIMARY KEY (Id,Username);
+
+
+--Problem 10.	Add Check Constraint
+
+ALTER TABLE [Users]
+  ADD CHECK (DATALENGTH([ProfilePassword]) >= 5)
+
+--Problem 11.	Set Default Value of a Field
+
+ALTER TABLE [Users] 
+ADD DEFAULT (CURRENT_TIMESTAMP) FOR [LastLoginTime]
+
+
+--Problem 12.	Set Unique Field
+
+ALTER TABLE 
+  [Users] DROP CONSTRAINT [PK_Users]
+
+ALTER TABLE [Users]
+  ADD CONSTRAINT [Pk_Users] PRIMARY KEY (Id);
+
+ALTER TABLE [Users] 
+   ADD UNIQUE ([Username])
+
+
+--Problem 13.	Movies Database
+
+
+CREATE TABLE [Directors](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[DirectorName] NVARCHAR(25) NOT NULL,
+	[Notes] NVARCHAR(50)
+)
+
+CREATE TABLE [Genres](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[GenreName] NVARCHAR(50) NOT NULL,
+	[Notes] TEXT
+)
+
+CREATE TABLE [Categories](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[CategoryName] NVARCHAR(50) NOT NULL,
+	[Notes] TEXT
+)
+
+CREATE TABLE [Movies](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[Title] NVARCHAR(50) NOT NULL,
+	[DirectorId] INT FOREIGN KEY REFERENCES [Directors]([Id]),
+	[CopyrightYear] DECIMAL(4,0),
+	[Length] TIME,
+	[GenreId] INT FOREIGN KEY REFERENCES [Genres]([Id]),
+	[CategoryId] INT FOREIGN KEY REFERENCES [Categories]([Id]),
+	[Rating] DECIMAL(2,1),
+	[Notes] TEXT
+)
+
+INSERT INTO [Directors]([DirectorName])
+      VALUES
+('Pesho'),
+('Slavi'),
+('Pesho'),
+('Ivan'),
+('Gosho')
+
+
+INSERT INTO [Genres]([GenreName])
+      VALUES
+('Horror'),
+('Comedy'),
+('Sci-Fi'),
+('Thriller'),
+('Fantasy')
+
+INSERT INTO [Categories]([CategoryName])
+      VALUES
+('Action'),
+('Drama'),
+('Mystery'),
+('Thriller'),
+('Western')
+
+INSERT INTO [Movies]([Title], [DirectorId], [CopyrightYear], [Length], [GenreId], [CategoryId], [Rating])
+      VALUES
+('DSFG', 3, 2021, '03:45:25', 1, 2, 9.8),
+('FGA', 2, 2021, '01:45:36', 4, 2, 7.7),
+('HGFDH', 1, 2021, '01:35:45', 2, 2, 3.8),
+('DSGFDFG', 4, 2021, '01:15:35', 3, 2, 7.8),
+('DSGFDGFG', 5, 2021, '02:45:15', 5, 2, 1.2)
+
+
+SELECT * FROM[Directors]
+SELECT * FROM [Genres]
+SELECT * FROM [Categories]
+SELECT * FROM [Movies]
+
+DROP TABLE [Movies]
+TRUNCATE TABLE [Directors]
