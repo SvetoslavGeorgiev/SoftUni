@@ -272,3 +272,7 @@ SELECT * FROM [Movies]
 
 DROP TABLE [Movies]
 TRUNCATE TABLE [Directors]
+
+--Problem 14.	Car Rental Database
+
+
