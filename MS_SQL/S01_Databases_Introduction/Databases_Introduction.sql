@@ -270,9 +270,295 @@ SELECT * FROM [Genres]
 SELECT * FROM [Categories]
 SELECT * FROM [Movies]
 
-DROP TABLE [Movies]
-TRUNCATE TABLE [Directors]
+DROP TABLE [Categories]
+DROP TABLE [Customers]
 
 --Problem 14.	Car Rental Database
 
+CREATE TABLE [Categories](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[CategoryName] NVARCHAR(50) NOT NULL,
+	[DailyRate] DECIMAL(7,2),
+	[WeeklyRate] DECIMAL(7,2),
+	[MonthlyRate] DECIMAL(7,2),
+	[WeekendRate] DECIMAL(7,2)
+)
 
+
+CREATE TABLE [Cars](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[PlateNumber] NVARCHAR(20) NOT NULL,
+	[Manufacturer] NVARCHAR(20) NOT NULL,
+	[Model] NVARCHAR(20) NOT NULL,
+	[CarYear] DECIMAL(4,0),
+	[CategoryId] INT FOREIGN KEY REFERENCES [Categories]([Id]),
+	[Doors] DECIMAL(1,0),
+	[Picture] VARBINARY(MAX),
+	CHECK (DATALENGTH([Picture]) <= 2000000),
+	[Condition] NVARCHAR(15),
+	[Available] BIT
+)
+
+CREATE TABLE [Employees](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[FirstName] NVARCHAR(25) NOT NULL,
+	[LastName] NVARCHAR(25) NOT NULL,
+	[Title] NVARCHAR(10),
+	[Notes] TEXT
+)
+
+CREATE TABLE [Customers](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[DriverLicenceNumber] NVARCHAR(40) NOT NULL,
+	[FullName] NVARCHAR(25) NOT NULL,
+	[Address] TEXT,
+	[ZIPCode] NVARCHAR(15),
+	[Notes] TEXT
+)
+
+CREATE TABLE [RentalOrders](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[EmployeeId] INT FOREIGN KEY REFERENCES [Employees]([Id]),
+	[CustomerId] INT FOREIGN KEY REFERENCES [Customers]([Id]),
+	[CarId] INT FOREIGN KEY REFERENCES [Cars]([Id]),
+	[TankLevel] NVARCHAR(10) NOT NULL,
+	[KilometrageStart] DECIMAL(4,1),
+	[KilometrageEnd] DECIMAL(4,1),
+	[TotalKilometrage] DECIMAL(10,0),
+	[StartDate] DATE NOT NULL,
+	[EndDate] DATE NOT NULL,
+	[TotalDays] DECIMAL(4,0),
+	[RateApplied] DECIMAL(7,2),
+	[TaxRate] DECIMAL(7,2),
+	[OrderStatus] NVARCHAR(15),
+	[Notes] TEXT
+)
+
+INSERT INTO [Categories]([CategoryName], [DailyRate], [WeeklyRate], [WeekendRate])
+      VALUES
+('practical', 59.99, 255.28, 122.25),
+('comfortable',65.89, 299.87, 165.33),
+('economical', 45.77, 199.54, 135.39)
+
+INSERT INTO [Cars]([PlateNumber], [Manufacturer], [Model], [CarYear], [CategoryId], [Doors], [Available])
+      VALUES
+('EH0212BP', 'Opel', 'Astra', 1992, 1, 4, 'true'),
+('EH02da2BP', 'Oasdel', 'Astasda', 2005, 2, 4, 'true'),
+('EHasd212BP', 'Opasdl', 'Astasdasa', 2022, 3, 2, 'false')
+
+
+INSERT INTO [Employees]([FirstName], [LastName])
+	VALUES
+('Petar', 'Ivanov'),
+('Stoyan', 'Georgiev'),
+('Ivan', 'Petrov')
+
+INSERT INTO [Customers]([DriverLicenceNumber], [FullName], [ZIPCode])
+	VALUES
+('JIGLAKFJFJHGDHASF', 'Petar Georgiev', '528000BT'),
+('JIdasdFJFJHGDHASF', 'Milen Georgiev', '5246540BT'),
+('JIGLAKFJFgfdgfDHASF', 'Petar Stoyanov', '5280655BT')
+
+INSERT INTO [RentalOrders]([EmployeeId], [CustomerId], [CarId], [TankLevel], [StartDate], [EndDate], [OrderStatus])
+	VALUES
+(1, 3, 2, 'FULL', '1988-09-27', '1988-10-27', 'Complete'),
+(2, 3, 3, 'HALF', '2022-05-27', '2022-10-15', 'Alieve'),
+(3, 1, 1, 'EMPTY', '1989-12-27', '1990-11-05', 'Complete')
+
+
+SELECT * FROM [Categories]
+SELECT * FROM [Cars]
+SELECT * FROM [Employees]
+SELECT * FROM [Customers]
+SELECT * FROM [RentalOrders]
+
+
+-- Problem 15.	Hotel Database
+
+CREATE TABLE [Employees](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[FirstName] NVARCHAR(25) NOT NULL,
+	[LastName] NVARCHAR(25) NOT NULL,
+	[Title] NVARCHAR(10),
+	[Notes] TEXT
+)
+
+CREATE TABLE [Customers](
+	[Accountnumber] DECIMAL(10,0) PRIMARY KEY NOT NULL,
+	[FirstName] NVARCHAR(15) NOT NULL,
+	[LastName] NVARCHAR(15) NOT NULL,
+	[PhoneNumber] DECIMAL(10,0) NOT NULL,
+	[EmergencyName] NVARCHAR(25),
+	[EmergencyNumber] DECIMAL(10,0),
+	[Notes] TEXT
+)
+
+CREATE TABLE [RoomStatus](
+	[RoomStatus] NVARCHAR(10) PRIMARY KEY NOT NULL,
+	[Notes] TEXT
+)
+
+CREATE TABLE [RoomTypes](
+	[RoomType] NVARCHAR(10) PRIMARY KEY NOT NULL,
+	[Notes] TEXT
+)
+
+CREATE TABLE [BedTypes](
+	[BedType] NVARCHAR(10) PRIMARY KEY NOT NULL,
+	[Notes] TEXT
+)
+
+CREATE TABLE [Rooms](
+	[RoomNumber] SMALLINT PRIMARY KEY NOT NULL,
+	[RoomType] NVARCHAR(10) FOREIGN KEY REFERENCES [RoomTypes]([RoomType]),
+	[BedType] NVARCHAR(10) FOREIGN KEY REFERENCES [BedTypes]([BedType]),
+	[Rate] DECIMAL(7,2) NOT NULL,
+	[RoomStatus] NVARCHAR(10) FOREIGN KEY REFERENCES [RoomStatus]([RoomStatus]),
+	[Notes] TEXT
+)
+
+CREATE TABLE [Payments](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[EmployeeId] INT FOREIGN KEY REFERENCES [Employees]([Id]),
+	[PaymentDate] DATE,
+	[AccountNumber] DECIMAL(10,0) FOREIGN KEY REFERENCES [Customers]([AccountNumber]),
+	[FirstDateOccupied] DATE NOT NULL,
+	[LastDateOccupied] DATE NOT NULL,
+	[TotalDays] DECIMAL(4,0),
+	[AmountCharged] DECIMAL(7,2),
+	[TaxRate] DECIMAL(4,2),
+	[TaxAmount] DECIMAL(7,2),
+	[PaymentTotal] DECIMAL(7,2),
+	[Notes] TEXT
+)
+
+CREATE TABLE [Occupancies](
+	[Id] INT PRIMARY KEY IDENTITY,
+	[EmployeeId] INT FOREIGN KEY REFERENCES [Employees]([Id]),
+	[DateOccupied] DATE NOT NULL,
+	[AccountNumber] DECIMAL(10,0) FOREIGN KEY REFERENCES [Customers]([AccountNumber]),
+	[RoomNumber] SMALLINT FOREIGN KEY REFERENCES [Rooms]([RoomNumber]),
+	[RateApplied] DECIMAL(5,2),
+	[PhoneCharge] DECIMAL(5,2),
+	[Notes] TEXT
+)
+
+INSERT INTO [Employees]([FirstName], [LastName])
+	VALUES
+('Petar', 'Ivanov'),
+('Stoyan', 'Georgiev'),
+('Ivan', 'Petrov')
+
+INSERT INTO [Customers]([AccountNumber], [FirstName], [LastName], [PhoneNumber])
+	VALUES
+(1234567890, 'Petar', 'Ivanov', 0886656814),
+(1234667890, 'Stoyan', 'Georgiev', 0685456814),
+(1234567990, 'Ivan', 'Petrov', 0886855681)
+
+INSERT INTO [RoomStatus]([RoomStatus])
+	VALUES
+('Available'),
+('occupated'),
+('Cleening')
+
+INSERT INTO [RoomTypes]([RoomType])
+	VALUES
+('Double'),
+('Single'),
+('Famaly')
+
+INSERT INTO [BedTypes]([BedType])
+	VALUES
+('Double'),
+('KingSize'),
+('Single')
+
+INSERT INTO [Rooms]([RoomNumber], [RoomType], [BedType], [Rate], [RoomStatus])
+	VALUES
+(122, 'Double', 'Double', 25.50, 'Available'),
+(132, 'Double', 'Single', 15.50, 'occupated'),
+(322, 'Double', 'KingSize', 45.50, 'Cleening')
+
+INSERT INTO [Payments]([EmployeeId], [AccountNumber], [PaymentDate], [FirstDateOccupied], [LastDateOccupied])
+	VALUES
+(1, 1234567890, '2020-05-27', '2022-05-27', '2022-09-27'),
+(2, 1234667890, '2021-05-27', '2022-06-15', '2022-09-01'),
+(3, 1234567990, '2021-06-27', '2022-09-27', '2023-01-15')
+
+INSERT INTO [Occupancies]([EmployeeId], [DateOccupied], [AccountNumber], [RoomNumber])
+	VALUES
+(1, '2022-05-27', 1234567890, 122),
+(2, '2022-06-27', 1234667890, 132),
+(3, '2022-09-27', 1234567990, 322)
+
+
+SELECT * FROM [Employees]
+SELECT * FROM [Customers]
+SELECT * FROM [RoomStatus]
+SELECT * FROM [RoomTypes]
+SELECT * FROM [BedTypes]
+SELECT * FROM [Rooms]
+SELECT * FROM [Payments]
+SELECT * FROM [Occupancies]
+
+--Problem 16.	Create SoftUni Database
+
+
+
+
+--Problem 19.	Basic Select All Fields
+
+SELECT * FROM [Towns]
+SELECT * FROM [Departments]
+SELECT * FROM [Employees]
+
+--Problem 20.	Basic Select All Fields and Order Them
+
+SELECT * FROM [Towns] ORDER BY [Name] ASC;
+SELECT * FROM [Departments] ORDER BY [Name] ASC;
+SELECT * FROM [Employees] ORDER BY [Salary] DESC;
+
+--Problem 21.	Basic Select Some Fields
+
+SELECT [Name] FROM [Towns] ORDER BY [Name] ASC;
+SELECT [Name] FROM [Departments] ORDER BY [Name] ASC;
+SELECT [FirstName], [LastName], [JobTitle], [Salary] FROM [Employees] ORDER BY [Salary] DESC;
+
+--Problem 22.	Increase Employees Salary
+
+--CREATE TABLE [Money](
+--	[Id] INT PRIMARY KEY IDENTITY,
+--	[FirstName] NVARCHAR(25) NOT NULL,
+--	[LastName] NVARCHAR(25) NOT NULL,
+--	[Salary] DECIMAL(7, 2),
+--	[Notes] TEXT
+--)
+
+--INSERT INTO [Money]([FirstName], [LastName], [Salary])
+--	VALUES
+--('Double', 'GFU', 25.25),
+--('Single', 'UGDSAF', 37.25),
+--('Famaly', 'JHUFALHD', 45.78)
+
+
+UPDATE [Employees]
+	SET [Salary] = [Salary] + ([Salary] * 0.1)
+
+SELECT [Salary] FROM [Employees]
+
+
+--Problem 23.	Decrease Tax Rate
+
+UPDATE [Payments]
+	SET [TaxRate] = [TaxRate] - ([TaxRate] * 0.03)
+
+SELECT [TaxRate] FROM [Payments]
+
+--Problem 24.	Delete All Records
+
+
+TRUNCATE TABLE [Occupancies]
+
+
+-- RANAMING COLUNM
+EXEC sp_RENAME 'Rooms.LastName', 'BedType'
