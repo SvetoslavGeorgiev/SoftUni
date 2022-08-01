@@ -103,3 +103,125 @@ SELECT [FirstName], [LastName]
 
 --15.	Sort Employees Table
 
+
+SELECT * 
+	FROM [Employees]
+	ORDER BY [Salary] DESC, [FirstName], [LastName] DESC, [MiddleName]
+
+--16.	Create View Employees with Salaries
+GO
+
+CREATE VIEW [V_EmployeesSalaries] 
+	AS
+    SELECT [FirstName], [LastName], [Salary]
+	FROM [Employees]
+ 
+GO
+
+SELECT * FROM [V_EmployeesSalaries]
+
+--17.	Create View Employees with Job Titles
+
+GO
+
+CREATE VIEW [V_EmployeeNameJobTitle] 
+	AS
+    SELECT CONCAT ([FirstName], ' ', [MiddleName], ' ', [LastName])
+	AS [Full Name],
+		[JobTitle]
+	FROM [Employees]
+ 
+GO
+
+-- SECOND VARIAN BUT EXEMPT SPACE AFTER THE MIDDLENAME IF NULL. AND 'OR ALTER' -> FOR EDITING THE VIEW
+GO
+
+CREATE OR ALTER VIEW [V_EmployeeNameJobTitle] 
+	AS
+    SELECT CONCAT ([FirstName], ' ', [MiddleName] + ' ', [LastName])
+	AS [Full Name],
+		[JobTitle]
+	FROM [Employees]
+ 
+GO
+
+
+SELECT * FROM [V_EmployeeNameJobTitle]
+
+
+--18.	Distinct Job Titles
+
+SELECT DISTINCT [JobTitle]
+  FROM [Employees]
+
+
+--19.	Find First 10 Started Projects
+
+
+SELECT TOP (10) * 
+	FROM [Projects]
+	ORDER BY [StartDate], [Name]
+
+
+--20.	Last 7 Hired Employees
+
+SELECT TOP (7) [FirstName], [LastName], [HireDate]
+	FROM [Employees]
+	ORDER BY [HireDate] DESC
+
+--21.	Increase Salaries
+
+
+UPDATE [Employees]
+	SET [Salary] += ([Salary] * 0.12)
+	WHERE [DepartmentID] IN (1, 2, 4, 11)
+
+SELECT [Salary] FROM [Employees]
+
+--22.	All Mountain Peaks
+
+USE [Geography]
+
+SELECT [PeakName]
+  FROM [Peaks]
+  ORDER BY [PeakName]
+
+
+--23.	Biggest Countries by Population
+
+
+SELECT *
+ FROM [Continents]
+
+GO
+
+SELECT TOP (30) [CountryName], [Population]
+	FROM [Countries]
+	WHERE [ContinentCode] = 'EU'
+	ORDER BY [Population] DESC
+
+GO
+
+--24.	*Countries and Currency (Euro / Not Euro)
+
+
+GO
+   SELECT [CountryName], [CountryCode], 
+        CASE
+		   WHEN [CurrencyCode] = 'EUR' THEN 'Euro'
+		   ELSE 'Not Euro'
+		END AS [Currency]
+     FROM [Countries]
+ORDER BY [CountryName]
+
+GO
+
+
+--25.	All Diablo Characters
+
+
+USE [Diablo]
+
+  SELECT [Name]
+    FROM [Characters]
+ORDER BY [Name]
