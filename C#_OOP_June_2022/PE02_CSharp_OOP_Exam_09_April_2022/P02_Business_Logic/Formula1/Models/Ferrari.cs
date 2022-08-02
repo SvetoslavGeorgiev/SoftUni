@@ -6,7 +6,7 @@
 
     public class Ferrari : FormulaOneCar
     {
-        public Ferrari(string model, int horcepower, double engineDisplacement) : base(model, horcepower, engineDisplacement)
+        public Ferrari(string model, int horsepower, double engineDisplacement) : base(model, horsepower, engineDisplacement)
         {
         }
     }
