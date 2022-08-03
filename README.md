@@ -832,21 +832,12 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S13_Unit_Testing_Exercise/CarManager.Tests">P03_CarManager_Tests</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S13_Unit_Testing_Exercise/FightingArena.Tests">P03_FightingArena_Tests</a>
   </details>
-<!--
   <details>
   <summary>
-👈🏻 XIV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise">S14_Generics_Exercise</a> - Seventh lecture: Exercise
+👈🏻 XIV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S14_Mocking_and_Test_Driven_Development_Lab">S14_Mocking_and_Test_Driven_Development_Lab</a> - Eight lecture
   </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P01_Generic_Box_of_String">P01_Generic_Box_of_String</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P02_Generic_Box_of_Integer">P02_Generic_Box_of_Integer</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P03_Generic_Swap_Method_String">P03_Generic_Swap_Method_String</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P04_Generic_Swap_Method_Integer">P04_Generic_Swap_Method_Integer</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P05_Generic_Count_Method_String">P05_Generic_Count_Method_String</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P06_Generic_Count_Method_Double">P06_Generic_Count_Method_Double</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P07_Tuple">P07_Tuple</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/S14_Generics_Exercise/P08_Threeuple">P08_Threeuple</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/S14_Mocking_and_Test_Driven_Development_Lab/FakeAxeAndDummy.Tests">P01_FakeAxeAndDummy.Tests</a>
  </details>
- -->
 </details>
 
 ## Basics Curriculum with PYTHON
@@ -1069,14 +1060,20 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE04_CSharp_OOP_Exam_11_December_2021/P02_Business_Logic">P02_Business_Logic</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE04_CSharp_OOP_Exam_11_December_2021/P03_Unit_Tests">P03_Unit_Tests</a>
   </details>
-<!--
   <details>
   <summary>
-👈🏻 V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Exam_15_August_2021">PE05_CSharp_OOP_Exam_15_August_2021</a>
+👈🏻 V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Retake_Exam_22_August_2021">PE05_CSharp_OOP_Retake_Exam_22_August_2021</a>
   </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Exam_15_August_2021/P01_Structure">P01_Structure</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Exam_15_August_2021/P02_Business_Logic">P02_Business_Logic</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Exam_15_August_2021/P03_Unit_Tests">P03_Unit_Tests</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Retake_Exam_22_August_2021/P01_Structure">P01_Structure</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Retake_Exam_22_August_2021/P02_Business_Logic">P02_Business_Logic</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE05_CSharp_OOP_Retake_Exam_22_August_2021/P03_Unit_Tests">P03_Unit_Tests</a>
   </details>
--->
+<details>
+  <summary>
+👈🏻 VI - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE06_CSharp_OOP_Exam_15_August_2021">PE06_CSharp_OOP_Exam_15_August_2021</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE06_CSharp_OOP_Exam_15_August_2021/P01_Structure">P01_Structure</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE06_CSharp_OOP_Exam_15_August_2021/P02_Business_Logic">P02_Business_Logic</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE06_CSharp_OOP_Exam_15_August_2021/P03_Unit_Tests">P03_Unit_Tests</a>
+  </details>
 </details>
