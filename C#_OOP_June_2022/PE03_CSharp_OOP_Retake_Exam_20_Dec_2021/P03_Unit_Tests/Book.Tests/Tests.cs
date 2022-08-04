@@ -13,7 +13,7 @@
         public void ConstructorCheckWithValideData()
         {
 
-            var book = new Book("Angels adn Demons", "Dan Brown");
+            var book = new Book("Angels and Demons", "Dan Brown");
 
             Assert.IsNotNull(book);
             Assert.AreEqual(0, book.FootnoteCount);
@@ -36,8 +36,8 @@
         {
 
 
-            Assert.Throws<ArgumentException>(() => new Book("Angels adn Demons", null));
-            Assert.Throws<ArgumentException>(() => new Book("Angels adn Demons", ""));
+            Assert.Throws<ArgumentException>(() => new Book("Angels and Demons", null));
+            Assert.Throws<ArgumentException>(() => new Book("Angels and Demons", ""));
 
         }
 
@@ -45,7 +45,7 @@
         [Test]
         public void AddFootnoteShouldChangeTheCount()
         {
-            var book = new Book("Angels adn Demons", "Dan Brown");
+            var book = new Book("Angels and Demons", "Dan Brown");
 
             book.AddFootnote(1, "FirstFootNote");
 
@@ -57,7 +57,7 @@
         [Test]
         public void AddFootnoteShouldThrowInvalidOperationExceptionIfNumberOfTheNoteExists()
         {
-            var book = new Book("Angels adn Demons", "Dan Brown");
+            var book = new Book("Angels and Demons", "Dan Brown");
 
             book.AddFootnote(1, "FirstFootNote");
 
@@ -68,7 +68,7 @@
         [Test]
         public void FindFootnoteShouldThrowInvalidOperationExceptionIfNumberOfTheNoteDoesntExists()
         {
-            var book = new Book("Angels adn Demons", "Dan Brown");
+            var book = new Book("Angels and Demons", "Dan Brown");
 
             book.AddFootnote(1, "FirstFootNote");
 
@@ -79,7 +79,7 @@
         [Test]
         public void FindFootnoteShouldReturnCorrectMessageIfNumberOfTheNoteExists()
         {
-            var book = new Book("Angels adn Demons", "Dan Brown");
+            var book = new Book("Angels and Demons", "Dan Brown");
 
             book.AddFootnote(1, "FirstFootNote");
 
@@ -92,7 +92,7 @@
         [Test]
         public void AlterFootnoteShouldReturnCorrectMessageIfNumberOfTheNoteExists()
         {
-            var book = new Book("Angels adn Demons", "Dan Brown");
+            var book = new Book("Angels and Demons", "Dan Brown");
 
             book.AddFootnote(1, "FirstFootNote");
 
@@ -107,7 +107,7 @@
         [Test]
         public void AlterFootnoteShouldThrowInvalidOperationExceptionIfNumberOfTheNoteNotExists()
         {
-            var book = new Book("Angels adn Demons", "Dan Brown");
+            var book = new Book("Angels and Demons", "Dan Brown");
 
             book.AddFootnote(1, "FirstFootNote");
 
