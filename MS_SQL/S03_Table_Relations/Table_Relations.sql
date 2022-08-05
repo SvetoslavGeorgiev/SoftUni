@@ -100,6 +100,66 @@ INSERT INTO [StudentsExams]([StudentID],[ExamID])
 
 --Problem 4.	Self-Referencing 
 
+CREATE TABLE [Teachers](
+	[TeacherID] INT PRIMARY KEY IDENTITY(101,1),
+	[Name] NVARCHAR(15) NOT NULL,
+	[ManagerID] INT REFERENCES [Teachers]([TeacherID])
+)
+
+
+INSERT INTO [Teachers]([Name], [ManagerID])
+	VALUES
+('John', Null),
+('Maya', 106),
+('Silvia', 106),
+('Ted', 105),
+('Mark', 101),
+('Greta', 101)
+
+
+--Problem 5.	Online Store Database
+
+CREATE DATABASE [OnlineStore]
+
+USE [OnlineStore]
+
+CREATE TABLE [Cities](
+	[CityID] INT PRIMARY KEY IDENTITY,
+	[Name] VARCHAR(50) NOT NULL
+)
+
+CREATE TABLE [Customers](
+	[CustomerID] INT PRIMARY KEY IDENTITY,
+	[Name] VARCHAR(50) NOT NULL,
+	[Birthday] DATE,
+	[CityID] INT FOREIGN KEY REFERENCES [Cities]([CityID])
+)
+
+CREATE TABLE [Orders](
+	[OrderID] INT PRIMARY KEY IDENTITY,
+	[CustomerID] INT FOREIGN KEY REFERENCES [Customers]([CustomerID])
+)
+
+CREATE TABLE [ItemTypes](
+	[ItemTypeID] INT PRIMARY KEY IDENTITY,
+	[Name] VARCHAR(50) NOT NULL
+)
+
+CREATE TABLE [Items](
+	[ItemID] INT PRIMARY KEY IDENTITY,
+	[Name] VARCHAR(50) NOT NULL,
+	[ItemsTypeID] INT FOREIGN KEY REFERENCES [ItemTypes]([ItemTypeID])
+)
+
+CREATE TABLE [OrderItems](
+	[OrderID] INT FOREIGN KEY REFERENCES [Orders]([OrderID]),
+	[ItemID] INT FOREIGN KEY REFERENCES [Items]([ItemID])
+
+	CONSTRAINT PK_Order_Item PRIMARY KEY ([OrderID], [ItemID])
+)
+
+
+
 
 
 --EXTRA BIT
