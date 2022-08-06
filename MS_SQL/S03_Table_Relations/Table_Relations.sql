@@ -148,19 +148,71 @@ CREATE TABLE [ItemTypes](
 CREATE TABLE [Items](
 	[ItemID] INT PRIMARY KEY IDENTITY,
 	[Name] VARCHAR(50) NOT NULL,
-	[ItemsTypeID] INT FOREIGN KEY REFERENCES [ItemTypes]([ItemTypeID])
+	[ItemTypeID] INT FOREIGN KEY REFERENCES [ItemTypes]([ItemTypeID])
 )
 
 CREATE TABLE [OrderItems](
 	[OrderID] INT FOREIGN KEY REFERENCES [Orders]([OrderID]),
 	[ItemID] INT FOREIGN KEY REFERENCES [Items]([ItemID])
 
-	CONSTRAINT PK_Order_Item PRIMARY KEY ([OrderID], [ItemID])
+	CONSTRAINT PK_Order_Item PRIMARY KEY ([OrderID], [ItemID]) --or like this without name: PRIMARY KEY ([OrderID], [ItemID])
 )
 
+--Problem 6.	University Database
+
+CREATE DATABASE [University]
+
+USE [University]
+
+CREATE TABLE [Majors](
+	[MajorID] INT PRIMARY KEY IDENTITY,
+	[Name] VARCHAR(50) NOT NULL
+)
+
+CREATE TABLE [Students](
+	[StudentID] INT PRIMARY KEY IDENTITY,
+	[StudentNumber] DECIMAL(10,0),
+	[StudentName] VARCHAR(50) NOT NULL,
+	[MajorID] INT REFERENCES [Majors]([MajorID])
+)
+
+CREATE TABLE [Payments](
+	[PaymentID] INT PRIMARY KEY IDENTITY,
+	[PaymentDate] DATETIME2,
+	[PaymentAmount] DECIMAL(7,2),
+	[StudentID] INT REFERENCES [Students]([StudentID])
+)
+
+CREATE TABLE [Subjects](
+	[SubjectID] INT PRIMARY KEY IDENTITY,
+	[SubjectName] VARCHAR(50) NOT NULL
+)
+
+CREATE TABLE [Agenda](
+	[StudentID] INT REFERENCES [Students]([StudentID]),
+	[SubjectID] INT REFERENCES [Subjects]([SubjectID])
+
+	PRIMARY KEY ([StudentID], [SubjectID])
+)
+
+--Problem 9.	*Peaks in Rila
+
+   SELECT [m].[MountainRange], [p].[PeakName], [p].[Elevation]
+     FROM [Mountains] AS [m]
+LEFT JOIN [Peaks]  AS [p]
+	   ON [p].[MountainID] = [m].[Id]
+    WHERE [MountainRange] = 'Rila'
+ ORDER BY [p].[Elevation] DESC
 
 
+-- SECOND VARIANT
 
+    SELECT [Mountains].[MountainRange], [PeakName], [Elevation]
+      FROM [Peaks]
+INNER JOIN [Mountains] 
+        ON [Mountains].[Id] = [Peaks].[MountainId]
+     WHERE [Mountains].[MountainRange] = 'Rila'
+  ORDER BY [Elevation] DESC
 
 --EXTRA BIT
 SELECT *
