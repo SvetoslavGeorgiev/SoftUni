@@ -11,7 +11,7 @@
     {
         public string Fight(ICollection<IHero> players)
         {
-            var knigths = new List<Knight>();
+            var knights = new List<Knight>();
             var barbarians = new List<Barbarian>();
 
 
@@ -20,7 +20,7 @@
                 if (hero is Knight && hero.Weapon != null && hero.IsAlive)
                 {
 
-                    knigths.Add(hero as Knight);
+                    knights.Add(hero as Knight);
 
                 }
                 else if (hero is Barbarian && hero.Weapon != null && hero.IsAlive)
@@ -31,10 +31,10 @@
             }
 
             var startBattle = false;
-            while(knigths.Any() && barbarians.Any())
+            while(knights.Any() && barbarians.Any())
             {
                 startBattle = true;
-                foreach (var knight in knigths)
+                foreach (var knight in knights)
                 {
 
                     foreach (var barbarian in barbarians)
@@ -50,7 +50,7 @@
                 foreach (var barbarian in barbarians)
                 {
 
-                    foreach (var knight in knigths)
+                    foreach (var knight in knights)
                     {
 
                         if (barbarian.IsAlive && knight.IsAlive)
@@ -60,7 +60,7 @@
                     }
                 }
 
-                if (knigths.All(x => x.IsAlive == false))
+                if (knights.All(x => x.IsAlive == false))
                 {
                     break;
                 }
@@ -73,10 +73,10 @@
 
             if (startBattle)
             {
-                if (knigths.Any(x => x.IsAlive))
+                if (knights.Any(x => x.IsAlive))
                 {
 
-                    return $"The knights took {knigths.Where(x => !x.IsAlive).ToList().Count} casualties but won the battle.";
+                    return $"The knights took {knights.Where(x => !x.IsAlive).ToList().Count} casualties but won the battle.";
                 }
 
                 return $"The barbarians took {barbarians.Where(x => !x.IsAlive).ToList().Count} casualties but won the battle.";
