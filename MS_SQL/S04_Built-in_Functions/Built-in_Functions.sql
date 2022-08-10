@@ -74,6 +74,7 @@ SELECT [FirstName], [LastName]
 
 
 
+
 --Problem 11.	Find All Employees with Rank 2 *
 SELECT *
 FROM (
@@ -86,3 +87,6 @@ FROM (
        WHERE [Salary] BETWEEN 10000 AND 50000) AS MyTable
 WHERE Rank = 2
 ORDER BY [Salary] DESC
+
+
+git commit -m "new queries adeed to S04_Built-in_Functions"
