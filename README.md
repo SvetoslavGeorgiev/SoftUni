@@ -848,8 +848,8 @@
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S01_Databases_Introduction/Databases_Introduction.sql">S01_Databases_Introduction</a> - First lecture
 <br>&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S02_CRUD/CRUD_Exercises.sql">S02_CRUD</a> - Second lecture
-<br>&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/MS_SQL/S03_Table_Relations">S03_Table_Relations</a> - Third lecture
-<br>&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/MS_SQL/S04_Built-in_Functions">S04_Built-in_Functions</a> - Fourth lecture
+<br>&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S03_Table_Relations/Table_Relations.sql">S03_Table_Relations</a> - Third lecture
+<br>&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S04_Built-in_Functions/Built-in_Functions.sql">S04_Built-in_Functions</a> - Fourth lecture
 </details>
 
 ## Basics Curriculum with PYTHON
