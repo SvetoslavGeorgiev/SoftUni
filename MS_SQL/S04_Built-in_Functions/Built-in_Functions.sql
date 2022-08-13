@@ -92,4 +92,9 @@ FROM (
 WHERE Rank = 2
 ORDER BY [Salary] DESC
 
+--Problem 12.	 Countries Holding 'A' 
 
+SELECT CountryName AS [Country Name], IsoCode AS [Iso Code] 
+  FROM Countries
+ WHERE LEN(CountryName) - LEN(REPLACE(CountryName,'a','')) >=3
+ ORDER BY [Iso Code]
