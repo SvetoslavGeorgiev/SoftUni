@@ -142,8 +142,8 @@
 
             if (planet1.MilitaryPower == planet2.MilitaryPower)
             {
-                if (planet1.Weapons.Any(x => x.GetType().FullName == nameof(NuclearWeapon)) && planet2.Weapons.Any(x => x.GetType().FullName == nameof(NuclearWeapon)) ||
-                    planet1.Weapons.All(x => x.GetType().FullName != nameof(NuclearWeapon)) && planet2.Weapons.All(x => x.GetType().FullName != nameof(NuclearWeapon)))
+                if (planet1.Weapons.Any(x => x.GetType().Name == nameof(NuclearWeapon)) && planet2.Weapons.Any(x => x.GetType().Name == nameof(NuclearWeapon)) ||
+                    planet1.Weapons.All(x => x.GetType().Name != nameof(NuclearWeapon)) && planet2.Weapons.All(x => x.GetType().Name != nameof(NuclearWeapon)))
                 {
 
                     planet1.Spend(planet1.Budget / 2);
@@ -151,7 +151,7 @@
 
                     return String.Format(OutputMessages.NoWinner);
                 }
-                else if (planet1.Weapons.Any(x => x.GetType().FullName == nameof(NuclearWeapon)))
+                else if (planet1.Weapons.Any(x => x.GetType().Name == nameof(NuclearWeapon)))
                 {
                     planet1.Spend(planet1.Budget / 2);
                     planet1.Profit(planet2.Budget / 2);
@@ -164,7 +164,7 @@
                 {
                     planet2.Spend(planet2.Budget / 2);
                     planet2.Profit(planet1.Budget / 2);
-                    planet1.Profit(planet2.Army.Sum(x => x.Cost) + planet2.Weapons.Sum(x => x.Price));
+                    planet2.Profit(planet1.Army.Sum(x => x.Cost) + planet1.Weapons.Sum(x => x.Price));
                     planetRepository.RemoveItem(planetOne);
                     return String.Format(OutputMessages.WinnigTheWar, planetTwo, planetOne);
                 }
@@ -182,7 +182,7 @@
             {
                 planet2.Spend(planet2.Budget / 2);
                 planet2.Profit(planet1.Budget / 2);
-                planet1.Profit(planet2.Army.Sum(x => x.Cost) + planet2.Weapons.Sum(x => x.Price));
+                planet2.Profit(planet1.Army.Sum(x => x.Cost) + planet1.Weapons.Sum(x => x.Price));
                 planetRepository.RemoveItem(planetOne);
                 return String.Format(OutputMessages.WinnigTheWar, planetTwo, planetOne);
             }
