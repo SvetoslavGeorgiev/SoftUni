@@ -930,7 +930,19 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022/E01_CSharp_Advanced_Exam_25_06_2022/P03_Renovators">P03_Renovators</a>
   </details>
 </details>
-
+<details>
+  <summary>
+👈🏻 CLICK HERE &#160;&#160;OOP Exam
+  </summary>
+  <details>
+  <summary>
+👈🏻 I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/E01_CSharp_OOP_Exam_14_Aug_2022">OOP_Exam</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/E01_CSharp_OOP_Exam_14_Aug_2022/P01_Structure">P01_Structure</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/E01_CSharp_OOP_Exam_14_Aug_2022/P02_Business_Logic">P02_Business_Logic</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/E01_CSharp_OOP_Exam_14_Aug_2022/P03_Unit_Tests">P03_Unit_Tests</a>
+  </details>
+</details>
 
 ## EXAMS Practice
 
