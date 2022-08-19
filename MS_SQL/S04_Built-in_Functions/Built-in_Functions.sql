@@ -108,7 +108,7 @@ JOIN Rivers
 ON RIGHT(Peaks.PeakName,1) = LEFT(Rivers.RiverName,1)
 ORDER BY Mix
 
---14.   Games From 2011 and 2012 Year
+--Problem 14.   Games From 2011 and 2012 Year
 
 SELECT TOP 50 Name, FORMAT(Start,'yyyy-MM-dd') AS [Start Date] 
   FROM Games
