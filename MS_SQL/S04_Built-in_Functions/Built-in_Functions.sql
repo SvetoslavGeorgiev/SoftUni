@@ -114,3 +114,10 @@ SELECT TOP 50 Name, FORMAT(Start,'yyyy-MM-dd') AS [Start Date]
   FROM Games
  WHERE (SELECT YEAR(Start)) IN (2011,2012)
  ORDER BY [Start Date], Name
+
+--Problem 15. User Email Providers
+
+SELECT Username, SUBSTRING(Email,CHARINDEX('@',Email,1)+1,LEN(Email)) 
+AS 'Email Provider' 
+FROM Users
+ORDER BY [Email Provider], Username
