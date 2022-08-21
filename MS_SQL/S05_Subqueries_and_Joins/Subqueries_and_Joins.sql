@@ -30,6 +30,9 @@ SELECT TOP(50) [FirstName], [LastName], [t].[Name] AS [Town], [a].[AddressText]
    WHERE [d].[Name] IN ('Sales')
 ORDER BY [EmployeeID]
 
+--Problem 4.	Employee Departments
+
+
 
 
 
