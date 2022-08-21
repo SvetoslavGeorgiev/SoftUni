@@ -96,15 +96,27 @@ SELECT [e].[EmployeeID], [e].[FirstName],
 --Problem 9.	Employee Manager
 
 
-  SELECT [e].[EmployeeID], [e].[FirstName], [e].[ManagerID], [m].[FirstName] AS [ManagerName]
-	    FROM [Employees] AS [e]
-  INNER JOIN [Employees] AS [m]
-	  ON [e].[ManagerID] = [m].[EmployeeID]
-   WHERE [e].[ManagerID] IN (3, 7)
-ORDER BY [e].[EmployeeID]
+    SELECT [e].[EmployeeID], [e].[FirstName], [e].[ManagerID], [m].[FirstName] AS [ManagerName]
+      FROM [Employees] AS [e]
+INNER JOIN [Employees] AS [m]
+        ON [e].[ManagerID] = [m].[EmployeeID]
+     WHERE [e].[ManagerID] IN (3, 7)
+  ORDER BY [e].[EmployeeID]
 
 
 --Problem 10. Employee Summary
 
+SELECT TOP(50) [e].[EmployeeID], CONCAT([e].[FirstName], ' ', [e].[LastName]) AS [EmployeeName], CONCAT([m].[FirstName], ' ', [m].[LastName]) AS [ManagerName], [d].[Name]
+	      FROM [Employees] AS [e]
+    INNER JOIN [Employees] AS [m]
+	        ON [e].[ManagerID] = [m].[EmployeeID]
+     LEFT JOIN [Departments] AS [d]
+            ON [e].[DepartmentID] = [d].[DepartmentID]
+      ORDER BY [e].[EmployeeID]
 
+
+
+
+SELECT *
+FROM [Employees]
 
