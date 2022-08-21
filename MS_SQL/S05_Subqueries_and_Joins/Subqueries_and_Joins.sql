@@ -78,7 +78,7 @@ SELECT TOP(5) [e].[EmployeeID], [e].[FirstName], [p].[Name] AS [ProjectName]
 	 ORDER BY [e].[EmployeeID]
 
 
---8.	Employee 24
+--8.Problem	Employee 24
 
 SELECT [e].[EmployeeID], [e].[FirstName],
 	   CASE
@@ -92,4 +92,19 @@ SELECT [e].[EmployeeID], [e].[FirstName],
     ON [ep].[ProjectID] = [p].[ProjectID]
  WHERE [e].[EmployeeID] IN (24)
    
+
+--Problem 9.	Employee Manager
+
+
+  SELECT [e].[EmployeeID], [e].[FirstName], [e].[ManagerID], [m].[FirstName] AS [ManagerName]
+	    FROM [Employees] AS [e]
+  INNER JOIN [Employees] AS [m]
+	  ON [e].[ManagerID] = [m].[EmployeeID]
+   WHERE [e].[ManagerID] IN (3, 7)
+ORDER BY [e].[EmployeeID]
+
+
+--Problem 10. Employee Summary
+
+
 
