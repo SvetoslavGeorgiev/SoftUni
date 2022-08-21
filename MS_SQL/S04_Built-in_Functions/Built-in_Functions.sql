@@ -168,7 +168,17 @@ ORDER BY [Username]
 		   ELSE 'Extra Long'
 	   END AS [Duration]
      FROM [Games]
- ORDER BY [Name], [Duration]
+ ORDER BY [Name], [Duration], [Part of the Day]
+
+
+ --Problem 18.	 Orders Table
+
+
+SELECT [ProductName], [OrderDate], 
+    DATEADD(DAY, 3, [OrderDate]) AS [Pay Due],
+    DATEADD(MONTH, 1, [OrderDate]) AS [Deliver Due]
+    FROM Orders
+
 
 
 
