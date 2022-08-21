@@ -77,3 +77,19 @@ SELECT TOP(5) [e].[EmployeeID], [e].[FirstName], [p].[Name] AS [ProjectName]
 	    WHERE [p].[StartDate] > '2002-08-13' AND [p].[EndDate] IS NULL
 	 ORDER BY [e].[EmployeeID]
 
+
+--8.	Employee 24
+
+SELECT [e].[EmployeeID], [e].[FirstName],
+	   CASE
+		      WHEN DATEPART(YEAR, [p].[StartDate]) > '2004' THEN NULL
+			  ELSE [p].[Name]
+	   END AS [ProjectName]
+  FROM [Employees] AS [e]
+  JOIN [EmployeesProjects] AS [ep]
+    ON [e].[EmployeeID] = [ep].[EmployeeID]
+  JOIN [Projects] AS [p]
+    ON [ep].[ProjectID] = [p].[ProjectID]
+ WHERE [e].[EmployeeID] IN (24)
+   
+
