@@ -2,7 +2,7 @@
 
 SELECT TOP(5) [EmployeeID], [JobTitle], [e].[AddressID], [a].[AddressText]
 	FROM [Employees] AS [e]
-	JOIN [Addresses] AS [a]
+	LEFT JOIN [Addresses] AS [a]
 	ON [e].[AddressID] = [a].[AddressID]
 	ORDER BY [e].[AddressID]
 
@@ -44,7 +44,13 @@ SELECT TOP(5) [EmployeeID], [FirstName], [Salary],
    WHERE [e].[Salary] > 15000
 ORDER BY [d].[DepartmentID]
 
+--Problem 5.	Employees Without Project
 
 
+SELECT TOP(3) [e].[EmployeeID], [FirstName]
+	 FROM [Employees] AS [e]
+LEFT JOIN [EmployeesProjects] AS [ep]
+	   ON [e].[EmployeeID] = [ep].[EmployeeID]
+	WHERE [ep].[ProjectID] IS NULL
 
 
