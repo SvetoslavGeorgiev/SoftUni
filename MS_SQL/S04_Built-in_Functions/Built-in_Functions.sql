@@ -43,6 +43,11 @@ SELECT *
     WHERE [Name] LIKE 'M%' OR [Name] LIKE 'K%' OR [Name] LIKE 'B%' OR [Name] LIKE 'E%'
  ORDER BY [Name]
 
+--SECOND VARIANT
+ SELECT *
+	 FROM [Towns]
+    WHERE [Name] LIKE '[MKBE]%'
+ ORDER BY [Name]
 
 
 --Problem 7.	 Find Towns Not Starting With
@@ -74,50 +79,55 @@ SELECT [FirstName], [LastName]
 
   SELECT [EmployeeID], [FirstName], [LastName], [Salary],
   	   DENSE_RANK() OVER(PARTITION BY [Salary] ORDER BY [EmployeeID])
-  	AS [Rank]
+  	  AS [Rank]
     FROM [Employees]
    WHERE [Salary] BETWEEN 10000 AND 50000
 ORDER BY [Salary] DESC
 
 --Problem 11.	Find All Employees with Rank 2 *
 SELECT *
-FROM (
-       SELECT [EmployeeID],
-              [FirstName],
-              [LastName],
-              [Salary],
-              DENSE_RANK() over (partition by [Salary] ORDER BY [EmployeeID]) AS Rank
-       FROM [Employees]
-       WHERE [Salary] BETWEEN 10000 AND 50000) AS MyTable
-WHERE Rank = 2
-ORDER BY [Salary] DESC
+    FROM (
+         SELECT [EmployeeID],
+                [FirstName],
+                [LastName],
+                [Salary],
+        DENSE_RANK() OVER(PARTITION BY [Salary] ORDER BY [EmployeeID]) 
+		     AS [Rank]
+           FROM [Employees]
+          WHERE [Salary] BETWEEN 10000 AND 50000) AS MyTable
+          WHERE [Rank] = 2
+       ORDER BY [Salary] DESC
 
 --Problem 12.	 Countries Holding 'A' 
 
-SELECT CountryName AS [Country Name], IsoCode AS [Iso Code] 
-  FROM Countries
- WHERE LEN(CountryName) - LEN(REPLACE(CountryName,'a','')) >=3
+   SELECT [CountryName] AS [Country Name], [IsoCode] AS [Iso Code] 
+     FROM [Countries]
+WHERE LEN([CountryName]) - LEN(REPLACE([CountryName],'a','')) >=3
  ORDER BY [Iso Code]
 
 --Problem 13.   Mix of Peak and River Names
 
-SELECT Peaks.PeakName, Rivers.RiverName, 
-LOWER((Peaks.PeakName) + SUBSTRING(Rivers.RiverName,2,LEN(Rivers.Rivername))) AS 'Mix' 
-FROM Peaks
-JOIN Rivers
-ON RIGHT(Peaks.PeakName,1) = LEFT(Rivers.RiverName,1)
-ORDER BY Mix
+  SELECT [PeakName], [RiverName], 
+  LOWER(([PeakName]) + SUBSTRING([RiverName], 2, LEN([Rivername]))) AS 'Mix' 
+    FROM [Peaks]
+    JOIN [Rivers]
+ON RIGHT([PeakName], 1) = LEFT([RiverName], 1)
+ORDER BY [Mix]
 
 --Problem 14.   Games From 2011 and 2012 Year
 
-SELECT TOP 50 Name, FORMAT(Start,'yyyy-MM-dd') AS [Start Date] 
-  FROM Games
- WHERE (SELECT YEAR(Start)) IN (2011,2012)
- ORDER BY [Start Date], Name
+SELECT TOP 50 [Name], FORMAT([Start],'yyyy-MM-dd') AS [Start Date] 
+         FROM [Games]
+         WHERE (SELECT YEAR([Start])) IN (2011,2012)
+     ORDER BY [Start Date], [Name]
 
 --Problem 15. User Email Providers
 
-SELECT Username, SUBSTRING(Email,CHARINDEX('@',Email,1)+1,LEN(Email)) 
-AS 'Email Provider' 
-FROM Users
-ORDER BY [Email Provider], Username
+  SELECT [Username], SUBSTRING([Email], CHARINDEX('@',[Email],1)+1,LEN([Email])) 
+      AS [Email Provider]
+    FROM [Users]
+ORDER BY [Email Provider], [Username]
+
+--Problem 16.	 Get Users with IPAdress Like Pattern
+
+
