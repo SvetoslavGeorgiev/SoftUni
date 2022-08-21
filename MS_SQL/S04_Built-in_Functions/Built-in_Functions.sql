@@ -88,7 +88,7 @@ ORDER BY [Salary] DESC
 SELECT *
     FROM (
          SELECT [EmployeeID], [FirstName], [LastName], [Salary],
-        DENSE_RANK() OVER(PARTITION BY [Salary] ORDER BY [EmployeeID]) 
+         DENSE_RANK() OVER(PARTITION BY [Salary] ORDER BY [EmployeeID]) 
 		     AS [Rank]
            FROM [Employees]
           WHERE [Salary] BETWEEN 10000 AND 50000
@@ -99,19 +99,37 @@ SELECT *
 
 --Problem 12.	 Countries Holding 'A' 
 
-   SELECT [CountryName] AS [Country Name], [IsoCode] AS [Iso Code] 
+   SELECT [CountryName], [IsoCode]
      FROM [Countries]
-WHERE LEN([CountryName]) - LEN(REPLACE([CountryName],'a','')) >=3
- ORDER BY [Iso Code]
+    WHERE LEN([CountryName]) - LEN(REPLACE([CountryName],'a','')) >=3
+ ORDER BY [IsoCode]
+
+ --SECOND VARIANT WITH WILD CARDS
+
+   SELECT [CountryName], [IsoCode]
+     FROM [Countries]
+    WHERE LOWER([CountryName]) LIKE '%a%a%a%'
+ ORDER BY [IsoCode]
 
 --Problem 13.   Mix of Peak and River Names
 
   SELECT [PeakName], [RiverName], 
-  LOWER(([PeakName]) + SUBSTRING([RiverName], 2, LEN([Rivername]))) AS 'Mix' 
+         LOWER(([PeakName]) + SUBSTRING([RiverName], 2, LEN([Rivername]))) AS 'Mix' 
     FROM [Peaks]
     JOIN [Rivers]
 ON RIGHT([PeakName], 1) = LEFT([RiverName], 1)
 ORDER BY [Mix]
+
+--SECOND VARIANT WITHOUT JOIN
+
+  SELECT [p].[PeakName], [r].[RiverName], 
+         LOWER(CONCAT(LEFT([p].[PeakName], LEN([p].[PeakName]) - 1), [r].[Rivername])) 
+	  AS [Mix] 
+    FROM [Peaks] AS [p],
+		 [Rivers] AS [r]
+   WHERE RIGHT([p].[PeakName], 1) = LEFT([r].[RiverName], 1)
+ORDER BY [Mix]
+
 
 --Problem 14.   Games From 2011 and 2012 Year
 
@@ -122,11 +140,36 @@ SELECT TOP 50 [Name], FORMAT([Start],'yyyy-MM-dd') AS [Start Date]
 
 --Problem 15. User Email Providers
 
-  SELECT [Username], SUBSTRING([Email], CHARINDEX('@',[Email],1)+1,LEN([Email])) 
+  SELECT [Username], SUBSTRING([Email], CHARINDEX('@', [Email], 1) + 1, LEN([Email])) 
       AS [Email Provider]
     FROM [Users]
 ORDER BY [Email Provider], [Username]
 
 --Problem 16.	 Get Users with IPAdress Like Pattern
+
+  SELECT [Username], [IpAddress]
+	FROM [Users]
+   WHERE [IpAddress] LIKE '___.1_%._%.___'
+ORDER BY [Username]
+
+
+--Problem 17.	 Show All Games with Duration and Part of the Day
+
+   SELECT [Name],
+	   CASE
+		   WHEN DATEPART(HOUR, [Start]) BETWEEN 0 AND 11 THEN 'Morning'
+		   WHEN DATEPART(HOUR, [Start]) BETWEEN 12 AND 17 THEN 'Afternoon'
+		   ELSE 'Evening'
+	   END AS [Part of the Day],
+	   CASE
+		   WHEN [Duration] BETWEEN 0 AND 3 THEN 'Extra Short'
+		   WHEN [Duration] BETWEEN 4 AND 6 THEN 'Short'
+		   WHEN [Duration] > 6 THEN 'Long'
+		   ELSE 'Extra Long'
+	   END AS [Duration]
+     FROM [Games]
+ ORDER BY [Name], [Duration]
+
+
 
 
