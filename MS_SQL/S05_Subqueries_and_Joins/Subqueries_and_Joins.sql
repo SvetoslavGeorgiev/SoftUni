@@ -115,8 +115,18 @@ SELECT TOP(50) [e].[EmployeeID], CONCAT([e].[FirstName], ' ', [e].[LastName]) AS
       ORDER BY [e].[EmployeeID]
 
 
+--Problem 11. Min Average Salary
+
+SELECT MIN([avg]) AS [MinAverageSalary]
+	FROM (
+	        SELECT AVG([Salary]) AS [avg]
+			      FROM [Employees]
+			  GROUP BY [DepartmentID]
+	     ) AS [AverageSalaries]
+
 
 
 SELECT *
-FROM [Employees]
+   FROM [Employees] AS [e]
+   ORDER BY [DepartmentID]
 
