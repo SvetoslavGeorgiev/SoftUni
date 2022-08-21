@@ -48,9 +48,21 @@ ORDER BY [d].[DepartmentID]
 
 
 SELECT TOP(3) [e].[EmployeeID], [FirstName]
-	 FROM [Employees] AS [e]
-LEFT JOIN [EmployeesProjects] AS [ep]
-	   ON [e].[EmployeeID] = [ep].[EmployeeID]
-	WHERE [ep].[ProjectID] IS NULL
+	     FROM [Employees] AS [e]
+    LEFT JOIN [EmployeesProjects] AS [ep]
+	       ON [e].[EmployeeID] = [ep].[EmployeeID]
+	    WHERE [ep].[ProjectID] IS NULL
+	 ORDER BY [e].[EmployeeID]
+
+
+--Problem 6.	Employees Hired After
+
+   SELECT [FirstName], [LastName], [HireDate], [Name] AS [DeptName]
+     FROM [Employees] AS [e]
+LEFT JOIN [Departments] AS [d]
+	   ON [e].[DepartmentID] = [d].[DepartmentID]
+	WHERE [e].[HireDate] > '1999-01-01'
+      AND [d].[Name] IN ('Sales', 'Finance')
+ ORDER BY [HireDate]
 
 
