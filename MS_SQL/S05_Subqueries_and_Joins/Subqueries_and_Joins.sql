@@ -126,7 +126,39 @@ SELECT MIN([avg]) AS [MinAverageSalary]
 
 
 
+USE [Geography]
+
+--Problem 12. Highest Peaks in Bulgaria
+
+     SELECT [mc].[CountryCode], [m].[MountainRange], [p].[PeakName], [p].[Elevation]
+       FROM [Peaks] AS [p]
+ INNER JOIN [Mountains] AS [m]
+         ON [p].[MountainId] = [m].[Id]
+ INNER JOIN [MountainsCountries] AS [mc]
+         ON [m].[Id] = [mc].[MountainId]
+      WHERE [mc].[CountryCode] = 'BG' AND [p].[Elevation] > 2835
+   ORDER BY [p].[Elevation] DESC
+
+
+--Problem 13. Count Mountain Ranges
+
+
+   SELECT [c].[CountryCode], COUNT([mc].[CountryCode]) AS [MountainRanges]
+     FROM [Countries] AS [c]
+LEFT JOIN [MountainsCountries] AS [mc]
+       ON [c].[CountryCode] = [mc].[CountryCode]
+    WHERE [c].[CountryCode] IN ('BG', 'US', 'RU')
+ GROUP BY [c].[CountryCode]
+
+
 SELECT *
-   FROM [Employees] AS [e]
-   ORDER BY [DepartmentID]
+   FROM [MountainsCountries]
+
+SELECT [cc] AS [MountainRanges]
+   FROM (
+         SELECT COUNT([CountryCode]) AS [cc]
+		 FROM [MountainsCountries]
+		 GROUP BY [CountryCode]
+        ) AS [Mc] 
+	ORDER BY [MountainRanges] DESC
 
