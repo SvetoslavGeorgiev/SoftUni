@@ -163,16 +163,6 @@ SELECT TOP(5) [c].[CountryName], [r].[RiverName]
         WHERE [con].[ContinentName] = 'Africa'
      ORDER BY [c].[CountryName] ASC
 
-SELECT *
-   FROM [MountainsCountries]
-
-SELECT [cc] AS [MountainRanges]
-   FROM (
-         SELECT COUNT([CountryCode]) AS [cc]
-		 FROM [MountainsCountries]
-		 GROUP BY [CountryCode]
-        ) AS [Mc] 
-	ORDER BY [MountainRanges] DESC
 
 
 --Problem 15. Continents and Currencies
@@ -195,3 +185,13 @@ SELECT [OrderedCurrencies].[ContinentCode],
 	        AS [OrderedCurrencies]
             ON [c].[ContinentCode] = [OrderedCurrencies].[ContinentCode]
          WHERE [OrderedCurrencies].Rank = 1
+
+
+--Problem 16. Countries Without any Mountains
+
+   SELECT COUNT([c].[CountryCode]) AS [CountryCode]
+           FROM [Countries] AS [c]
+LEFT OUTER JOIN [MountainsCountries] AS [m] 
+             ON [c].[CountryCode] = [m].[CountryCode]
+          WHERE [m].[MountainId] IS NULL
+
