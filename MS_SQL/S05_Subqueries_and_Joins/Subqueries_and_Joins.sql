@@ -152,18 +152,16 @@ LEFT JOIN [MountainsCountries] AS [mc]
 
 --Problem 14. Countries With or Without Rivers
 
-SELECT TOP 5
-  c.CountryName,
-  r.RiverName
-FROM Countries AS c
-  INNER JOIN Continents AS con
-    ON c.ContinentCode = con.ContinentCode
-  LEFT JOIN CountriesRivers cr
-    ON c.CountryCode = cr.CountryCode
-  LEFT JOIN Rivers r
-    ON cr.RiverId = r.Id
-WHERE con.ContinentName = 'Africa'
-ORDER BY c.CountryName ASC
+SELECT TOP(5) [c].[CountryName], [r].[RiverName]
+         FROM [Countries] AS [c]
+   INNER JOIN [Continents] AS [con]
+           ON [c].[ContinentCode] = [con].[ContinentCode]
+    LEFT JOIN [CountriesRivers] AS [cr]
+           ON [c].[CountryCode] = [cr].[CountryCode]
+    LEFT JOIN [Rivers] AS [r]
+           ON [cr].[RiverId] = [r].[Id]
+        WHERE [con].[ContinentName] = 'Africa'
+     ORDER BY [c].[CountryName] ASC
 
 SELECT *
    FROM [MountainsCountries]
@@ -176,3 +174,24 @@ SELECT [cc] AS [MountainRanges]
         ) AS [Mc] 
 	ORDER BY [MountainRanges] DESC
 
+
+--Problem 15. Continents and Currencies
+
+SELECT [OrderedCurrencies].[ContinentCode],
+	   [OrderedCurrencies].[CurrencyCode],
+	   [OrderedCurrencies].[CurrencyUsage]
+  FROM [Continents] AS [c]
+  JOIN (
+	     SELECT [ContinentCode] AS [ContinentCode],
+	      COUNT([CurrencyCode]) AS [CurrencyUsage],
+	            [CurrencyCode] as [CurrencyCode],
+	            DENSE_RANK() OVER (PARTITION BY [ContinentCode]
+	            ORDER BY COUNT([CurrencyCode]) DESC) 
+	   AS [Rank]
+	 FROM [Countries]
+ GROUP BY [ContinentCode], [CurrencyCode]
+   HAVING COUNT([CurrencyCode]) > 1
+	           )
+	        AS [OrderedCurrencies]
+            ON [c].[ContinentCode] = [OrderedCurrencies].[ContinentCode]
+         WHERE [OrderedCurrencies].Rank = 1
