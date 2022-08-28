@@ -195,23 +195,30 @@ LEFT OUTER JOIN [MountainsCountries] AS [m]
              ON [c].[CountryCode] = [m].[CountryCode]
           WHERE [m].[MountainId] IS NULL
 
---17 Highest Peak and Longest River by Country
+--Problem 17 Highest Peak and Longest River by Country
 
-SELECT TOP(5) c.CountryName, MAX(p.Elevation) AS [HighestPeakElevation], MAX(r.Length) AS [LongestRiverLength]
-FROM Countries AS c
-LEFT OUTER JOIN MountainsCountries AS mc ON c.CountryCode = mc.CountryCode
-LEFT OUTER JOIN Peaks AS p ON p.MountainId = mc.MountainId
-LEFT OUTER JOIN CountriesRivers AS cr ON c.CountryCode = cr.CountryCode
-LEFT OUTER JOIN Rivers AS r ON cr.RiverId = r.Id
-GROUP BY c.CountryName
-ORDER BY [HighestPeakElevation] DESC, [LongestRiverLength] DESC, c.CountryName
+  SELECT TOP(5) [c].[CountryName], MAX([p].[Elevation]) AS [HighestPeakElevation], MAX([r].Length) AS [LongestRiverLength]
+           FROM [Countries] AS [c]
+LEFT OUTER JOIN [MountainsCountries] AS [mc] 
+             ON [c].[CountryCode] = [mc].[CountryCode]
+LEFT OUTER JOIN [Peaks] AS [p] 
+             ON [p].[MountainId] = [mc].[MountainId]
+LEFT OUTER JOIN [CountriesRivers] AS [cr]
+             ON [c].[CountryCode] = [cr].[CountryCode]
+LEFT OUTER JOIN [Rivers] AS [r] ON [cr].[RiverId] = [r].[Id]
+       GROUP BY [c].[CountryName]
+       ORDER BY [HighestPeakElevation] DESC, [LongestRiverLength] DESC, [c].[CountryName]
 
 --Problem 18 Highest Peak Name and Elevation by Country
 
-SELECT TOP (5) WITH TIES c.CountryName, ISNULL(p.PeakName, '(no highest peak)') AS 'HighestPeakName', ISNULL(MAX(p.Elevation), 0) AS 'HighestPeakElevation', ISNULL(m.MountainRange, '(no mountain)')
-FROM Countries AS c
-LEFT JOIN MountainsCountries AS mc ON c.CountryCode = mc.CountryCode
-LEFT JOIN Mountains AS m ON mc.MountainId = m.Id
-LEFT JOIN Peaks AS p ON m.Id = p.MountainId
-GROUP BY c.CountryName, p.PeakName, m.MountainRange
-ORDER BY c.CountryName, p.PeakName
+SELECT TOP (5) WITH TIES [c].[CountryName], ISNULL(p.PeakName, '(no highest peak)') AS [HighestPeakName], 
+              ISNULL(MAX([p].[Elevation]), 0) AS [HighestPeakElevation], ISNULL([m].[MountainRange], '(no mountain)')
+                    FROM [Countries] AS [c]
+               LEFT JOIN [MountainsCountries] AS [mc] 
+			          ON [c].[CountryCode] = [mc].[CountryCode]
+               LEFT JOIN [Mountains] AS [m] 
+			          ON [mc].[MountainId] = [m].[Id]
+               LEFT JOIN [Peaks] AS [p] 
+			          ON [m].[Id]= [p].[MountainId]
+                GROUP BY [c].[CountryName], [p].[PeakName], [m].[MountainRange]
+                ORDER BY [c].[CountryName], [p].[PeakName]
