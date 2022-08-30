@@ -171,10 +171,10 @@ SELECT [OrderedCurrencies].[ContinentCode],
 	   [OrderedCurrencies].[CurrencyCode],
 	   [OrderedCurrencies].[CurrencyUsage]
   FROM [Continents] AS [c]
-  JOIN (
+  LEFT JOIN (
 	     SELECT [ContinentCode] AS [ContinentCode],
 	      COUNT([CurrencyCode]) AS [CurrencyUsage],
-	            [CurrencyCode] as [CurrencyCode],
+	            [CurrencyCode] AS [CurrencyCode],
 	            DENSE_RANK() OVER (PARTITION BY [ContinentCode]
 	            ORDER BY COUNT([CurrencyCode]) DESC) 
 	   AS [Rank]
@@ -197,7 +197,7 @@ LEFT OUTER JOIN [MountainsCountries] AS [m]
 
 --Problem 17 Highest Peak and Longest River by Country
 
-  SELECT TOP(5) [c].[CountryName], MAX([p].[Elevation]) AS [HighestPeakElevation], MAX([r].Length) AS [LongestRiverLength]
+  SELECT TOP(5) [c].[CountryName], MAX([p].[Elevation]) AS [HighestPeakElevation], MAX([r].[Length]) AS [LongestRiverLength]
            FROM [Countries] AS [c]
 LEFT OUTER JOIN [MountainsCountries] AS [mc] 
              ON [c].[CountryCode] = [mc].[CountryCode]
