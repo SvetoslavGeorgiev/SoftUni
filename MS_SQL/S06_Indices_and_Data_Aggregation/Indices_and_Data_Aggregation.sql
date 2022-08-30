@@ -19,3 +19,11 @@ SELECT TOP(1) [MagicWandSize] AS [LongestMagicWand]
   SELECT [DepositGroup], MAX([MagicWandSize]) AS [LongestMagicWand]
     FROM [WizzardDeposits]
 GROUP BY [DepositGroup]
+
+--Problem 4. * Smallest Deposit Group Per Magic Wand Size
+
+SELECT TOP(2) [DepositGroup]
+         FROM [WizzardDeposits]
+     GROUP BY [DepositGroup]
+ ORDER BY AVG([MagicWandSize])
+
