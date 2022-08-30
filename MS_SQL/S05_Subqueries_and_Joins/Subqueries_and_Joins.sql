@@ -205,13 +205,14 @@ LEFT OUTER JOIN [Peaks] AS [p]
              ON [p].[MountainId] = [mc].[MountainId]
 LEFT OUTER JOIN [CountriesRivers] AS [cr]
              ON [c].[CountryCode] = [cr].[CountryCode]
-LEFT OUTER JOIN [Rivers] AS [r] ON [cr].[RiverId] = [r].[Id]
+LEFT OUTER JOIN [Rivers] AS [r] 
+             ON [cr].[RiverId] = [r].[Id]
        GROUP BY [c].[CountryName]
        ORDER BY [HighestPeakElevation] DESC, [LongestRiverLength] DESC, [c].[CountryName]
 
 --Problem 18 Highest Peak Name and Elevation by Country
 
-SELECT TOP (5) WITH TIES [c].[CountryName], ISNULL(p.PeakName, '(no highest peak)') AS [HighestPeakName], 
+SELECT TOP (5) WITH TIES [c].[CountryName], ISNULL([p].[PeakName], '(no highest peak)') AS [HighestPeakName], 
               ISNULL(MAX([p].[Elevation]), 0) AS [HighestPeakElevation], ISNULL([m].[MountainRange], '(no mountain)')
                     FROM [Countries] AS [c]
                LEFT JOIN [MountainsCountries] AS [mc] 
