@@ -851,6 +851,7 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S03_Table_Relations/Table_Relations.sql">S03_Table_Relations</a> - Third lecture
 <br>&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S04_Built-in_Functions/Built-in_Functions.sql">S04_Built-in_Functions</a> - Fourth lecture
 <br>&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S05_Subqueries_and_Joins/Subqueries_and_Joins.sql">S05_Subqueries_and_Joins</a> - Fourth lecture
+<br>&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S06_Indices_and_Data_Aggregation/Indices_and_Data_Aggregation.sql">S06_Indices_and_Data_Aggregation</a> - Fifth lecture
 </details>
 
 ## Basics Curriculum with PYTHON
