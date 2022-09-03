@@ -162,9 +162,31 @@ GROUP BY [DepartmentID]
 HAVING NOT MAX([Salary]) BETWEEN 30000 AND 70000
 
 
---17. Employees Count Salaries
+--Problem 17. Employees Count Salaries
 
 SELECT COUNT(*) AS [Count]
-	FROM [Employees]
-	WHERE [ManagerID] IS NULL
+  FROM [Employees]
+ WHERE [ManagerID] IS NULL
 
+
+--Problem 18. *3rd Highest Salary
+SELECT [DepartmentID], [Salary]
+    FROM (
+			SELECT [DepartmentID], [Salary],
+				DENSE_RANK() OVER(PARTITION BY [DepartmentID] ORDER BY [Salary] DESC)
+				AS [Rank]
+				FROM [Employees]
+		 ) AS [SalaryRankingQuery]
+	WHERE [Rank] = 3
+	GROUP BY [DepartmentID], [Salary]
+
+-- SECOND VARIANT 
+
+SELECT DISTINCT [DepartmentID], [Salary]
+    FROM (
+			SELECT [DepartmentID], [Salary],
+				DENSE_RANK() OVER(PARTITION BY [DepartmentID] ORDER BY [Salary] DESC)
+				AS [Rank]
+				FROM [Employees]
+		 ) AS [SalaryRankingQuery]
+	WHERE [Rank] = 3
