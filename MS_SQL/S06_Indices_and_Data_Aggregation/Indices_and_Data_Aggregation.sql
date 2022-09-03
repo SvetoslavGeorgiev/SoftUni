@@ -111,5 +111,15 @@ SELECT SUM([Host Wizard Deposit] - [Guest Wizard Deposit])
 	 ) AS [HostGuestQuery]
   WHERE [Guest Wizard] IS NOT NULL
 
+GO
+
+USE [SoftUni]
+
+GO
+
+
 --Problem 13. Departments Total Salaries
+
+
+
 
