@@ -133,4 +133,16 @@ GROUP BY [DepartmentID]
 GROUP BY [DepartmentID]
 
 
+--Problem 15. Employees Average Salaries
 
+
+
+
+
+
+--Problem 16. Employees Maximum Salaries
+
+SELECT [DepartmentID], MAX([Salary]) AS [MaxSalary]
+    FROM [Employees]
+GROUP BY [DepartmentID]
+HAVING NOT MAX([Salary]) BETWEEN 30000 AND 70000
