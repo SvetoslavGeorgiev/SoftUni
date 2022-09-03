@@ -30,3 +30,17 @@ END
 
 
 GO
+
+
+--Problem 3.	Town Names Starting With
+
+CREATE OR ALTER PROCEDURE [usp_GetTownsStartingWith] @startWith NVARCHAR(50)
+AS
+BEGIN
+	SELECT [Name] AS [Town]
+	  FROM [Towns]
+	 WHERE LEFT ([NAME], LEN(@startWith)) = @startWith
+END
+
+
+GO
