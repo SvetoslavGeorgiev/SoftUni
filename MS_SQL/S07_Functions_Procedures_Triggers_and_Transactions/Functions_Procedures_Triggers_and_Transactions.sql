@@ -34,12 +34,67 @@ GO
 
 --Problem 3.	Town Names Starting With
 
+GO
+
+
 CREATE OR ALTER PROCEDURE [usp_GetTownsStartingWith] @startWith NVARCHAR(50)
 AS
 BEGIN
 	SELECT [Name] AS [Town]
 	  FROM [Towns]
 	 WHERE LEFT ([NAME], LEN(@startWith)) = @startWith
+END
+
+
+GO
+
+--Problem 4.	Employees from Town
+
+GO
+
+
+CREATE OR ALTER PROCEDURE [usp_GetEmployeesFromTown] @tonwName VARCHAR(50)
+AS
+BEGIN
+	SELECT [FirstName] AS [First Name],
+	       [LastName] AS [Last Name]
+	  FROM [Employees] AS [e]
+ LEFT JOIN [Addresses] AS [a]
+		ON [e].[AddressID] = [a].[AddressID]
+ LEFT JOIN [Towns] AS [t]
+        ON [a].TownID = [t].[TownID]
+	 WHERE [t].[Name] = @tonwName
+END
+
+
+GO
+
+
+--Problem 5.	Salary Level Function
+
+GO
+
+
+CREATE OR ALTER FUNCTION [ufn_GetSalaryLevel](@salary DECIMAL(18,4))
+RETURNS VARCHAR(8)
+AS
+BEGIN
+     DECLARE @salaryLevel VARCHAR(8)
+
+	 IF @salary < 30000
+	 BEGIN
+	     SET @salaryLevel = 'Low'
+	 END
+	 ELSE IF @salary BETWEEN 30000 AND 50000
+	 BEGIN
+	     SET @salaryLevel = 'Average'
+	 END
+	 ELSE IF @salary > 50000
+	 BEGIN
+	     SET @salaryLevel = 'High'
+	 END
+	 
+	 RETURN @salaryLevel
 END
 
 
