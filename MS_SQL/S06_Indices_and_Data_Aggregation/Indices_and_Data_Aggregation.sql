@@ -120,6 +120,17 @@ GO
 
 --Problem 13. Departments Total Salaries
 
+  SELECT [DepartmentID], SUM([Salary]) AS [TotalSalary]
+    FROM [Employees]
+GROUP BY [DepartmentID]
+
+
+--Problem 14. Employees Minimum Salaries
+
+  SELECT [DepartmentID], MIN([Salary]) AS [MinimumSalary]
+    FROM [Employees]
+   WHERE [DepartmentID] IN(2, 5, 7) AND [HireDate] > '01/01/2000'
+GROUP BY [DepartmentID]
 
 
 
