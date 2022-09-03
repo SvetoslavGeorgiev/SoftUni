@@ -96,6 +96,7 @@ ORDER BY [DepositGroup] DESC, [IsDepositExpired]
 --Problem 12. * Rich Wizard, Poor Wizard
 
 SELECT SUM([Host Wizard Deposit] - [Guest Wizard Deposit])
+     AS[SumDifference]
  FROM 
      (
 		SELECT [FirstName] 
@@ -109,4 +110,6 @@ SELECT SUM([Host Wizard Deposit] - [Guest Wizard Deposit])
 		  FROM [WizzardDeposits]
 	 ) AS [HostGuestQuery]
   WHERE [Guest Wizard] IS NOT NULL
+
+--Problem 13. Departments Total Salaries
 
