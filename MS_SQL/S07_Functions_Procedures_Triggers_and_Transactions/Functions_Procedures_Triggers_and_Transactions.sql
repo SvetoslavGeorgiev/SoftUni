@@ -99,3 +99,20 @@ END
 
 
 GO
+
+--Problem 6.	Employees by Salary Level
+
+GO
+
+CREATE OR ALTER PROCEDURE [usp_EmployeesBySalaryLevel] @salaryLevel VARCHAR(8)
+AS
+BEGIN
+	SELECT [FirstName] AS [First Name],
+	       [LastName] AS [Last Name]
+	  FROM [Employees] AS [e]
+	 WHERE [dbo].[ufn_GetSalaryLevel]([Salary]) = @salaryLevel
+END
+
+GO
+
+EXEC [dbo].[usp_EmployeesBySalaryLevel] 'High'
