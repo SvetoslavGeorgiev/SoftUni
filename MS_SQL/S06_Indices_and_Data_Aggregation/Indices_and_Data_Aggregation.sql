@@ -190,3 +190,17 @@ SELECT DISTINCT [DepartmentID], [Salary]
 				FROM [Employees]
 		 ) AS [SalaryRankingQuery]
 	WHERE [Rank] = 3
+
+--Problem 19. **Salary Challenge
+SELECT TOP(10) [FirstName], 
+               [LastName], 
+			   [DepartmentID]
+          FROM [Employees] AS [e]
+		 WHERE [e].[Salary] > (
+		                         SELECT AVG([Salary]) AS [AverageSalary]
+				                       FROM [Employees] AS [esub]
+									  WHERE [esub].[DepartmentID] = e.[DepartmentID]
+			                       GROUP BY [DepartmentID]
+							   )
+	  ORDER BY [e].[DepartmentID]
+	  
