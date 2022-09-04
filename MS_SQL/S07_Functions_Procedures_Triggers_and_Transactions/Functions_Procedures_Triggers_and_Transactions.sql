@@ -213,7 +213,7 @@ GO
 
 --Problem 10.	People with Balance Higher Than
 
-CREATE PROCEDURE [usp_GetHoldersWithBalanceHigherThan] (@money MONEY)
+CREATE OR ALTER PROCEDURE [usp_GetHoldersWithBalanceHigherThan] (@money MONEY)
 AS
 BEGIN
 
@@ -233,3 +233,19 @@ EXECUTE [dbo].[usp_GetHoldersWithBalanceHigherThan] 7000
 
 
 --Problem 11.	Future Value Function
+
+GO
+
+CREATE OR ALTER FUNCTION [ufn_CalculateFutureValue](@sum DECIMAL(10, 4), @yearlyInterestRate FLOAT, @years INT) 
+RETURNS DECIMAL(10, 4)
+AS
+BEGIN
+    
+	DECLARE @output DECIMAL(10, 4) = @sum * (POWER(1 +  @yearlyInterestRate, @years))
+
+    RETURN @output;
+END
+
+
+GO
+
