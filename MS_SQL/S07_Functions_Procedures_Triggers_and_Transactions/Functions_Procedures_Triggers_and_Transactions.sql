@@ -209,3 +209,27 @@ BEGIN
 END
 
 GO
+
+
+--Problem 10.	People with Balance Higher Than
+
+CREATE PROCEDURE [usp_GetHoldersWithBalanceHigherThan] (@money MONEY)
+AS
+BEGIN
+
+	SELECT [FirstName] AS [First Name], [LastName] AS [Last Name]
+		FROM [AccountHolders] AS [ah]
+   LEFT JOIN [Accounts] AS [a]
+		  ON [ah].[Id] = [a].[AccountHolderId]
+    GROUP BY [FirstName], [LastName]
+	  HAVING SUM([Balance]) > @money
+    ORDER BY [FirstName], [LastName]
+	
+END
+
+GO
+
+EXECUTE [dbo].[usp_GetHoldersWithBalanceHigherThan] 7000
+
+
+--Problem 11.	Future Value Function
