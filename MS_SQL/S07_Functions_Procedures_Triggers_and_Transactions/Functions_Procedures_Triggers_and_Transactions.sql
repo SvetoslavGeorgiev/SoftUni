@@ -125,12 +125,12 @@ CREATE OR ALTER FUNCTION [ufn_IsWordComprised](@setOfLetters VARCHAR(50), @word 
 RETURNS BIT
 AS
 BEGIN
-    DECLARE @currentIndex int = 1;
+    DECLARE @currentIndex INT = 1;
 
     WHILE @currentIndex <= LEN(@word)
 	BEGIN
 
-	DECLARE @currentLetter varchar(1) = SUBSTRING(@word, @currentIndex, 1);
+	DECLARE @currentLetter VARCHAR(1) = SUBSTRING(@word, @currentIndex, 1);
 
 	IF(CHARINDEX(@currentLetter, @setOfLetters)) = 0
 	BEGIN
@@ -145,3 +145,49 @@ END
 
 
 GO
+
+
+--Problem 8.	* Delete Employees and Departments
+
+GO
+
+CREATE OR ALTER PROCEDURE [usp_DeleteEmployeesFromDepartment](@departmentId INT)
+AS
+BEGIN
+	 DELETE FROM [EmployeesProjects]
+		   WHERE [EmployeeID] IN (
+								  SELECT [EmployeeID]
+								    FROM [Employees]
+							       WHERE [DepartmentID] = @departmentId
+								 )
+	 UPDATE [Employees]
+	    SET [ManagerID] = NULL
+	  WHERE [ManagerID] IN (
+							 SELECT [EmployeeID]
+							   FROM [Employees]
+							  WHERE [DepartmentID] = @departmentId
+						   )
+	  ALTER TABLE [Departments]
+	 ALTER COLUMN [ManagerID] INT
+
+	 UPDATE [Departments]
+		SET [ManagerID] = NULL
+	  WHERE [ManagerID] IN (
+							 SELECT [EmployeeID]
+							   FROM [Employees]
+							  WHERE [DepartmentID] = @departmentId
+						   )
+	 DELETE FROM [Employees]
+		   WHERE [DepartmentID] = @departmentId
+
+	 DELETE FROM [Departments]
+	       WHERE [DepartmentID] = @departmentId
+
+	 SELECT COUNT([EmployeeId])
+	   FROM [Employees]
+	  WHERE [DepartmentID] = @departmentId
+END
+
+GO
+
+EXECUTE [dbo].[usp_DeleteEmployeesFromDepartment] 2
