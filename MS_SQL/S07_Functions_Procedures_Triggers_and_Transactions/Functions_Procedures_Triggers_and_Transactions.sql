@@ -249,3 +249,24 @@ END
 
 GO
 
+SELECT dbo.ufn_CalculateFutureValue(1000.98, 0.05, 3)
+
+--Problem 12.	Calculating Interest
+
+GO
+
+CREATE OR ALTER PROCEDURE usp_CalculateFutureValueForAccount (@accountId INT, @yearlyInterestRate FLOAT)
+AS
+BEGIN
+
+	SELECT [a].[Id] AS [Account Id], [FirstName] AS [First Name], [LastName] AS [Last Name], [Balance] AS [Current Balance], dbo.ufn_CalculateFutureValue([Balance], @yearlyInterestRate, 5) AS [Balance in 5 years]
+		FROM [AccountHolders] AS [ah]
+   LEFT JOIN [Accounts] AS [a]
+		  ON [ah].[Id] = [a].[AccountHolderId]
+	   WHERE [a].[Id] = @accountId
+	
+END
+
+GO
+
+EXECUTE [dbo].[usp_CalculateFutureValueForAccount] 1, 0.1
