@@ -279,3 +279,31 @@ END
 GO
 
 EXECUTE [dbo].[usp_CalculateFutureValueForAccount] 1, 0.1
+
+
+--Problem 13.	*Scalar Function: Cash in User Games Odd Rows
+
+USE [Diablo]
+
+GO
+
+CREATE OR ALTER FUNCTION [ufn_CashInUsersGames](@gameName NVARCHAR(50))
+RETURNS TABLE
+AS RETURN (
+			SELECT SUM([Cash])
+				   AS [SumCash]
+				FROM (
+						   SELECT [Cash], ROW_NUMBER() OVER(ORDER BY [ug].[Cash] DESC) AS [RowNumber]
+							 FROM [UsersGames] AS [ug]
+						LEFT JOIN [Games] AS [g]
+							   ON [ug].[GameId] = [g].[Id]
+							WHERE [g].[Name] = @gameName
+					 ) AS [RowNumberQuery]
+				WHERE [RowNumber] % 2 != 0
+		  )
+
+
+GO
+
+SELECT *
+ FROM [dbo].[ufn_CashInUsersGames]('Love in a mist')
