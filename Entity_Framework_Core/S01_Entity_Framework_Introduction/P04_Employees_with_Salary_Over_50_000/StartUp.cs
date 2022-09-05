@@ -11,7 +11,7 @@
         static void Main(string[] args)
         {
 
-            SoftUniContext dbContext = new SoftUniContext();
+            using SoftUniContext dbContext = new SoftUniContext();
 
             string result = GetEmployeesWithSalaryOver50000(dbContext);
 
