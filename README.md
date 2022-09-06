@@ -842,8 +842,7 @@
 
 ## C# DB Curriculum List
 
-<details>
-  <summary>
+<summary>
 👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/MS_SQL">MS SQL - May 2022 </a>
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S01_Databases_Introduction/Databases_Introduction.sql">S01_Databases_Introduction</a> - First lecture
@@ -852,6 +851,36 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S04_Built-in_Functions/Built-in_Functions.sql">S04_Built-in_Functions</a> - Fourth lecture
 <br>&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S05_Subqueries_and_Joins/Subqueries_and_Joins.sql">S05_Subqueries_and_Joins</a> - Fourth lecture
 <br>&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S06_Indices_and_Data_Aggregation/Indices_and_Data_Aggregation.sql">S06_Indices_and_Data_Aggregation</a> - Fifth lecture
+</details>
+  <summary>
+👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core">Entity Framework Core - June 2022</a>
+  </summary>
+  <details>
+  <summary>
+👈🏻 I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S01_Entity_Framework_Introduction">S01_Entity_Framework_Introduction</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S01_Entity_Framework_Introduction/P02_Database_First">P02_Database_First</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S01_Entity_Framework_Introduction/P03_Employees_Full_Information">P03_Employees_Full_Information</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S01_Entity_Framework_Introduction/P04_Employees_with_Salary_Over_50_000">P04_Employees_with_Salary_Over_50_000</a>
+  </details>
+<!--
+  <details>
+  <summary>
+👈🏻 II - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/01_Programming_Fundamentals_Final_Exam">FE01_Programming_Fundamentals_Final_Exam</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/01_Programming_Fundamentals_Final_Exam/P01_The_Imitation_Game/Program.cs">P01_The_Imitation_Game</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/01_Programming_Fundamentals_Final_Exam/P02_Ad_Astra/Program.cs">P02_Ad_Astra</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/01_Programming_Fundamentals_Final_Exam/P03_The_Pianist/Program.cs">P03_The_Pianist</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam">FE02_Programming_Fundamentals_Final_Exam</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P01_World_Tour/Program.cs">P01_World_Tour</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P02_D_Mapper/Program.cs">P02_D_Mapper</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P03PlantDiscovery/Program.cs">P03_Plant_Discovery</a>
+  </details>
+ -->
 </details>
 
 ## Basics Curriculum with PYTHON
