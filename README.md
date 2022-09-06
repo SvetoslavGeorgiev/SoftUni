@@ -842,6 +842,8 @@
 
 ## C# DB Curriculum List
 
+
+<details>
 <summary>
 👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/MS_SQL">MS SQL - May 2022 </a>
   </summary>
@@ -852,6 +854,7 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S05_Subqueries_and_Joins/Subqueries_and_Joins.sql">S05_Subqueries_and_Joins</a> - Fourth lecture
 <br>&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S06_Indices_and_Data_Aggregation/Indices_and_Data_Aggregation.sql">S06_Indices_and_Data_Aggregation</a> - Fifth lecture
 </details>
+<details>
   <summary>
 👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core">Entity Framework Core - June 2022</a>
   </summary>
