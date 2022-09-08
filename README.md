@@ -707,7 +707,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C#_OOP_June_2022</a> - This is what I am currently studying.
+👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C#_OOP_June_2022</a>
   </summary>
   <details>
   <summary>

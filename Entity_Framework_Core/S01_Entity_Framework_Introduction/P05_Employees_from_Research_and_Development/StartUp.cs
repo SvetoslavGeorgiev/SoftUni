@@ -1,6 +1,7 @@
 ﻿namespace SoftUni
 {
     using SoftUni.Data;
+    using SoftUni.Models;
     using System;
     using System.Linq;
     using System.Text;
@@ -30,7 +31,7 @@
                 {
                     e.FirstName,
                     e.LastName,
-                    e.Department.Name,
+                    DepartmentName = e.Department.Name,
                     e.Salary
                 })
                 .OrderBy(e => e.Salary)
@@ -40,7 +41,7 @@
             foreach (var e in allEmployees)
             {
                 output
-                    .AppendLine($"{e.FirstName} {e.LastName} from {e.Name} - ${e.Salary:F2}");
+                    .AppendLine($"{e.FirstName} {e.LastName} from {e.DepartmentName} - ${e.Salary:F2}");
             }
 
             return output.ToString().TrimEnd();
