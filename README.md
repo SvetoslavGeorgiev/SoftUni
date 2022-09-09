@@ -865,7 +865,8 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S01_Entity_Framework_Introduction/P02_Database_First">P02_Database_First</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S01_Entity_Framework_Introduction/P03_Employees_Full_Information">P03_Employees_Full_Information</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S01_Entity_Framework_Introduction/P04_Employees_with_Salary_Over_50_000">P04_Employees_with_Salary_Over_50_000</a>
-  </details>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S01_Entity_Framework_Introduction/P05_Employees_from_Research_and_Development">P05_Employees_from_Research_and_Development</a>
+</details>
 <!--
   <details>
   <summary>
