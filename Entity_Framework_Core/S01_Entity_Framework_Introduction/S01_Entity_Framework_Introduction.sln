@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P10_Departments_with_More_T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P11_Find_Latest_10_Projects", "P11_Find_Latest_10_Projects\P11_Find_Latest_10_Projects.csproj", "{3EDA1A04-0970-4F43-9BB7-6299CEFD88AF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P12_Increase_Salaries", "P12_Increase_Salaries\P12_Increase_Salaries.csproj", "{82A7D5E2-4D84-4D55-882A-8BFA71606B7A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{3EDA1A04-0970-4F43-9BB7-6299CEFD88AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EDA1A04-0970-4F43-9BB7-6299CEFD88AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EDA1A04-0970-4F43-9BB7-6299CEFD88AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A7D5E2-4D84-4D55-882A-8BFA71606B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A7D5E2-4D84-4D55-882A-8BFA71606B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A7D5E2-4D84-4D55-882A-8BFA71606B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A7D5E2-4D84-4D55-882A-8BFA71606B7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
