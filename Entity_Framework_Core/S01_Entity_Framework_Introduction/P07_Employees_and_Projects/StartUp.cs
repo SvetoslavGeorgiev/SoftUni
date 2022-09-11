@@ -50,6 +50,7 @@
             foreach (var em in filteredEmployees)
             {
                 output.AppendLine($"{em.FirstName} {em.LastName} - Manager: {em.ManagerFirstName} {em.ManagerLastName}");
+
                 foreach (var project in em.AllProject)
                 {
                     var endDate = project.EndDate.HasValue ? project.EndDate.Value.ToString("M/d/yyyy h:mm:ss tt") : "not finished";
