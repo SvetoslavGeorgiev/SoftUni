@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P11_Find_Latest_10_Projects
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P12_Increase_Salaries", "P12_Increase_Salaries\P12_Increase_Salaries.csproj", "{82A7D5E2-4D84-4D55-882A-8BFA71606B7A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P13_Find_Employees_by_First_Name_Starting_With_Sa", "P13_Find_Employees_by_First_Name_Starting_With_Sa\P13_Find_Employees_by_First_Name_Starting_With_Sa.csproj", "{8AF58B30-2E31-4871-8976-8A33B19D1E33}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{82A7D5E2-4D84-4D55-882A-8BFA71606B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82A7D5E2-4D84-4D55-882A-8BFA71606B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82A7D5E2-4D84-4D55-882A-8BFA71606B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF58B30-2E31-4871-8976-8A33B19D1E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF58B30-2E31-4871-8976-8A33B19D1E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF58B30-2E31-4871-8976-8A33B19D1E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF58B30-2E31-4871-8976-8A33B19D1E33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
