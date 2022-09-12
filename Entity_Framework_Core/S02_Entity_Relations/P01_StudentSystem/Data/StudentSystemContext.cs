@@ -24,7 +24,17 @@
 
         }
 
+        public DbSet<Course> Courses { get; set; }
+
+        public DbSet<Homework> HomeworkSubmissions { get; set; }
+
+        public DbSet<Resource> Resources { get; set; }
+
         public DbSet<Student> Students { get; set; }
+
+        public DbSet<StudentCourse> StudentCourses { get; set; }
+
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -36,16 +46,14 @@
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Student>(entity =>
+            
+
+            modelBuilder.Entity<StudentCourse>(entity =>
             {
-                entity.Property(e => e.Name)
-                .IsUnicode(true);
+                entity.HasKey(e => new { e.StudentId, e.CourseId });
 
-                entity.Property(e => e.PhoneNumber)
-                .IsUnicode(false);
-
-                
             });
+
         }
 
     }
