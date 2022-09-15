@@ -3,6 +3,7 @@
     using System.Collections;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public class Color
     {
@@ -13,8 +14,10 @@
         [MaxLength(25)]
         public string Name { get; set; }
 
-
+        [InverseProperty(nameof(Team.PrimaryKitColor))]
         public ICollection<Team> PrimaryKitColors { get; set; }
+
+        [InverseProperty(nameof(Team.SecondaryKitColor))]
         public ICollection<Team> SecondaryKitColors { get; set; }
 
     }

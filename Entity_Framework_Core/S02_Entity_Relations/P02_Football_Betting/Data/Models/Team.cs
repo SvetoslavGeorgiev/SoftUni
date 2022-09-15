@@ -10,6 +10,11 @@
     public class Team
     {
 
+        public Team()
+        {
+            Players = new HashSet<Player>();
+        }
+
         public int TeamId { get; set; }
 
         [Required]
@@ -33,6 +38,9 @@
         public int SecondaryKitColorId { get; set; }
 
         public Color SecondaryKitColor { get; set; }
+
+
+        public ICollection<Player> Players { get; set; }
 
     }
 }
