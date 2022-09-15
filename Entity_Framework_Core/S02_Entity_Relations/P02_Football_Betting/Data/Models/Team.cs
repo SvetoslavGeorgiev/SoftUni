@@ -13,6 +13,8 @@
         public Team()
         {
             Players = new HashSet<Player>();
+            HomeGames = new HashSet<Game>();
+            AwayGames = new HashSet<Game>();
         }
 
         public int TeamId { get; set; }
@@ -41,6 +43,14 @@
 
 
         public ICollection<Player> Players { get; set; }
+
+
+        [InverseProperty(nameof(Game.HomeTeam))]
+        public ICollection<Game> HomeGames { get; set; }
+
+
+        [InverseProperty(nameof(Game.AwayTeam))]
+        public ICollection<Game> AwayGames { get; set; }
 
     }
 }

@@ -33,7 +33,7 @@
 
         public string Result { get; set; }
 
-
         public ICollection<PlayerStatistic> GetPlayerStatisticsForTheGame { get; set; }
+
     }
 }

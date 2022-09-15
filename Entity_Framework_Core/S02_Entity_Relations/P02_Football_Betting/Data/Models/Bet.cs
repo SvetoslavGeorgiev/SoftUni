@@ -4,7 +4,10 @@
     using System.Collections.Generic;
     using System.Text;
 
-    internal class Bet
+    public class Bet
     {
+
+
+
     }
 }
