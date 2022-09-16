@@ -2,12 +2,14 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public class Game
     {
         public Game()
         {
             GetPlayerStatisticsForTheGame = new HashSet<PlayerStatistic>();
+            Bets = new HashSet<Bet>();
         }
         public int GameId { get; set; }
 
@@ -33,7 +35,11 @@
 
         public string Result { get; set; }
 
+
+        [InverseProperty(nameof(PlayerStatistic.Game))]
         public ICollection<PlayerStatistic> GetPlayerStatisticsForTheGame { get; set; }
+
+        public ICollection<Bet> Bets { get; set; }
 
     }
 }
