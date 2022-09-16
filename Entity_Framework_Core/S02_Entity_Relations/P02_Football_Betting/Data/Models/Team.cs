@@ -52,5 +52,11 @@
         [InverseProperty(nameof(Game.AwayTeam))]
         public ICollection<Game> AwayGames { get; set; }
 
+        public int TownId { get; set; }
+
+        public Town Town { get; set; }
+
+
+
     }
 }

@@ -8,6 +8,11 @@
     public class Town
     {
 
+        public Town()
+        {
+            Teams = new HashSet<Team>();   
+        }
+
         public int TownId { get; set; }
 
         [Required]
@@ -17,6 +22,8 @@
         public int CountryId { get; set; }
 
         public Country Country { get; set; }
+
+        public ICollection<Team> Teams { get; set; }
 
 
     }

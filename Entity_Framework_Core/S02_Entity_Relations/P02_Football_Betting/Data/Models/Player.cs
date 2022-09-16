@@ -9,8 +9,9 @@
     {
         public Player()
         {
-            //Positions = new HashSet<Position>();
+            
             PlayerStatistics = new HashSet<PlayerStatistic>();
+
         }
 
         public int PlayerId { get; set; }
@@ -32,9 +33,9 @@
 
         public bool IsInjured { get; set; }
 
-        //public ICollection<Position> Positions { get; set; }
 
         public ICollection<PlayerStatistic> PlayerStatistics { get; set; }
+
 
     }
 }
