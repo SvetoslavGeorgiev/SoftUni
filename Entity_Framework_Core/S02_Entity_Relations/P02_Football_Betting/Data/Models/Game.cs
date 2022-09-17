@@ -8,7 +8,7 @@
     {
         public Game()
         {
-            GetPlayerStatisticsForTheGame = new HashSet<PlayerStatistic>();
+            PlayerStatistics = new HashSet<PlayerStatistic>();
             Bets = new HashSet<Bet>();
         }
         public int GameId { get; set; }
@@ -37,7 +37,7 @@
 
 
         [InverseProperty(nameof(PlayerStatistic.Game))]
-        public ICollection<PlayerStatistic> GetPlayerStatisticsForTheGame { get; set; }
+        public ICollection<PlayerStatistic> PlayerStatistics { get; set; }
 
         public ICollection<Bet> Bets { get; set; }
 

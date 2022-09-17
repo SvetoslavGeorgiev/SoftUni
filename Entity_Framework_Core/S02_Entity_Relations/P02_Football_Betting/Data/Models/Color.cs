@@ -15,10 +15,10 @@
         public string Name { get; set; }
 
         [InverseProperty(nameof(Team.PrimaryKitColor))]
-        public ICollection<Team> PrimaryKitColors { get; set; }
+        public ICollection<Team> PrimaryKitTeams { get; set; }
 
         [InverseProperty(nameof(Team.SecondaryKitColor))]
-        public ICollection<Team> SecondaryKitColors { get; set; }
+        public ICollection<Team> SecondaryKitTeams { get; set; }
 
     }
 }

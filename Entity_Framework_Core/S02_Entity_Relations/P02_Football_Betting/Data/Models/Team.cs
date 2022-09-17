@@ -22,6 +22,7 @@
         [Required]
         public string Name { get; set; }
 
+        
         [Required]
         [Column(TypeName = "varchar(2048)")]
         public string LogoUrl { get; set; }
