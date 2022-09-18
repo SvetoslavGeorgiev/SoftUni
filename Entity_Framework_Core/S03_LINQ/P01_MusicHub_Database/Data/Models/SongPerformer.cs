@@ -11,13 +11,13 @@
         public int SongId { get; set; }
 
         [Required]
-        public Song Song { get; set; }
+        public virtual Song Song { get; set; }
 
         [Key]
         [ForeignKey(nameof(Performer))]
         public int PerformerId { get; set; }
 
-        public Performer Performer { get; set; }
+        public virtual Performer Performer { get; set; }
 
 
     }

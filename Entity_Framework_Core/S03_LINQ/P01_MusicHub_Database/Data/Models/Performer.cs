@@ -32,7 +32,7 @@
         [Column(TypeName = "money")]
         public decimal NetWorth { get; set; }
 
-        public ICollection<SongPerformer> PerformerSongs { get; set; }
+        public virtual ICollection<SongPerformer> PerformerSongs { get; set; }
 
     }
 }

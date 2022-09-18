@@ -27,16 +27,17 @@
         [DataType(DataType.Date)]
         public DateTime ReleaseDate { get; set; }
 
-        [Column(TypeName = "money")]
-        public decimal Price => Songs.Sum(x => x.Price);
+        [NotMapped]
+        public decimal Price 
+            => Songs.Count > 0 ? Songs.Sum(x => x.Price) : 0m;
 
         [ForeignKey(nameof(Producer))]
         public int? ProducerId { get; set; }
 
-        public Producer Producer { get; set; }
+        public virtual Producer Producer { get; set; }
 
 
-        public ICollection<Song> Songs { get; set; }
+        public virtual ICollection<Song> Songs { get; set; }
 
     }
 }
