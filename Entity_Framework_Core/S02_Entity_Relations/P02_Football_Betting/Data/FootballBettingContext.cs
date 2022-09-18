@@ -66,21 +66,21 @@
 
             modelBuilder.Entity<Team>()
                 .HasOne(t => t.SecondaryKitColor)
-                .WithMany(t => t.SecondaryKitTeams)
+                .WithMany(c => c.SecondaryKitTeams)
                 .HasForeignKey(t => t.SecondaryKitColorId)
                 .OnDelete(DeleteBehavior.Restrict)
                 .HasConstraintName("FK_Teams_Colors_SecondaryKitColorId");
 
             modelBuilder.Entity<Game>()
                 .HasOne(g => g.HomeTeam)
-                .WithMany(g => g.HomeGames)
+                .WithMany(t => t.HomeGames)
                 .HasForeignKey(g => g.HomeTeamId)
                 .OnDelete(DeleteBehavior.Restrict)
                 .HasConstraintName("FK_Games_Teams_HomeTeamId");
 
             modelBuilder.Entity<PlayerStatistic>()
                 .HasOne(ps => ps.Player)
-                .WithMany(ps => ps.PlayerStatistics)
+                .WithMany(p => p.PlayerStatistics)
                 .HasForeignKey(ps => ps.PlayerId)
                 .OnDelete(DeleteBehavior.Restrict)
                 .HasConstraintName("FK_playerStatistics_Players_PlayerId");
