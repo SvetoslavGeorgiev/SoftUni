@@ -884,16 +884,14 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S02_Entity_Relations/P01_StudentSystem">P01_StudentSystem</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S02_Entity_Relations/P02_Football_Betting">P02_Football_Betting</a>
   </details>
- <!--
   <details>
   <summary>
-👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam">FE02_Programming_Fundamentals_Final_Exam</a>
+👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S03_LINQ">S03_LINQ</a>
   </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P01_World_Tour/Program.cs">P01_World_Tour</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P02_D_Mapper/Program.cs">P02_D_Mapper</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam/P03PlantDiscovery/Program.cs">P03_Plant_Discovery</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S03_LINQ/P01_MusicHub_Database">P01_MusicHub_Database</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S03_LINQ/P02_Albums_Info">P02_Albums_Info</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S03_LINQ/P03_Songs_Above_Duration">P03_Songs_Above_Duration</a>
   </details>
- -->
 </details>
 
 ## Basics Curriculum with PYTHON
