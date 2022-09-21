@@ -877,15 +877,14 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;14. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S01_Entity_Framework_Introduction/P14_Delete_Project_by_Id">P14_Delete_Project_by_Id</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;15. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S01_Entity_Framework_Introduction/P15_Remove_Town">P15_Remove_Town</a>
 </details>
-<!--
   <details>
   <summary>
-👈🏻 II - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/01_Programming_Fundamentals_Final_Exam">FE01_Programming_Fundamentals_Final_Exam</a>
+👈🏻 II - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S02_Entity_Relations">S02_Entity_Relations</a>
   </summary>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/01_Programming_Fundamentals_Final_Exam/P01_The_Imitation_Game/Program.cs">P01_The_Imitation_Game</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/01_Programming_Fundamentals_Final_Exam/P02_Ad_Astra/Program.cs">P02_Ad_Astra</a>
-<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/01_Programming_Fundamentals_Final_Exam/P03_The_Pianist/Program.cs">P03_The_Pianist</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S02_Entity_Relations/P01_StudentSystem">P01_StudentSystem</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S02_Entity_Relations/P02_Football_Betting">P02_Football_Betting</a>
   </details>
+ <!--
   <details>
   <summary>
 👈🏻 III - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022/FE02_Programming_Fundamentals_Final_Exam">FE02_Programming_Fundamentals_Final_Exam</a>
