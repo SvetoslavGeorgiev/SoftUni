@@ -9,7 +9,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;<a href="https://https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics">Programming Basics</a>
+👈🏻 &#160;&#160;<a href="https://https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics">Programming Basics</a>
   </summary>
   <details>
   <summary>
@@ -182,7 +182,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022">Programming Fundamentals with C# - January 2022</a>
+👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming%20Fundamentals%20with%20C%23%20-%20January%202022">Programming Fundamentals with C# - January 2022</a>
   </summary>
   <details>
   <summary>
@@ -488,7 +488,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C# Advanced - May 2022</a>
+👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C# Advanced - May 2022</a>
   </summary>
   <details>
   <summary>
@@ -707,7 +707,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C#_OOP_June_2022</a>
+👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23%20Advanced%20-%20May%202022">C#_OOP_June_2022</a>
   </summary>
   <details>
   <summary>
@@ -845,7 +845,7 @@
 
 <details>
 <summary>
-👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/MS_SQL">MS SQL - May 2022 </a>
+👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/MS_SQL">MS SQL - May 2022 </a>
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S01_Databases_Introduction/Databases_Introduction.sql">S01_Databases_Introduction</a> - First lecture
 <br>&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/MS_SQL/S02_CRUD/CRUD_Exercises.sql">S02_CRUD</a> - Second lecture
@@ -856,7 +856,7 @@
 </details>
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core">Entity Framework Core - June 2022</a>
+👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core">Entity Framework Core - June 2022</a>
   </summary>
   <details>
   <summary>
@@ -910,7 +910,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics_Python">Programming_Basics_Python</a>
+👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics_Python">Programming_Basics_Python</a>
   </summary>
   <details>
   <summary>
@@ -934,7 +934,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;Basics Exam
+👈🏻 &#160;&#160;Basics Exam
   </summary>
   <details>
   <summary>
@@ -951,7 +951,7 @@
 </details>
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;Fundamentals Exams
+👈🏻 &#160;&#160;Fundamentals Exams
   </summary>
   <details>
   <summary>
@@ -972,7 +972,7 @@
 </details>
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;Advanced Exam
+👈🏻 &#160;&#160;Advanced Exam
   </summary>
   <details>
   <summary>
@@ -985,7 +985,7 @@
 </details>
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;OOP Exam
+👈🏻 &#160;&#160;OOP Exam
   </summary>
   <details>
   <summary>
@@ -1002,7 +1002,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;Basics Exams
+👈🏻 &#160;&#160;Basics Exams
   </summary>
   <details>
   <summary>
@@ -1026,7 +1026,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;Fundamentals Exams
+👈🏻 &#160;&#160;Fundamentals Exams
   </summary>
   <details>
   <summary>
@@ -1057,7 +1057,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;Advanced Exams
+👈🏻 &#160;&#160;Advanced Exams
   </summary>
   <details>
   <summary>
@@ -1103,7 +1103,7 @@
 
 <details>
   <summary>
-👈🏻 CLICK HERE &#160;&#160;OOP Exams
+👈🏻 &#160;&#160;OOP Exams
   </summary>
   <details>
   <summary>
