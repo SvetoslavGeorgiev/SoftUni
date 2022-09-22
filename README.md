@@ -892,6 +892,17 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S03_LINQ/P02_Albums_Info">P02_Albums_Info</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S03_LINQ/P03_Songs_Above_Duration">P03_Songs_Above_Duration</a>
   </details>
+ <details>
+  <summary>
+👈🏻 IV - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S04_Advanced_Querying">S04_Advanced_Querying</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S04_Advanced_Querying/P02_Age_Restriction">P02_Age_Restriction</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S04_Advanced_Querying/P03_Golden_Books">P03_Golden_Books</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S04_Advanced_Querying/P04_Books_by_Price">P04_Books_by_Price</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S04_Advanced_Querying/P05_Not_Released_In">P05_Not_Released_In</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S04_Advanced_Querying/P06_Book_Titles_by_Category">P06_Book_Titles_by_Category</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S04_Advanced_Querying/P07_Released_Before_Date">P07_Released_Before_Date</a>
+  </details>
 </details>
 
 ## Basics Curriculum with PYTHON
