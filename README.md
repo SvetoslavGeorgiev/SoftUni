@@ -912,6 +912,11 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;15. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S04_Advanced_Querying/P15_Increase_Prices">P15_Increase_Prices</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;16. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S04_Advanced_Querying/P16_Remove_Books">P16_Remove_Books</a>
   </details>
+   <details>
+  <summary>
+&#160;&#160;V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S05_CSharp_Auto_Mapping_Objects_Exercise">S05_CSharp_Auto_Mapping_Objects_Exercise</a>
+  </summary>
+  </details>
 </details>
 
 ## Basics Curriculum with PYTHON
