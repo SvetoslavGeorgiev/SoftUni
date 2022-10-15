@@ -1,5 +1,6 @@
 ﻿namespace WebShopDemo.Controllers
 {
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using WebShopDemo.Core.Contracts;
     using WebShopDemo.Core.Models;
@@ -7,6 +8,7 @@
     /// <summary>
     /// web shop products
     /// </summary>
+    [Authorize]
     public class ProductController : Controller
     {
         private readonly IProductService productService;
@@ -21,6 +23,7 @@
         /// list of all products
         /// </summary>
         /// <returns></returns>
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var products = await productService.GetAll();
