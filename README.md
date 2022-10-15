@@ -917,6 +917,14 @@
 &#160;&#160;V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S05_CSharp_Auto_Mapping_Objects_Exercise">S05_CSharp_Auto_Mapping_Objects_Exercise</a>
   </summary>
   </details>
+  <details>
+  <summary>
+👈🏻 VI - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON">S06_JavaScript_Object_Notation_JSON</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON/P01_Import_Users">P01_Import_Users</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON/P02_Import_Products">P02_Import_Products</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON/P03_Import_Categories">P03_Import_Categories</a>
+  </details>
 </details>
 
 ## Basics Curriculum with PYTHON
