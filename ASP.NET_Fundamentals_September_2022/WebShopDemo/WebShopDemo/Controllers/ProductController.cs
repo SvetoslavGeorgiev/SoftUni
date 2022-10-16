@@ -2,14 +2,14 @@
 {
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
+    using WebShopDemo.Core.Constants;
     using WebShopDemo.Core.Contracts;
     using WebShopDemo.Core.Models;
 
     /// <summary>
     /// web shop products
     /// </summary>
-    [Authorize]
-    public class ProductController : Controller
+    public class ProductController : BaseController
     {
         private readonly IProductService productService;
 
@@ -23,7 +23,6 @@
         /// list of all products
         /// </summary>
         /// <returns></returns>
-        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var products = await productService.GetAll();
@@ -34,6 +33,7 @@
 
 
         [HttpGet]
+        [Authorize(Roles = $"{RoleConstants.Manager}, {RoleConstants.Supervisor}")]
         public IActionResult Add()
         {
             var model = new ProductDto();
@@ -44,6 +44,7 @@
 
 
         [HttpPost]
+        [Authorize(Roles = $"{RoleConstants.Manager}, {RoleConstants.Supervisor}")]
         public async Task<IActionResult> Add(ProductDto model)
         {
             ViewData["Title"] = "Add new product";
@@ -60,6 +61,7 @@
 
 
         [HttpPost]
+        [Authorize(Roles = RoleConstants.Supervisor)]
         public async Task<IActionResult> Delete(Guid id)
         {
 

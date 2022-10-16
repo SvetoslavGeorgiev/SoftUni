@@ -10,7 +10,7 @@
             <td>Price</td>
             <td>Quantity</td>
             <td>Buy</td>
-            <td>Delite</td>
+            <td @(User.IsInRole("Supervisor") ? "" : "hidden")>Delete</td>
         </tr>
     </thead>
     <tbody>
@@ -21,10 +21,10 @@
                 <td>@item.Price.ToString("F2")</td>
                 <td>@item.Quantity</td>
                 <td><button class="btn btn-success">Buy</button></td>
-                <td>
+                <td @(User.IsInRole("Supervisor") ? "" : "hidden")>
                     <form asp-controller="Product" asp-action="Delete" method="post">
                         <input name="id" type="hidden" value="@item.Id" />
-                        <button class="btn btn-danger">Delete</button>
+                        <button class="btn btn-danger" >Delete</button>
                     </form>
                 </td>
             </tr>
