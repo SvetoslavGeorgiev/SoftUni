@@ -927,6 +927,18 @@
   </details>
 </details>
 
+## C# Web Curriculum List
+
+
+<details>
+  <summary>
+👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022">ASP.NET_Fundamentals_September_2022</a>
+  </summary>
+  <details>
+I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022/WebShopDemo">WebShopDemo</a>
+</details>
+</details>
+
 ## Basics Curriculum with PYTHON
 
 
