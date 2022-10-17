@@ -934,9 +934,7 @@
   <summary>
 👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022">ASP.NET_Fundamentals_September_2022</a>
   </summary>
-  <details>
-I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022/WebShopDemo">WebShopDemo</a>
-</details>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1 - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022/WebShopDemo">WebShopDemo</a>
 </details>
 
 ## Basics Curriculum with PYTHON
