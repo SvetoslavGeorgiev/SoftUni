@@ -11,7 +11,7 @@
 
         Task<IEnumerable<Category>> GetCategoriesAsync();
 
-        Task AddBookAsync(AddBookViewModel movieFormModel);
+        Task AddBookAsync(AddBookViewModel addBookViewModel);
 
         Task AddBookToCollectionAsync(int bookId, string userId);
 

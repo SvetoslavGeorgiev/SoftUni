@@ -9,8 +9,8 @@
     using Microsoft.Extensions.FileSystemGlobbing;
     using System.Collections.Generic;
     using System.Security.Claims;
-    using static ForumApp.Data.DataConstants.Book;
-    using static ForumApp.Data.DataConstants.ControllerConstants;
+    using static Library.Data.DataConstants.Book;
+    using static Library.Data.DataConstants.ControllerConstants;
 
     [Authorize]
     public class BooksController : Controller

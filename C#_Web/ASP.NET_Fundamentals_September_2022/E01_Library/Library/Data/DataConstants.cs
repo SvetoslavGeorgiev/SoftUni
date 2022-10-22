@@ -1,4 +1,4 @@
-﻿namespace ForumApp.Data
+﻿namespace Library.Data
 {
     public class DataConstants
     {

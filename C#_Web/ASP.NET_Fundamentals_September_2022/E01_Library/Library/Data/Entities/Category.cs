@@ -1,7 +1,7 @@
 ﻿namespace Library.Data.Entities
 {
     using System.ComponentModel.DataAnnotations;
-    using static ForumApp.Data.DataConstants.Category;
+    using static Data.DataConstants.Category;
 
     public class Category
     {

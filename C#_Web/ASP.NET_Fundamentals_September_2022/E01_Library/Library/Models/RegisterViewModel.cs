@@ -1,21 +1,22 @@
 ﻿namespace Library.Models
 {
     using System.ComponentModel.DataAnnotations;
+    using static Data.DataConstants.ApplicationUser;
 
     public class RegisterViewModel
     {
 
         [Required]
-        [StringLength(20, MinimumLength = 5)]
+        [StringLength(UsernameMaxLength, MinimumLength = UsernameMinLength)]
         public string UserName { get; set; } = null!;
 
         [Required]
         [EmailAddress]
-        [StringLength(60, MinimumLength = 10)]
+        [StringLength(EmailMaxLength, MinimumLength = EmailMinLength)]
         public string Email { get; set; } = null!;
 
         [Required]
-        [StringLength(20, MinimumLength = 5)]
+        [StringLength(PasswordMaxLength, MinimumLength = PasswordMinLength)]
         [DataType(DataType.Password)]
         public string Password { get; set; } = null!;
 

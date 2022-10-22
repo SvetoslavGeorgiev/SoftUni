@@ -9,8 +9,8 @@
     using Microsoft.EntityFrameworkCore.ChangeTracking;
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using static ForumApp.Data.DataConstants.ApplicationUser;
-    using static ForumApp.Data.DataConstants.Book;
+    using static Data.DataConstants.ApplicationUser;
+    using static Data.DataConstants.Book;
 
     public class BookServices : IBookServices
     {
@@ -23,16 +23,16 @@
             libraryDbContext = _libraryDbContext;
         }
 
-        public async Task AddBookAsync(AddBookViewModel movieFormModel)
+        public async Task AddBookAsync(AddBookViewModel addBookViewModel)
         {
             var book = new Book()
             {
-                Title = movieFormModel.Title,
-                ImageUrl = movieFormModel.ImageUrl,
-                Rating = movieFormModel.Rating,
-                Author = movieFormModel.Author,
-                CategoryId = movieFormModel.CategoryId,
-                Description = movieFormModel.Description,
+                Title = addBookViewModel.Title,
+                ImageUrl = addBookViewModel.ImageUrl,
+                Rating = addBookViewModel.Rating,
+                Author = addBookViewModel.Author,
+                CategoryId = addBookViewModel.CategoryId,
+                Description = addBookViewModel.Description,
             };
 
             await libraryDbContext.books.AddAsync(book);
@@ -113,7 +113,7 @@
 
             if (user == null)
             {
-                throw new ArgumentException("Invalid user Id");
+                throw new ArgumentException(InvalidUserId);
             }
 
             return user.ApplicationUsersBooks
@@ -140,7 +140,7 @@
 
             if (user == null)
             {
-                throw new ArgumentException("Invalid user Id");
+                throw new ArgumentException(InvalidUserId);
             }
 
             var movie = user.ApplicationUsersBooks.FirstOrDefault(m => m.BookId == bookId);

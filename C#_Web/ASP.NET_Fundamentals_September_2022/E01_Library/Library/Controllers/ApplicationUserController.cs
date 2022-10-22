@@ -1,10 +1,11 @@
-﻿namespace ForumApp.Controllers
+﻿namespace Library.Controllers
 {
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using Library.Data.Entities;
     using Library.Models;
+    using static Data.DataConstants.ControllerConstants;
 
     [Authorize]
     public class ApplicationUserController : Controller
@@ -73,7 +74,7 @@
         {
             if (User.Identity?.IsAuthenticated ?? false)
             {
-                return RedirectToAction("All", "Books");
+                return RedirectToAction("Index", "Home");
             }
 
             var model = new LoginViewModel();
@@ -98,11 +99,11 @@
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("All", "Books");
                 }
             }
 
-            ModelState.AddModelError("", "Invalid Login");
+            ModelState.AddModelError(string.Empty, ErrorMessage);
 
             return View(model);
             
