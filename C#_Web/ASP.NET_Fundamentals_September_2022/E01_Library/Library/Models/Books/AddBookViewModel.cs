@@ -3,7 +3,7 @@
     using Microsoft.EntityFrameworkCore.Metadata.Internal;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.ComponentModel.DataAnnotations;
-    using static ForumApp.Data.DataConstants.Book;
+    using static Library.Data.DataConstants.Book;
     using Library.Data.Entities;
 
     public class AddBookViewModel

@@ -2,7 +2,7 @@
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using static ForumApp.Data.DataConstants.Book;
+    using static Library.Data.DataConstants.Book;
 
     public class Book
     {
