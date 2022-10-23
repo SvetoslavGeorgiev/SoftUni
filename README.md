@@ -912,11 +912,7 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;15. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S04_Advanced_Querying/P15_Increase_Prices">P15_Increase_Prices</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;16. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S04_Advanced_Querying/P16_Remove_Books">P16_Remove_Books</a>
   </details>
-   <details>
-  <summary>
-&#160;&#160;V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S05_CSharp_Auto_Mapping_Objects_Exercise">S05_CSharp_Auto_Mapping_Objects_Exercise</a>
-  </summary>
-  </details>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;V - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S05_CSharp_Auto_Mapping_Objects_Exercise">S05_CSharp_Auto_Mapping_Objects_Exercise</a>
   <details>
   <summary>
 👈🏻 VI - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON">S06_JavaScript_Object_Notation_JSON</a>
@@ -924,6 +920,27 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON/P01_Import_Users">P01_Import_Users</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON/P02_Import_Products">P02_Import_Products</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON/P03_Import_Categories">P03_Import_Categories</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON/P04_Import_Categories_and_Products">P04_Import_Categories_and_Products</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON/P05_Export_Products_In_Range">P05_Export_Products_In_Range</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON/P06_Export_Sold_Products">P06_Export_Sold_Products</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON/P07_Export_Categories_By_Products_Count">P07_Export_Categories_By_Products_Count</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S06_JavaScript_Object_Notation_JSON/P08_Export_Users_and_Products">P08_Export_Users_and_Products</a>
+  </details>
+  <details>
+  <summary>
+👈🏻 VII - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML">S07_Extensible_Markup_Language_XML</a>
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML/P09_Import_Suppliers">P09_Import_Suppliers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML/P10_Import_Parts">P10_Import_Parts</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;11. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML/P11_Import_Cars">P11_Import_Cars</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;12. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML/P12_Import_Customers">P12_Import_Customers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;13. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML/P13_Import_Sales">P13_Import_Sales</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;14. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML/P14_Export_Cars_With_Distance">P14_Export_Cars_With_Distance</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;15. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML/P15_Export_Cars_From_Make_BMW">P15_Export_Cars_From_Make_BMW</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;16. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML/P16_Export_Local_Suppliers">P16_Export_Local_Suppliers</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;17. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML/P17_Export_Cars_With_Their_List_Of_Parts">P17_Export_Cars_With_Their_List_Of_Parts</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;18. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML/P18_Export_Total_Sales_By_Customer">P18_Export_Total_Sales_By_Customer</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;19. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Entity_Framework_Core/S07_Extensible_Markup_Language_XML/P19_Export_Sales_With_Applied_Discount">P19_Export_Sales_With_Applied_Discount</a>
   </details>
 </details>
 
@@ -935,6 +952,7 @@
 👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022">ASP.NET_Fundamentals_September_2022</a>
   </summary>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1 - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022/WebShopDemo">WebShopDemo</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2 - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022/ForumAppWithIdentity">ForumAppWithIdentity</a>
 </details>
 
 ## Basics Curriculum with PYTHON
@@ -1027,6 +1045,12 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/E01_CSharp_OOP_Exam_14_Aug_2022/P02_Business_Logic">P02_Business_Logic</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/E01_CSharp_OOP_Exam_14_Aug_2022/P03_Unit_Tests">P03_Unit_Tests</a>
   </details>
+</details>
+  <details>
+  <summary>
+👈🏻 &#160;&#160;Web Exams
+  </summary>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1 - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022/E01_Library">E01_Library</a>
 </details>
 
 ## EXAMS Practice
@@ -1185,4 +1209,10 @@
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE06_CSharp_OOP_Exam_15_August_2021/P02_Business_Logic">P02_Business_Logic</a>
 <br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_OOP_June_2022/PE06_CSharp_OOP_Exam_15_August_2021/P03_Unit_Tests">P03_Unit_Tests</a>
   </details>
+</details>
+<details>
+  <summary>
+👈🏻 &#160;&#160;Web Exams
+  </summary>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1 - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022/EP01_Watchlist">EP01_Watchlist</a>
 </details>
