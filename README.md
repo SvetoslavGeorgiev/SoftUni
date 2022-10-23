@@ -9,7 +9,7 @@
 
 <details>
   <summary>
-👈🏻 &#160;&#160;<a href="https://https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics">Programming Basics</a>
+👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Programming_Basics">Programming Basics</a>
   </summary>
   <details>
   <summary>
