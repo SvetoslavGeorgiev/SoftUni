@@ -1,0 +1,27 @@
+﻿@model PostViewModel
+
+<h2 class="text-center">@ViewData["Title"]</h2>
+<hr />
+
+<div class="row">
+    <form asp-controller="Post" asp-action="Edit" method="post">
+        <input type="hidden" asp-for="@Model.Id" />
+        <div class="form-group">
+            <div class="mb-3">
+                <label asp-for="Title"></label>
+                <input asp-for="Title" class="form-control" placeholder="Write your title here...">
+                <span asp-validation-for="@Model.Title" class="small text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Content"></label>
+                <input asp-for="Content" class="form-control" placeholder="Write your post here...">
+                <span asp-validation-for="@Model.Content" class="small text-danger"></span>
+            </div>
+        </div>
+        <input class="btn btn-primary mt-3" type="submit" value="Submit" />
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
