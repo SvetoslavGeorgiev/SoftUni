@@ -2,7 +2,6 @@ using Library.Contracts;
 using Library.Data;
 using Library.Data.Entities;
 using Library.Services;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

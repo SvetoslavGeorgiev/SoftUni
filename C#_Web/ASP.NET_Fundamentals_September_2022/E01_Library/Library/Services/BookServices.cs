@@ -1,12 +1,11 @@
 ﻿namespace Library.Services
 {
-    using Library.Contracts;
-    using Library.Data;
-    using Library.Data.Entities;
-    using Library.Models;
-    using Library.Models.Books;
+    using Contracts;
+    using Data;
+    using Data.Entities;
+    using Models;
+    using Models.Books;
     using Microsoft.EntityFrameworkCore;
-    using Microsoft.EntityFrameworkCore.ChangeTracking;
     using System.Collections.Generic;
     using System.Threading.Tasks;
     using static Data.DataConstants.ApplicationUser;
@@ -54,14 +53,14 @@
 
             }
 
-            var book = await libraryDbContext.books.FirstOrDefaultAsync(u => u.Id == bookId);
+            var book = await libraryDbContext.books.FirstOrDefaultAsync(b => b.Id == bookId);
 
             if (book == null)
             {
                 throw new ArgumentException(InvalidBookId);
             }
 
-            if (!user.ApplicationUsersBooks.Any(m => m.BookId == bookId))
+            if (!user.ApplicationUsersBooks.Any(b => b.BookId == bookId))
             {
                 user.ApplicationUsersBooks.Add(new ApplicationUserBook()
                 {
@@ -106,8 +105,8 @@
                 .Users
                 .Where(u => u.Id == userId)
                 .Include(u => u.ApplicationUsersBooks)
-                .ThenInclude(um => um.Book)
-                .ThenInclude(m => m.Category)
+                .ThenInclude(aub => aub.Book)
+                .ThenInclude(b => b.Category)
                 .FirstOrDefaultAsync();
 
 
@@ -143,11 +142,11 @@
                 throw new ArgumentException(InvalidUserId);
             }
 
-            var movie = user.ApplicationUsersBooks.FirstOrDefault(m => m.BookId == bookId);
+            var book = user.ApplicationUsersBooks.FirstOrDefault(b => b.BookId == bookId);
 
-            if (movie != null)
+            if (book != null)
             {
-                user.ApplicationUsersBooks.Remove(movie);
+                user.ApplicationUsersBooks.Remove(book);
 
                 await libraryDbContext.SaveChangesAsync();
             }

@@ -1,16 +1,12 @@
 ﻿namespace Library.Controllers
 {
-    using Library.Contracts;
-    using Library.Models;
-    using Library.Models.Books;
+    using Contracts;
+    using Models;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.EntityFrameworkCore.ChangeTracking;
-    using Microsoft.Extensions.FileSystemGlobbing;
-    using System.Collections.Generic;
     using System.Security.Claims;
-    using static Library.Data.DataConstants.Book;
-    using static Library.Data.DataConstants.ControllerConstants;
+    using static Data.DataConstants.Book;
+    using static Data.DataConstants.ControllerConstants;
 
     [Authorize]
     public class BooksController : Controller
