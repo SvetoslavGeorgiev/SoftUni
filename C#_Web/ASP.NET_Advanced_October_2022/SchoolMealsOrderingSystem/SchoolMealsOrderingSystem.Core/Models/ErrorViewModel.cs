@@ -1,4 +1,4 @@
-namespace SchoolMealsOrderingSystem.Models
+namespace SchoolMealsOrderingSystem.Core.Models
 {
     public class ErrorViewModel
     {

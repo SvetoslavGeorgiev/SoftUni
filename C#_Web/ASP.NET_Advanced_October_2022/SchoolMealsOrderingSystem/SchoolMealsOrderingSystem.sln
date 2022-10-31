@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolMealsOrderingSystem", "SchoolMealsOrderingSystem\SchoolMealsOrderingSystem.csproj", "{6489984A-8C85-429E-A834-78781253EEED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolMealsOrderingSystem", "SchoolMealsOrderingSystem\SchoolMealsOrderingSystem.csproj", "{6489984A-8C85-429E-A834-78781253EEED}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DA6155A8-3775-4EE2-ABBC-31392E333FD5} = {DA6155A8-3775-4EE2-ABBC-31392E333FD5}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolMealsOrderingSystem.Core", "SchoolMealsOrderingSystem.Core\SchoolMealsOrderingSystem.Core.csproj", "{DA6155A8-3775-4EE2-ABBC-31392E333FD5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{317EAF13-F7B7-46BC-B34A-80EE64E882C4} = {317EAF13-F7B7-46BC-B34A-80EE64E882C4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolMealsOrderingSystem.Data", "SchoolMealsOrderingSystem.Data\SchoolMealsOrderingSystem.Data.csproj", "{317EAF13-F7B7-46BC-B34A-80EE64E882C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,14 @@ Global
 		{6489984A-8C85-429E-A834-78781253EEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6489984A-8C85-429E-A834-78781253EEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6489984A-8C85-429E-A834-78781253EEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA6155A8-3775-4EE2-ABBC-31392E333FD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA6155A8-3775-4EE2-ABBC-31392E333FD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA6155A8-3775-4EE2-ABBC-31392E333FD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA6155A8-3775-4EE2-ABBC-31392E333FD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317EAF13-F7B7-46BC-B34A-80EE64E882C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317EAF13-F7B7-46BC-B34A-80EE64E882C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317EAF13-F7B7-46BC-B34A-80EE64E882C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317EAF13-F7B7-46BC-B34A-80EE64E882C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

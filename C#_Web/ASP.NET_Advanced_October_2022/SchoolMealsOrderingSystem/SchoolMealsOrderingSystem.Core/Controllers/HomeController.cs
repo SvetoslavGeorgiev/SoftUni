@@ -1,8 +1,9 @@
-﻿namespace SchoolMealsOrderingSystem.Controllers
+﻿namespace SchoolMealsOrderingSystem.Core.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
-    using SchoolMealsOrderingSystem.Models;
+    using Microsoft.Extensions.Logging;
     using System.Diagnostics;
+    using Models;
 
     public class HomeController : Controller
     {
