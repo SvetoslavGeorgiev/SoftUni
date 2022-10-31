@@ -9,8 +9,8 @@
         <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
     </li>*@
     <li class="nav-item">
-            <form  class="form-inline" asp-controller="ParentUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
-            <button  type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+            <form  class="form-inline" asp-controller="ApplicationUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
+            <button  type="submit" class="nav-link btn btn-link text-dark">Изход</button>
         </form>
     </li>
 }

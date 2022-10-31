@@ -8,16 +8,16 @@
         [Key]
         [Required]
         [ForeignKey(nameof(ParentUser))]
-        internal int ParentUserId { get; set; }
+        public string ParentUserId { get; set; }
 
-        internal ParentUser ParentUser { get; set; } = null!;
+        public ParentUser ParentUser { get; set; } = null!;
 
         [Key]
         [Required]
         [ForeignKey(nameof(Child))]
-        internal int ChildId { get; set; }
+        public Guid ChildId { get; set; }
 
-        internal Child Child { get; set; } = null!;
+        public Child Child { get; set; } = null!;
 
     }
 }

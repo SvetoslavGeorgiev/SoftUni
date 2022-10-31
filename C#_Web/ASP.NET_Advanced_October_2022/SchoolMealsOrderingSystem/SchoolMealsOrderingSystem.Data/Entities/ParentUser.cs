@@ -6,6 +6,14 @@
 
     public class ParentUser : ApplicationUser
     {
+
+        public ParentUser()
+            : base()
+        {
+
+        }
+
+
         [Required]
         [MaxLength(FirstNameMaxLength)]
         public string FirstName { get; set; }
@@ -17,12 +25,15 @@
         [MaxLength(LastNameMaxLength)]
         public string LastName { get; set; }
 
+        
+
         [Required]
         [MaxLength(ParentChildRelationMaxLength)]
         public string ParentChildRelation { get; set; }
 
+        public virtual ICollection<ParentUser> ParentsChildren { get; set; } = new HashSet<ParentUser>();
 
-        public virtual List<ParentChild> ParentsChildren { get; set; } = new List<ParentChild>();
+
 
     }
 }

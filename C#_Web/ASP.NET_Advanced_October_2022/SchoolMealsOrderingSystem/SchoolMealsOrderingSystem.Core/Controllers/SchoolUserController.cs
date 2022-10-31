@@ -36,7 +36,6 @@
 
 
             return View(model);
-            //return View("Identity/ParentUser/Register", model);
         }
 
         [HttpGet]
