@@ -12,8 +12,8 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
             migrationBuilder.AlterColumn<string>(
                 name: "UserName",
                 table: "AspNetUsers",
-                type: "nvarchar(20)",
-                maxLength: 20,
+                type: "nvarchar(80)",
+                maxLength: 80,
                 nullable: false,
                 defaultValue: "",
                 oldClrType: typeof(string),
@@ -76,7 +76,7 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "SchoolName",
                 table: "AspNetUsers",
-                type: "nvarchar(40)",
+                type: "nvarchar(80)",
                 maxLength: 40,
                 nullable: true);
 

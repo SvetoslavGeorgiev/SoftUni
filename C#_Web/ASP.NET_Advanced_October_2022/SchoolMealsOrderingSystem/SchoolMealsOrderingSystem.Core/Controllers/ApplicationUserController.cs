@@ -2,7 +2,7 @@
 {
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
-    using SchoolMealsOrderingSystem.Data.Entities;
+    using Data.Entities;
 
     public class ApplicationUserController : Controller
     {

@@ -1,9 +1,12 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Models.SchoolUser
 {
     using System.ComponentModel.DataAnnotations;
-    using static Data.Constants.DataConstants.ParentUser;
+    using static Data.Constants.DataConstants.SchoolUser;
     public class SchoolRegisterViewModel
     {
+        [Required(ErrorMessage = "Полето \"Име на училище\" е задължително")]
+        [StringLength(SchoolNameMaxLength, MinimumLength = SchoolNameMinLength)]
+        public string SchoolName { get; set; }
 
         [Required]
         [EmailAddress(ErrorMessage = "Полето {0} е задължително")]

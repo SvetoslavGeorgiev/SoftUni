@@ -2,7 +2,7 @@
 {
     using Microsoft.AspNetCore.Identity;
     using System.ComponentModel.DataAnnotations;
-    using static SchoolMealsOrderingSystem.Data.Constants.DataConstants.ParentUser;
+    using static Constants.DataConstants.ParentUser;
 
     public class ParentUser : ApplicationUser
     {

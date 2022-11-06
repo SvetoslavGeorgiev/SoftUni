@@ -13,7 +13,7 @@
 
         }
 
-        [MaxLength(SchoolUserMaxLength)]
+        [MaxLength(SchoolNameMaxLength)]
         public string SchoolName { get; set; }
 
 

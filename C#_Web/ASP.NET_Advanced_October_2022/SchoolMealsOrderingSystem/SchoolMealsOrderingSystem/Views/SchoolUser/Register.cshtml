@@ -12,8 +12,13 @@
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="text-center mb-3">
+                <label asp-for="@Model.SchoolName">Име на училището</label>
+                <input class="form-control" autocomplete="SchoolName" aria-required="true" asp-for="@Model.SchoolName" />
+                <span asp-validation-for="@Model.SchoolName" class="text-danger"></span>
+            </div>
+            <div class="text-center mb-3">
                 <label asp-for="@Model.Email">Email</label>
-                <input class="form-control " autocomplete="username" aria-required="true" asp-for="@Model.Email" />
+                <input class="form-control" autocomplete="Email" aria-required="true" asp-for="@Model.Email" />
                 <span asp-validation-for="@Model.Email" class="text-danger"></span>
             </div>
             <div class="text-center mb-3">
