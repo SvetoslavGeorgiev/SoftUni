@@ -1,4 +1,4 @@
-﻿namespace SchoolMealsOrderingSystem.Core.Controllers
+﻿namespace SchoolMealsOrderingSystem.Controllers
 {
     using Microsoft.AspNetCore.Mvc;
 

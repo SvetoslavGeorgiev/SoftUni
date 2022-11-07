@@ -1,8 +1,8 @@
-﻿namespace SchoolMealsOrderingSystem.Core.Controllers
+﻿namespace SchoolMealsOrderingSystem.Controllers
 {
+    using Data.Entities;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
-    using Data.Entities;
 
     public class ApplicationUserController : Controller
     {

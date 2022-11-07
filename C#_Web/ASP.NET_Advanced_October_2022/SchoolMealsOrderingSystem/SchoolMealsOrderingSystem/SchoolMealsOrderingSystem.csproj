@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SchoolMealsOrderingSystem.Core\SchoolMealsOrderingSystem.Core.csproj" />
-    <ProjectReference Include="..\SchoolMealsOrderingSystem.Data\SchoolMealsOrderingSystem.Data.csproj" />
   </ItemGroup>
 
 </Project>

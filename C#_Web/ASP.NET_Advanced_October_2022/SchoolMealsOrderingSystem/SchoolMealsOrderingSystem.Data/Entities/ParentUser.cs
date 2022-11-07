@@ -1,6 +1,5 @@
 ﻿namespace SchoolMealsOrderingSystem.Data.Entities
 {
-    using Microsoft.AspNetCore.Identity;
     using System.ComponentModel.DataAnnotations;
     using static Constants.DataConstants.ParentUser;
 
