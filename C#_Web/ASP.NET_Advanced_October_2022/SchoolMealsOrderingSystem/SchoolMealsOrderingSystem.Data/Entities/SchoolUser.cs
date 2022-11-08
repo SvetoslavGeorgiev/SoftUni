@@ -17,7 +17,7 @@
         public string SchoolName { get; set; }
 
 
-        public ICollection<ParentUser> SchoolChildren { get; set; } = new HashSet<ParentUser>();
+        public virtual ICollection<ParentUser> SchoolChildren { get; set; } = new HashSet<ParentUser>();
 
     }
 

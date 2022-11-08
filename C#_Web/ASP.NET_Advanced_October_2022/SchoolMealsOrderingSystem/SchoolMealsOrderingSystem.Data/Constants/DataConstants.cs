@@ -21,11 +21,6 @@
             public const int PasswordMaxLength = 20;
             public const int PasswordMinLength = 5;
 
-            public const int RelationToChildMaxLength = 20;
-            public const int RelationToChildMixLength = 4;
-
-            public const int ParentChildRelationMaxLength = 30;
-            public const int ParentChildRelationMixLength = 30;
 
             public const string InvalidParentUserId = "Invalid Parent Id";
         }
@@ -54,13 +49,20 @@
             public const int LastNameMaxLength = 597;
             public const int LastNameMinLength = 5;
 
+            public const int RelationToChildMaxLength = 20;
+            public const int RelationToChildMinLength = 4;
+
+            public const string InvalidBook = "Въвели сте неправилна информация за детето!";
+
             public const string InvalidChildUserId = "Invalid Child Id";
+
+            public const string BirthdayFormat = "dd/MM/yyyy";
 
         }
 
         public class GeneralConstants
         {
-            public static string ErrorMessage = "Something went wrong. Please try again!";
+            public static string ErrorMessage = "Нещо се обърка. Моля опитайте отново!";
         }
 
 

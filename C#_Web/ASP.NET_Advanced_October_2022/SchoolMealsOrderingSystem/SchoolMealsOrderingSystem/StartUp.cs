@@ -1,5 +1,6 @@
-using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using SchoolMealsOrderingSystem.Core.Contracts;
+using SchoolMealsOrderingSystem.Core.Services;
 using SchoolMealsOrderingSystem.Data;
 using SchoolMealsOrderingSystem.Data.Entities;
 
@@ -21,6 +22,9 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
 
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<ISchoolServices, SchoolServices>();
+builder.Services.AddScoped<IChildServices, ChildServices>();
 
 var app = builder.Build();
 
@@ -46,6 +50,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-app.MapRazorPages();
+//app.MapRazorPages();
 
 app.Run();

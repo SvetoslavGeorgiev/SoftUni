@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SchoolMealsOrderingSystem.Data;
 
@@ -11,9 +12,10 @@ using SchoolMealsOrderingSystem.Data;
 namespace SchoolMealsOrderingSystem.Data.Migrations
 {
     [DbContext(typeof(SchoolMealsOrderingSystemDbContext))]
-    partial class SchoolMealsOrderingSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221107182235_removedChildRelationFromParentUser")]
+    partial class removedChildRelationFromParentUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -243,9 +245,6 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<DateTime>("Birthday")
-                        .HasColumnType("datetime2");
 
                     b.Property<string>("FirstName")
                         .IsRequired()

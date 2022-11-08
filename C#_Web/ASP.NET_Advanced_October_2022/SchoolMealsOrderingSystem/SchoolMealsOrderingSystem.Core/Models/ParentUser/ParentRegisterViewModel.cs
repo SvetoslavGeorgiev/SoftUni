@@ -5,7 +5,7 @@
     public class ParentRegisterViewModel
     {
 
-        [Required(ErrorMessage = "Полето \"Потребителско Име\" е задължително")]
+        [Required(ErrorMessage = "Полето \"Потребителско Име\" е задължително и трябва да е на латиница")]
         [StringLength(UserNameMaxLength, MinimumLength = UserNameMinLength, ErrorMessage = "Полето трябва да е между {2} и {1} символа")]
         public string UserName { get; set; } = null!;
 
@@ -16,10 +16,6 @@
         [Required(ErrorMessage = "Полето \"Фамилия\" е задължително")]
         [StringLength(LastNameMaxLength, MinimumLength = LastNameMinLength, ErrorMessage = "Полето трябва да е между {2} и {1} символа")]
         public string LastName { get; set; } = null!;
-
-        [Required(ErrorMessage = "Полето \"Връзката ви с детето\" е задължително")]
-        [StringLength(RelationToChildMaxLength, MinimumLength = RelationToChildMixLength, ErrorMessage = "Полето трябва да е между {2} и {1} символа")]
-        public string RelationToChild { get; set; } = null!;
 
         [Required(ErrorMessage = "Полето \"{0}\" е задължително")]
         [EmailAddress(ErrorMessage ="Невалиден Email")]

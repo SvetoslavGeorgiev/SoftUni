@@ -27,11 +27,6 @@
                 <span asp-validation-for="@Model.LastName" class="text-danger"></span>
             </div>
             <div class="text-center mb-3">
-                <label asp-for="@Model.RelationToChild">Връзката ви с детето</label>
-                <input class="form-control " autocomplete="RelationToChild" aria-required="true" asp-for="@Model.RelationToChild" />
-                <span asp-validation-for="@Model.RelationToChild" class="text-danger"></span>
-            </div>
-            <div class="text-center mb-3">
                 <label asp-for="@Model.Email">Email</label>
                 <input class="form-control " autocomplete="Email" aria-required="true" asp-for="@Model.Email" />
                 <span asp-validation-for="@Model.Email" class="text-danger"></span>

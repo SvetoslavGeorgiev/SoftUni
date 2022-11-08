@@ -69,7 +69,6 @@
                 UserName = model.UserName,
                 FirstName = model.FirstName,
                 LastName = model.LastName,
-                ParentChildRelation = model.RelationToChild,
                 IsSchool = false,
                 Email = model.Email
             };

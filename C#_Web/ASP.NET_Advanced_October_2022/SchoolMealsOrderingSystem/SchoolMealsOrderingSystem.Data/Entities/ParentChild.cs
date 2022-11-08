@@ -8,7 +8,7 @@
         [Key]
         [Required]
         [ForeignKey(nameof(ParentUser))]
-        public string ParentUserId { get; set; }
+        public string ParentUserId { get; set; } = null!;
 
         public ParentUser ParentUser { get; set; } = null!;
 

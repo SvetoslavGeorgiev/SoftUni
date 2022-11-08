@@ -24,11 +24,6 @@
         [MaxLength(LastNameMaxLength)]
         public string LastName { get; set; }
 
-        
-
-        [Required]
-        [MaxLength(ParentChildRelationMaxLength)]
-        public string ParentChildRelation { get; set; }
 
         public virtual ICollection<ParentUser> ParentsChildren { get; set; } = new HashSet<ParentUser>();
 
