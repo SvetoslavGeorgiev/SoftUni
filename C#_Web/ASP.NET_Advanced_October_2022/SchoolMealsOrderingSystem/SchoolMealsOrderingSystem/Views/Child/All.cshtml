@@ -15,13 +15,22 @@
                 <div class="card-body">
 
                     <h5 class="card-title mt-1">@child.FirstName @child.LastName</h5>
-                    <p class="mb-0">Години: @child.Age</p>
+                    @if (@child.MonthsOld != 0)
+                    {
+                        <p class="mb-0">Години: @child.YearsOld години и @child.MonthsOld месеца</p>
+
+                    }
+                    else
+                    {
+                        <p class="mb-0">Години: @child.YearsOld</p>
+                    }
+
                     <p class="mb-0">Училище: @child.School</p>
                 </div>
-
-                <form class="input-group-sm" asp-controller="Child" asp-action="Edit" asp-route-bookId="@child.Id">
-                    <input type="submit" value="Промени" class="fs-6 btn btn-success mb-3 p-2" />
-                </form>
+                    <a asp-controller="Child" asp-action="Edit" asp-route-childId="@child.Id" class="fs-6 btn btn-success mb-3 p-2">Редактирай</a>
+                @*<form class="input-group-sm" asp-controller="Child" asp-action="Edit" asp-route-Id="@child.Id.ToString()">
+                    <input type="submit" value="Редактирай" class="fs-6 btn btn-success mb-3 p-2" />
+                </form>*@
             </div>
     }
 </div>

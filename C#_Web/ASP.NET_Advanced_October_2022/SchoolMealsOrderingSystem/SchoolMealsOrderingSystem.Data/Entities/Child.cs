@@ -22,8 +22,17 @@
         [Column(TypeName = "date")]
         public DateTime Birthday { get; set; }
 
+        /// <summary>
+        /// auto calculated property for the years old of the child
+        /// </summary>
         [NotMapped]
-        public int Age => DateTime.Now.Year - Birthday.Year; 
+        public int YearsOld => (((DateTime.Now.Year - Birthday.Year) * 12) + DateTime.Now.Month - Birthday.Month) / 12;
+
+        /// <summary>
+        /// auto calculated property for the month old of the child if is born same month it will return 12
+        /// </summary>
+        [NotMapped]
+        public int Months => (Birthday.Month - DateTime.Now.Month) < 0 ? (12 - (Birthday.Month - DateTime.Now.Month)) - 12 : 12 - (Birthday.Month - DateTime.Now.Month);
 
         public virtual ICollection<ParentChild> ParentsChildren { get; set; } = new HashSet<ParentChild>();
 

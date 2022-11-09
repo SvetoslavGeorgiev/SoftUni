@@ -11,11 +11,11 @@
         {
         }
 
-        public DbSet<Child> Children { get; set; } = null!;
+        public DbSet<Child> Children { get; set; } 
 
-        public DbSet<SchoolUser> SchoolUsers { get; set; } = null!;
+        public DbSet<SchoolUser> SchoolUsers { get; set; } 
 
-        public DbSet<ParentUser> ParentUsers { get; set; } = null!; 
+        public DbSet<ParentUser> ParentUsers { get; set; } 
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
