@@ -18,7 +18,7 @@
             schoolMealsOrderingSystemDbContext = _schoolMealsOrderingSystemDbContext;
         }
 
-        public async Task AddChildAsync(AddChildViewModel AddChildViewModel, string userId)
+        public async Task AddChildAsync(AddChildViewModel addChildViewModel, string userId)
         {
             var user = await schoolMealsOrderingSystemDbContext
                 .ParentUsers
@@ -35,11 +35,11 @@
 
             var child = new Child()
             {
-                FirstName = AddChildViewModel.FirstName,
-                LastName = AddChildViewModel.LastName,
-                Birthday = AddChildViewModel.Birthday,
-                SchoolUserId = AddChildViewModel.SchoolUserId,
-                ParentChildRelation = AddChildViewModel.RelationToChild
+                FirstName = addChildViewModel.FirstName,
+                LastName = addChildViewModel.LastName,
+                Birthday = addChildViewModel.Birthday,
+                SchoolUserId = addChildViewModel.SchoolUserId,
+                ParentChildRelation = addChildViewModel.RelationToChild
             };
 
 
@@ -51,6 +51,25 @@
 
             await schoolMealsOrderingSystemDbContext.Children.AddAsync(child);
 
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+
+        }
+
+        public async Task EditChildAsync(EditChildViewModel editChildViewModel)
+        {
+
+            var child = await schoolMealsOrderingSystemDbContext
+                .Children.FindAsync(editChildViewModel.Id);
+
+            if (child != null)
+            {
+                child.FirstName = editChildViewModel.FirstName;
+                child.LastName = editChildViewModel.LastName;
+                child.Birthday = editChildViewModel.Birthday;
+                child.SchoolUserId= editChildViewModel.SchoolUserId;
+                child.ParentChildRelation = editChildViewModel.RelationToChild;
+            }
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
 
@@ -68,8 +87,6 @@
                 .ThenInclude(pu => pu.Child.SchoolUser)
                 .FirstAsync();
 
-            Console.WriteLine();
-
 
             var result = parent
                 .ParentsChildren
@@ -78,13 +95,32 @@
                     Id = pc.Child.Id,
                     FirstName = pc.Child.FirstName,
                     LastName = pc.Child.LastName,
-                    Age = pc.Child.Age,
-                    School = pc.Child?.SchoolUser?.SchoolName
+                    YearsOld = pc.Child.YearsOld,
+                    MonthsOld = pc.Child.Months == 12 ? 0 : pc.Child.Months,
+                    School = pc.Child.SchoolUser?.SchoolName
                 });
 
-            Console.WriteLine();
 
             return result;
+        }
+
+        public async Task<EditChildViewModel> GetChildModelForEditAsync(Guid childId)
+        {
+
+            var child = await schoolMealsOrderingSystemDbContext
+                .Children
+                .Where(c => c.Id.Equals(childId))
+                .Select(c => new EditChildViewModel
+                {
+                    Id = c.Id,
+                    FirstName = c.FirstName,
+                    LastName = c.LastName,
+                    Birthday = c.Birthday,
+                    RelationToChild = c.ParentChildRelation
+                })
+                .SingleOrDefaultAsync();
+
+            return child;
         }
     }
 }

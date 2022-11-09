@@ -1,0 +1,53 @@
+﻿@model EditChildViewModel
+
+@{
+    ViewBag.Title = "Редакция на детето";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<div class="row">
+    <form asp-controller="Child" asp-action="Edit" method="post">
+        <input type="hidden" asp-for="@Model.Id" />
+        <div class="mb-3">
+            <label asp-for="@Model.FirstName" class="form-label">Име</label>
+            <input asp-for="@Model.FirstName" class="form-control" aria-required="true" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="@Model.LastName" class="form-label">Фамилия</label>
+            <input asp-for="@Model.LastName" class="form-control" aria-required="true" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="@Model.RelationToChild" class="form-label">Връзката ви с детето</label>
+            <input asp-for="@Model.RelationToChild" class="form-control" aria-required="true" />
+            <span asp-validation-for="RelationToChild" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="@Model.Birthday" class="form-label">Дата на раждане</label>
+            <input asp-for="@Model.Birthday" type="date" min="1997-01-01" max="2030-12-31" class="form-control" aria-required="true" />
+            <span asp-validation-for="Birthday" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="@Model.SchoolUserId" class="form-label">Училищe</label>
+
+            <select asp-for="@Model.SchoolUserId" class="form-control">
+                <option value="">-- Избери училище --</option>
+                @foreach (SchoolUser school in Model.Schools)
+                {
+                    <option value="@school.Id">@school.SchoolName</option>
+                }
+            </select>
+            <span asp-validation-for="SchoolUserId" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Потвърди" />
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+}

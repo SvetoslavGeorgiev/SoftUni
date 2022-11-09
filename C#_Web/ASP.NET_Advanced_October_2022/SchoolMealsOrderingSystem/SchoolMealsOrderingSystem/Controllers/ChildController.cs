@@ -19,7 +19,7 @@
             childServices = _childServices;
         }
 
-
+        [HttpGet]
         public async Task<IActionResult> All()
         {
 
@@ -32,6 +32,8 @@
             }
 
             var model = await childServices.GetAllMyChildrenAsync(userId);
+
+            Console.WriteLine();
 
             return View(model);
         }
@@ -46,7 +48,6 @@
                 Schools = await schoolServices.GetSchoolsAsync()
             };
 
-            Console.WriteLine();
 
             return View(model);
         }
@@ -65,6 +66,7 @@
 
                 string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
+
                 await childServices.AddChildAsync(model, userId);
 
 
@@ -79,7 +81,51 @@
                 return View(model);
             }
 
-            
+
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(Guid childId)
+        {
+
+            var child = await childServices.GetChildModelForEditAsync(childId);
+
+            if (child == null)
+            {
+                return RedirectToAction(nameof(All));
+            }
+
+            child.Schools = await schoolServices.GetSchoolsAsync();
+
+            return View(child);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(EditChildViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            try
+            {
+
+                await childServices.EditChildAsync(model);
+
+
+                return RedirectToAction(nameof(All));
+
+            }
+            catch (Exception)
+            {
+
+                ModelState.AddModelError(string.Empty, InvalidChildUserId);
+
+                return View(model);
+            }
         }
     }
 }
