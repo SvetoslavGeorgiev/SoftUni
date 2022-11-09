@@ -21,8 +21,9 @@
         public async Task AddChildAsync(AddChildViewModel AddChildViewModel, string userId)
         {
             var user = await schoolMealsOrderingSystemDbContext
-                .Users
-                .Where(u => u.Id == userId)
+                .ParentUsers
+                .Where(pu => pu.Id == userId)
+                .Include(pu => pu.ParentsChildren)
                 .FirstOrDefaultAsync();
 
 
@@ -37,41 +38,53 @@
                 FirstName = AddChildViewModel.FirstName,
                 LastName = AddChildViewModel.LastName,
                 Birthday = AddChildViewModel.Birthday,
-                SchoolId = AddChildViewModel.SchoolId,
+                SchoolUserId = AddChildViewModel.SchoolUserId,
                 ParentChildRelation = AddChildViewModel.RelationToChild
             };
 
 
-            child.ParentsChildren.Add((ParentUser)user);
+            child.ParentsChildren.Add(new ParentChild
+            {
+                Child = child,
+                ParentUser = user,
+            });
 
             await schoolMealsOrderingSystemDbContext.Children.AddAsync(child);
 
-            await schoolMealsOrderingSystemDbContext.ParentChild.AddAsync(new ParentChild
-            {
-                ChildId = child.Id,
-                ParentUserId = userId
-            });
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
 
         }
 
-        public async Task<IEnumerable<ChildViewModel>> GetAllAsync()
+        public async Task<IEnumerable<ChildViewModel>> GetAllMyChildrenAsync(string userId)
         {
-            var entities = await schoolMealsOrderingSystemDbContext
-                .Children
-                .Include(c => c.SchoolUser)
-                .ToListAsync();
 
-            return entities
-                .Select(ch => new ChildViewModel
+            var parent = await schoolMealsOrderingSystemDbContext
+                .ParentUsers
+                .Where(pu => pu.Id == userId)
+                .Include(pu => pu.ParentsChildren)
+                .ThenInclude(pu => pu.Child)
+                .Include(pu => pu.ParentsChildren)
+                .ThenInclude(pu => pu.Child.SchoolUser)
+                .FirstAsync();
+
+            Console.WriteLine();
+
+
+            var result = parent
+                .ParentsChildren
+                .Select(pc => new ChildViewModel
                 {
-                    Id = ch.Id,
-                    FirstName = ch.FirstName,
-                    LastName = ch.LastName,
-                    Age = ch.Age,
-                    School = ch.SchoolUser.SchoolName
+                    Id = pc.Child.Id,
+                    FirstName = pc.Child.FirstName,
+                    LastName = pc.Child.LastName,
+                    Age = pc.Child.Age,
+                    School = pc.Child?.SchoolUser?.SchoolName
                 });
+
+            Console.WriteLine();
+
+            return result;
         }
     }
 }

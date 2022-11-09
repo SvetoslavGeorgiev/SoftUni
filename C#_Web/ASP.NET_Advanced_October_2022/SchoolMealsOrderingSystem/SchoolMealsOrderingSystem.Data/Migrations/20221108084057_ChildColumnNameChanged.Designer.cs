@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SchoolMealsOrderingSystem.Data;
 
@@ -11,9 +12,10 @@ using SchoolMealsOrderingSystem.Data;
 namespace SchoolMealsOrderingSystem.Data.Migrations
 {
     [DbContext(typeof(SchoolMealsOrderingSystemDbContext))]
-    partial class SchoolMealsOrderingSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221108084057_ChildColumnNameChanged")]
+    partial class ChildColumnNameChanged
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -292,6 +294,9 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
                 {
                     b.HasBaseType("SchoolMealsOrderingSystem.Data.Entities.ApplicationUser");
 
+                    b.Property<Guid?>("ChildId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasMaxLength(30)
@@ -302,8 +307,15 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
                         .HasMaxLength(597)
                         .HasColumnType("nvarchar(597)");
 
+                    b.Property<string>("ParentUserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("SchoolUserId")
                         .HasColumnType("nvarchar(450)");
+
+                    b.HasIndex("ChildId");
+
+                    b.HasIndex("ParentUserId");
 
                     b.HasIndex("SchoolUserId");
 
@@ -387,13 +399,13 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
             modelBuilder.Entity("SchoolMealsOrderingSystem.Data.Entities.ParentChild", b =>
                 {
                     b.HasOne("SchoolMealsOrderingSystem.Data.Entities.Child", "Child")
-                        .WithMany("ParentsChildren")
+                        .WithMany()
                         .HasForeignKey("ChildId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("SchoolMealsOrderingSystem.Data.Entities.ParentUser", "ParentUser")
-                        .WithMany("ParentsChildren")
+                        .WithMany()
                         .HasForeignKey("ParentUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -405,6 +417,14 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
 
             modelBuilder.Entity("SchoolMealsOrderingSystem.Data.Entities.ParentUser", b =>
                 {
+                    b.HasOne("SchoolMealsOrderingSystem.Data.Entities.Child", null)
+                        .WithMany("ParentsChildren")
+                        .HasForeignKey("ChildId");
+
+                    b.HasOne("SchoolMealsOrderingSystem.Data.Entities.ParentUser", null)
+                        .WithMany("ParentsChildren")
+                        .HasForeignKey("ParentUserId");
+
                     b.HasOne("SchoolMealsOrderingSystem.Data.Entities.SchoolUser", null)
                         .WithMany("SchoolChildren")
                         .HasForeignKey("SchoolUserId");

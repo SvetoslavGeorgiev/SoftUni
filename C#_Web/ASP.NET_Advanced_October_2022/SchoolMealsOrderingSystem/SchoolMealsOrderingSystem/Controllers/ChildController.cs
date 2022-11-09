@@ -5,6 +5,7 @@
     using SchoolMealsOrderingSystem.Core.Models.Child;
     using System.Security.Claims;
     using static Data.Constants.DataConstants.Child;
+    using static Data.Constants.DataConstants.ParentUser;
 
     public class ChildController : Controller
     {
@@ -21,7 +22,16 @@
 
         public async Task<IActionResult> All()
         {
-            var model = await childServices.GetAllAsync();
+
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+
+            if (userId == null)
+            {
+                throw new ArgumentException(InvalidParentUserId);
+            }
+
+            var model = await childServices.GetAllMyChildrenAsync(userId);
 
             return View(model);
         }

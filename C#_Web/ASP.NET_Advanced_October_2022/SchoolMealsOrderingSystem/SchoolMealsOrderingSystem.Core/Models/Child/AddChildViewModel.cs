@@ -23,7 +23,7 @@
         public DateTime Birthday { get; set; }
 
 
-        public string SchoolId { get; set; }
+        public string SchoolUserId { get; set; } = null!;
 
         public IEnumerable<ApplicationUser> Schools = new HashSet<ApplicationUser>();
 

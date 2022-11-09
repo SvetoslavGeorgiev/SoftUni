@@ -15,17 +15,17 @@
 
         [Required]
         [MaxLength(FirstNameMaxLength)]
-        public string FirstName { get; set; }
+        public string FirstName { get; set; } = null!;
 
         /// <summary>
         /// https://www.guinnessworldrecords.com/world-records/67285-longest-personal-name -> Longest personal name by Guinness Total(774), last(597)
         /// </summary>
         [Required]
         [MaxLength(LastNameMaxLength)]
-        public string LastName { get; set; }
+        public string LastName { get; set; } = null!;
 
 
-        public virtual ICollection<ParentUser> ParentsChildren { get; set; } = new HashSet<ParentUser>();
+        public virtual ICollection<ParentChild> ParentsChildren { get; set; } = new HashSet<ParentChild>();
 
 
 

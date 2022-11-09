@@ -19,17 +19,18 @@
         public string LastName { get; set; } = null!;
 
         [Required]
-        [DataType(DataType.Date)]
+        [Column(TypeName = "date")]
         public DateTime Birthday { get; set; }
 
         [NotMapped]
-        public int Age => DateTime.UtcNow.Year - Birthday.Year; 
+        public int Age => DateTime.Now.Year - Birthday.Year; 
 
-        public virtual ICollection<ParentUser> ParentsChildren { get; set; } = new HashSet<ParentUser>();
+        public virtual ICollection<ParentChild> ParentsChildren { get; set; } = new HashSet<ParentChild>();
 
         [Required]
         [ForeignKey(nameof(SchoolUser))]
-        public string SchoolId { get; set; } = null!;
+
+        public string SchoolUserId { get; set; } = null!;
 
         public SchoolUser? SchoolUser { get; set; }
 

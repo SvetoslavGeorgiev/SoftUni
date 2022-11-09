@@ -10,7 +10,7 @@
     public interface IChildServices
     {
 
-        Task<IEnumerable<ChildViewModel>> GetAllAsync();
+        Task<IEnumerable<ChildViewModel>> GetAllMyChildrenAsync(string userId);
 
         Task AddChildAsync(AddChildViewModel AddChildViewModel, string userId);
 
