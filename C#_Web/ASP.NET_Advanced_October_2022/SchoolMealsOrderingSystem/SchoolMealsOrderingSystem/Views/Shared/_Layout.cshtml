@@ -19,13 +19,19 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        @if (User?.Identity?.IsAuthenticated ?? false)
+                        @if (User.IsInRole(Parent) && User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Child" asp-action="All">Мойте деца</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Child" asp-action="Add">Добави дете</a>
+                            </li>
+                        }
+                        else if (User.Identity.IsAuthenticated && User.IsInRole(School))
+                        {
+                            <li class="nav-item">
+                                 <a class="nav-link text-dark" asp-area="" asp-controller="School" asp-action="AllChildrenInSchool">Децата в училище</a>
                             </li>
                         }
                         else

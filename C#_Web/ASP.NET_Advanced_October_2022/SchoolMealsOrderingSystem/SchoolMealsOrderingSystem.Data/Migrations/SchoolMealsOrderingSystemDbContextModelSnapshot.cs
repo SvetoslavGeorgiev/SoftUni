@@ -266,6 +266,11 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("YearInSchool")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("SchoolUserId");
@@ -301,11 +306,6 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
                         .IsRequired()
                         .HasMaxLength(597)
                         .HasColumnType("nvarchar(597)");
-
-                    b.Property<string>("SchoolUserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasIndex("SchoolUserId");
 
                     b.HasDiscriminator().HasValue("ParentUser");
                 });
@@ -376,7 +376,7 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
             modelBuilder.Entity("SchoolMealsOrderingSystem.Data.Entities.Child", b =>
                 {
                     b.HasOne("SchoolMealsOrderingSystem.Data.Entities.SchoolUser", "SchoolUser")
-                        .WithMany()
+                        .WithMany("SchoolChildren")
                         .HasForeignKey("SchoolUserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -401,13 +401,6 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
                     b.Navigation("Child");
 
                     b.Navigation("ParentUser");
-                });
-
-            modelBuilder.Entity("SchoolMealsOrderingSystem.Data.Entities.ParentUser", b =>
-                {
-                    b.HasOne("SchoolMealsOrderingSystem.Data.Entities.SchoolUser", null)
-                        .WithMany("SchoolChildren")
-                        .HasForeignKey("SchoolUserId");
                 });
 
             modelBuilder.Entity("SchoolMealsOrderingSystem.Data.Entities.Child", b =>

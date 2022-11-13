@@ -11,26 +11,27 @@
 <div class="text-center row">
     @foreach (var child in Model)
     {
-            <div class="card col-4" style="width: 20rem; ">
-                <div class="card-body">
+        <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px; background-color: honeydew">
+            <div class="card-body">
+                <h5 class="card-title mt-1" style="color: darkgreen">@child.FirstName @child.LastName</h5>
+                @if (@child.MonthsOld != 0)
+                {
+                    <p class= "mb-2" style="color: darkviolet">Години: @child.YearsOld години и @child.MonthsOld месеца</p>
 
-                    <h5 class="card-title mt-1">@child.FirstName @child.LastName</h5>
-                    @if (@child.MonthsOld != 0)
-                    {
-                        <p class="mb-0">Години: @child.YearsOld години и @child.MonthsOld месеца</p>
-
-                    }
-                    else
-                    {
-                        <p class="mb-0">Години: @child.YearsOld</p>
-                    }
-
-                    <p class="mb-0">Училище: @child.School</p>
-                </div>
-                    <a asp-controller="Child" asp-action="Edit" asp-route-childId="@child.Id" class="fs-6 btn btn-success mb-3 p-2">Редактирай</a>
-                @*<form class="input-group-sm" asp-controller="Child" asp-action="Edit" asp-route-Id="@child.Id.ToString()">
-                    <input type="submit" value="Редактирай" class="fs-6 btn btn-success mb-3 p-2" />
-                </form>*@
+                }
+                else
+                {
+                    <p class="mb-2" style="color: darkviolet">Години: @child.YearsOld</p>
+                }
+                <p class="mb-0" style="color: coral">Училище: @child.School</p>
+                <p class="mb-0" style="color: darkblue">Клас в училище: @child.YearInSchool</p>
             </div>
+            <div class="mb-3">
+                 <a asp-controller="Child" asp-action="Edit" asp-route-childId="@child.Id" class="fs-6 btn btn-outline-primary mb-3 p-2">Редактирай</a>
+            </div>
+            @*<form class="input-group-sm" asp-controller="Child" asp-action="Edit" asp-route-Id="@child.Id.ToString()">
+                <input type="submit" value="Редактирай" class="fs-6 btn btn-success mb-3 p-2" />
+            </form>*@
+        </div>
     }
 </div>

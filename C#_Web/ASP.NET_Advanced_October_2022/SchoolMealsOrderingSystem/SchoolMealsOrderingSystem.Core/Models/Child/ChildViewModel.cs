@@ -1,6 +1,5 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Models.Child
 {
-    using Microsoft.EntityFrameworkCore;
     using System.ComponentModel.DataAnnotations;
 
     public class ChildViewModel
@@ -15,6 +14,8 @@
         public int YearsOld { get; set; }
 
         public int MonthsOld { get; set; }
+
+        public string YearInSchool { get; set; } = null!;
 
         public string School { get; set; } = null!;
 

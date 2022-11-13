@@ -4,8 +4,14 @@
 
     public class ApplicationUser : IdentityUser
     {
-        public bool IsDeleted { get; set; } = false;
+        public ApplicationUser()
+        {
+            IsDeleted= false;
+            IsSchool= false;
+        }
 
-        public bool IsSchool { get; set; } = false;
+        public bool IsDeleted { get; set; }
+
+        public bool IsSchool { get; set; }
     }
 }

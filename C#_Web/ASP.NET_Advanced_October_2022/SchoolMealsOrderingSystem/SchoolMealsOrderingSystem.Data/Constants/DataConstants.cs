@@ -52,17 +52,29 @@
             public const int RelationToChildMaxLength = 20;
             public const int RelationToChildMinLength = 4;
 
+            public const int YearInSchoolMaxLength = 25;
+            public const int YearInSchoolMinLength = 2;
+
             public const string InvalidBook = "Въвели сте неправилна информация за детето!";
+
+            public const string ErrorMassageForTheLengthOfTheField = "Полето трябва да е между {2} и {1} символа";
+
+
 
             public const string InvalidChildUserId = "Invalid Child Id";
 
-            public const string BirthdayFormat = "dd/MM/yyyy";
+            public const string BirthdayTypeFormat = "date";
+
+
 
         }
 
         public class GeneralConstants
         {
-            public static string ErrorMessage = "Нещо се обърка. Моля опитайте отново!";
+            public const string ErrorMessage = "Нещо се обърка. Моля опитайте отново!";
+
+            public const string AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+ чявертъуиопшщасдфгхйклюзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЮЗЬЦЖБНМ";
+
         }
 
 

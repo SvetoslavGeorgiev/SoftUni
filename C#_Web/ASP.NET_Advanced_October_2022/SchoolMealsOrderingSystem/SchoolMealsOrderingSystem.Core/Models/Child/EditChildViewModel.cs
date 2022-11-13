@@ -13,20 +13,24 @@
         public Guid Id { get; set; }
 
         [Required(ErrorMessage = "Полето \"Име\" е задължително")]
-        [StringLength(FirstNameMaxLength, MinimumLength = FirstNameMinLength, ErrorMessage = "Полето трябва да е между {2} и {1} символа")]
+        [StringLength(FirstNameMaxLength, MinimumLength = FirstNameMinLength, ErrorMessage = ErrorMassageForTheLengthOfTheField)]
         public string FirstName { get; set; } = null!;
 
         [Required(ErrorMessage = "Полето \"Фамилия\" е задължително")]
-        [StringLength(LastNameMaxLength, MinimumLength = LastNameMinLength, ErrorMessage = "Полето трябва да е между {2} и {1} символа")]
+        [StringLength(LastNameMaxLength, MinimumLength = LastNameMinLength, ErrorMessage = ErrorMassageForTheLengthOfTheField)]
         public string LastName { get; set; } = null!;
 
         [Required(ErrorMessage = "Полето \"Връзката ви с детето\" е задължително")]
-        [StringLength(RelationToChildMaxLength, MinimumLength = RelationToChildMinLength, ErrorMessage = "Полето трябва да е между {2} и {1} символа")]
+        [StringLength(RelationToChildMaxLength, MinimumLength = RelationToChildMinLength, ErrorMessage = ErrorMassageForTheLengthOfTheField)]
         public string RelationToChild { get; set; } = null!;
 
         [Required(ErrorMessage = "Полето \"Дата на раждане\" е задължително")]
         [DataType(DataType.Date)]
         public DateTime Birthday { get; set; }
+
+        [Required(ErrorMessage = "Полето \"Клас в училище\" е задължително")]
+        [StringLength(YearInSchoolMaxLength, MinimumLength = YearInSchoolMinLength, ErrorMessage = ErrorMassageForTheLengthOfTheField)]
+        public string YearInSchool { get; set; } = null!;
 
 
         public string SchoolUserId { get; set; } = null!;

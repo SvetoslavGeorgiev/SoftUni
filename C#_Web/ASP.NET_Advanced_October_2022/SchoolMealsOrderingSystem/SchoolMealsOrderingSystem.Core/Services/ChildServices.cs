@@ -39,7 +39,8 @@
                 LastName = addChildViewModel.LastName,
                 Birthday = addChildViewModel.Birthday,
                 SchoolUserId = addChildViewModel.SchoolUserId,
-                ParentChildRelation = addChildViewModel.RelationToChild
+                ParentChildRelation = addChildViewModel.RelationToChild,
+                YearInSchool = addChildViewModel.YearInSchool
             };
 
 
@@ -50,7 +51,6 @@
             });
 
             await schoolMealsOrderingSystemDbContext.Children.AddAsync(child);
-
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
 
@@ -69,6 +69,7 @@
                 child.Birthday = editChildViewModel.Birthday;
                 child.SchoolUserId= editChildViewModel.SchoolUserId;
                 child.ParentChildRelation = editChildViewModel.RelationToChild;
+                child.YearInSchool= editChildViewModel.YearInSchool;
             }
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
@@ -90,6 +91,8 @@
 
             var result = parent
                 .ParentsChildren
+                .OrderBy(pc => pc.Child.FirstName)
+                .ThenBy(pc => pc.Child.LastName)
                 .Select(pc => new ChildViewModel
                 {
                     Id = pc.Child.Id,
@@ -97,7 +100,8 @@
                     LastName = pc.Child.LastName,
                     YearsOld = pc.Child.YearsOld,
                     MonthsOld = pc.Child.Months == 12 ? 0 : pc.Child.Months,
-                    School = pc.Child.SchoolUser?.SchoolName
+                    YearInSchool= pc.Child.YearInSchool,
+                    School = pc.Child.SchoolUser.SchoolName
                 });
 
 
@@ -116,7 +120,8 @@
                     FirstName = c.FirstName,
                     LastName = c.LastName,
                     Birthday = c.Birthday,
-                    RelationToChild = c.ParentChildRelation
+                    RelationToChild = c.ParentChildRelation,
+                    YearInSchool = c.YearInSchool
                 })
                 .SingleOrDefaultAsync();
 

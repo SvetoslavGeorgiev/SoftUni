@@ -9,7 +9,7 @@
         public ParentUser()
             : base()
         {
-
+            ParentsChildren = new HashSet<ParentChild>();
         }
 
 
@@ -25,7 +25,7 @@
         public string LastName { get; set; } = null!;
 
 
-        public virtual ICollection<ParentChild> ParentsChildren { get; set; } = new HashSet<ParentChild>();
+        public virtual ICollection<ParentChild> ParentsChildren { get; set; }
 
 
 

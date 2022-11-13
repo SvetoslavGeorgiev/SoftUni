@@ -8,19 +8,16 @@
     using static Data.Constants.DataConstants.GeneralConstants;
 
     [Authorize]
-    public class ParentUserController : Controller
+    public class ParentUserController : ApplicationUserController
     {
 
-        private readonly UserManager<ApplicationUser> userManager;
-        private readonly SignInManager<ApplicationUser> signInManager;
-
-
         public ParentUserController(
-            UserManager<ApplicationUser> _userManager,
-            SignInManager<ApplicationUser> _signInManager)
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager,
+            RoleManager<IdentityRole> roleManager)
+            :base(userManager, signInManager, roleManager)
         {
-            userManager = _userManager;
-            signInManager = _signInManager;
+
 
         }
 
@@ -73,7 +70,7 @@
                 Email = model.Email
             };
 
-            var result = await userManager.CreateAsync(user, model.Password);
+            var result = await UserManager.CreateAsync(user, model.Password);
 
             if (result.Succeeded)
             {
@@ -99,11 +96,11 @@
                 return View(model);
             }
 
-            var user = await userManager.FindByNameAsync(model.UserName);
+            var user = await UserManager.FindByNameAsync(model.UserName);
 
             if (user != null)
             {
-                var result = await signInManager.PasswordSignInAsync(user, model.Password, false, false);
+                var result = await SignInManager.PasswordSignInAsync(user, model.Password, false, false);
 
                 if (result.Succeeded)
                 {

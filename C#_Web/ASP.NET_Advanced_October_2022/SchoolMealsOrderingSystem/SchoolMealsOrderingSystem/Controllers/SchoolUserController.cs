@@ -8,20 +8,15 @@
     using static Data.Constants.DataConstants.GeneralConstants;
 
     [Authorize]
-    public class SchoolUserController : Controller
+    public class SchoolUserController : ApplicationUserController
     {
-        private readonly UserManager<ApplicationUser> userManager;
-        private readonly SignInManager<ApplicationUser> signInManager;
-
 
         public SchoolUserController(
-            UserManager<ApplicationUser> _userManager,
-            SignInManager<ApplicationUser> _signInManager)
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager,
+            RoleManager<IdentityRole> roleManager)
+            : base(userManager, signInManager, roleManager)
         {
-
-            userManager = _userManager;
-            signInManager = _signInManager;
-
         }
 
 
@@ -60,7 +55,7 @@
                 IsDeleted = false
             };
 
-            var result = await userManager.CreateAsync(user, model.Password);
+            var result = await UserManager.CreateAsync(user, model.Password);
 
             if (result.Succeeded)
             {
@@ -99,11 +94,11 @@
                 return View(model);
             }
 
-            var user = await userManager.FindByEmailAsync(model.Email);
+            var user = await UserManager.FindByEmailAsync(model.Email);
 
             if (user != null)
             {
-                var result = await signInManager.PasswordSignInAsync(user, model.Password, false, false);
+                var result = await SignInManager.PasswordSignInAsync(user, model.Password, false, false);
 
                 if (result.Succeeded)
                 {

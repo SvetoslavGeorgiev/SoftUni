@@ -19,7 +19,7 @@
         public string LastName { get; set; } = null!;
 
         [Required]
-        [Column(TypeName = "date")]
+        [Column(TypeName = BirthdayTypeFormat)]
         public DateTime Birthday { get; set; }
 
         /// <summary>
@@ -42,6 +42,10 @@
         public string SchoolUserId { get; set; } = null!;
 
         public SchoolUser? SchoolUser { get; set; }
+
+        [Required]
+        [MaxLength(YearInSchoolMaxLength)]
+        public string YearInSchool { get; set; } = null!;
 
         [Required]
         [MaxLength(RelationToChildMaxLength)]

@@ -10,14 +10,14 @@
         public SchoolUser()
             : base()
         {
-
+            SchoolChildren = new HashSet<Child>();
         }
 
         [MaxLength(SchoolNameMaxLength)]
-        public string SchoolName { get; set; }
+        public string SchoolName { get; set; } = null!;
 
 
-        public virtual ICollection<ParentUser> SchoolChildren { get; set; } = new HashSet<ParentUser>();
+        public virtual ICollection<Child> SchoolChildren { get; set; }
 
     }
 

@@ -15,4 +15,8 @@
     <ProjectReference Include="..\SchoolMealsOrderingSystem.Data\SchoolMealsOrderingSystem.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\School\" />
+  </ItemGroup>
+
 </Project>

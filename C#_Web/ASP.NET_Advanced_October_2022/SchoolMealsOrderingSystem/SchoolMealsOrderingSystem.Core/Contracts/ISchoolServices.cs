@@ -1,5 +1,6 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Contracts
 {
+    using SchoolMealsOrderingSystem.Core.Models.Child;
     using SchoolMealsOrderingSystem.Data.Entities;
     using System;
     using System.Collections.Generic;
@@ -9,6 +10,9 @@
 
     public interface ISchoolServices
     {
-        Task<IEnumerable<ApplicationUser>> GetSchoolsAsync();
+        Task<IEnumerable<SchoolUser>> GetSchoolsAsync();
+
+        Task<IEnumerable<ChildViewModel>> GetAllChildrenInSelectedSchoolAsync(string schoolUserId);
+
     }
 }

@@ -2,8 +2,10 @@
 {
     using Microsoft.EntityFrameworkCore;
     using SchoolMealsOrderingSystem.Core.Contracts;
+    using SchoolMealsOrderingSystem.Core.Models.Child;
     using SchoolMealsOrderingSystem.Data;
     using SchoolMealsOrderingSystem.Data.Entities;
+    using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
@@ -16,9 +18,29 @@
             schoolMealsOrderingSystemDbContext = _schoolMealsOrderingSystemDbContext;
         }
 
-        public async Task<IEnumerable<ApplicationUser>> GetSchoolsAsync()
+
+
+        public async Task<IEnumerable<ChildViewModel>> GetAllChildrenInSelectedSchoolAsync(string schoolUserId)
         {
-            var result =  await schoolMealsOrderingSystemDbContext.Users.Where(u => u.IsSchool && !u.IsDeleted).ToListAsync();
+            return await schoolMealsOrderingSystemDbContext
+                .SchoolUsers.Where(su => su.Id == schoolUserId)
+                .Select(su => su.SchoolChildren.Select(c => new ChildViewModel
+                {
+                    Id= c.Id,
+                    FirstName = c.FirstName,
+                    LastName = c.LastName,
+                    YearsOld = c.YearsOld,
+                    YearInSchool= c.YearInSchool,
+                    MonthsOld = c.Months == 12 ? 0 : c.Months
+                    
+                }))
+                .SingleAsync();
+
+        }
+
+        public async Task<IEnumerable<SchoolUser>> GetSchoolsAsync()
+        {
+            var result =  await schoolMealsOrderingSystemDbContext.SchoolUsers.Where(u => u.IsSchool && !u.IsDeleted).ToListAsync();
 
             return result;
         }

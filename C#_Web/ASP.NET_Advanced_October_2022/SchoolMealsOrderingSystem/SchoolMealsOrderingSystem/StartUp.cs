@@ -1,8 +1,10 @@
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SchoolMealsOrderingSystem.Core.Contracts;
 using SchoolMealsOrderingSystem.Core.Services;
 using SchoolMealsOrderingSystem.Data;
 using SchoolMealsOrderingSystem.Data.Entities;
+using static SchoolMealsOrderingSystem.Data.Constants.DataConstants.GeneralConstants;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,9 +18,16 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
     options.Password.RequiredLength = 5;
+    options.User.AllowedUserNameCharacters = AllowedUserNameCharacters;
 
 })
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<SchoolMealsOrderingSystemDbContext>();
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath= "/Identity/Login";
+});
 
 
 builder.Services.AddControllersWithViews();

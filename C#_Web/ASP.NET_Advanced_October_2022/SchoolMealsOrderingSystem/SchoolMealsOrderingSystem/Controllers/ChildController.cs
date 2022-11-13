@@ -1,12 +1,15 @@
 ﻿namespace SchoolMealsOrderingSystem.Controllers
 {
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using SchoolMealsOrderingSystem.Core.Contracts;
     using SchoolMealsOrderingSystem.Core.Models.Child;
     using System.Security.Claims;
     using static Data.Constants.DataConstants.Child;
     using static Data.Constants.DataConstants.ParentUser;
+    using static Data.Constants.RoleConstants;
 
+    [Authorize]
     public class ChildController : Controller
     {
 
@@ -20,6 +23,7 @@
         }
 
         [HttpGet]
+        [Authorize(Roles = Parent)]
         public async Task<IActionResult> All()
         {
 
@@ -33,13 +37,12 @@
 
             var model = await childServices.GetAllMyChildrenAsync(userId);
 
-            Console.WriteLine();
-
             return View(model);
         }
 
 
         [HttpGet]
+        [Authorize(Roles = Parent)]
         public async Task<IActionResult> Add()
         {
 

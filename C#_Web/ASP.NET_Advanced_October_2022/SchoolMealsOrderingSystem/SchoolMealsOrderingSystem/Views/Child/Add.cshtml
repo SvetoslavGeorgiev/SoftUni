@@ -10,7 +10,7 @@
 
 <div class="row">
     <div class="col-sm-12 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6">
-        <form asp-action="Add" method="post">
+        <form asp-controller="Child" asp-action="Add" method="post">
             <div class="mb-3">
                 <label asp-for="@Model.FirstName" class="form-label">Име</label>
                 <input asp-for="@Model.FirstName" class="form-control" aria-required="true" />
@@ -42,6 +42,11 @@
                     }
                 </select>
                 <span asp-validation-for="SchoolUserId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.YearInSchool" class="form-label">Клас в училището</label>
+                <input asp-for="@Model.YearInSchool" class="form-control" aria-required="true" />
+                <span asp-validation-for="YearInSchool" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <input class="btn btn-primary" type="submit" value="Добави" />
