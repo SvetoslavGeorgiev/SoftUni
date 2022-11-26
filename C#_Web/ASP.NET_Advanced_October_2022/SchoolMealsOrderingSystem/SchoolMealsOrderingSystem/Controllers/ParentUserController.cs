@@ -5,19 +5,24 @@
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
+    using SchoolMealsOrderingSystem.Core.Contracts;
     using static Data.Constants.DataConstants.GeneralConstants;
+    using static Data.Constants.DataConstants.ParentUser;
+    using static Data.Constants.RoleConstants;
 
-    [Authorize]
+    [Authorize(Roles = Parent)]
     public class ParentUserController : ApplicationUserController
     {
+        private readonly IParentUserServices parentUserServices;
 
         public ParentUserController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            RoleManager<IdentityRole> roleManager)
+            RoleManager<IdentityRole> roleManager,
+            IParentUserServices _parentUserServices)
             :base(userManager, signInManager, roleManager)
         {
-
+            parentUserServices= _parentUserServices;
 
         }
 
@@ -61,20 +66,10 @@
                 return View(model);
             }
 
-            var user = new ParentUser
-            {
-                UserName = model.UserName,
-                FirstName = model.FirstName,
-                LastName = model.LastName,
-                IsSchool = false,
-                Email = model.Email
-            };
-
-            var result = await UserManager.CreateAsync(user, model.Password);
+            var result = await parentUserServices.AddParentUserToDatabase(UserManager, RoleManager, model);
 
             if (result.Succeeded)
             {
-
                 return RedirectToAction("Login", "ParentUser");
             }
 
@@ -96,7 +91,18 @@
                 return View(model);
             }
 
+            
+
             var user = await UserManager.FindByNameAsync(model.UserName);
+
+            if (model.UserName == user.Email)
+            {
+                ModelState.AddModelError(string.Empty, WrongLoginPageForParentIfScholl);
+                ModelState.AddModelError(string.Empty, WrongLoginPageForParentNeedUsername);
+
+                //return RedirectToAction("Login", "SchoolUser");
+                return View();
+            }
 
             if (user != null)
             {

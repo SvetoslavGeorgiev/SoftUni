@@ -18,6 +18,10 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
     options.Password.RequiredLength = 5;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireUppercase = false;
     options.User.AllowedUserNameCharacters = AllowedUserNameCharacters;
 
 })
@@ -34,6 +38,8 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<ISchoolServices, SchoolServices>();
 builder.Services.AddScoped<IChildServices, ChildServices>();
+builder.Services.AddScoped<IParentUserServices, ParentUserServices>();
+builder.Services.AddScoped<ISchoolUserServices, SchoolUserServices>();
 
 var app = builder.Build();
 

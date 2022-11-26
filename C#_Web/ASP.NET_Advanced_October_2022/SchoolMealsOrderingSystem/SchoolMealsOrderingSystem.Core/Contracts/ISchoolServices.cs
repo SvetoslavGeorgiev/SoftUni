@@ -1,11 +1,8 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Contracts
 {
-    using SchoolMealsOrderingSystem.Core.Models.Child;
-    using SchoolMealsOrderingSystem.Data.Entities;
-    using System;
+    using Models.Child;
+    using Data.Entities;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
     using System.Threading.Tasks;
 
     public interface ISchoolServices

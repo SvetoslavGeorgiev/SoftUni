@@ -23,6 +23,9 @@
 
 
             public const string InvalidParentUserId = "Invalid Parent Id";
+
+            public const string WrongLoginPageForParentIfScholl = "Ако сте регистрирано училище моля влезте от \"Вход за училища\"!";
+            public const string WrongLoginPageForParentNeedUsername = "Ако сте родител веведете \"Потрепителско Име\"";
         }
 
         public class SchoolUser
@@ -37,6 +40,11 @@
             public const int PasswordMinLength = 5;
 
             public const string InvalidSchoolUserId = "Invalid School Id";
+
+            public const string EmailAddress = "Моля въведете Email адрес";
+
+            public const string WrongLoginPageForSchoolIfParent = "Ако сте регистриран родител моля влезте от \"Вход за родители\"!";
+            public const string WrongLoginPageForSchoolNeedEmail = "Ако сте регистриранo училище моля въведете Email!";
         }
 
 
@@ -72,6 +80,7 @@
         public class GeneralConstants
         {
             public const string ErrorMessage = "Нещо се обърка. Моля опитайте отново!";
+            
 
             public const string AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+ чявертъуиопшщасдфгхйклюзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЮЗЬЦЖБНМ";
 

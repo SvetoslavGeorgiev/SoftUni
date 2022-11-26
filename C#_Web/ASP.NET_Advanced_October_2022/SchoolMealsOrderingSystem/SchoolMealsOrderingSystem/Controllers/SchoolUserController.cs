@@ -5,18 +5,27 @@
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
+    using SchoolMealsOrderingSystem.Core.Contracts;
     using static Data.Constants.DataConstants.GeneralConstants;
+    using static Data.Constants.DataConstants.SchoolUser;
+    using static Data.Constants.RoleConstants;
 
-    [Authorize]
+    [Authorize(Roles = School)]
     public class SchoolUserController : ApplicationUserController
     {
+
+        private readonly ISchoolUserServices schoolUserServices;
 
         public SchoolUserController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
-            RoleManager<IdentityRole> roleManager)
+            RoleManager<IdentityRole> roleManager,
+            ISchoolUserServices _schoolUserServices)
             : base(userManager, signInManager, roleManager)
         {
+
+            schoolUserServices= _schoolUserServices;
+
         }
 
 
@@ -44,19 +53,9 @@
                 return View(model);
             }
 
+            var result = await schoolUserServices.AddSchoolUserToDatabase(UserManager, RoleManager, model);
 
-
-            var user = new SchoolUser
-            {
-                UserName = model.Email,
-                SchoolName = model.SchoolName,
-                Email = model.Email,
-                IsSchool = true,
-                IsDeleted = false
-            };
-
-            var result = await UserManager.CreateAsync(user, model.Password);
-
+            
             if (result.Succeeded)
             {
 
@@ -96,9 +95,18 @@
 
             var user = await UserManager.FindByEmailAsync(model.Email);
 
+            if (model.Email != user.UserName)
+            {
+                ModelState.AddModelError(string.Empty, WrongLoginPageForSchoolIfParent);
+                ModelState.AddModelError(string.Empty, WrongLoginPageForSchoolNeedEmail);
+                //return RedirectToAction("Login", "ParentUser");
+                return View();
+            }
+
             if (user != null)
             {
                 var result = await SignInManager.PasswordSignInAsync(user, model.Password, false, false);
+
 
                 if (result.Succeeded)
                 {

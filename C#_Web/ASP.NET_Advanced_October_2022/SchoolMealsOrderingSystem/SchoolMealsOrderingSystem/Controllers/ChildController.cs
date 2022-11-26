@@ -9,7 +9,7 @@
     using static Data.Constants.DataConstants.ParentUser;
     using static Data.Constants.RoleConstants;
 
-    [Authorize]
+    [Authorize(Roles = Parent)]
     public class ChildController : Controller
     {
 
@@ -23,7 +23,6 @@
         }
 
         [HttpGet]
-        [Authorize(Roles = Parent)]
         public async Task<IActionResult> All()
         {
 
@@ -42,7 +41,6 @@
 
 
         [HttpGet]
-        [Authorize(Roles = Parent)]
         public async Task<IActionResult> Add()
         {
 

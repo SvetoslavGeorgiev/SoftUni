@@ -5,7 +5,6 @@
     using SchoolMealsOrderingSystem.Core.Models.Child;
     using SchoolMealsOrderingSystem.Data;
     using SchoolMealsOrderingSystem.Data.Entities;
-    using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
 
@@ -31,8 +30,9 @@
                     LastName = c.LastName,
                     YearsOld = c.YearsOld,
                     YearInSchool= c.YearInSchool,
-                    MonthsOld = c.Months == 12 ? 0 : c.Months
-                    
+                    MonthsOld = c.Months == 12 ? 0 : c.Months,
+                    School = c.SchoolUser.SchoolName
+
                 }))
                 .SingleAsync();
 
