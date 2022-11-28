@@ -1,7 +1,7 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Models.SchoolUser
 {
     using System.ComponentModel.DataAnnotations;
-    using static Data.Constants.DataConstants.SchoolUser;
+    using static Data.Constants.GeneralConstants;
 
     public class SchoolLoginViewModel
     {

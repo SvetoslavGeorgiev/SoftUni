@@ -4,32 +4,33 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using static Data.Constants.DataConstants.Child;
+    using static Data.Constants.ChildConstants;
+    using static Data.Constants.GeneralConstants;
 
     public class EditChildViewModel
     {
 
-        [UIHint("hidden")]
+        [UIHint(Hidden)]
         public Guid Id { get; set; }
 
-        [Required(ErrorMessage = "Полето \"Име\" е задължително")]
-        [StringLength(FirstNameMaxLength, MinimumLength = FirstNameMinLength, ErrorMessage = ErrorMassageForTheLengthOfTheField)]
+        [Required(ErrorMessage = NameRequired)]
+        [StringLength(FirstNameMaxLength, MinimumLength = FirstNameMinLength, ErrorMessage = FieldSymbolsLength)]
         public string FirstName { get; set; } = null!;
 
-        [Required(ErrorMessage = "Полето \"Фамилия\" е задължително")]
-        [StringLength(LastNameMaxLength, MinimumLength = LastNameMinLength, ErrorMessage = ErrorMassageForTheLengthOfTheField)]
+        [Required(ErrorMessage = LastNameRequired)]
+        [StringLength(LastNameMaxLength, MinimumLength = LastNameMinLength, ErrorMessage = FieldSymbolsLength)]
         public string LastName { get; set; } = null!;
 
-        [Required(ErrorMessage = "Полето \"Връзката ви с детето\" е задължително")]
-        [StringLength(RelationToChildMaxLength, MinimumLength = RelationToChildMinLength, ErrorMessage = ErrorMassageForTheLengthOfTheField)]
+        [Required(ErrorMessage = ParentChildRelationRequired)]
+        [StringLength(RelationToChildMaxLength, MinimumLength = RelationToChildMinLength, ErrorMessage = FieldSymbolsLength)]
         public string RelationToChild { get; set; } = null!;
 
-        [Required(ErrorMessage = "Полето \"Дата на раждане\" е задължително")]
+        [Required(ErrorMessage = BirthDayRequired)]
         [DataType(DataType.Date)]
         public DateTime Birthday { get; set; }
 
-        [Required(ErrorMessage = "Полето \"Клас в училище\" е задължително")]
-        [StringLength(YearInSchoolMaxLength, MinimumLength = YearInSchoolMinLength, ErrorMessage = ErrorMassageForTheLengthOfTheField)]
+        [Required(ErrorMessage = YearInSchoolRequired)]
+        [StringLength(YearInSchoolMaxLength, MinimumLength = YearInSchoolMinLength, ErrorMessage = FieldSymbolsLength)]
         public string YearInSchool { get; set; } = null!;
 
 

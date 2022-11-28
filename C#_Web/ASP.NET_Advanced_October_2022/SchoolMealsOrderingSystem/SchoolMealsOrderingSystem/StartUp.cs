@@ -4,7 +4,7 @@ using SchoolMealsOrderingSystem.Core.Contracts;
 using SchoolMealsOrderingSystem.Core.Services;
 using SchoolMealsOrderingSystem.Data;
 using SchoolMealsOrderingSystem.Data.Entities;
-using static SchoolMealsOrderingSystem.Data.Constants.DataConstants.GeneralConstants;
+using static SchoolMealsOrderingSystem.Data.Constants.GeneralConstants;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,11 +1,11 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Models.Child
 {
     using System.ComponentModel.DataAnnotations;
-
+    using static Data.Constants.GeneralConstants;
     public class ChildViewModel
     {
 
-        [UIHint("hidden")]
+        [UIHint(Hidden)]
         public Guid Id { get; set; }
 
         public string FirstName { get; set; } = null!;

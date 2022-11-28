@@ -6,8 +6,8 @@
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using SchoolMealsOrderingSystem.Core.Contracts;
-    using static Data.Constants.DataConstants.GeneralConstants;
-    using static Data.Constants.DataConstants.SchoolUser;
+    using static Data.Constants.GeneralConstants;
+    using static Data.Constants.SchoolUserConstants;
     using static Data.Constants.RoleConstants;
 
     [Authorize(Roles = School)]

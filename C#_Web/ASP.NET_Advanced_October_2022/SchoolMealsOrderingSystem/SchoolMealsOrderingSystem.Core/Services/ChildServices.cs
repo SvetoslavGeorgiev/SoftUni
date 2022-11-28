@@ -7,7 +7,7 @@
     using SchoolMealsOrderingSystem.Data.Entities;
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using static Data.Constants.DataConstants.ParentUser;
+    using static Data.Constants.ParentUserConstants;
 
     public class ChildServices : IChildServices
     {

@@ -4,7 +4,7 @@
     using Microsoft.AspNetCore.Mvc;
     using SchoolMealsOrderingSystem.Core.Contracts;
     using System.Security.Claims;
-    using static Data.Constants.DataConstants.SchoolUser;
+    using static Data.Constants.SchoolUserConstants;
     using static Data.Constants.RoleConstants;
 
 

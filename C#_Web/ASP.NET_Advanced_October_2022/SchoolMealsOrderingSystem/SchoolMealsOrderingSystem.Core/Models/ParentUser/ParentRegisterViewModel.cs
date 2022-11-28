@@ -1,35 +1,36 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Models.ParentUser
 {
     using System.ComponentModel.DataAnnotations;
-    using static Data.Constants.DataConstants.ParentUser;
+    using static Data.Constants.ParentUserConstants;
+    using static Data.Constants.GeneralConstants;
     public class ParentRegisterViewModel
     {
 
-        [Required(ErrorMessage = "Полето \"Потребителско Име\" е задължително и трябва да е на латиница")]
-        [StringLength(UserNameMaxLength, MinimumLength = UserNameMinLength, ErrorMessage = "Полето трябва да е между {2} и {1} символа")]
+        [Required(ErrorMessage = UsernameRequired)]
+        [StringLength(UserNameMaxLength, MinimumLength = UserNameMinLength, ErrorMessage = FieldSymbolsLength)]
         public string UserName { get; set; } = null!;
 
-        [Required(ErrorMessage = "Полето \"Име\" е задължително")]
-        [StringLength(FirstNameMaxLength, MinimumLength = FirstNameMinLength, ErrorMessage = "Полето трябва да е между {2} и {1} символа")]
+        [Required(ErrorMessage = NameRequired)]
+        [StringLength(FirstNameMaxLength, MinimumLength = FirstNameMinLength, ErrorMessage = FieldSymbolsLength)]
         public string FirstName { get; set; } = null!;
 
-        [Required(ErrorMessage = "Полето \"Фамилия\" е задължително")]
-        [StringLength(LastNameMaxLength, MinimumLength = LastNameMinLength, ErrorMessage = "Полето трябва да е между {2} и {1} символа")]
+        [Required(ErrorMessage = LastNameRequired)]
+        [StringLength(LastNameMaxLength, MinimumLength = LastNameMinLength, ErrorMessage = FieldSymbolsLength)]
         public string LastName { get; set; } = null!;
 
-        [Required(ErrorMessage = "Полето \"{0}\" е задължително")]
-        [EmailAddress(ErrorMessage ="Невалиден Email")]
-        [StringLength(EmailMaxLength, MinimumLength = EmailMinLength, ErrorMessage = "Полето трябва да е между {2} и {1} символа")]
+        [Required(ErrorMessage = EmailRequired)]
+        [EmailAddress(ErrorMessage = InvalidEmail)]
+        [StringLength(EmailMaxLength, MinimumLength = EmailMinLength, ErrorMessage = FieldSymbolsLength)]
         public string Email { get; set; } = null!;
 
-        [Required(ErrorMessage = "Полето \"Парола\" е задължително")]
-        [StringLength(PasswordMaxLength, MinimumLength = PasswordMinLength, ErrorMessage = "Полето трябва да е между {2} и {1} символа")]
+        [Required(ErrorMessage = PasswordRequired)]
+        [StringLength(PasswordMaxLength, MinimumLength = PasswordMinLength, ErrorMessage = FieldSymbolsLength)]
         [DataType(DataType.Password)]
         public string Password { get; set; } = null!;
 
-        [Compare(nameof(Password), ErrorMessage = "\"Паролата\" и \"Потвърждаване на паролата\" не съвпадат")]
+        [Compare(nameof(Password), ErrorMessage = PasswordAndConfirmPasswordEquality)]
         [DataType(DataType.Password)]
-        [Required(ErrorMessage = "Полето \"Потвърждаване на парола\" е задължително")]
+        [Required(ErrorMessage = PasswordConfirmRequired)]
         public string ConfirmPassword { get; set; } = null!;
 
     }

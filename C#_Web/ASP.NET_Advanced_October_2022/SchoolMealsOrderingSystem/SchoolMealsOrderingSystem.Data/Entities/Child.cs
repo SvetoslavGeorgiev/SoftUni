@@ -2,7 +2,7 @@
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using static Data.Constants.DataConstants.Child;
+    using static Data.Constants.ChildConstants;
 
     public class Child
     {
@@ -38,7 +38,6 @@
 
         [Required]
         [ForeignKey(nameof(SchoolUser))]
-
         public string SchoolUserId { get; set; } = null!;
 
         public SchoolUser? SchoolUser { get; set; }

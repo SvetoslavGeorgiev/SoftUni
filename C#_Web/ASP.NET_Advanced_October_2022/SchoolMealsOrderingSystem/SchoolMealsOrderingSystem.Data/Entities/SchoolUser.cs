@@ -1,7 +1,7 @@
 ﻿namespace SchoolMealsOrderingSystem.Data.Entities
 {
     using System.ComponentModel.DataAnnotations;
-    using static Data.Constants.DataConstants.SchoolUser;
+    using static Data.Constants.SchoolUserConstants;
 
 
     public class SchoolUser : ApplicationUser

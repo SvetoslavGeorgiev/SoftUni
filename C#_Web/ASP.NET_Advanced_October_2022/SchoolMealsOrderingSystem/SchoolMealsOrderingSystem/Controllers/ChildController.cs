@@ -5,8 +5,8 @@
     using SchoolMealsOrderingSystem.Core.Contracts;
     using SchoolMealsOrderingSystem.Core.Models.Child;
     using System.Security.Claims;
-    using static Data.Constants.DataConstants.Child;
-    using static Data.Constants.DataConstants.ParentUser;
+    using static Data.Constants.ChildConstants;
+    using static Data.Constants.ParentUserConstants;
     using static Data.Constants.RoleConstants;
 
     [Authorize(Roles = Parent)]
