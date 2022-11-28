@@ -26,7 +26,7 @@
         [StringLength(YearInSchoolMaxLength, MinimumLength = YearInSchoolMinLength, ErrorMessage = ErrorMassageForTheLengthOfTheField)]
         public string YearInSchool { get; set; } = null!;
 
-
+        [Required(ErrorMessage = "Полето \"Училище\" е задължително")]
         public string SchoolUserId { get; set; } = null!;
 
         public IEnumerable<SchoolUser> Schools = new HashSet<SchoolUser>();

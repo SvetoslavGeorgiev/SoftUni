@@ -1,4 +1,4 @@
-### SoftUni-courses
+<img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=SoftUni-Courses&fontSize=90" />
 
 
 #### Here i have all solutions from my time as student <a href="https://softuni.bg">@SoftUni.bg</a>

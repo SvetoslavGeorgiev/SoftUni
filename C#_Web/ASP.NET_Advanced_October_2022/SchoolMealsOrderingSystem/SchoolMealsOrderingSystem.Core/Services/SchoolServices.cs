@@ -22,7 +22,8 @@
         public async Task<IEnumerable<ChildViewModel>> GetAllChildrenInSelectedSchoolAsync(string schoolUserId)
         {
             return await schoolMealsOrderingSystemDbContext
-                .SchoolUsers.Where(su => su.Id == schoolUserId)
+                .SchoolUsers
+                .Where(su => su.Id == schoolUserId)
                 .Select(su => su.SchoolChildren.Select(c => new ChildViewModel
                 {
                     Id= c.Id,
@@ -40,7 +41,10 @@
 
         public async Task<IEnumerable<SchoolUser>> GetSchoolsAsync()
         {
-            var result =  await schoolMealsOrderingSystemDbContext.SchoolUsers.Where(u => u.IsSchool && !u.IsDeleted).ToListAsync();
+            var result =  await schoolMealsOrderingSystemDbContext
+                .SchoolUsers
+                .Where(u => u.IsSchool && !u.IsDeleted)
+                .ToListAsync();
 
             return result;
         }
