@@ -14,5 +14,7 @@
         Task EditChildAsync(EditChildViewModel editChildViewModel);
 
         Task<EditChildViewModel> GetChildModelForEditAsync(Guid childId);
+
+        Task DeleteChildAsync(Guid childId);
     }
 }

@@ -51,6 +51,10 @@
             <input class="btn btn-primary" type="submit" value="Потвърди" />
         </div>
     </form>
+    <form asp-controller="Child" asp-action="Delete" method="post">
+        <input name="id" type="hidden" value="@Model.Id" />
+        <button class="btn btn-danger">Премахни</button>
+    </form>
 </div>
 
 @section Scripts {

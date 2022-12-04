@@ -7,7 +7,7 @@
     {
         [Required(ErrorMessage = SchoolNameRequired)]
         [StringLength(SchoolNameMaxLength, MinimumLength = SchoolNameMinLength)]
-        public string SchoolName { get; set; }
+        public string SchoolName { get; set; } = null!;
 
         [Required]
         [EmailAddress(ErrorMessage = EmailRequired)]

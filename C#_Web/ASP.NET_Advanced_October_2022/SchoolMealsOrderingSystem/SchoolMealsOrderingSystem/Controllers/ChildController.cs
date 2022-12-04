@@ -4,6 +4,7 @@
     using Microsoft.AspNetCore.Mvc;
     using SchoolMealsOrderingSystem.Core.Contracts;
     using SchoolMealsOrderingSystem.Core.Models.Child;
+    using SchoolMealsOrderingSystem.Data.Constants;
     using System.Security.Claims;
     using static Data.Constants.ChildConstants;
     using static Data.Constants.ParentUserConstants;
@@ -127,6 +128,17 @@
 
                 return View(model);
             }
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+
+            await childServices.DeleteChildAsync(id);
+
+            return RedirectToAction(nameof(All));
+
+
         }
     }
 }

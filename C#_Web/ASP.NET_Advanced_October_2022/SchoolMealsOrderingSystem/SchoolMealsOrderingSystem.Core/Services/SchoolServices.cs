@@ -24,17 +24,18 @@
             return await schoolMealsOrderingSystemDbContext
                 .SchoolUsers
                 .Where(su => su.Id == schoolUserId)
-                .Select(su => su.SchoolChildren.Select(c => new ChildViewModel
-                {
-                    Id= c.Id,
-                    FirstName = c.FirstName,
-                    LastName = c.LastName,
-                    YearsOld = c.YearsOld,
-                    YearInSchool= c.YearInSchool,
-                    MonthsOld = c.Months == 12 ? 0 : c.Months,
-                    School = c.SchoolUser.SchoolName
-
-                }))
+                .Select(su => su.SchoolChildren.Where(sc => sc.IsDeleted == false)
+                                               .Select(c => new ChildViewModel
+                                               {
+                                                   Id= c.Id,
+                                                   FirstName = c.FirstName,
+                                                   LastName = c.LastName,
+                                                   YearsOld = c.YearsOld,
+                                                   YearInSchool= c.YearInSchool,
+                                                   MonthsOld = c.Months == 12 ? 0 : c.Months,
+                                                   School = c.SchoolUser.SchoolName
+                                               
+                                               }))
                 .SingleAsync();
 
         }

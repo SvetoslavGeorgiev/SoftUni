@@ -56,6 +56,21 @@
 
         }
 
+        public async Task DeleteChildAsync(Guid childId)
+        {
+            var child = await schoolMealsOrderingSystemDbContext
+                .Children
+                .Where(c => c.Id == childId)
+                .FirstOrDefaultAsync();
+
+            if (child != null)
+            {
+                child.IsDeleted = true;
+
+                await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+            }
+        }
+
         public async Task EditChildAsync(EditChildViewModel editChildViewModel)
         {
 
@@ -67,9 +82,9 @@
                 child.FirstName = editChildViewModel.FirstName;
                 child.LastName = editChildViewModel.LastName;
                 child.Birthday = editChildViewModel.Birthday;
-                child.SchoolUserId= editChildViewModel.SchoolUserId;
+                child.SchoolUserId = editChildViewModel.SchoolUserId;
                 child.ParentChildRelation = editChildViewModel.RelationToChild;
-                child.YearInSchool= editChildViewModel.YearInSchool;
+                child.YearInSchool = editChildViewModel.YearInSchool;
             }
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
@@ -84,7 +99,7 @@
                 .Where(pu => pu.Id == userId)
                 .Include(pu => pu.ParentsChildren)
                 .ThenInclude(pu => pu.Child)
-                .Include(pu => pu.ParentsChildren)
+                .Include(pu => pu.ParentsChildren.Where(pc => pc.Child.IsDeleted == false))
                 .ThenInclude(pu => pu.Child.SchoolUser)
                 .FirstAsync();
 
@@ -100,7 +115,7 @@
                     LastName = pc.Child.LastName,
                     YearsOld = pc.Child.YearsOld,
                     MonthsOld = pc.Child.Months == 12 ? 0 : pc.Child.Months,
-                    YearInSchool= pc.Child.YearInSchool,
+                    YearInSchool = pc.Child.YearInSchool,
                     School = pc.Child.SchoolUser.SchoolName
                 });
 
@@ -127,5 +142,8 @@
 
             return child;
         }
+
+
+
     }
 }
