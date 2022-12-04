@@ -2,10 +2,16 @@
 {
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
+    using System.Reflection.Metadata.Ecma335;
     using static Data.Constants.ChildConstants;
 
     public class Child
     {
+
+        public Child()
+        {
+            IsDeleted = false;
+        }
 
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
@@ -50,7 +56,8 @@
         [MaxLength(RelationToChildMaxLength)]
         public string ParentChildRelation { get; set; } = null!;
 
-
+        [Required]
+        public bool IsDeleted { get; set; }
 
     }
 }
