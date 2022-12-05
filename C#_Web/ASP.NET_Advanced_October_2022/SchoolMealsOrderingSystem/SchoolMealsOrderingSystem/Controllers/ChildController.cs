@@ -4,7 +4,6 @@
     using Microsoft.AspNetCore.Mvc;
     using SchoolMealsOrderingSystem.Core.Contracts;
     using SchoolMealsOrderingSystem.Core.Models.Child;
-    using SchoolMealsOrderingSystem.Data.Constants;
     using System.Security.Claims;
     using static Data.Constants.ChildConstants;
     using static Data.Constants.ParentUserConstants;

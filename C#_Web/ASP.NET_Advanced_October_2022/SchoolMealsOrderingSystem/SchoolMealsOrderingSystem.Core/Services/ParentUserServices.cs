@@ -3,7 +3,7 @@
     using Contracts;
     using Data.Entities;
     using Microsoft.AspNetCore.Identity;
-    using Models.ParentUser;
+    using Models.Parent;
     using System.Threading.Tasks;
     using static Data.Constants.RoleConstants;
 

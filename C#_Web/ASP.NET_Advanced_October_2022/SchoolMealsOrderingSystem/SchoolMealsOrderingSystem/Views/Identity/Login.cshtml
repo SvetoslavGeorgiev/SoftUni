@@ -2,9 +2,22 @@
     ViewData["Title"] = "Log in";
 }
 
-<div class="d-grid gap-2 mb-2">
-    <a asp-controller="ParentUser" asp-action="Login" class="btn btn-outline-primary">Вход за родители</a>
-</div>
- <div class="d-grid gap-2 mb-2">
-    <a asp-controller="SchoolUser" asp-action="Login" class="btn btn-outline-danger">Вход за училища</a>
+<style>
+
+.container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
+ <div class="container">
+      <div class="d-grid gap-2 mb-2">
+          <a asp-area="Parent" asp-controller="ParentUser" asp-action="Login" class="btn btn-outline-primary">Вход за родители</a>
+      </div>
+       <div class="d-grid gap-2 mb-2">
+          <a asp-area="School" asp-controller="SchoolUser" asp-action="Login" class="btn btn-outline-danger">Вход за училища</a>
+      </div>
 </div>

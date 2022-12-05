@@ -1,4 +1,4 @@
-﻿namespace SchoolMealsOrderingSystem.Core.Models.ParentUser
+﻿namespace SchoolMealsOrderingSystem.Core.Models.Parent
 {
     using System.ComponentModel.DataAnnotations;
     using static Data.Constants.ParentUserConstants;

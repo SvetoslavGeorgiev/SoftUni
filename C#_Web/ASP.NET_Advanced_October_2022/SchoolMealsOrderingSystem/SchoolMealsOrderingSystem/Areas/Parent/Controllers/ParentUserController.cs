@@ -1,30 +1,31 @@
-﻿namespace SchoolMealsOrderingSystem.Controllers
+﻿namespace SchoolMealsOrderingSystem.Areas.Parent.Controllers
 {
-    using Core.Models.SchoolUser;
     using Data.Entities;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
-    using SchoolMealsOrderingSystem.Core.Contracts;
+    using Core.Contracts;
+    using Core.Models.Parent;
+    using SchoolMealsOrderingSystem.Controllers;
     using static Data.Constants.GeneralConstants;
-    using static Data.Constants.SchoolUserConstants;
+    using static Data.Constants.ParentUserConstants;
     using static Data.Constants.RoleConstants;
 
-    [Authorize(Roles = School)]
-    public class SchoolUserController : ApplicationUserController
+    [Area(ParentAreaName)]
+    [Authorize(Roles = Parent)]
+    [Route("Parent/[controller]/[Action]/{id?}")]
+    public class ParentUserController : ApplicationUserController
     {
+        private readonly IParentUserServices parentUserServices;
 
-        private readonly ISchoolUserServices schoolUserServices;
-
-        public SchoolUserController(
+        public ParentUserController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             RoleManager<IdentityRole> roleManager,
-            ISchoolUserServices _schoolUserServices)
+            IParentUserServices _parentUserServices)
             : base(userManager, signInManager, roleManager)
         {
-
-            schoolUserServices= _schoolUserServices;
+            parentUserServices = _parentUserServices;
 
         }
 
@@ -38,37 +39,12 @@
                 return RedirectToAction("Index", "Home");
             }
 
-            var model = new SchoolRegisterViewModel();
+            var model = new ParentRegisterViewModel();
 
 
             return View(model);
         }
 
-        [HttpPost]
-        [AllowAnonymous]
-        public async Task<IActionResult> Register(SchoolRegisterViewModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
-
-            var result = await schoolUserServices.AddSchoolUserToDatabase(UserManager, RoleManager, model);
-
-            
-            if (result.Succeeded)
-            {
-
-                return RedirectToAction("Login", "SchoolUser");
-            }
-
-            foreach (var item in result.Errors)
-            {
-                ModelState.AddModelError(string.Empty, item.Description);
-            }
-
-            return View(model);
-        }
 
         [HttpGet]
         [AllowAnonymous]
@@ -79,27 +55,55 @@
                 return RedirectToAction("Index", "Home");
             }
 
-            var model = new SchoolLoginViewModel();
+            var model = new ParentLoginViewModel();
 
             return View(model);
         }
 
         [HttpPost]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(SchoolLoginViewModel model)
+        public async Task<IActionResult> Register(ParentRegisterViewModel model)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
 
-            var user = await UserManager.FindByEmailAsync(model.Email);
+            var result = await parentUserServices.AddParentUserToDatabase(UserManager, RoleManager, model);
 
-            if (model.Email != user.UserName)
+            if (result.Succeeded)
             {
-                ModelState.AddModelError(string.Empty, WrongLoginPageForSchoolIfParent);
-                ModelState.AddModelError(string.Empty, WrongLoginPageForSchoolNeedEmail);
-                //return RedirectToAction("Login", "ParentUser");
+                return RedirectToAction("Login", "ParentUser");
+            }
+
+            foreach (var item in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, item.Description);
+            }
+
+            return View(model);
+        }
+
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login(ParentLoginViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+
+
+            var user = await UserManager.FindByNameAsync(model.UserName);
+
+            if (model.UserName == user.Email)
+            {
+                ModelState.AddModelError(string.Empty, WrongLoginPageForParentIfScholl);
+                ModelState.AddModelError(string.Empty, WrongLoginPageForParentNeedUsername);
+
+                //return RedirectToAction("Login", "SchoolUser");
                 return View();
             }
 
@@ -107,10 +111,9 @@
             {
                 var result = await SignInManager.PasswordSignInAsync(user, model.Password, false, false);
 
-
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Home", new { area = "" });
                 }
             }
 

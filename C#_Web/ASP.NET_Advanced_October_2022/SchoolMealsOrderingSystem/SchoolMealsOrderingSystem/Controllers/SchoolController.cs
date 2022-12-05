@@ -8,6 +8,7 @@
     using static Data.Constants.RoleConstants;
 
 
+    
     [Authorize(Roles = School)]
     public class SchoolController : Controller
     {
@@ -15,7 +16,7 @@
 
         public SchoolController(ISchoolServices _schoolServices)
         {
-            schoolServices= _schoolServices;
+            schoolServices = _schoolServices;
         }
 
         [HttpGet]
