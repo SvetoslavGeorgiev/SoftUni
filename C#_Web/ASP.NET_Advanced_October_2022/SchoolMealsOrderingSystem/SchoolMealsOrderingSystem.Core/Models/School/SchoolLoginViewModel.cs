@@ -1,4 +1,4 @@
-﻿namespace SchoolMealsOrderingSystem.Core.Models.SchoolUser
+﻿namespace SchoolMealsOrderingSystem.Core.Models.School
 {
     using System.ComponentModel.DataAnnotations;
     using static Data.Constants.GeneralConstants;

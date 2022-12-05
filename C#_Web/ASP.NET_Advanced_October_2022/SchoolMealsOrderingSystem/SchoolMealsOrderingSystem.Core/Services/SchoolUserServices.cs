@@ -3,7 +3,7 @@
     using Contracts;
     using Data.Entities;
     using Microsoft.AspNetCore.Identity;
-    using Models.SchoolUser;
+    using Core.Models.School;
     using System.Threading.Tasks;
     using static Data.Constants.RoleConstants;
 
