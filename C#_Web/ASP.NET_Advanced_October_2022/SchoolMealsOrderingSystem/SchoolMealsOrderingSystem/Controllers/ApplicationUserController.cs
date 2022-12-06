@@ -50,13 +50,6 @@
             }
         }
 
-        public async Task<IActionResult> Logout()
-        {
-            await signInManager.SignOutAsync();
-
-            return RedirectToAction("Index", "Home");
-        }
-
         public async Task<IActionResult> CreateRoles()
         {
             await RoleManager.CreateAsync(new IdentityRole(School));
@@ -64,6 +57,5 @@
 
             return RedirectToAction("Index", "Home");
         }
-
     }
 }

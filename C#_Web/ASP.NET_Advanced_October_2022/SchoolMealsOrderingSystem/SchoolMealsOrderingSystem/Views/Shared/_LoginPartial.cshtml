@@ -5,13 +5,33 @@
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
-    @*<li class="nav-item">
-        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
-    </li>*@
     <li class="nav-item">
-            <form  class="form-inline" asp-controller="ApplicationUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
-            <button  type="submit" class="nav-link btn btn-link text-dark">Изход</button>
-        </form>
+        @if (User.Identity.IsAuthenticated && User.IsInRole(Parent))
+        {
+             <form class="form-inline" asp-area="Parent" asp-controller="ParentUser" asp-action="ParentProfile" asp-route-id="@UserManager.GetUserId(User)">
+                     <button  type="submit" class="nav-link btn btn-link text-dark">Профил</button>
+             </form>
+        }
+        else
+        {
+             <form class="form-inline" asp-area="School" asp-controller="SchoolUser" asp-action="EditSchoolProfile" asp-route-id="@UserManager.GetUserId(User)">
+                     <button  type="submit" class="nav-link btn btn-link text-dark">@User.Identity?.Name!</button>
+             </form>
+        }
+    </li>
+    <li class="nav-item">
+            @if (User.Identity.IsAuthenticated && User.IsInRole(Parent))
+            {
+                <form  class="form-inline" asp-area="Parent" asp-controller="ParentUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
+                    <button  type="submit" class="nav-link btn btn-link text-dark">Изход</button>
+                </form>
+            }
+            else
+            {
+                <form  class="form-inline" asp-area="School" asp-controller="SchoolUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
+                    <button  type="submit" class="nav-link btn btn-link text-dark">Изход</button>
+                </form>
+            }
     </li>
 }
 else

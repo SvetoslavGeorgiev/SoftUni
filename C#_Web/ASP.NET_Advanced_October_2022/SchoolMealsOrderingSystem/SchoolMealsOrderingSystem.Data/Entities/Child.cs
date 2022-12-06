@@ -11,10 +11,12 @@
         public Child()
         {
             IsDeleted = false;
+            Id= Guid.NewGuid();
+            ParentsChildren = new HashSet<ParentChild>();
         }
 
         [Key]
-        public Guid Id { get; set; } = Guid.NewGuid();
+        public Guid Id { get; set; } 
 
         [Required]
         [MaxLength(FirstNameMaxLength)]
@@ -40,7 +42,7 @@
         [NotMapped]
         public int Months => (Birthday.Month - DateTime.Now.Month) < 0 ? (12 - (Birthday.Month - DateTime.Now.Month)) - 12 : 12 - (Birthday.Month - DateTime.Now.Month);
 
-        public virtual ICollection<ParentChild> ParentsChildren { get; set; } = new HashSet<ParentChild>();
+        public virtual ICollection<ParentChild> ParentsChildren { get; set; } 
 
         [Required]
         [ForeignKey(nameof(SchoolUser))]

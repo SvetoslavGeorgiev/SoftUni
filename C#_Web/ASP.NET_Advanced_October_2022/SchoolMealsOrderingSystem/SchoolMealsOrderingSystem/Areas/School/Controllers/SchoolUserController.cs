@@ -10,6 +10,7 @@
     using static Data.Constants.GeneralConstants;
     using static Data.Constants.RoleConstants;
     using static Data.Constants.SchoolUserConstants;
+    using SchoolMealsOrderingSystem.Core.Services;
 
     [Area(School)]
     [Authorize(Roles = School)]
@@ -120,6 +121,57 @@
 
             return View(model);
 
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> EditSchoolProfile(string id)
+        {
+
+            var schoolUser = await schoolUserServices.GetSchoolUserProfileAsync(id);
+
+            if (schoolUser == null)
+            {
+                return RedirectToAction("Index", "Home", new { area = "" });
+            }
+
+            return View(schoolUser);
+
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditSchoolProfile(EditSchoolUserViewModel model)
+        {
+
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            try
+            {
+
+                await schoolUserServices.EditSchoolUserAsync(model);
+
+
+                return RedirectToAction("Index", "Home", new { area = "" });
+
+            }
+            catch (Exception)
+            {
+
+                ModelState.AddModelError(string.Empty, InvalidSchoolUserId);
+
+                return View(model);
+            }
+
+        }
+
+        
+        public async Task<IActionResult> Logout()
+        {
+            await SignInManager.SignOutAsync();
+
+            return RedirectToAction("Index", "Home", new { area = "" });
         }
 
     }
