@@ -9,35 +9,35 @@
 
 <div class="row">
    <form asp-area="School" asp-controller="SchoolUser" asp-action="EditSchoolProfile" method="post">
-        <hr />
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="text-center mb-3">
-            <label asp-for="@Model.SchoolName">Име на училището</label>
+        <input type="hidden" asp-for="@Model.Id" />
+        @*<div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+        <div class="mb-3">
+            <label asp-for="@Model.SchoolName" class="form-label">Име на училището</label>
             <input class="form-control" autocomplete="SchoolName" aria-required="true" asp-for="@Model.SchoolName" />
             <span asp-validation-for="@Model.SchoolName" class="text-danger"></span>
         </div>
-        <div class="text-center mb-3">
-            <label asp-for="@Model.Email">Email на училището</label>
-            <input class="form-control" autocomplete="Email" aria-required="true" asp-for="@Model.Email" />
+        <div class="mb-3">
+            <label asp-for="@Model.Email" class="form-label">Email на училището</label>
+            <input class="form-control" autocomplete="Email" aria-required="true" asp-for="@Model.Email" disabled="disabled" />
             <span asp-validation-for="@Model.Email" class="text-danger"></span>
         </div>
-        <div class="text-center mb-3">
-            <label asp-for="@Model.Password">Парола</label>
+        <div class="mb-3">
+            <label asp-for="@Model.Password" class="form-label">Парола</label>
             <input class="form-control" type="password" autocomplete="new-password" aria-required="true" asp-for="@Model.Password" />
             <span asp-validation-for="@Model.Password" class="text-danger"></span>
         </div>
-        <div class="text-center mb-3">
-            <label asp-for="@Model.ConfirmPassword">Потвърждаване на паролата</label>
+        <div class="mb-3">
+            <label asp-for="@Model.ConfirmPassword" class="form-label">Потвърждаване на паролата</label>
             <input class="form-control" type="password" autocomplete="new-password" aria-required="true" asp-for="@Model.ConfirmPassword" />
             <span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
         </div>
         <div class="text-center">
-            <button id="registerSubmit" type="submit" class="btn btn-primary">Промени</button>
+            <button type="submit" class="btn btn-primary">Промени</button>
         </div>
     </form>
     <form asp-area="School" asp-controller="SchoolUser" asp-action="Delete" asp-route-id="@Model.Id">
         <div>
-               <input  type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-danger " />
+               <input type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-danger " />
         </div>
     </form>
 </div>

@@ -123,5 +123,12 @@
 
         }
 
+        public async Task<IActionResult> Logout()
+        {
+            await SignInManager.SignOutAsync();
+
+            return RedirectToAction("Index", "Home", new { area = "" });
+        }
+
     }
 }

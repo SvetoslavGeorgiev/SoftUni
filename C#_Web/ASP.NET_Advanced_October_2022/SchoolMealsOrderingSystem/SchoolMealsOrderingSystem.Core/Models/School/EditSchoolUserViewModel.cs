@@ -11,16 +11,16 @@
         public string Id { get; set; } = null!;
 
         [Required(ErrorMessage = SchoolNameRequired)]
-        [StringLength(SchoolNameMaxLength, MinimumLength = SchoolNameMinLength)]
+        [StringLength(SchoolNameMaxLength, MinimumLength = SchoolNameMinLength, ErrorMessage = FieldSymbolsLength)]
         public string SchoolName { get; set; } = null!;
 
         [Required]
         [EmailAddress(ErrorMessage = EmailRequired)]
-        [StringLength(EmailMaxLength, MinimumLength = EmailMinLength)]
+        [StringLength(EmailMaxLength, MinimumLength = EmailMinLength, ErrorMessage = FieldSymbolsLength)]
         public string Email { get; set; } = null!;
 
         [Required(ErrorMessage = PasswordRequired)]
-        [StringLength(PasswordMaxLength, MinimumLength = PasswordMinLength)]
+        [StringLength(PasswordMaxLength, MinimumLength = PasswordMinLength, ErrorMessage = FieldSymbolsLength)]
         [DataType(DataType.Password)]
         public string Password { get; set; } = null!;
 
