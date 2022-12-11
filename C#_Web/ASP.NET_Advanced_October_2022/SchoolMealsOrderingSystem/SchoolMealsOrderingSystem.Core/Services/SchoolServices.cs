@@ -1,10 +1,10 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Services
 {
     using Microsoft.EntityFrameworkCore;
-    using SchoolMealsOrderingSystem.Core.Contracts;
-    using SchoolMealsOrderingSystem.Core.Models.Child;
-    using SchoolMealsOrderingSystem.Data;
-    using SchoolMealsOrderingSystem.Data.Entities;
+    using Core.Contracts;
+    using Core.Models.Child;
+    using Data;
+    using Data.Entities;
     using System.Collections.Generic;
     using System.Threading.Tasks;
 

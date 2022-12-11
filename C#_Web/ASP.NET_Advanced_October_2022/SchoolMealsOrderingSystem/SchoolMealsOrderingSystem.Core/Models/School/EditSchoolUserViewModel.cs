@@ -14,8 +14,7 @@
         [StringLength(SchoolNameMaxLength, MinimumLength = SchoolNameMinLength, ErrorMessage = FieldSymbolsLength)]
         public string SchoolName { get; set; } = null!;
 
-        [Required]
-        [EmailAddress(ErrorMessage = EmailRequired)]
+        [EmailAddress(ErrorMessage = InvalidEmail)]
         [StringLength(EmailMaxLength, MinimumLength = EmailMinLength, ErrorMessage = FieldSymbolsLength)]
         public string Email { get; set; } = null!;
 

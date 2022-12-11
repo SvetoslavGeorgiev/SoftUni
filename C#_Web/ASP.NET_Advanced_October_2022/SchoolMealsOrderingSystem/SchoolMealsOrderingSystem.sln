@@ -8,12 +8,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolMealsOrderingSystem",
 		{DA6155A8-3775-4EE2-ABBC-31392E333FD5} = {DA6155A8-3775-4EE2-ABBC-31392E333FD5}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolMealsOrderingSystem.Core", "SchoolMealsOrderingSystem.Core\SchoolMealsOrderingSystem.Core.csproj", "{DA6155A8-3775-4EE2-ABBC-31392E333FD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolMealsOrderingSystem.Core", "SchoolMealsOrderingSystem.Core\SchoolMealsOrderingSystem.Core.csproj", "{DA6155A8-3775-4EE2-ABBC-31392E333FD5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{317EAF13-F7B7-46BC-B34A-80EE64E882C4} = {317EAF13-F7B7-46BC-B34A-80EE64E882C4}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolMealsOrderingSystem.Data", "SchoolMealsOrderingSystem.Data\SchoolMealsOrderingSystem.Data.csproj", "{317EAF13-F7B7-46BC-B34A-80EE64E882C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolMealsOrderingSystem.Data", "SchoolMealsOrderingSystem.Data\SchoolMealsOrderingSystem.Data.csproj", "{317EAF13-F7B7-46BC-B34A-80EE64E882C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

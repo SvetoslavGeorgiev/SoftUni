@@ -1,9 +1,8 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Contracts
 {
     using Microsoft.AspNetCore.Identity;
-    using SchoolMealsOrderingSystem.Core.Models.Child;
-    using SchoolMealsOrderingSystem.Core.Models.School;
-    using SchoolMealsOrderingSystem.Data.Entities;
+    using Core.Models.School;
+    using Data.Entities;
 
     public interface ISchoolUserServices
     {

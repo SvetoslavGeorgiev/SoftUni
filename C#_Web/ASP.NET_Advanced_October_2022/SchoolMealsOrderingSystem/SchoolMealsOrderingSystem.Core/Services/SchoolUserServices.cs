@@ -5,9 +5,7 @@
     using Data.Entities;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
-    using SchoolMealsOrderingSystem.Core.Models.Child;
     using SchoolMealsOrderingSystem.Data;
-    using System.Security.Cryptography;
     using System.Threading.Tasks;
     using static Data.Constants.RoleConstants;
 
@@ -62,7 +60,6 @@
             {
                 schoolUser.SchoolName = editSchoolUserViewModel.SchoolName;
                 schoolUser.PasswordHash = savedPasswordHash;
-                schoolUser.Email = editSchoolUserViewModel.Email;
 
             }
 
