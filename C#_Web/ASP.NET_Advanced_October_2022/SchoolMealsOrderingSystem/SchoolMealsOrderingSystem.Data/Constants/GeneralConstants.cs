@@ -9,7 +9,7 @@
         public const string LastNameRequired = "Полето \"Фамилия\" е задължително";
         public const string PasswordRequired = "Полето \"Парола\" е задължително";
         public const string PasswordConfirmRequired = "Полето \"Потвърждаване на парола\" е задължително";
-        public const string EmailRequired = "Полето \"Email на училището\" е задължително";
+        public const string EmailRequired = "Полето \"Email\" е задължително";
         public const string ParentChildRelationRequired = "Полето \"Връзката ви с детето\" е задължително";
         public const string BirthDayRequired = "Полето \"Дата на раждане\" е задължително";
         public const string YearInSchoolRequired = "Полето \"Дата на раждане\" е задължително";

@@ -8,16 +8,13 @@
     <li class="nav-item">
         @if (User.Identity.IsAuthenticated && User.IsInRole(Parent))
         {
-             <form class="form-inline" asp-area="Parent" asp-controller="ParentUser" asp-action="EditParentProfile" asp-route-id="@UserManager.GetUserId(User)">
-                     <button  type="submit" class="nav-link btn btn-link text-dark">Профил</button>
-             </form>
+             <a asp-area="Parent" asp-controller="ParentUser" asp-action="EditParentProfile" asp-route-id="@UserManager.GetUserId(User)" class="fs-6 btn btn-outline-primary mb-3 p-2">Моят профил</a>
+             
         }
         else
         {
              <a asp-area="School" asp-controller="SchoolUser" asp-action="EditSchoolProfile" asp-route-id="@UserManager.GetUserId(User)" class="fs-6 btn btn-outline-warning mb-3 p-2">@User.Identity?.Name!</a>
-             @*<form class="form-inline" asp-area="School" asp-controller="SchoolUser" asp-action="EditSchoolProfile" asp-route-id="@UserManager.GetUserId(User)">
-                     <button  type="submit" class="nav-link btn btn-link text-dark">@User.Identity?.Name!</button>
-             </form>*@
+             
         }
     </li>
     <li class="nav-item">

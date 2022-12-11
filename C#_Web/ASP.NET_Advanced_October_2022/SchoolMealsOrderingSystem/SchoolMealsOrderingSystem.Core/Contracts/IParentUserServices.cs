@@ -12,5 +12,8 @@
             RoleManager<IdentityRole> roleManager,
             ParentRegisterViewModel model);
 
+        Task<EditParentUserViewModel> GetParentUserProfileAsync(string id);
+
+        Task EditParentUserAsync(EditParentUserViewModel editParentUserViewModel);
     }
 }
