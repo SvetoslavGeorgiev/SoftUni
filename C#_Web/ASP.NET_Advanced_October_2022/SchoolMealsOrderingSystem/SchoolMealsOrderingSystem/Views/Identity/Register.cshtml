@@ -3,21 +3,34 @@
 }
 
 <style>
+    body {
+  background-image: url(https://media.istockphoto.com/id/500753933/photo/children-eating-school-dinners.jpg?s=1024x1024&w=is&k=20&c=LE8aGOXpbjceBN-v4OGD8P12JLVbbv_hjUkNhh-zkMY=);
+  background-size: cover;
+}
 
-.container {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.light-blue-element {
+   background-color: cyan;
+}
+.light-blue-element:hover {
+   background-color: blue;
+   color: wheat;
+}
+
+.hoverme{
+   background-color: limegreen;
+}
+
+.hoverme:hover{
+   background-color: lime;
+   color: red;
 }
 </style>
 
 <div class="container">
       <div class="d-grid gap-2 mb-2">
-         <a asp-area="Parent" asp-controller="ParentUser" asp-action="Register" class="btn btn-outline-primary">Регистрация на родители</a>
+         <a asp-area="Parent" asp-controller="ParentUser" asp-action="Register" class="btn light-blue-element">Регистрация на родители</a>
      </div>
       <div class="d-grid gap-2 mb-2">
-         <a asp-area="School" asp-controller="SchoolUser" asp-action="Register" class="btn btn-outline-success">Регистрация на училища</a>
+         <a asp-area="School" asp-controller="SchoolUser" asp-action="Register" class="btn hoverme">Регистрация на училища</a>
      </div>
 </div>
