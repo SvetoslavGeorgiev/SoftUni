@@ -3,6 +3,8 @@
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
     using SchoolMealsOrderingSystem.Data.Entities;
+    using SchoolMealsOrderingSystem.Data.Entities.Meals;
+    using SchoolMealsOrderingSystem.Data.Entities.Menu;
 
     public class SchoolMealsOrderingSystemDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -11,11 +13,19 @@
         {
         }
 
-        public DbSet<Child> Children { get; set; } 
+        public DbSet<Child> Children { get; set; } = null!;
 
-        public DbSet<SchoolUser> SchoolUsers { get; set; } 
+        public DbSet<SchoolUser> SchoolUsers { get; set; } = null!;
 
-        public DbSet<ParentUser> ParentUsers { get; set; } 
+        public DbSet<ParentUser> ParentUsers { get; set; } = null!;
+
+        public DbSet<Soup> Soups { get; set; } = null!; 
+
+        public DbSet<MainDish> MainDishes { get; set; } = null!;
+
+        public DbSet<Dessert> Desserts { get; set; } = null!;
+
+        public DbSet<DailyMenu> DailyMenus { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

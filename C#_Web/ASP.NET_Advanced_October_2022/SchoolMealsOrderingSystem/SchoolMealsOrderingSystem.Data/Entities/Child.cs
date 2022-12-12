@@ -1,11 +1,12 @@
 ﻿namespace SchoolMealsOrderingSystem.Data.Entities
 {
+    using Data.Interfaces;
+    using SchoolMealsOrderingSystem.Data.Entities.Menu;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Reflection.Metadata.Ecma335;
     using static Data.Constants.ChildConstants;
 
-    public class Child
+    public class Child : IsDeletable
     {
 
         public Child()
@@ -13,6 +14,7 @@
             IsDeleted = false;
             Id= Guid.NewGuid();
             ParentsChildren = new HashSet<ParentChild>();
+            Menus = new HashSet<DailyMenu>();
         }
 
         [Key]
@@ -42,8 +44,6 @@
         [NotMapped]
         public int Months => (Birthday.Month - DateTime.Now.Month) < 0 ? (12 - (Birthday.Month - DateTime.Now.Month)) - 12 : 12 - (Birthday.Month - DateTime.Now.Month);
 
-        public virtual ICollection<ParentChild> ParentsChildren { get; set; } 
-
         [Required]
         [ForeignKey(nameof(SchoolUser))]
         public string SchoolUserId { get; set; } = null!;
@@ -60,6 +60,9 @@
 
         [Required]
         public bool IsDeleted { get; set; }
+
+        public virtual ICollection<ParentChild> ParentsChildren { get; set; }
+        public virtual ICollection<DailyMenu> Menus { get; set; }
 
     }
 }

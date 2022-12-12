@@ -40,6 +40,8 @@ builder.Services.AddScoped<ISchoolServices, SchoolServices>();
 builder.Services.AddScoped<IChildServices, ChildServices>();
 builder.Services.AddScoped<IParentUserServices, ParentUserServices>();
 builder.Services.AddScoped<ISchoolUserServices, SchoolUserServices>();
+builder.Services.AddScoped<IMealServices, MealServices>();
+
 
 var app = builder.Build();
 
@@ -65,13 +67,15 @@ app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    endpoints.MapControllerRoute(
       name: "areas",
       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
     );
 
-    endpoints.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    
 
     endpoints.MapDefaultControllerRoute();
 });

@@ -1,8 +1,9 @@
 ﻿namespace SchoolMealsOrderingSystem.Data.Entities
 {
     using Microsoft.AspNetCore.Identity;
+    using SchoolMealsOrderingSystem.Data.Interfaces;
 
-    public class ApplicationUser : IdentityUser
+    public class ApplicationUser : IdentityUser, IsDeletable
     {
         public ApplicationUser()
         {

@@ -1,0 +1,120 @@
+﻿@model AddMealsToSchoolListViewModel
+
+@{
+    ViewBag.Title = "Избери меню за родителите";
+}
+
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<div class="row">
+    <div class="col-sm-12 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6">
+        <form asp-controller="Meal" asp-action="AddMealsToSchoolList" method="post">
+            <div class="mb-3">
+                <label asp-for="@Model.FirstSoupId" class="form-label">Първи избор супа</label>
+                <select asp-for="@Model.FirstSoupId" class="form-control">
+                    <option value="">-- Избери супа --</option>
+                    @foreach (Soup soup in Model.Soups)
+                    {
+                         <option value="@soup.Id">@soup.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="FirstSoupId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.SecondSoupId" class="form-label">Втори избор супа</label>
+                <select asp-for="@Model.SecondSoupId" class="form-control">
+                    <option value="">-- Избери супа --</option>
+                    @foreach (Soup soup in Model.Soups)
+                    {
+                         <option value="@soup.Id">@soup.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="SecondSoupId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.ThirdSoupId" class="form-label">Трети избор супа</label>
+                <select asp-for="@Model.ThirdSoupId" class="form-control">
+                    <option value="">-- Избери супа --</option>
+                    @foreach (Soup soup in Model.Soups)
+                    {
+                         <option value="@soup.Id">@soup.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="ThirdSoupId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.FirstMainDishId" class="form-label">Първи избор основно ястие</label>
+                <select asp-for="@Model.FirstMainDishId" class="form-control">
+                    <option value="">-- Избери основно ястие --</option>
+                    @foreach (MainDish mainDish in Model.MainDishes)
+                    {
+                         <option value="@mainDish.Id">@mainDish.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="FirstMainDishId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.SecondMainDishId" class="form-label">Втори избор основно ястие</label>
+                <select asp-for="@Model.SecondMainDishId" class="form-control">
+                    <option value="">-- Избери основно ястие --</option>
+                    @foreach (MainDish mainDish in Model.MainDishes)
+                    {
+                         <option value="@mainDish.Id">@mainDish.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="SecondMainDishId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.ThirdMainDishId" class="form-label">Трети избор основно ястиеe</label>
+                <select asp-for="@Model.ThirdMainDishId" class="form-control">
+                    <option value="">-- Избери основно ястие --</option>
+                    @foreach (MainDish mainDish in Model.MainDishes)
+                    {
+                          <option value="@mainDish.Id">@mainDish.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="ThirdMainDishId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.FirstDessertsId" class="form-label">Първи избор десерт</label>
+                <select asp-for="@Model.FirstDessertsId" class="form-control">
+                    <option value="">-- Избери десерт --</option>
+                    @foreach (Dessert dessert in Model.Desserts)
+                    {
+                          <option value="@dessert.Id">@dessert.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="FirstDessertsId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.SecondDessertsId" class="form-label">Втори избор десерт</label>
+                <select asp-for="@Model.SecondDessertsId" class="form-control">
+                    <option value="">-- Избери десерт --</option>
+                    @foreach (Dessert dessert in Model.Desserts)
+                    {
+                          <option value="@dessert.Id">@dessert.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="SecondDessertsId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.ThirdDessertsId" class="form-label">Трети избор десерт</label>
+                <select asp-for="@Model.ThirdDessertsId" class="form-control">
+                    <option value="">-- Избери десерт --</option>
+                    @foreach (Dessert dessert in Model.Desserts)
+                    {
+                             <option value="@dessert.Id">@dessert.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="ThirdDessertsId" class="text-danger"></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+            <partial name="_ValidationScriptsPartial" />
+}

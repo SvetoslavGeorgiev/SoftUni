@@ -14,6 +14,9 @@
         public const string BirthDayRequired = "Полето \"Дата на раждане\" е задължително";
         public const string YearInSchoolRequired = "Полето \"Дата на раждане\" е задължително";
         public const string SchoolNameRequired = "Полето \"Име на училище\" е задължително";
+        public const string DescriptionRequired = "Полето \"Описание\" е задължително";
+        public const string IngredientsRequired = "Полето \"Съставки\" е задължително";
+        public const string AllergensRequired = "Полето \"Алергени\" е задължително";
 
         public const string PasswordAndConfirmPasswordEquality = "\"Паролата\" и \"Потвърждаване на паролата\" не съвпадат";
 
