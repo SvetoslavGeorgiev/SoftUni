@@ -5,7 +5,7 @@
 
     public class SchoolLoginViewModel
     {
-        [Required]
+        [Required(ErrorMessage = EmailRequired)]
         [EmailAddress(ErrorMessage = EmailAddress)]
         public string Email { get; set; } = null!;
 

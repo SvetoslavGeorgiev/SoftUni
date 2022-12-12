@@ -10,10 +10,10 @@
     using static Data.Constants.GeneralConstants;
     using static Data.Constants.RoleConstants;
     using static Data.Constants.SchoolUserConstants;
-    using SchoolMealsOrderingSystem.Core.Services;
 
-    [Area(School)]
+    [Area(SchoolAreaName)]
     [Authorize(Roles = School)]
+    [Route("School/[controller]/[Action]/{id?}")]
     public class SchoolUserController : ApplicationUserController
     {
 
@@ -38,7 +38,7 @@
         {
             if (User.Identity?.IsAuthenticated ?? false)
             {
-                return RedirectToAction("Index", "Home", new { area = "" });
+                return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
             }
 
             var model = new SchoolRegisterViewModel();
@@ -62,7 +62,7 @@
             if (result.Succeeded)
             {
 
-                return RedirectToAction("Login", "SchoolUser");
+                return RedirectToAction("Login", "SchoolUser", new { area = SchoolAreaName });
             }
 
             foreach (var item in result.Errors)
@@ -79,7 +79,7 @@
         {
             if (User.Identity?.IsAuthenticated ?? false)
             {
-                return RedirectToAction("Index", "Home", new { area = "" });
+                return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
             }
 
             var model = new SchoolLoginViewModel();
@@ -102,7 +102,6 @@
             {
                 ModelState.AddModelError(string.Empty, WrongLoginPageForSchoolIfParent);
                 ModelState.AddModelError(string.Empty, WrongLoginPageForSchoolNeedEmail);
-                //return RedirectToAction("Login", "ParentUser");
                 return View();
             }
 
@@ -131,7 +130,7 @@
 
             if (schoolUser == null)
             {
-                return RedirectToAction("Index", "Home", new { area = "" });
+                return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
             }
 
             return View(schoolUser);
@@ -153,7 +152,7 @@
                 await schoolUserServices.EditSchoolUserAsync(model);
 
 
-                return RedirectToAction("Index", "Home", new { area = "" });
+                return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
 
             }
             catch (Exception)

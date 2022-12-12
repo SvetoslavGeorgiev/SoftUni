@@ -34,6 +34,9 @@
                             <li class="nav-item">
                                  <a class="nav-link text-dark" asp-area="" asp-controller="School" asp-action="AllChildrenInSchool">Децата в училище</a>
                             </li>
+                            <li class="nav-item">
+                                 <a class="nav-link text-dark" asp-area="" asp-controller="Meal" asp-action="AddMealsToSchoolList">Избери седмично меню</a>
+                            </li>
                         }
                         else
                         {
@@ -54,7 +57,7 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="container" style="color: blue">
             &copy; 2022 - @DateTime.UtcNow.Year - SchoolMealsOrderingSystem
         </div>
     </footer>

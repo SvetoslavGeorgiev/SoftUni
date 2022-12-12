@@ -36,7 +36,7 @@
         {
             if (User.Identity?.IsAuthenticated ?? false)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home", new { area = ParentAreaName });
             }
 
             var model = new ParentRegisterViewModel();
@@ -52,7 +52,7 @@
         {
             if (User.Identity?.IsAuthenticated ?? false)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Home", new { area = ParentAreaName });
             }
 
             var model = new ParentLoginViewModel();
@@ -73,7 +73,7 @@
 
             if (result.Succeeded)
             {
-                return RedirectToAction("Login", "ParentUser");
+                return RedirectToAction("Login", "ParentUser", new { area = ParentAreaName });
             }
 
             foreach (var item in result.Errors)
@@ -106,13 +106,13 @@
                 return View();
             }
 
-            if (user != null)
+            if (user != null && await UserManager.IsInRoleAsync(user, ParentAreaName))
             {
                 var result = await SignInManager.PasswordSignInAsync(user, model.Password, false, false);
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home", new { area = "" });
+                    return RedirectToAction("Index", "Home", new { area = ParentAreaName });
                 }
             }
 
@@ -151,7 +151,7 @@
                 await parentUserServices.EditParentUserAsync(model);
 
 
-                return RedirectToAction("Index", "Home", new { area = "" });
+                return RedirectToAction("Index", "Home", new { area = ParentAreaName });
 
             }
             catch (Exception)
