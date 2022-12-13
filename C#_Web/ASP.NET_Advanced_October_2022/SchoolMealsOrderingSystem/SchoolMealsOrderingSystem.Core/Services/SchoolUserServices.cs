@@ -8,6 +8,7 @@
     using SchoolMealsOrderingSystem.Data;
     using System.Threading.Tasks;
     using static Data.Constants.RoleConstants;
+    using static Data.Constants.SchoolUserConstants;
 
     public class SchoolUserServices : ISchoolUserServices
     {
@@ -51,6 +52,11 @@
             var schoolUser = await schoolMealsOrderingSystemDbContext
                 .SchoolUsers.FindAsync(editSchoolUserViewModel.Id);
 
+            if (schoolUser == null)
+            {
+                throw new ArgumentException(InvalidSchoolUserId);
+            }
+
             var hasher = new PasswordHasher<ApplicationUser>();
 
             var savedPasswordHash = hasher.HashPassword(schoolUser, editSchoolUserViewModel.Password);
@@ -70,7 +76,7 @@
         {
             var schoolUser = await schoolMealsOrderingSystemDbContext
                 .SchoolUsers
-                .Where(su => su.Id.Equals(id))
+                .Where(su => su.Id.Equals(id) && !su.IsDeleted)
                 .Select(su => new EditSchoolUserViewModel
                 {
                     Id = su.Id,
@@ -79,6 +85,11 @@
 
                 })
                 .SingleOrDefaultAsync();
+
+            if (schoolUser == null)
+            {
+                throw new ArgumentException(InvalidSchoolUserId);
+            }
 
             return schoolUser;
         }

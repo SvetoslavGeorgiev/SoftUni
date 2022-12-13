@@ -8,6 +8,11 @@
     public class DailyMenu : IsDeletable
     {
 
+        public DailyMenu()
+        {
+            IsDeleted = false;
+        }
+
         [Key]
         public Guid Id { get; set; }
 

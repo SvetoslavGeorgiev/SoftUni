@@ -11,6 +11,7 @@
     using static Data.Constants.SoupConstants;
     using static Data.Constants.MainDishConstants;
     using static Data.Constants.DessertConstatnts;
+    using SchoolMealsOrderingSystem.Data.Entities;
 
     public class MealServices : IMealServices
     {
@@ -115,6 +116,23 @@
             }
 
             return result;
+        }
+
+        public async Task AddSoupAsync(AddSoupViewModel model)
+        {
+
+            var soup = new Soup()
+            {
+                Name = model.Name,
+                Description = model.Description,
+                Ingredients = model.Ingredients,
+                Allergens = model.Allergens
+            };
+
+            await schoolMealsOrderingSystemDbContext.Soups.AddAsync(soup);
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+
         }
     }
 }

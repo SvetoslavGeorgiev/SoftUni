@@ -10,24 +10,25 @@
     {
         public MainDish()
         {
+            IsDeleted = false;
             Id = Guid.NewGuid();
         }
 
         [Key]
         public Guid Id { get; set; }
 
-        [Required(ErrorMessage = NameRequired)]
+        [Required]
         [MaxLength(NameMaxLength)]
         public string Name { get; set; } = null!;
 
-        [MaxLength(DescriptionMaxLength)]
+        [MaxLength]
         public string? Description { get; set; } = null!;
 
-        [Required(ErrorMessage = IngredientsRequired)]
+        [Required]
         [MaxLength(IngredientsMaxLength)]
         public string Ingredients { get; set; } = null!;
 
-        [Required(ErrorMessage = AllergensRequired)]
+        [Required]
         [MaxLength(AllergensMaxLength)]
         public string Allergens { get; set; } = null!;
 

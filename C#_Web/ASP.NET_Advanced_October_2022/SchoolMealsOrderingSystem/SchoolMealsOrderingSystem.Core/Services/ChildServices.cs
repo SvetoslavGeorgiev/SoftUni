@@ -8,6 +8,7 @@
     using System.Collections.Generic;
     using System.Threading.Tasks;
     using static Data.Constants.ParentUserConstants;
+    using static Data.Constants.ChildConstants;
 
     public class ChildServices : IChildServices
     {
@@ -22,7 +23,7 @@
         {
             var user = await schoolMealsOrderingSystemDbContext
                 .ParentUsers
-                .Where(pu => pu.Id == userId)
+                .Where(pu => pu.Id == userId && !pu.IsDeleted)
                 .Include(pu => pu.ParentsChildren)
                 .FirstOrDefaultAsync();
 
@@ -60,7 +61,7 @@
         {
             var child = await schoolMealsOrderingSystemDbContext
                 .Children
-                .Where(c => c.Id == childId)
+                .Where(c => c.Id == childId && !c.IsDeleted)
                 .FirstOrDefaultAsync();
 
             if (child != null)
@@ -75,7 +76,8 @@
         {
 
             var child = await schoolMealsOrderingSystemDbContext
-                .Children.FindAsync(editChildViewModel.Id);
+                .Children
+                .FindAsync(editChildViewModel.Id);
 
             if (child != null)
             {
@@ -96,7 +98,7 @@
 
             var parent = await schoolMealsOrderingSystemDbContext
                 .ParentUsers
-                .Where(pu => pu.Id == userId)
+                .Where(pu => pu.Id == userId && !pu.IsDeleted)
                 .Include(pu => pu.ParentsChildren)
                 .ThenInclude(pu => pu.Child)
                 .Include(pu => pu.ParentsChildren.Where(pc => pc.Child.IsDeleted == false))
@@ -116,7 +118,7 @@
                     YearsOld = pc.Child.YearsOld,
                     MonthsOld = pc.Child.Months == 12 ? 0 : pc.Child.Months,
                     YearInSchool = pc.Child.YearInSchool,
-                    School = pc.Child.SchoolUser.SchoolName
+                    School = pc.Child.SchoolUser == null ? string.Empty : pc.Child.SchoolUser.SchoolName
                 });
 
 
@@ -128,7 +130,7 @@
 
             var child = await schoolMealsOrderingSystemDbContext
                 .Children
-                .Where(c => c.Id.Equals(childId))
+                .Where(c => c.Id.Equals(childId) && !c.IsDeleted)
                 .Select(c => new EditChildViewModel
                 {
                     Id = c.Id,
@@ -139,6 +141,11 @@
                     YearInSchool = c.YearInSchool
                 })
                 .SingleOrDefaultAsync();
+
+            if (child == null)
+            {
+                throw new ArgumentException(InvalidChildUserId);
+            }
 
             return child;
         }

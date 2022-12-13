@@ -11,23 +11,24 @@
 
         public Soup()
         {
+            IsDeleted = false;
             Id = Guid.NewGuid();
         }
 
         [Key]
         public Guid Id { get; set; }
 
-        [Required(ErrorMessage = NameRequired)]
+        [Required]
         [MaxLength(SoupNameMaxLength)]
         public string Name { get; set; } = null!;
 
         public string? Description { get; set; }
 
-        [Required(ErrorMessage = IngredientsRequired)]
+        [Required]
         [MaxLength(IngredientsMaxLength)]
         public string Ingredients { get; set; } = null!;
 
-        [Required(ErrorMessage = AllergensRequired)]
+        [Required]
         [MaxLength(AllergensMaxLength)]
         public string Allergens { get; set; } = null!;
 

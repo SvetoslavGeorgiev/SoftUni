@@ -23,7 +23,7 @@
         {
             return await schoolMealsOrderingSystemDbContext
                 .SchoolUsers
-                .Where(su => su.Id == schoolUserId)
+                .Where(su => su.Id == schoolUserId && !su.IsDeleted)
                 .Select(su => su.SchoolChildren.Where(sc => sc.IsDeleted == false)
                                                .Select(c => new ChildViewModel
                                                {

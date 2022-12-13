@@ -4,6 +4,8 @@
     using Microsoft.AspNetCore.Mvc;
     using SchoolMealsOrderingSystem.Core.Contracts;
     using SchoolMealsOrderingSystem.Core.Models.Meal;
+    using SchoolMealsOrderingSystem.Core.Models.School;
+    using SchoolMealsOrderingSystem.Core.Services;
     using System.Security.Claims;
     using static Data.Constants.RoleConstants;
     using static Data.Constants.SchoolUserConstants;
@@ -16,6 +18,44 @@
         public MealController(IMealServices _mealServices)
         {
             mealServices= _mealServices;
+        }
+
+        [HttpGet]
+        [Authorize(Roles = School)]
+        public IActionResult AddSoup()
+        {
+            
+            var model = new AddSoupViewModel();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = School)]
+        public async Task<IActionResult> AddSoup(AddSoupViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            try
+            {
+
+                
+                await mealServices.AddSoupAsync(model);
+
+
+                return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
+
+            }
+            catch (Exception)
+            {
+
+                ModelState.AddModelError(string.Empty, InvalidSchoolUserId);
+
+                return View(model);
+            }
         }
 
 
@@ -53,7 +93,7 @@
                 await mealServices.AddMealsAsync(model, userId);
 
 
-                //return RedirectToAction(nameof(All));
+                return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
 
             }
             catch (Exception)
@@ -63,8 +103,6 @@
 
                 return View(model);
             }
-
-            return Ok();
         }
     }
 }

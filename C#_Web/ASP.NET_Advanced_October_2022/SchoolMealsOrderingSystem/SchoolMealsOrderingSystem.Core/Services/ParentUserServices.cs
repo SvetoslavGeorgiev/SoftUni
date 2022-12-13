@@ -10,6 +10,7 @@
     using SchoolMealsOrderingSystem.Data;
     using System.Threading.Tasks;
     using static Data.Constants.RoleConstants;
+    using static Data.Constants.ParentUserConstants;
 
     public class ParentUserServices : IParentUserServices
     {
@@ -50,7 +51,7 @@
         {
             var parentUser = await schoolMealsOrderingSystemDbContext
                 .ParentUsers
-                .Where(pu => pu.Id.Equals(id))
+                .Where(pu => pu.Id.Equals(id) && !pu.IsDeleted)
                 .Select(pu => new EditParentUserViewModel
                 {
                     Id = pu.Id,
@@ -62,6 +63,11 @@
                 })
                 .SingleOrDefaultAsync();
 
+            if (parentUser == null)
+            {
+                throw new ArgumentException(InvalidParentUserId);
+            }
+
             return parentUser;
         }
 
@@ -69,6 +75,11 @@
         {
             var parentUser = await schoolMealsOrderingSystemDbContext
                 .ParentUsers.FindAsync(editParentUserViewModel.Id);
+
+            if (parentUser == null)
+            {
+                throw new ArgumentException(InvalidParentUserId);
+            }
 
             var hasher = new PasswordHasher<ApplicationUser>();
 
