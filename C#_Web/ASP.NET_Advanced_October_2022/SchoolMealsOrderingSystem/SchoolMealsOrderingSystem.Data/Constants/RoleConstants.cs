@@ -5,6 +5,7 @@
 
         public const string School = "School";
         public const string Parent = "Parent";
+        public const string SchoolAndParent = "School, Parent";
 
 
     }

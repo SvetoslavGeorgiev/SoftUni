@@ -17,6 +17,7 @@
         public const string DescriptionRequired = "Полето \"Описание\" е задължително";
         public const string IngredientsRequired = "Полето \"Съставки\" е задължително";
         public const string AllergensRequired = "Полето \"Алергени\" е задължително";
+        public const string UrlRequired = "Полето \"Линк към снимката\" е задължително";
 
         public const string PasswordAndConfirmPasswordEquality = "\"Паролата\" и \"Потвърждаване на паролата\" не съвпадат";
 

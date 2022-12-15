@@ -49,7 +49,16 @@
                                   </div>
                                 </div>
                             </li>
-
+                            <li>
+                                <div class="subnav">
+                                  <button class="subnavbtn">Всички ястия<i class="fa fa-caret-down"></i></button>
+                                  <div class="subnav-content">
+                                    <a href="@Url.Action("AllSoups", "Meal")">Супи</a>
+                                    <a href="@Url.Action("AllMainDishes", "Meal")">Основни ястия</a>
+                                    <a href="@Url.Action("AllDesserts", "Meal")">Десерти</a>
+                                  </div>
+                                </div>
+                            </li>
                         }
                         else
                         {

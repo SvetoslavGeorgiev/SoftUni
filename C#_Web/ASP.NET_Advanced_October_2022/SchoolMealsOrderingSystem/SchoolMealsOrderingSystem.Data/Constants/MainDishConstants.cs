@@ -14,6 +14,9 @@
         public const int AllergensMaxLength = 3000;
         public const int AllergensMinLength = 3;
 
+        public const int UrlMaxLength = 2000;
+        public const int UrlMinLength = 2;
+
         public const string InvalidMainDishId = "Invalid MainDish Id";
 
     }
