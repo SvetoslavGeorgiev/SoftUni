@@ -15,5 +15,7 @@
         Task<EditParentUserViewModel> GetParentUserProfileAsync(string id);
 
         Task EditParentUserAsync(EditParentUserViewModel editParentUserViewModel);
+
+        Task DeleteParentUserAsync(string ParentUserId);
     }
 }

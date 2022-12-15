@@ -4,28 +4,28 @@
     using Data.Entities;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
-    using Microsoft.Extensions.Configuration;
     using Models.Parent;
-    using SchoolMealsOrderingSystem.Core.Models.School;
     using SchoolMealsOrderingSystem.Data;
     using System.Threading.Tasks;
-    using static Data.Constants.RoleConstants;
     using static Data.Constants.ParentUserConstants;
+    using static Data.Constants.RoleConstants;
 
     public class ParentUserServices : IParentUserServices
     {
 
         private readonly SchoolMealsOrderingSystemDbContext schoolMealsOrderingSystemDbContext;
+        private readonly IChildServices childServices;
 
-        public ParentUserServices(SchoolMealsOrderingSystemDbContext _schoolMealsOrderingSystemDbContext)
+        public ParentUserServices(SchoolMealsOrderingSystemDbContext _schoolMealsOrderingSystemDbContext, IChildServices _childServices)
         {
             schoolMealsOrderingSystemDbContext = _schoolMealsOrderingSystemDbContext;
+            childServices = _childServices;
         }
 
 
         public async Task<IdentityResult> AddParentUserToDatabase(
-            UserManager<ApplicationUser> userManager, 
-            RoleManager<IdentityRole> roleManager, 
+            UserManager<ApplicationUser> userManager,
+            RoleManager<IdentityRole> roleManager,
             ParentRegisterViewModel model)
         {
             var user = new ParentUser
@@ -56,8 +56,8 @@
                 {
                     Id = pu.Id,
                     UserName = pu.UserName,
-                    FirstName= pu.FirstName,
-                    LastName= pu.LastName,
+                    FirstName = pu.FirstName,
+                    LastName = pu.LastName,
                     Email = pu.Email
 
                 })
@@ -96,6 +96,48 @@
             }
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteParentUserAsync(string ParentUSerId)
+        {
+            var user = await schoolMealsOrderingSystemDbContext
+                .ParentUsers
+                .Where(pu => pu.Id == ParentUSerId && !pu.IsDeleted)
+                .Include(pu => pu.ParentsChildren.Where(pc => !pc.Child.IsDeleted))
+                .FirstOrDefaultAsync();
+
+            var str = Guid.NewGuid().ToString();
+
+            if (user != null)
+            {
+                user.IsDeleted = true;
+                user.UserName = str;
+                user.FirstName = string.Empty;
+                user.LastName = string.Empty;
+                user.PasswordHash = string.Empty;
+                user.Email = string.Empty;
+                user.PhoneNumber = string.Empty;
+                user.NormalizedEmail = string.Empty;
+                user.NormalizedUserName = str.ToUpper();
+
+                if (user.ParentsChildren.Any())
+                {
+                    foreach (var item in user.ParentsChildren)
+                    {
+
+                        var child = await schoolMealsOrderingSystemDbContext
+                            .Children.FindAsync(item.ChildId);
+
+                        if (child != null) 
+                        {
+                            child.IsDeleted = true;
+                        }
+
+                    }
+                }
+
+                await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+            }
         }
 
     }

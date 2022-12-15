@@ -7,6 +7,7 @@
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using SchoolMealsOrderingSystem.Controllers;
+    using SchoolMealsOrderingSystem.Core.Services;
     using static Data.Constants.GeneralConstants;
     using static Data.Constants.ParentUserConstants;
     using static Data.Constants.RoleConstants;
@@ -169,6 +170,25 @@
             await SignInManager.SignOutAsync();
 
             return RedirectToAction("Index", "Home", new { area = "" });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(string id)
+        {
+            try
+            {
+                await parentUserServices.DeleteParentUserAsync(id);
+            }
+            catch (Exception)
+            {
+
+                throw new ArgumentException(ErrorMessage);
+            }
+            
+
+            return RedirectToAction(nameof(Logout));
+
+
         }
 
     }

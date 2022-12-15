@@ -18,7 +18,7 @@
         public string FirstName { get; set; } = null!;
 
         /// <summary>
-        /// https://www.guinnessworldrecords.com/world-records/67285-longest-personal-name -> Longest personal name by Guinness Total(774), last(597)
+        /// https://www.guinnessworldrecords.com/world-records/67285-longest-personal-name -> Longest personal name by Guinness Total(774), lastName(597)
         /// </summary>
         [Required]
         [MaxLength(LastNameMaxLength)]
