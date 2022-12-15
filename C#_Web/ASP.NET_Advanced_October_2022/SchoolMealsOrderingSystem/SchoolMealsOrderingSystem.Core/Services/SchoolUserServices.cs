@@ -93,5 +93,33 @@
 
             return schoolUser;
         }
+
+        public async Task DeleteSchoolUserAsync(string SchoolUserId)
+        {
+            var user = await schoolMealsOrderingSystemDbContext
+                .SchoolUsers
+                .Where(pu => pu.Id == SchoolUserId && !pu.IsDeleted)
+                .FirstOrDefaultAsync();
+
+            var str = Guid.NewGuid().ToString();
+
+            if (user != null)
+            {
+                user.IsDeleted = true;
+                user.UserName = str;
+                user.SchoolName = string.Empty;
+                user.PasswordHash = string.Empty;
+                user.Email = string.Empty;
+                user.PhoneNumber = string.Empty;
+                user.NormalizedEmail = string.Empty;
+                user.NormalizedUserName = str.ToUpper();
+                user.ConcurrencyStamp = string.Empty;
+                user.SecurityStamp = string.Empty;
+
+                
+
+                await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+            }
+        }
     }
 }

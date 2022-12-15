@@ -98,11 +98,11 @@
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
         }
 
-        public async Task DeleteParentUserAsync(string ParentUSerId)
+        public async Task DeleteParentUserAsync(string ParentUserId)
         {
             var user = await schoolMealsOrderingSystemDbContext
                 .ParentUsers
-                .Where(pu => pu.Id == ParentUSerId && !pu.IsDeleted)
+                .Where(pu => pu.Id == ParentUserId && !pu.IsDeleted)
                 .Include(pu => pu.ParentsChildren.Where(pc => !pc.Child.IsDeleted))
                 .FirstOrDefaultAsync();
 
@@ -119,19 +119,15 @@
                 user.PhoneNumber = string.Empty;
                 user.NormalizedEmail = string.Empty;
                 user.NormalizedUserName = str.ToUpper();
+                user.ConcurrencyStamp = string.Empty;
+                user.SecurityStamp = string.Empty;
 
                 if (user.ParentsChildren.Any())
                 {
                     foreach (var item in user.ParentsChildren)
                     {
 
-                        var child = await schoolMealsOrderingSystemDbContext
-                            .Children.FindAsync(item.ChildId);
-
-                        if (child != null) 
-                        {
-                            child.IsDeleted = true;
-                        }
+                        await childServices.DeleteChildAsync(item.ChildId);
 
                     }
                 }

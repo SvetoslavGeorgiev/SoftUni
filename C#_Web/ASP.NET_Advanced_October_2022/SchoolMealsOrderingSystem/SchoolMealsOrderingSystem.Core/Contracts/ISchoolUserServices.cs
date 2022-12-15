@@ -16,5 +16,7 @@
 
         Task EditSchoolUserAsync(EditSchoolUserViewModel editSchoolUserViewModel);
 
+        Task DeleteSchoolUserAsync(string SchoolUserId);
+
     }
 }

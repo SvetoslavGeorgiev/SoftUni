@@ -95,11 +95,13 @@
                 return View(model);
             }
 
-
-
             var user = await UserManager.FindByNameAsync(model.UserName);
 
-            if (model.UserName == user.Email)
+            if (user == null)
+            {
+                ModelState.AddModelError(string.Empty, InvalidUserName);
+            }
+            else if (model.UserName == user.Email)
             {
                 ModelState.AddModelError(string.Empty, WrongLoginPageForParentIfScholl);
                 ModelState.AddModelError(string.Empty, WrongLoginPageForParentNeedUsername);

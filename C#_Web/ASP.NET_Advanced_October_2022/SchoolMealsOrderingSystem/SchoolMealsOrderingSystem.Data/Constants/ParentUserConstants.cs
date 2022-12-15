@@ -19,6 +19,7 @@
 
 
         public const string InvalidParentUserId = "Invalid Parent Id";
+        public const string InvalidUserName = "Невалидно потребителско име";
 
         public const string ParentAreaName = "Parent";
 

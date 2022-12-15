@@ -10,6 +10,7 @@
     using static Data.Constants.GeneralConstants;
     using static Data.Constants.RoleConstants;
     using static Data.Constants.SchoolUserConstants;
+    using SchoolMealsOrderingSystem.Core.Services;
 
     [Area(SchoolAreaName)]
     [Authorize(Roles = School)]
@@ -98,7 +99,11 @@
 
             var user = await UserManager.FindByEmailAsync(model.Email);
 
-            if (model.Email != user.UserName)
+            if (user == null)
+            {
+                ModelState.AddModelError(string.Empty, InvalidEmail);
+            }
+            else if (model.Email != user.UserName)
             {
                 ModelState.AddModelError(string.Empty, WrongLoginPageForSchoolIfParent);
                 ModelState.AddModelError(string.Empty, WrongLoginPageForSchoolNeedEmail);
@@ -171,6 +176,23 @@
             await SignInManager.SignOutAsync();
 
             return RedirectToAction("Index", "Home", new { area = "" });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(string id)
+        {
+            try
+            {
+                await schoolUserServices.DeleteSchoolUserAsync(id);
+            }
+            catch (Exception)
+            {
+
+                throw new ArgumentException(ErrorMessage);
+            }
+
+
+            return RedirectToAction(nameof(Logout));
         }
 
     }
