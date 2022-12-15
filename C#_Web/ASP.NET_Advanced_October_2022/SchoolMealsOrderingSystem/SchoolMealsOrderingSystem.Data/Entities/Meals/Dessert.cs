@@ -25,6 +25,10 @@
         public string? Description { get; set; } = null!;
 
         [Required]
+        [MaxLength(UrlMaxLength)]
+        public string ImageUrl { get; set; } = null!;
+
+        [Required]
         [MaxLength(IngredientsMaxLength)]
         public string Ingredients { get; set; } = null!;
 

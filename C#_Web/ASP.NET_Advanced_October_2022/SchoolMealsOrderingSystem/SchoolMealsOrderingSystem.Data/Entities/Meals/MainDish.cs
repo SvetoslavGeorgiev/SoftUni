@@ -40,5 +40,9 @@
         public string SchoolUserId { get; set; }
 
         public SchoolUser SchoolUser { get; set; }
+
+        [Required]
+        [MaxLength(UrlMaxLength)]
+        public string ImageUrl { get; set; } = null!;
     }
 }

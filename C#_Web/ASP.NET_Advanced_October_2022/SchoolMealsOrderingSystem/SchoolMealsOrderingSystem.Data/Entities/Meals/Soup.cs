@@ -33,6 +33,10 @@
         [MaxLength(AllergensMaxLength)]
         public string Allergens { get; set; } = null!;
 
+        [Required]
+        [MaxLength(UrlMaxLength)]
+        public string ImageUrl { get; set; } = null!;
+
         public bool IsDeleted { get; set; }
 
         [Required]
