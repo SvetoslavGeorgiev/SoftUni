@@ -2,6 +2,7 @@
 {
     using Interfaces;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
     using static Constants.DessertConstatnts;
     using static Constants.GeneralConstants;
 
@@ -32,6 +33,12 @@
         public string Allergens { get; set; } = null!;
 
         public bool IsDeleted { get; set; }
+
+        [Required]
+        [ForeignKey(nameof(SchoolUser))]
+        public string SchoolUserId { get; set; }
+
+        public SchoolUser SchoolUser { get; set; }
 
     }
 }

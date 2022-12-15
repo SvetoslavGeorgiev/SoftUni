@@ -118,7 +118,7 @@
                     YearsOld = pc.Child.YearsOld,
                     MonthsOld = pc.Child.Months == 12 ? 0 : pc.Child.Months,
                     YearInSchool = pc.Child.YearInSchool,
-                    School = pc.Child.SchoolUser == null ? string.Empty : pc.Child.SchoolUser.SchoolName
+                    School = pc.Child.SchoolUser.SchoolName == string.Empty ? DeletedSchoolUser : pc.Child.SchoolUser.SchoolName
                 });
 
 

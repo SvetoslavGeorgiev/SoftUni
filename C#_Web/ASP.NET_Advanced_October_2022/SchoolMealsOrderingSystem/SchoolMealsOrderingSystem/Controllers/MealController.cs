@@ -6,6 +6,7 @@
     using SchoolMealsOrderingSystem.Core.Models.Meal;
     using SchoolMealsOrderingSystem.Core.Models.School;
     using SchoolMealsOrderingSystem.Core.Services;
+    using SchoolMealsOrderingSystem.Data.Entities;
     using System.Security.Claims;
     using static Data.Constants.RoleConstants;
     using static Data.Constants.SchoolUserConstants;
@@ -39,11 +40,13 @@
                 return View(model);
             }
 
+            string schoolUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             try
             {
 
                 
-                await mealServices.AddSoupAsync(model);
+                await mealServices.AddSoupAsync(model, schoolUserId);
 
 
                 return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
@@ -63,11 +66,14 @@
         [Authorize(Roles = School)]
         public async Task<IActionResult> AddMealsToSchoolList()
         {
+
+            string schoolUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             var model = new AddMealsToSchoolListViewModel
             {
-                Soups = await mealServices.GetSoupsAsync(),
-                MainDishes = await mealServices.GetMainDishsAsync(),
-                Desserts = await mealServices.GetDessertsAsync()
+                Soups = await mealServices.GetSoupsAsync(schoolUserId),
+                MainDishes = await mealServices.GetMainDishsAsync(schoolUserId),
+                Desserts = await mealServices.GetDessertsAsync(schoolUserId)
             };
 
             return View(model);

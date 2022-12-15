@@ -3,6 +3,7 @@
     using Data.Interfaces;
     using System;
     using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
     using static Constants.GeneralConstants;
     using static Constants.SoupConstants;
 
@@ -33,5 +34,11 @@
         public string Allergens { get; set; } = null!;
 
         public bool IsDeleted { get; set; }
+
+        [Required]
+        [ForeignKey(nameof(SchoolUser))]
+        public string SchoolUserId { get; set; }
+
+        public SchoolUser SchoolUser { get; set; }
     }
 }

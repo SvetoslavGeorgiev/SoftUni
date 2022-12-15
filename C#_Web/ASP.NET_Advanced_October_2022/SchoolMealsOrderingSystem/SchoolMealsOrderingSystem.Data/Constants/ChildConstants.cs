@@ -16,6 +16,8 @@
 
         public const string InvalidBook = "Въвели сте неправилна информация за детето!";
 
+        public const string DeletedSchoolUser = "Моля редактирайте и изберете училище!";
+
         
         public const string InvalidChildUserId = "Invalid Child Id";
 

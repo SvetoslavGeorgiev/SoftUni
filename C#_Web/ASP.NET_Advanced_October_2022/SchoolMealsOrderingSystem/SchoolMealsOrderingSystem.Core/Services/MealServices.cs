@@ -7,11 +7,10 @@
     using SchoolMealsOrderingSystem.Data.Entities.Meals;
     using System.Collections.Generic;
     using System.Threading.Tasks;
+    using static Data.Constants.DessertConstatnts;
+    using static Data.Constants.MainDishConstants;
     using static Data.Constants.SchoolUserConstants;
     using static Data.Constants.SoupConstants;
-    using static Data.Constants.MainDishConstants;
-    using static Data.Constants.DessertConstatnts;
-    using SchoolMealsOrderingSystem.Data.Entities;
 
     public class MealServices : IMealServices
     {
@@ -23,28 +22,31 @@
         }
 
 
-        public async Task<IEnumerable<Soup>> GetSoupsAsync()
+        public async Task<IEnumerable<Soup>> GetSoupsAsync(string schoolUserId)
         {
             var result = await schoolMealsOrderingSystemDbContext
                 .Soups
+                .Where(s => s.SchoolUserId == schoolUserId)
                 .ToListAsync();
 
             return result;
         }
 
-        public async Task<IEnumerable<MainDish>> GetMainDishsAsync()
+        public async Task<IEnumerable<MainDish>> GetMainDishsAsync(string schoolUserId)
         {
             var result = await schoolMealsOrderingSystemDbContext
                 .MainDishes
+                .Where(s => s.SchoolUserId == schoolUserId)
                 .ToListAsync();
 
             return result;
         }
 
-        public async Task<IEnumerable<Dessert>> GetDessertsAsync()
+        public async Task<IEnumerable<Dessert>> GetDessertsAsync(string schoolUserId)
         {
             var result = await schoolMealsOrderingSystemDbContext
                 .Desserts
+                .Where(s => s.SchoolUserId == schoolUserId)
                 .ToListAsync();
 
             return result;
@@ -118,7 +120,7 @@
             return result;
         }
 
-        public async Task AddSoupAsync(AddSoupViewModel model)
+        public async Task AddSoupAsync(AddSoupViewModel model, string schoolUserId)
         {
 
             var soup = new Soup()
@@ -126,7 +128,8 @@
                 Name = model.Name,
                 Description = model.Description,
                 Ingredients = model.Ingredients,
-                Allergens = model.Allergens
+                Allergens = model.Allergens,
+                SchoolUserId = schoolUserId
             };
 
             await schoolMealsOrderingSystemDbContext.Soups.AddAsync(soup);

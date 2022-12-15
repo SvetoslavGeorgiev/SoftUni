@@ -6,15 +6,15 @@
     public interface IMealServices
     {
 
-        Task<IEnumerable<Soup>> GetSoupsAsync();
-        Task<IEnumerable<MainDish>> GetMainDishsAsync();
-        Task<IEnumerable<Dessert>> GetDessertsAsync();
+        Task<IEnumerable<Soup>> GetSoupsAsync(string schoolUserId);
+        Task<IEnumerable<MainDish>> GetMainDishsAsync(string schoolUserId);
+        Task<IEnumerable<Dessert>> GetDessertsAsync(string schoolUserId);
 
         Task<Soup> FindSoupAsync(Guid Id);
         Task<MainDish> FindMainDishAsync(Guid Id);
         Task<Dessert> FindDessertAsync(Guid Id);
 
-        Task AddSoupAsync(AddSoupViewModel model);
+        Task AddSoupAsync(AddSoupViewModel model, string schoolUserId);
         Task AddMealsAsync(AddMealsToSchoolListViewModel model, string userId);
     }
 }

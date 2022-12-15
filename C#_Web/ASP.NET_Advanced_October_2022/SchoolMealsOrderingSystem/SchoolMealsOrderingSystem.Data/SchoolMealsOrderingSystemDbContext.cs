@@ -44,6 +44,24 @@
                 .HasMaxLength(60)
                 .IsRequired();
 
+            builder.Entity<Dessert>()
+                .HasOne(d => d.SchoolUser)
+                .WithMany(su => su.Desserts)
+                .OnDelete(DeleteBehavior.NoAction)
+                .HasForeignKey(d => d.SchoolUserId);
+
+            builder.Entity<Soup>()
+                .HasOne(s => s.SchoolUser)
+                .WithMany(su => su.Soups)
+                .OnDelete(DeleteBehavior.NoAction)
+                .HasForeignKey(d => d.SchoolUserId);
+
+            builder.Entity<MainDish>()
+                .HasOne(md => md.SchoolUser)
+                .WithMany(su => su.MainDishes)
+                .OnDelete(DeleteBehavior.NoAction)
+                .HasForeignKey(d => d.SchoolUserId);
+
 
             base.OnModelCreating(builder);
         }
