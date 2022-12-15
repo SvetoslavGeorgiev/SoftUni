@@ -32,6 +32,7 @@
             return result;
         }
 
+
         public async Task<IEnumerable<MainDish>> GetMainDishsAsync(string schoolUserId)
         {
             var result = await schoolMealsOrderingSystemDbContext
@@ -47,6 +48,61 @@
             var result = await schoolMealsOrderingSystemDbContext
                 .Desserts
                 .Where(s => s.SchoolUserId == schoolUserId)
+                .ToListAsync();
+
+            return result;
+        }
+        public async Task<IEnumerable<SoupViewModel>> GetSoupViewModelAsync(string schoolUserId)
+        {
+            var result = await schoolMealsOrderingSystemDbContext
+                .Soups
+                .Where(s => s.SchoolUserId == schoolUserId)
+                .Select(s => new SoupViewModel
+                {
+                    Id = s.Id,
+                    Name= s.Name,
+                    ImageUrl = s.ImageUrl,
+                    Allergens = s.Allergens,
+                    Ingredients = s.Ingredients
+
+                })
+                .ToListAsync();
+
+            return result;
+        }
+        public async Task<IEnumerable<MainDishViewModel>> GetMainDishViewModelAsync(string schoolUserId)
+        {
+            var result = await schoolMealsOrderingSystemDbContext
+                .MainDishes
+                .Where(s => s.SchoolUserId == schoolUserId)
+                .Select(s => new MainDishViewModel
+                {
+                    Id = s.Id,
+                    Name = s.Name,
+                    ImageUrl = s.ImageUrl,
+                    Allergens = s.Allergens,
+                    Ingredients = s.Ingredients
+
+                })
+                .ToListAsync();
+
+            return result;
+        }
+
+        public async Task<IEnumerable<DessertViewModel>> GetDessertViewModelAsync(string schoolUserId)
+        {
+            var result = await schoolMealsOrderingSystemDbContext
+                .Desserts
+                .Where(s => s.SchoolUserId == schoolUserId)
+                .Select(s => new DessertViewModel
+                {
+                    Id = s.Id,
+                    Name = s.Name,
+                    ImageUrl = s.ImageUrl,
+                    Allergens = s.Allergens,
+                    Ingredients = s.Ingredients
+
+                })
                 .ToListAsync();
 
             return result;
@@ -138,6 +194,7 @@
             {
                 Name = model.Name,
                 Description = model.Description,
+                ImageUrl = model.ImageUrl,
                 Ingredients = model.Ingredients,
                 Allergens = model.Allergens,
                 SchoolUserId = schoolUserId
@@ -149,7 +206,7 @@
 
             await schoolMealsOrderingSystemDbContext.Soups.AddAsync(soup);
 
-            
+
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
 
@@ -174,6 +231,7 @@
                 Description = model.Description,
                 Ingredients = model.Ingredients,
                 Allergens = model.Allergens,
+                ImageUrl = model.ImageUrl,
                 SchoolUserId = schoolUserId
             };
 
@@ -206,6 +264,7 @@
                 Name = model.Name,
                 Description = model.Description,
                 Ingredients = model.Ingredients,
+                ImageUrl = model.ImageUrl,
                 Allergens = model.Allergens,
                 SchoolUserId = schoolUserId
             };

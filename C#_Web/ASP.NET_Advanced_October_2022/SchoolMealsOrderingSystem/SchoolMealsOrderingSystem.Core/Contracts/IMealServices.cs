@@ -11,6 +11,10 @@
         Task<IEnumerable<MainDish>> GetMainDishsAsync(string schoolUserId);
         Task<IEnumerable<Dessert>> GetDessertsAsync(string schoolUserId);
 
+        Task<IEnumerable<SoupViewModel>> GetSoupViewModelAsync(string schoolUserId);
+        Task<IEnumerable<MainDishViewModel>> GetMainDishViewModelAsync(string schoolUserId);
+        Task<IEnumerable<DessertViewModel>> GetDessertViewModelAsync(string schoolUserId);
+
         Task<Soup> FindSoupAsync(Guid Id);
         Task<MainDish> FindMainDishAsync(Guid Id);
         Task<Dessert> FindDessertAsync(Guid Id);
