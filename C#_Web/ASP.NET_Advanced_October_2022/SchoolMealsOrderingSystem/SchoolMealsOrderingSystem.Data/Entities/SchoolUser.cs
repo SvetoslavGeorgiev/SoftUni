@@ -13,9 +13,9 @@
             : base()
         {
             SchoolChildren = new HashSet<Child>();
-            Soups = new HashSet<Soup>();
-            MainDishes = new HashSet<MainDish>();
-            Desserts = new HashSet<Dessert>();
+            SoupsForParents = new HashSet<Soup>();
+            MainDishesForParents = new HashSet<MainDish>();
+            DessertsForParents = new HashSet<Dessert>();
         }
 
         [MaxLength(SchoolNameMaxLength)]
@@ -24,12 +24,23 @@
 
         public virtual ICollection<Child> SchoolChildren { get; set; }
 
-        [NotMapped]
+        [InverseProperty(nameof(Soup.SchoolUser))]
         public virtual ICollection<Soup> Soups { get; set; }
-        [NotMapped]
+
+        [InverseProperty(nameof(MainDish.SchoolUser))]
         public virtual ICollection<MainDish> MainDishes { get; set; }
-        [NotMapped]
+
+        [InverseProperty(nameof(Dessert.SchoolUser))]
         public virtual ICollection<Dessert> Desserts { get; set; }
+
+
+
+        [NotMapped]
+        public virtual ICollection<Soup> SoupsForParents { get; set; }
+        [NotMapped]
+        public virtual ICollection<MainDish> MainDishesForParents { get; set; }
+        [NotMapped]
+        public virtual ICollection<Dessert> DessertsForParents { get; set; }
 
     }
 

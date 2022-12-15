@@ -6,6 +6,7 @@
     using Microsoft.AspNetCore.Identity;
     using Microsoft.EntityFrameworkCore;
     using SchoolMealsOrderingSystem.Data;
+    using SchoolMealsOrderingSystem.Data.Entities.Meals;
     using System.Threading.Tasks;
     using static Data.Constants.RoleConstants;
     using static Data.Constants.SchoolUserConstants;
@@ -13,15 +14,17 @@
     public class SchoolUserServices : ISchoolUserServices
     {
         private readonly SchoolMealsOrderingSystemDbContext schoolMealsOrderingSystemDbContext;
+        private readonly IMealServices mealServices;
 
-        public SchoolUserServices(SchoolMealsOrderingSystemDbContext _schoolMealsOrderingSystemDbContext)
+        public SchoolUserServices(SchoolMealsOrderingSystemDbContext _schoolMealsOrderingSystemDbContext, IMealServices _mealServices)
         {
             schoolMealsOrderingSystemDbContext = _schoolMealsOrderingSystemDbContext;
+            mealServices = _mealServices;
         }
 
         public async Task<IdentityResult> AddSchoolUserToDatabase(
-            UserManager<ApplicationUser> userManager, 
-            RoleManager<IdentityRole> roleManager, 
+            UserManager<ApplicationUser> userManager,
+            RoleManager<IdentityRole> roleManager,
             SchoolRegisterViewModel model)
         {
             var user = new SchoolUser
@@ -38,11 +41,11 @@
 
             var schoolRole = await roleManager.FindByNameAsync(School);
 
-            
+
 
             await userManager.AddToRoleAsync(user, schoolRole.Name);
 
-            
+
 
             return result;
         }
@@ -98,7 +101,10 @@
         {
             var user = await schoolMealsOrderingSystemDbContext
                 .SchoolUsers
-                .Where(pu => pu.Id == SchoolUserId && !pu.IsDeleted)
+                .Where(su => su.Id == SchoolUserId && !su.IsDeleted)
+                .Include(su => su.Soups)
+                .Include(su => su.MainDishes)
+                .Include(su => su.Desserts)
                 .FirstOrDefaultAsync();
 
             var str = Guid.NewGuid().ToString();
@@ -116,7 +122,21 @@
                 user.ConcurrencyStamp = string.Empty;
                 user.SecurityStamp = string.Empty;
 
-                
+                foreach (Soup soup in user.Soups)
+                {
+                    await mealServices.DeleteSoupAsync(soup.Id);
+                }
+
+                foreach (MainDish mainDish in user.MainDishes)
+                {
+                    await mealServices.DeleteMainDishAsync(mainDish.Id);
+                }
+
+                foreach (Dessert dessert in user.Desserts)
+                {
+                    await mealServices.DeleteDessertAsync(dessert.Id);
+                }
+
 
                 await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
             }

@@ -79,15 +79,15 @@
                 throw new ArgumentException(InvalidSchoolUserId);
             }
 
-            user.Soups.Add(await FindSoupAsync(model.FirstSoupId));
-            user.Soups.Add(await FindSoupAsync(model.SecondSoupId));
-            user.Soups.Add(await FindSoupAsync(model.ThirdSoupId));
-            user.MainDishes.Add(await FindMainDishAsync(model.FirstMainDishId));
-            user.MainDishes.Add(await FindMainDishAsync(model.SecondMainDishId));
-            user.MainDishes.Add(await FindMainDishAsync(model.ThirdMainDishId));
-            user.Desserts.Add(await FindDessertAsync(model.FirstDessertsId));
-            user.Desserts.Add(await FindDessertAsync(model.SecondDessertsId));
-            user.Desserts.Add(await FindDessertAsync(model.ThirdDessertsId));
+            user.SoupsForParents.Add(await FindSoupAsync(model.FirstSoupId));
+            user.SoupsForParents.Add(await FindSoupAsync(model.SecondSoupId));
+            user.SoupsForParents.Add(await FindSoupAsync(model.ThirdSoupId));
+            user.MainDishesForParents.Add(await FindMainDishAsync(model.FirstMainDishId));
+            user.MainDishesForParents.Add(await FindMainDishAsync(model.SecondMainDishId));
+            user.MainDishesForParents.Add(await FindMainDishAsync(model.ThirdMainDishId));
+            user.DessertsForParents.Add(await FindDessertAsync(model.FirstDessertsId));
+            user.DessertsForParents.Add(await FindDessertAsync(model.SecondDessertsId));
+            user.DessertsForParents.Add(await FindDessertAsync(model.ThirdDessertsId));
         }
 
         public async Task<MainDish> FindMainDishAsync(Guid Id)
@@ -123,6 +123,17 @@
         public async Task AddSoupAsync(AddSoupViewModel model, string schoolUserId)
         {
 
+            var schoolUser = await schoolMealsOrderingSystemDbContext
+                .SchoolUsers
+                .Where(su => su.Id == schoolUserId && !su.IsDeleted)
+                .Include(su => su.Soups)
+                .FirstOrDefaultAsync();
+
+            if (schoolUser == null)
+            {
+                throw new ArgumentException(InvalidMainDishId);
+            }
+
             var soup = new Soup()
             {
                 Name = model.Name,
@@ -132,10 +143,114 @@
                 SchoolUserId = schoolUserId
             };
 
+
+            schoolUser.Soups.Add(soup);
+
+
             await schoolMealsOrderingSystemDbContext.Soups.AddAsync(soup);
+
+            
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
 
         }
+
+        public async Task AddMainDishAsync(AddMainDishViewModel model, string schoolUserId)
+        {
+            var schoolUser = await schoolMealsOrderingSystemDbContext
+                .SchoolUsers
+                .Where(su => su.Id == schoolUserId && !su.IsDeleted)
+                .Include(su => su.MainDishes)
+                .FirstOrDefaultAsync();
+
+            if (schoolUser == null)
+            {
+                throw new ArgumentException(InvalidMainDishId);
+            }
+
+            var mainDish = new MainDish()
+            {
+                Name = model.Name,
+                Description = model.Description,
+                Ingredients = model.Ingredients,
+                Allergens = model.Allergens,
+                SchoolUserId = schoolUserId
+            };
+
+
+            schoolUser.MainDishes.Add(mainDish);
+
+
+            await schoolMealsOrderingSystemDbContext.MainDishes.AddAsync(mainDish);
+
+
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+        }
+
+        public async Task AddDessertAsync(AddDessertViewModel model, string schoolUserId)
+        {
+            var schoolUser = await schoolMealsOrderingSystemDbContext
+                .SchoolUsers
+                .Where(su => su.Id == schoolUserId && !su.IsDeleted)
+                .Include(su => su.Desserts)
+                .FirstOrDefaultAsync();
+
+            if (schoolUser == null)
+            {
+                throw new ArgumentException(InvalidMainDishId);
+            }
+
+            var dessert = new Dessert()
+            {
+                Name = model.Name,
+                Description = model.Description,
+                Ingredients = model.Ingredients,
+                Allergens = model.Allergens,
+                SchoolUserId = schoolUserId
+            };
+
+
+            schoolUser.Desserts.Add(dessert);
+
+
+            await schoolMealsOrderingSystemDbContext.Desserts.AddAsync(dessert);
+
+
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteSoupAsync(Guid Id)
+        {
+            var soup = await FindSoupAsync(Id);
+
+
+            soup.IsDeleted = true;
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteMainDishAsync(Guid Id)
+        {
+            var mainDish = await FindMainDishAsync(Id);
+
+
+            mainDish.IsDeleted = true;
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteDessertAsync(Guid Id)
+        {
+            var dessert = await FindDessertAsync(Id);
+
+
+            dessert.IsDeleted = true;
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+        }
+
+        
     }
 }

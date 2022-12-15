@@ -61,6 +61,85 @@
             }
         }
 
+        [HttpGet]
+        [Authorize(Roles = School)]
+        public IActionResult AddMainDish()
+        {
+
+            var model = new AddMainDishViewModel();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = School)]
+        public async Task<IActionResult> AddMainDish(AddMainDishViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            string schoolUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            try
+            {
+
+
+                await mealServices.AddMainDishAsync(model, schoolUserId);
+
+
+                return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
+
+            }
+            catch (Exception)
+            {
+
+                ModelState.AddModelError(string.Empty, InvalidSchoolUserId);
+
+                return View(model);
+            }
+        }
+
+        [Authorize(Roles = School)]
+        public IActionResult AddDessert()
+        {
+
+            var model = new AddDessertViewModel();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = School)]
+        public async Task<IActionResult> AddDessert(AddDessertViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            string schoolUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            try
+            {
+
+
+                await mealServices.AddDessertAsync(model, schoolUserId);
+
+
+                return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
+
+            }
+            catch (Exception)
+            {
+
+                ModelState.AddModelError(string.Empty, InvalidSchoolUserId);
+
+                return View(model);
+            }
+        }
+
 
         [HttpGet]
         [Authorize(Roles = School)]
