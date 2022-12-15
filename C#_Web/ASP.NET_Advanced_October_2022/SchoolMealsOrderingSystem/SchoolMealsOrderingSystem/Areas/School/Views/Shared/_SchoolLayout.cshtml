@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SchoolMealsOrderingSystem.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/lib/limonte-sweetalert2/sweetalert2.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> 
 </head>
 <body>
     <header>
@@ -28,8 +29,15 @@
                             <li class="nav-item">
                                  <a class="nav-link text-dark" asp-area="" asp-controller="Meal" asp-action="AddMealsToSchoolList">Избери седмично Меню</a>
                             </li>
-                            <li class="nav-item">
-                                 <a class="nav-link text-dark" asp-area="" asp-controller="Meal" asp-action="AddSoup">Добави ястие</a>
+                            <li>
+                                <div class="subnav">
+                                  <button class="subnavbtn">Добави ястие <i class="fa fa-caret-down"></i></button>
+                                  <div class="subnav-content">
+                                    <a href="@Url.Action("AddSoup", "Meal")">Добави супа</a>
+                                    <a href="@Url.Action("AddMainDish", "Meal")">Добави основно ястие</a>
+                                    <a href="@Url.Action("AddDessert", "Meal")">Добави десерт</a>
+                                  </div>
+                                </div>
                             </li>
                         }
                         else
@@ -51,7 +59,7 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="container" style="color: blue">
             &copy; 2022 - @DateTime.UtcNow.Year - SchoolMealsOrderingSystem
         </div>
     </footer>

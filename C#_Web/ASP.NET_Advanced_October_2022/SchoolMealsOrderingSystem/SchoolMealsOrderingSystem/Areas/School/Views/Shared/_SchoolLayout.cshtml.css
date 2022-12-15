@@ -46,3 +46,49 @@ button.accept-policy {
   white-space: nowrap;
   line-height: 60px;
 }
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 8px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.subnav:hover .subnavbtn {
+    background-color: dodgerblue;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: dodgerblue;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    font-size: 25px;
+    float: left;
+    color: navajowhite;
+    text-decoration: none;
+    margin-right: 5rem;
+}
+
+.subnav-content a:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
