@@ -20,7 +20,7 @@
         /// Name is the name of the day of the week
         /// </summary>
         [Required]
-        public string Name { get; set; } = null!;
+        public DayOfWeek Name { get; set; }
 
         [Required]
         [ForeignKey(nameof(Soup))]
@@ -41,10 +41,14 @@
 
         public Dessert? Dessert { get; set; }
 
+
+
         public bool IsDeleted { get; set; }
+
 
         [Required]
         public DateTime CreatedOn { get; set; }
+
 
         [Required]
         [ForeignKey(nameof(Child))]

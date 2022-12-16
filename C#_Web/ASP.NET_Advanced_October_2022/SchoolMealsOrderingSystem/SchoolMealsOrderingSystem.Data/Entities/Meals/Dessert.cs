@@ -4,7 +4,6 @@
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using static Constants.DessertConstatnts;
-    using static Constants.GeneralConstants;
 
     public class Dessert : IsDeletable
     {
@@ -38,11 +37,16 @@
 
         public bool IsDeleted { get; set; }
 
+        /// <summary>
+        /// if IsSelected is true this means the dessert is been selected for offering to the parent
+        /// </summary>
+        public bool IsSelected { get; set; }
+
         [Required]
         [ForeignKey(nameof(SchoolUser))]
-        public string SchoolUserId { get; set; }
+        public string SchoolUserId { get; set; } = null!;
 
-        public SchoolUser SchoolUser { get; set; }
+        public SchoolUser? SchoolUser { get; set; }
 
     }
 }

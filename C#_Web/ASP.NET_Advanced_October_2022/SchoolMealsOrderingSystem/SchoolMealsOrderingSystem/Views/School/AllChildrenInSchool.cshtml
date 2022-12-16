@@ -26,11 +26,8 @@
                     <p class="mb-0" style="color: darkblue">Клас в училище: @child.YearInSchool</p>
                 </div>
                 <div class="mb-3">
-                     <a asp-controller="Menu" asp-action="Index" asp-route-childId="@child.Id" class="fs-6 btn btn-outline-primary mb-3 p-2">Виж избрано меню</a>
+                     <a asp-controller="DailyMenu" asp-action="All" asp-route-childId="@child.Id" class="fs-6 btn btn-outline-primary mb-3 p-2">Виж избрано меню</a>
                 </div>
-            @*<form class="input-group-sm" asp-controller="Child" asp-action="Edit" asp-route-Id="@child.Id.ToString()">
-                <input type="submit" value="Редактирай" class="fs-6 btn btn-success mb-3 p-2" />
-            </form>*@
             </div>
     }
 </div>

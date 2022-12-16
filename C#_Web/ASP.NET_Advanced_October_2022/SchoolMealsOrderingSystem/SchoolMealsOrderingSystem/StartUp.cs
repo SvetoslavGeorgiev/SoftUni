@@ -41,6 +41,7 @@ builder.Services.AddScoped<IChildServices, ChildServices>();
 builder.Services.AddScoped<IParentUserServices, ParentUserServices>();
 builder.Services.AddScoped<ISchoolUserServices, SchoolUserServices>();
 builder.Services.AddScoped<IMealServices, MealServices>();
+builder.Services.AddScoped<IDailyMenuServices, DailyManuServices>();
 
 
 var app = builder.Build();

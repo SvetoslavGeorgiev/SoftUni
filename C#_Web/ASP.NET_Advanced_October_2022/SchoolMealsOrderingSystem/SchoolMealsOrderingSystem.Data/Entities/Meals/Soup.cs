@@ -14,6 +14,7 @@
         {
             IsDeleted = false;
             Id = Guid.NewGuid();
+            IsSelected = false;
         }
 
         [Key]
@@ -38,6 +39,11 @@
         public string ImageUrl { get; set; } = null!;
 
         public bool IsDeleted { get; set; }
+
+        /// <summary>
+        /// if IsSelected is true this means the soup is been selected for offering to the parent
+        /// </summary>
+        public bool IsSelected { get; set; }
 
         [Required]
         [ForeignKey(nameof(SchoolUser))]

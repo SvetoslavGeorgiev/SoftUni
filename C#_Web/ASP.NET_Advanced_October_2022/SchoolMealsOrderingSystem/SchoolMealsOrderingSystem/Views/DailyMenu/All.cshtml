@@ -1,0 +1,43 @@
+﻿@model IEnumerable<DailyMenuViewModel>
+
+@{
+    ViewBag.Title = "Меню";
+}
+<style> 
+.light-blue-element {
+  background-color: cyan;
+}
+.light-blue-element:hover {
+  background-color: blue;
+  color: wheat;
+}
+
+.hoverme{
+  background-color: limegreen;
+}
+
+.hoverme:hover{
+  background-color: lime;
+  color: red;
+}
+</style>
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<div class="text-center row">
+    @foreach (var dailyMenu in Model)
+    {
+            <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px; background-color: honeydew">
+                <div class="card-body">
+                    <h5 class="card-title mt-1" style="color: darkgreen">@dailyMenu.Name</h5>
+                    <p class= "mb-0" style="text-align: left">Супа: @dailyMenu.Soup.Name</p>
+                    <p class="mb-0" style="text-align: left">Основно ястие: @dailyMenu.MainDish.Name</p>
+                    <p class="mb-0" style="text-align: left">Десерт: @dailyMenu.Dessert.Name</p>
+                </div>
+                <div class="mb-3">
+                     <a asp-controller="DailyManu" asp-action="Edit" asp-route-childId="@dailyMenu.Id" class="fs-6 btn light-blue-element mb-3 p-2">Редактирай</a>
+                </div>
+            </div>
+    }
+</div>

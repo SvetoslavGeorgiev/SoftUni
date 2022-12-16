@@ -23,7 +23,9 @@
 
         public const string FieldSymbolsLength = "Полето трябва да е между {2} и {1} символа";
         public const string EmailAddress = "Моля въведете Email адрес на училището";
+        public const string InvalidMenu = "Менюто още не е налично";
         public const string InvalidEmail = "Невалиден Email";
+        public const string InvalidUser = "Невалиден потребител";
         public const string ErrorMessage = "Нещо се обърка. Моля опитайте отново!";
 
         public const string AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+ чявертъуиопшщасдфгхйклюзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЮЗЬЦЖБНМ";

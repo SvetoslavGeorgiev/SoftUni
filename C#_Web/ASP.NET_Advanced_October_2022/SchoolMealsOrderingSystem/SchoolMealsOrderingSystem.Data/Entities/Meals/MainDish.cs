@@ -35,6 +35,11 @@
 
         public bool IsDeleted { get; set; }
 
+        /// <summary>
+        /// if IsSelected is true this means the main dish is been selected for offering to the parent
+        /// </summary>
+        public bool IsSelected { get; set; }
+
         [Required]
         [ForeignKey(nameof(SchoolUser))]
         public string SchoolUserId { get; set; }
