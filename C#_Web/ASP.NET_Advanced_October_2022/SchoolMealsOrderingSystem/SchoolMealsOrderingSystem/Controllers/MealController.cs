@@ -1,12 +1,17 @@
 ﻿namespace SchoolMealsOrderingSystem.Controllers
 {
+    using DocumentFormat.OpenXml.Office2013.Drawing.ChartStyle;
+    using DocumentFormat.OpenXml.Spreadsheet;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using SchoolMealsOrderingSystem.Core.Contracts;
+    using SchoolMealsOrderingSystem.Core.Models.Child;
     using SchoolMealsOrderingSystem.Core.Models.Meal;
+    using SchoolMealsOrderingSystem.Core.Services;
     using System.Security.Claims;
     using static Data.Constants.RoleConstants;
     using static Data.Constants.SchoolUserConstants;
+    using static Data.Constants.SoupConstants;
 
     [Authorize]
     public class MealController : Controller
@@ -15,14 +20,14 @@
 
         public MealController(IMealServices _mealServices)
         {
-            mealServices= _mealServices;
+            mealServices = _mealServices;
         }
 
         [HttpGet]
         [Authorize(Roles = School)]
         public IActionResult AddSoup()
         {
-            
+
             var model = new AddSoupViewModel();
 
             return View(model);
@@ -42,7 +47,7 @@
             try
             {
 
-                
+
                 await mealServices.AddSoupAsync(model, schoolUserId);
 
 
@@ -189,57 +194,112 @@
         }
 
         [HttpGet]
-        [Authorize(Roles = "School, Parent")]
-        public async Task<IActionResult> AllSoups()
+        [Authorize(Roles = SchoolAndParent)]
+        public async Task<IActionResult> AllSoups(string schoolId)
         {
 
-            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
 
-            if (userId == null)
+            IEnumerable<SoupViewModel> model;
+
+            if (schoolId != null)
             {
-                throw new ArgumentException(InvalidSchoolUserId);
+                model = await mealServices.GetSoupViewModelAsync(schoolId);
+            }
+            else
+            {
+                string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                model = await mealServices.GetSoupViewModelAsync(userId);
             }
 
-            var model = await mealServices.GetSoupViewModelAsync(userId);
 
             return View(model);
         }
 
         [HttpGet]
-        [Authorize(Roles = "School, Parent")]
-        public async Task<IActionResult> AllMainDishes()
+        [Authorize(Roles = SchoolAndParent)]
+        public async Task<IActionResult> AllMainDishes(string schoolId)
         {
 
-            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            IEnumerable<MainDishViewModel> model;
 
-
-            if (userId == null)
+            
+            if (schoolId != null)
             {
-                throw new ArgumentException(InvalidSchoolUserId);
+                model = await mealServices.GetMainDishViewModelAsync(schoolId);
+            }
+            else
+            {
+                string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                model = await mealServices.GetMainDishViewModelAsync(userId);
             }
 
-            var model = await mealServices.GetMainDishViewModelAsync(userId);
 
             return View(model);
         }
 
         [HttpGet]
-        [Authorize(Roles = "School, Parent")]
-        public async Task<IActionResult> AllDesserts()
+        [Authorize(Roles = SchoolAndParent)]
+        public async Task<IActionResult> AllDesserts(string schoolId)
         {
 
-            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            
+            IEnumerable<DessertViewModel> model;
 
 
-            if (userId == null)
+            if (schoolId != null)
             {
-                throw new ArgumentException(InvalidSchoolUserId);
+                model = await mealServices.GetDessertViewModelAsync(schoolId);
+            }
+            else
+            {
+                string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                model = await mealServices.GetDessertViewModelAsync(userId);
+            }
+            return View(model);
+        }
+
+        [HttpGet]
+        [Authorize(Roles = School)]
+        public async Task<IActionResult> EditSoup(Guid soupId)
+        {
+
+            var soup = await mealServices.GetSoupForEditAsync(soupId);
+
+            if (soup == null)
+            {
+                return RedirectToAction(nameof(AllSoups));
             }
 
-            var model = await mealServices.GetDessertViewModelAsync(userId);
+            return View(soup);
+        }
 
-            return View(model);
+
+        [HttpPost]
+        [Authorize(Roles = School)]
+        public async Task<IActionResult> EditSoup(EditSoupViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            try
+            {
+
+                await mealServices.EditSoupAsync(model);
+
+
+                return RedirectToAction(nameof(AllSoups));
+
+            }
+            catch (Exception)
+            {
+
+                ModelState.AddModelError(string.Empty, InvalidSoupId);
+
+                return View(model);
+            }
         }
     }
 }

@@ -21,7 +21,7 @@
 <div class="text-center row">
     @foreach (var soup in Model)
     {
-        <div class="card col-4" style="width: 20rem;">
+        <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px;">
             <img class="card-img-top" style="width: 18rem;"
          src="@soup.ImageUrl" alt="Book Image">
             <div class="card-body">
@@ -29,10 +29,14 @@
                 <p class="mb-0">Ingredients: @soup.Ingredients</p>
                 <p class="mb-0">Allergens: @soup.Allergens</p>
             </div>
-
-            <form class="input-group-sm" asp-controller="Meal" asp-action="EditSoup" asp-route-bookId="@soup.Id">
-                 <input type="submit" value="Редактирай" class="fs-6 btn hoverme mb-3 p-2" />
-            </form>
+            @if (User.IsInRole(School))
+            {
+                
+                 <div class="mb-3">
+                     <a asp-controller="Meal" asp-action="EditSoup" asp-route-soupId="@soup.Id" class="fs-6 btn  hoverme mb-3 p-2">Редактирай</a>
+                </div>
+            }
+            
         </div>
     }
 </div>

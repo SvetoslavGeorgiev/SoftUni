@@ -4,6 +4,7 @@
     using SchoolMealsOrderingSystem.Core.Contracts;
     using SchoolMealsOrderingSystem.Core.Models.Meal;
     using SchoolMealsOrderingSystem.Data;
+    using SchoolMealsOrderingSystem.Data.Entities;
     using SchoolMealsOrderingSystem.Data.Entities.Meals;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -11,6 +12,7 @@
     using static Data.Constants.MainDishConstants;
     using static Data.Constants.SchoolUserConstants;
     using static Data.Constants.SoupConstants;
+
 
     public class MealServices : IMealServices
     {
@@ -60,7 +62,7 @@
                 .Select(s => new SoupViewModel
                 {
                     Id = s.Id,
-                    Name= s.Name,
+                    Name = s.Name,
                     ImageUrl = s.ImageUrl,
                     Allergens = s.Allergens,
                     Ingredients = s.Ingredients
@@ -135,15 +137,71 @@
                 throw new ArgumentException(InvalidSchoolUserId);
             }
 
-            user.SoupsForParents.Add(await FindSoupAsync(model.FirstSoupId));
-            user.SoupsForParents.Add(await FindSoupAsync(model.SecondSoupId));
-            user.SoupsForParents.Add(await FindSoupAsync(model.ThirdSoupId));
-            user.MainDishesForParents.Add(await FindMainDishAsync(model.FirstMainDishId));
-            user.MainDishesForParents.Add(await FindMainDishAsync(model.SecondMainDishId));
-            user.MainDishesForParents.Add(await FindMainDishAsync(model.ThirdMainDishId));
-            user.DessertsForParents.Add(await FindDessertAsync(model.FirstDessertsId));
-            user.DessertsForParents.Add(await FindDessertAsync(model.SecondDessertsId));
-            user.DessertsForParents.Add(await FindDessertAsync(model.ThirdDessertsId));
+            var selectedIdList = new List<Guid>();
+
+            var firstSoup = await FindSoupAsync(model.FirstSoupId);
+            firstSoup.IsSelected = true;
+            selectedIdList.Add(firstSoup.Id);
+            var secondSoup = await FindSoupAsync(model.SecondSoupId);
+            secondSoup.IsSelected = true;
+            selectedIdList.Add(secondSoup.Id);
+            var thirdSoup = await FindSoupAsync(model.ThirdSoupId);
+            thirdSoup.IsSelected = true;
+            selectedIdList.Add(thirdSoup.Id);
+            var firstMainDish = await FindMainDishAsync(model.FirstMainDishId);
+            firstMainDish.IsSelected = true;
+            selectedIdList.Add(firstMainDish.Id);
+            var secondtMainDish = await FindMainDishAsync(model.SecondMainDishId);
+            secondtMainDish.IsSelected = true;
+            selectedIdList.Add(secondtMainDish.Id);
+            var thirdMainDish = await FindMainDishAsync(model.ThirdMainDishId);
+            thirdMainDish.IsSelected = true;
+            selectedIdList.Add(thirdMainDish.Id);
+            var firstDessert = await FindDessertAsync(model.FirstDessertsId);
+            firstDessert.IsSelected = true;
+            selectedIdList.Add(firstDessert.Id);
+            var secondDessert = await FindDessertAsync(model.SecondDessertsId);
+            secondDessert.IsSelected = true;
+            selectedIdList.Add(secondDessert.Id);
+            var thirdDessert = await FindDessertAsync(model.ThirdDessertsId);
+            thirdDessert.IsSelected = true;
+            selectedIdList.Add(thirdDessert.Id);
+
+            await GetRestOfMealsUnselected(selectedIdList, user.Id);
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+
+        }
+
+        public async Task GetRestOfMealsUnselected(List<Guid> selectedIdList, string id)
+        {
+            var soups = await GetSoupsAsync(id);
+            var mainDishes = await GetMainDishsAsync(id);
+            var desserts = await GetDessertsAsync(id);
+
+            foreach (var soup in soups)
+            {
+                if (!selectedIdList.Any(x => x.Equals(soup.Id)))
+                {
+                    soup.IsSelected = false;
+                }
+            }
+
+            foreach (var mainDish in mainDishes)
+            {
+                if (!selectedIdList.Any(x => x.Equals(mainDish.Id)))
+                {
+                    mainDish.IsSelected = false;
+                }
+            }
+
+            foreach (var dessert in desserts)
+            {
+                if (!selectedIdList.Any(x => x.Equals(dessert.Id)))
+                {
+                    dessert.IsSelected = false;
+                }
+            }
         }
 
         public async Task<MainDish> FindMainDishAsync(Guid Id)
@@ -310,6 +368,46 @@
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
         }
 
-        
+        public async Task<EditSoupViewModel> GetSoupForEditAsync(Guid soupId)
+        {
+            var soup = await schoolMealsOrderingSystemDbContext
+                .Soups
+                .Where(s => s.Id.Equals(soupId) && !s.IsDeleted)
+                .Select(c => new EditSoupViewModel
+                {
+                    Id = c.Id,
+                    Name = c.Name,
+                    Description = c.Description == null ? string.Empty : c.Description,
+                    Allergens = c.Allergens,
+                    Ingredients = c.Ingredients,
+                    ImageUrl = c.ImageUrl,
+                })
+                .SingleOrDefaultAsync();
+
+            if (soup == null)
+            {
+                throw new ArgumentException(InvalidSoupId);
+            }
+
+            return soup;
+        }
+
+        public async Task EditSoupAsync(EditSoupViewModel editSoupViewModel)
+        {
+            var soup = await schoolMealsOrderingSystemDbContext
+                .Soups
+                .FindAsync(editSoupViewModel.Id);
+
+            if (soup != null)
+            {
+                soup.Name= editSoupViewModel.Name;
+                soup.Description= editSoupViewModel.Description;
+                soup.Allergens= editSoupViewModel.Allergens;
+                soup.ImageUrl= editSoupViewModel.ImageUrl;
+                soup.Ingredients = editSoupViewModel.Ingredients;
+            }
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+        }
     }
 }

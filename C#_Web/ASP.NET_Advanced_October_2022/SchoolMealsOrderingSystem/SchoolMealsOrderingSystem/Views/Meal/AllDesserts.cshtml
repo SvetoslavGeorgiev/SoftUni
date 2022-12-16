@@ -21,18 +21,18 @@
 <div class="text-center row">
     @foreach (var dessert in Model)
     {
-            <div class="card col-4" style="width: 20rem;">
+         <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px;">
                 <img class="card-img-top" style="width: 18rem;"
-         src="@dessert.ImageUrl" alt="Book Image">
+                 src="@dessert.ImageUrl" alt="Book Image">
                 <div class="card-body">
                     <h5 class="card-Name mt-1">@dessert.Name</h5>
                     <p class="mb-0">Ingredients: @dessert.Ingredients</p>
                     <p class="mb-0">Allergens: @dessert.Allergens</p>
                 </div>
 
-                <form class="input-group-sm" asp-controller="Meal" asp-action="EditSoup" asp-route-bookId="@dessert.Id">
+                <form class="input-group-sm" asp-controller="Meal" asp-action="EditSoup" asp-route-dessertId="@dessert.Id">
                      <input type="submit" value="Редактирай" class="fs-6 btn hoverme mb-3 p-2" />
                 </form>
-            </div>
+         </div>
     }
 </div>
