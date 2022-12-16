@@ -1,5 +1,6 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Contracts
 {
+    using SchoolMealsOrderingSystem.Core.Models.Child;
     using SchoolMealsOrderingSystem.Core.Models.Meal;
     using SchoolMealsOrderingSystem.Data.Entities;
     using SchoolMealsOrderingSystem.Data.Entities.Meals;
@@ -29,5 +30,12 @@
         Task DeleteSoupAsync(Guid Id);
         Task DeleteMainDishAsync(Guid Id);
         Task DeleteDessertAsync(Guid Id);
+
+        Task GetRestOfMealsUnselected(List<Guid> selectedIdList, string id);
+
+        Task<EditSoupViewModel> GetSoupForEditAsync(Guid soupId);
+        Task EditSoupAsync(EditSoupViewModel editSoupViewModel);
+        //Task<EditSoupViewModel> GetMainDishForEditAsync(Guid soupId);
+        //Task<EditSoupViewModel> GetDessertForEditAsync(Guid soupId);
     }
 }
