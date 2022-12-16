@@ -389,5 +389,33 @@
                 return View(model);
             }
         }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteSoup(Guid soupId)
+        {
+
+            await mealServices.DeleteSoupAsync(soupId);
+
+            return RedirectToAction(nameof(AllSoups));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteMainDish(Guid mainDishId)
+        {
+
+            await mealServices.DeleteMainDishAsync(mainDishId);
+
+            return RedirectToAction(nameof(AllMainDishes));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteDessert(Guid dessertId)
+        {
+
+            await mealServices.DeleteDessertAsync(dessertId);
+
+            return RedirectToAction(nameof(AllDesserts));
+        }
+
     }
 }

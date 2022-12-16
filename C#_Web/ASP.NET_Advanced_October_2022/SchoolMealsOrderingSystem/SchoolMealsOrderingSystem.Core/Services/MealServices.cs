@@ -1,11 +1,9 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Services
 {
-    using DocumentFormat.OpenXml.Presentation;
     using Microsoft.EntityFrameworkCore;
     using SchoolMealsOrderingSystem.Core.Contracts;
     using SchoolMealsOrderingSystem.Core.Models.Meal;
     using SchoolMealsOrderingSystem.Data;
-    using SchoolMealsOrderingSystem.Data.Entities;
     using SchoolMealsOrderingSystem.Data.Entities.Meals;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -29,7 +27,7 @@
         {
             var result = await schoolMealsOrderingSystemDbContext
                 .Soups
-                .Where(s => s.SchoolUserId == schoolUserId)
+                .Where(s => s.SchoolUserId == schoolUserId && !s.IsDeleted)
                 .ToListAsync();
 
             return result;
@@ -40,7 +38,7 @@
         {
             var result = await schoolMealsOrderingSystemDbContext
                 .MainDishes
-                .Where(s => s.SchoolUserId == schoolUserId)
+                .Where(m => m.SchoolUserId == schoolUserId && !m.IsDeleted)
                 .ToListAsync();
 
             return result;
@@ -50,7 +48,7 @@
         {
             var result = await schoolMealsOrderingSystemDbContext
                 .Desserts
-                .Where(s => s.SchoolUserId == schoolUserId)
+                .Where(d => d.SchoolUserId == schoolUserId && !d.IsDeleted)
                 .ToListAsync();
 
             return result;
@@ -59,7 +57,7 @@
         {
             var result = await schoolMealsOrderingSystemDbContext
                 .Soups
-                .Where(s => s.SchoolUserId == schoolUserId)
+                .Where(s => s.SchoolUserId == schoolUserId && !s.IsDeleted)
                 .Select(s => new SoupViewModel
                 {
                     Id = s.Id,
@@ -77,14 +75,14 @@
         {
             var result = await schoolMealsOrderingSystemDbContext
                 .MainDishes
-                .Where(s => s.SchoolUserId == schoolUserId)
-                .Select(s => new MainDishViewModel
+                .Where(m => m.SchoolUserId == schoolUserId && !m.IsDeleted)
+                .Select(m => new MainDishViewModel
                 {
-                    Id = s.Id,
-                    Name = s.Name,
-                    ImageUrl = s.ImageUrl,
-                    Allergens = s.Allergens,
-                    Ingredients = s.Ingredients
+                    Id = m.Id,
+                    Name = m.Name,
+                    ImageUrl = m.ImageUrl,
+                    Allergens = m.Allergens,
+                    Ingredients = m.Ingredients
 
                 })
                 .ToListAsync();
@@ -96,14 +94,14 @@
         {
             var result = await schoolMealsOrderingSystemDbContext
                 .Desserts
-                .Where(s => s.SchoolUserId == schoolUserId)
-                .Select(s => new DessertViewModel
+                .Where(d => d.SchoolUserId == schoolUserId && !d.IsDeleted)
+                .Select(d => new DessertViewModel
                 {
-                    Id = s.Id,
-                    Name = s.Name,
-                    ImageUrl = s.ImageUrl,
-                    Allergens = s.Allergens,
-                    Ingredients = s.Ingredients
+                    Id = d.Id,
+                    Name = d.Name,
+                    ImageUrl = d.ImageUrl,
+                    Allergens = d.Allergens,
+                    Ingredients = d.Ingredients
 
                 })
                 .ToListAsync();
@@ -209,7 +207,7 @@
         {
             var result = await schoolMealsOrderingSystemDbContext
                 .MainDishes
-                .Where(s => s.Id == Id && !s.IsDeleted)
+                .Where(m => m.Id == Id && !m.IsDeleted)
                 .FirstOrDefaultAsync();
 
             if (result == null)
@@ -224,7 +222,7 @@
         {
             var result = await schoolMealsOrderingSystemDbContext
                 .Desserts
-                .Where(s => s.Id == Id && !s.IsDeleted)
+                .Where(d => d.Id == Id && !d.IsDeleted)
                 .FirstOrDefaultAsync();
 
             if (result == null)
@@ -494,5 +492,6 @@
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
         }
+
     }
 }

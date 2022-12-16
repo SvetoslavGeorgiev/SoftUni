@@ -72,7 +72,12 @@
                 .Menus
                 .Select(m => new DailyMenuViewModel()
                 {
-                    Name = m.Name.ToString(),
+                    Id = m.Id,
+                    Name = m.Name.ToString() == "Monday" ? "Понеделник" : 
+                           m.Name.ToString() == "Tuesdey" ? "Вторник" : 
+                           m.Name.ToString() == "Wednesday" ? "Сряда" : 
+                           m.Name.ToString() == "Thursday" ? "Четвъртък" : 
+                           "Петък",
                     Dessert = m.Dessert,
                     Soup = m.Soup,
                     MainDish = m.MainDish,
@@ -86,9 +91,9 @@
             var child = await schoolMealsOrderingSystemDbContext
                 .Children
                 .Where(c => c.Id == id && !c.IsDeleted)
-                .Include(c => c.SchoolUser.Soups.Where(s => s.IsSelected))
-                .Include(c => c.SchoolUser.MainDishes.Where(s => s.IsSelected))
-                .Include(c => c.SchoolUser.Desserts.Where(s => s.IsSelected))
+                .Include(c => c.SchoolUser.Soups.Where(s => !s.IsSelected))
+                .Include(c => c.SchoolUser.MainDishes.Where(s => !s.IsSelected))
+                .Include(c => c.SchoolUser.Desserts.Where(s => !s.IsSelected))
                 .FirstOrDefaultAsync();
 
             if (child.SchoolUser.Soups == null ||
