@@ -4,6 +4,7 @@
     using Microsoft.AspNetCore.Mvc;
     using SchoolMealsOrderingSystem.Core.Contracts;
     using SchoolMealsOrderingSystem.Core.Models.Meal;
+    using SchoolMealsOrderingSystem.Core.Services;
     using static Data.Constants.RoleConstants;
 
 
@@ -52,11 +53,13 @@
             {
                 await menuServices.AddDailyMenuAsync(model);
 
-                return RedirectToAction(nameof(All));
+                return RedirectToAction(nameof(All), new { childId = model.ChildId});
             }
             catch (Exception e)
             {
                 ModelState.AddModelError(string.Empty, e.Message);
+
+                //return RedirectToAction("Error", "Home");
 
                 return View(model);
             }
@@ -72,6 +75,18 @@
             var model = await menuServices.GetAllDailyMenusAsync(childId);
 
             return View(model);
+        }
+
+        [HttpPost]
+        [Authorize(Roles = Parent)]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+
+            await menuServices.DeleteDailyMenuAsync(id);
+
+            return RedirectToAction("All", "Child");
+
+
         }
     }
 }

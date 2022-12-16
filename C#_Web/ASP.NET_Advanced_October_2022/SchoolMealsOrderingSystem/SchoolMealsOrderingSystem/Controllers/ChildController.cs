@@ -133,6 +133,8 @@
         public async Task<IActionResult> Delete(Guid id)
         {
 
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             await childServices.DeleteChildAsync(id);
 
             return RedirectToAction(nameof(All));

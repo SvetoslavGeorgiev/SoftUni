@@ -11,6 +11,7 @@
         public DailyMenu()
         {
             IsDeleted = false;
+            Id= Guid.NewGuid();
         }
 
         [Key]

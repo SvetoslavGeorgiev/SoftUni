@@ -12,5 +12,7 @@
 
         Task<IEnumerable<DailyMenuViewModel>> GetAllDailyMenusAsync(Guid childId);
 
+        Task DeleteDailyMenuAsync (Guid dailyMenuId);
+
     }
 }

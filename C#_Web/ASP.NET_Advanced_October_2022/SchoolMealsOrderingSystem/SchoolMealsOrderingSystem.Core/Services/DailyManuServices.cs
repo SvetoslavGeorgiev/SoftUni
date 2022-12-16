@@ -9,6 +9,7 @@
     using SchoolMealsOrderingSystem.Data.Entities.Menu;
     using System.Collections.Generic;
     using SchoolMealsOrderingSystem.Core.Models.DailyMenu;
+    using SchoolMealsOrderingSystem.Data.Entities;
 
     public class DailyManuServices : IDailyMenuServices
     {
@@ -33,6 +34,12 @@
                 throw new ArithmeticException(InvalidChildUserId);
             }
 
+            if (child.Menus.Any(m => m.Name.ToString() == model.DayOfTheWeek.ToString()))
+            {
+
+                throw new ArithmeticException("Меню за този ден вече съществива");
+            }
+
             var dailyMenu = new DailyMenu()
             {
                 Name = model.DayOfTheWeek,
@@ -48,6 +55,23 @@
             child.Menus.Add(dailyMenu);
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+        }
+
+        public async Task DeleteDailyMenuAsync(Guid dailyMenuId)
+        {
+            var dailyMenu = await schoolMealsOrderingSystemDbContext
+            .DailyMenus
+                .Where(dm => dm.Id == dailyMenuId && !dm.IsDeleted)
+                .FirstOrDefaultAsync();
+
+            if (dailyMenu != null)
+            {
+                //dailyMenu.IsDeleted = true;
+
+                schoolMealsOrderingSystemDbContext.DailyMenus.Remove(dailyMenu);
+
+                await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+            }
         }
 
         public async Task<IEnumerable<DailyMenuViewModel>> GetAllDailyMenusAsync(Guid childId)
@@ -74,7 +98,7 @@
                 {
                     Id = m.Id,
                     Name = m.Name.ToString() == "Monday" ? "Понеделник" : 
-                           m.Name.ToString() == "Tuesdey" ? "Вторник" : 
+                           m.Name.ToString() == "Tuesday" ? "Вторник" : 
                            m.Name.ToString() == "Wednesday" ? "Сряда" : 
                            m.Name.ToString() == "Thursday" ? "Четвъртък" : 
                            "Петък",
@@ -91,9 +115,9 @@
             var child = await schoolMealsOrderingSystemDbContext
                 .Children
                 .Where(c => c.Id == id && !c.IsDeleted)
-                .Include(c => c.SchoolUser.Soups.Where(s => !s.IsSelected))
-                .Include(c => c.SchoolUser.MainDishes.Where(s => !s.IsSelected))
-                .Include(c => c.SchoolUser.Desserts.Where(s => !s.IsSelected))
+                .Include(c => c.SchoolUser.Soups.Where(s => s.IsSelected))
+                .Include(c => c.SchoolUser.MainDishes.Where(s => s.IsSelected))
+                .Include(c => c.SchoolUser.Desserts.Where(s => s.IsSelected))
                 .FirstOrDefaultAsync();
 
             if (child.SchoolUser.Soups == null ||

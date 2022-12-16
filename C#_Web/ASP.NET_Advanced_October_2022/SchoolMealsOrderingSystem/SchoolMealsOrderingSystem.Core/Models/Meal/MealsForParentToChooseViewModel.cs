@@ -1,6 +1,9 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Models.Meal
 {
+    
     using SchoolMealsOrderingSystem.Data.Entities.Meals;
+    using System.ComponentModel.DataAnnotations;
+    using static Data.Constants.GeneralConstants;
 
     public class MealsForParentToChooseViewModel
     {
@@ -16,6 +19,8 @@
         public Guid SoupId { get; set; }
         public Guid MainDishId { get; set; }
         public Guid DessertsId { get; set; }
+
+        [UIHint(Hidden)]
         public string SchoolId { get; set; } = null!;
 
         public IEnumerable<Soup> Soups { get; set; }

@@ -1,7 +1,6 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Models.DailyMenu
 {
     using SchoolMealsOrderingSystem.Data.Entities.Meals;
-    using System.ComponentModel.DataAnnotations.Schema;
     using System.ComponentModel.DataAnnotations;
     using static Data.Constants.GeneralConstants;
 
