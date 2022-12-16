@@ -115,9 +115,9 @@
             var child = await schoolMealsOrderingSystemDbContext
                 .Children
                 .Where(c => c.Id == id && !c.IsDeleted)
-                .Include(c => c.SchoolUser.Soups.Where(s => s.IsSelected))
-                .Include(c => c.SchoolUser.MainDishes.Where(s => s.IsSelected))
-                .Include(c => c.SchoolUser.Desserts.Where(s => s.IsSelected))
+                .Include(c => c.SchoolUser.Soups.Where(s => s.IsSelected && !s.IsDeleted))
+                .Include(c => c.SchoolUser.MainDishes.Where(s => s.IsSelected && !s.IsDeleted))
+                .Include(c => c.SchoolUser.Desserts.Where(s => s.IsSelected && !s.IsDeleted))
                 .FirstOrDefaultAsync();
 
             if (child.SchoolUser.Soups == null ||
