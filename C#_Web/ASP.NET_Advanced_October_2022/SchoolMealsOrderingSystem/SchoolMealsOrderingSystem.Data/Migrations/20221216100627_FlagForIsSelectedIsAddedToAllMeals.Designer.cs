@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SchoolMealsOrderingSystem.Data;
 
@@ -11,9 +12,10 @@ using SchoolMealsOrderingSystem.Data;
 namespace SchoolMealsOrderingSystem.Data.Migrations
 {
     [DbContext(typeof(SchoolMealsOrderingSystemDbContext))]
-    partial class SchoolMealsOrderingSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221216100627_FlagForIsSelectedIsAddedToAllMeals")]
+    partial class FlagForIsSelectedIsAddedToAllMeals
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -441,8 +443,9 @@ namespace SchoolMealsOrderingSystem.Data.Migrations
                     b.Property<Guid>("MainDishId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Name")
-                        .HasColumnType("int");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("SoupId")
                         .HasColumnType("uniqueidentifier");
