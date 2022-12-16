@@ -1,5 +1,6 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Services
 {
+    using DocumentFormat.OpenXml.Presentation;
     using Microsoft.EntityFrameworkCore;
     using SchoolMealsOrderingSystem.Core.Contracts;
     using SchoolMealsOrderingSystem.Core.Models.Meal;
@@ -405,6 +406,48 @@
                 soup.Allergens= editSoupViewModel.Allergens;
                 soup.ImageUrl= editSoupViewModel.ImageUrl;
                 soup.Ingredients = editSoupViewModel.Ingredients;
+            }
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+        }
+
+        public async Task<EditMainDishViewModel> GetMainDishForEditAsync(Guid mainDishId)
+        {
+            var mainDish = await schoolMealsOrderingSystemDbContext
+                .MainDishes
+                .Where(m => m.Id.Equals(mainDishId) && !m.IsDeleted)
+                .Select(c => new EditMainDishViewModel
+                {
+                    Id = c.Id,
+                    Name = c.Name,
+                    Description = c.Description == null ? string.Empty : c.Description,
+                    Allergens = c.Allergens,
+                    Ingredients = c.Ingredients,
+                    ImageUrl = c.ImageUrl,
+                })
+                .SingleOrDefaultAsync();
+
+            if (mainDish == null)
+            {
+                throw new ArgumentException(InvalidSoupId);
+            }
+
+            return mainDish;
+        }
+
+        public async Task EditMainDishAsync(EditMainDishViewModel EditMainDishViewModel)
+        {
+            var soup = await schoolMealsOrderingSystemDbContext
+                .MainDishes
+                .FindAsync(EditMainDishViewModel.Id);
+
+            if (soup != null)
+            {
+                soup.Name = EditMainDishViewModel.Name;
+                soup.Description = EditMainDishViewModel.Description;
+                soup.Allergens = EditMainDishViewModel.Allergens;
+                soup.ImageUrl = EditMainDishViewModel.ImageUrl;
+                soup.Ingredients = EditMainDishViewModel.Ingredients;
             }
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();

@@ -4,7 +4,6 @@
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using static Constants.GeneralConstants;
     using static Constants.SoupConstants;
 
     public class Soup : IsDeletable
@@ -47,8 +46,8 @@
 
         [Required]
         [ForeignKey(nameof(SchoolUser))]
-        public string SchoolUserId { get; set; }
+        public string SchoolUserId { get; set; } = null!;
 
-        public SchoolUser SchoolUser { get; set; }
+        public SchoolUser? SchoolUser { get; set; }
     }
 }

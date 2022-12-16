@@ -301,5 +301,48 @@
                 return View(model);
             }
         }
+
+        [HttpGet]
+        [Authorize(Roles = School)]
+        public async Task<IActionResult> EditMainDish(Guid mainDishId)
+        {
+
+            var soup = await mealServices.GetMainDishForEditAsync(mainDishId);
+
+            if (soup == null)
+            {
+                return RedirectToAction(nameof(AllMainDishes));
+            }
+
+            return View(soup);
+        }
+
+
+        [HttpPost]
+        [Authorize(Roles = School)]
+        public async Task<IActionResult> EditMainDish(EditMainDishViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            try
+            {
+
+                await mealServices.EditMainDishAsync(model);
+
+
+                return RedirectToAction(nameof(AllMainDishes));
+
+            }
+            catch (Exception)
+            {
+
+                ModelState.AddModelError(string.Empty, InvalidSoupId);
+
+                return View(model);
+            }
+        }
     }
 }

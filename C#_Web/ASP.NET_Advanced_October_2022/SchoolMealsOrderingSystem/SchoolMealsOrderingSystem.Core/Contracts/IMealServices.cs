@@ -35,7 +35,9 @@
 
         Task<EditSoupViewModel> GetSoupForEditAsync(Guid soupId);
         Task EditSoupAsync(EditSoupViewModel editSoupViewModel);
-        //Task<EditSoupViewModel> GetMainDishForEditAsync(Guid soupId);
+        Task<EditMainDishViewModel> GetMainDishForEditAsync(Guid mainDishId);
+
+        Task EditMainDishAsync(EditMainDishViewModel EditMainDishViewModel);
         //Task<EditSoupViewModel> GetDessertForEditAsync(Guid soupId);
     }
 }
