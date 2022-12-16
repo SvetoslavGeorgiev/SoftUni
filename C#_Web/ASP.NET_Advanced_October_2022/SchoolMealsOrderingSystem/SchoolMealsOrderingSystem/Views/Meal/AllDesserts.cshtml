@@ -29,10 +29,12 @@
                     <p class="mb-0">Ingredients: @dessert.Ingredients</p>
                     <p class="mb-0">Allergens: @dessert.Allergens</p>
                 </div>
-
-                <form class="input-group-sm" asp-controller="Meal" asp-action="EditSoup" asp-route-dessertId="@dessert.Id">
-                     <input type="submit" value="Редактирай" class="fs-6 btn hoverme mb-3 p-2" />
-                </form>
+                @if (User.IsInRole(School))
+                {
+                     <div class="mb-3">
+                           <a asp-controller="Meal" asp-action="EditDessert" asp-route-dessertId="@dessert.Id" class="fs-6 btn  hoverme mb-3 p-2">Редактирай</a>
+                    </div>
+                }
          </div>
     }
 </div>

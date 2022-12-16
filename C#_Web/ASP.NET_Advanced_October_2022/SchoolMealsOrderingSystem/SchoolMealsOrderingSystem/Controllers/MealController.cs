@@ -12,6 +12,8 @@
     using static Data.Constants.RoleConstants;
     using static Data.Constants.SchoolUserConstants;
     using static Data.Constants.SoupConstants;
+    using static Data.Constants.MainDishConstants;
+    using static Data.Constants.DessertConstatnts;
 
     [Authorize]
     public class MealController : Controller
@@ -307,14 +309,14 @@
         public async Task<IActionResult> EditMainDish(Guid mainDishId)
         {
 
-            var soup = await mealServices.GetMainDishForEditAsync(mainDishId);
+            var mainDish = await mealServices.GetMainDishForEditAsync(mainDishId);
 
-            if (soup == null)
+            if (mainDish == null)
             {
                 return RedirectToAction(nameof(AllMainDishes));
             }
 
-            return View(soup);
+            return View(mainDish);
         }
 
 
@@ -339,7 +341,50 @@
             catch (Exception)
             {
 
-                ModelState.AddModelError(string.Empty, InvalidSoupId);
+                ModelState.AddModelError(string.Empty, InvalidMainDishId);
+
+                return View(model);
+            }
+        }
+
+        [HttpGet]
+        [Authorize(Roles = School)]
+        public async Task<IActionResult> EditDessert(Guid dessertId)
+        {
+
+            var dessert = await mealServices.GetDessertForEditAsync(dessertId);
+
+            if (dessert == null)
+            {
+                return RedirectToAction(nameof(AllDesserts));
+            }
+
+            return View(dessert);
+        }
+
+
+        [HttpPost]
+        [Authorize(Roles = School)]
+        public async Task<IActionResult> EditDessert(EditDessertViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            try
+            {
+
+                await mealServices.EditDessertAsync(model);
+
+
+                return RedirectToAction(nameof(AllDesserts));
+
+            }
+            catch (Exception)
+            {
+
+                ModelState.AddModelError(string.Empty, InvalidDessertId);
 
                 return View(model);
             }

@@ -38,6 +38,10 @@
         Task<EditMainDishViewModel> GetMainDishForEditAsync(Guid mainDishId);
 
         Task EditMainDishAsync(EditMainDishViewModel EditMainDishViewModel);
-        //Task<EditSoupViewModel> GetDessertForEditAsync(Guid soupId);
+
+
+        Task<EditDessertViewModel> GetDessertForEditAsync(Guid dessertId);
+
+        Task EditDessertAsync(EditDessertViewModel editDessertViewModel);
     }
 }

@@ -374,14 +374,14 @@
             var soup = await schoolMealsOrderingSystemDbContext
                 .Soups
                 .Where(s => s.Id.Equals(soupId) && !s.IsDeleted)
-                .Select(c => new EditSoupViewModel
+                .Select(s => new EditSoupViewModel
                 {
-                    Id = c.Id,
-                    Name = c.Name,
-                    Description = c.Description == null ? string.Empty : c.Description,
-                    Allergens = c.Allergens,
-                    Ingredients = c.Ingredients,
-                    ImageUrl = c.ImageUrl,
+                    Id = s.Id,
+                    Name = s.Name,
+                    Description = s.Description == null ? string.Empty : s.Description,
+                    Allergens = s.Allergens,
+                    Ingredients = s.Ingredients,
+                    ImageUrl = s.ImageUrl,
                 })
                 .SingleOrDefaultAsync();
 
@@ -416,14 +416,14 @@
             var mainDish = await schoolMealsOrderingSystemDbContext
                 .MainDishes
                 .Where(m => m.Id.Equals(mainDishId) && !m.IsDeleted)
-                .Select(c => new EditMainDishViewModel
+                .Select(m => new EditMainDishViewModel
                 {
-                    Id = c.Id,
-                    Name = c.Name,
-                    Description = c.Description == null ? string.Empty : c.Description,
-                    Allergens = c.Allergens,
-                    Ingredients = c.Ingredients,
-                    ImageUrl = c.ImageUrl,
+                    Id = m.Id,
+                    Name = m.Name,
+                    Description = m.Description == null ? string.Empty : m.Description,
+                    Allergens = m.Allergens,
+                    Ingredients = m.Ingredients,
+                    ImageUrl = m.ImageUrl,
                 })
                 .SingleOrDefaultAsync();
 
@@ -435,19 +435,61 @@
             return mainDish;
         }
 
-        public async Task EditMainDishAsync(EditMainDishViewModel EditMainDishViewModel)
+        public async Task EditMainDishAsync(EditMainDishViewModel editMainDishViewModel)
         {
             var soup = await schoolMealsOrderingSystemDbContext
                 .MainDishes
-                .FindAsync(EditMainDishViewModel.Id);
+                .FindAsync(editMainDishViewModel.Id);
 
             if (soup != null)
             {
-                soup.Name = EditMainDishViewModel.Name;
-                soup.Description = EditMainDishViewModel.Description;
-                soup.Allergens = EditMainDishViewModel.Allergens;
-                soup.ImageUrl = EditMainDishViewModel.ImageUrl;
-                soup.Ingredients = EditMainDishViewModel.Ingredients;
+                soup.Name = editMainDishViewModel.Name;
+                soup.Description = editMainDishViewModel.Description;
+                soup.Allergens = editMainDishViewModel.Allergens;
+                soup.ImageUrl = editMainDishViewModel.ImageUrl;
+                soup.Ingredients = editMainDishViewModel.Ingredients;
+            }
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
+        }
+
+        public async Task<EditDessertViewModel> GetDessertForEditAsync(Guid dessertId)
+        {
+            var dessert = await schoolMealsOrderingSystemDbContext
+                .Desserts
+                .Where(d => d.Id.Equals(dessertId) && !d.IsDeleted)
+                .Select(d => new EditDessertViewModel
+                {
+                    Id = d.Id,
+                    Name = d.Name,
+                    Description = d.Description == null ? string.Empty : d.Description,
+                    Allergens = d.Allergens,
+                    Ingredients = d.Ingredients,
+                    ImageUrl = d.ImageUrl,
+                })
+                .SingleOrDefaultAsync();
+
+            if (dessert == null)
+            {
+                throw new ArgumentException(InvalidSoupId);
+            }
+
+            return dessert;
+        }
+
+        public async Task EditDessertAsync(EditDessertViewModel editDessertViewModel)
+        {
+            var dessert = await schoolMealsOrderingSystemDbContext
+                .Desserts
+                .FindAsync(editDessertViewModel.Id);
+
+            if (dessert != null)
+            {   
+                dessert.Name = editDessertViewModel.Name;
+                dessert.Description = editDessertViewModel.Description;
+                dessert.Allergens = editDessertViewModel.Allergens;
+                dessert.ImageUrl = editDessertViewModel.ImageUrl;
+                dessert.Ingredients = editDessertViewModel.Ingredients;
             }
 
             await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
