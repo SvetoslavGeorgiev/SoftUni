@@ -110,7 +110,7 @@
                 .ParentsChildren
                 .OrderBy(pc => pc.Child.FirstName)
                 .ThenBy(pc => pc.Child.LastName)
-                .Select(pc => new ChildViewModel
+                .Select(pc => new ChildViewModel()
                 {
                     Id = pc.Child.Id,
                     FirstName = pc.Child.FirstName,
@@ -118,7 +118,7 @@
                     YearsOld = pc.Child.YearsOld,
                     MonthsOld = pc.Child.Months == 12 ? 0 : pc.Child.Months,
                     YearInSchool = pc.Child.YearInSchool,
-                    School = pc.Child.SchoolUser.SchoolName == string.Empty ? DeletedSchoolUser : pc.Child.SchoolUser.SchoolName
+                    School = pc.Child.SchoolUser.SchoolName == string.Empty ? DeletedSchoolUser :pc.Child.SchoolUser.SchoolName
                 });
 
 

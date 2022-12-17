@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SchoolMealsOrderingSystem.Core.Contracts;
 using SchoolMealsOrderingSystem.Core.Services;
@@ -34,7 +35,10 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews(options =>
+{
+    options.Filters.Add<AutoValidateAntiforgeryTokenAttribute>();
+});
 
 builder.Services.AddScoped<ISchoolServices, SchoolServices>();
 builder.Services.AddScoped<IChildServices, ChildServices>();
