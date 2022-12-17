@@ -9,7 +9,7 @@
 
     [Area(SchoolAreaName)]
     [Authorize(Roles = School)]
-    [Route("School/[controller]/[Action]/{id?}")]
+    [Route("/School/[controller]/[Action]/{id?}")]
     public class HomeController : Controller
     {
         [AllowAnonymous]

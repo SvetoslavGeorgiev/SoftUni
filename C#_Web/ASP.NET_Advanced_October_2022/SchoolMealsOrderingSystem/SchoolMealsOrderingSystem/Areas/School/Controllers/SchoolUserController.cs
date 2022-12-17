@@ -14,7 +14,7 @@
 
     [Area(SchoolAreaName)]
     [Authorize(Roles = School)]
-    [Route("School/[controller]/[Action]/{id?}")]
+    [Route("/School/[controller]/[Action]/{id?}")]
     public class SchoolUserController : ApplicationUserController
     {
 
@@ -117,7 +117,7 @@
 
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Home", new { area = "" });
+                    return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
                 }
             }
 

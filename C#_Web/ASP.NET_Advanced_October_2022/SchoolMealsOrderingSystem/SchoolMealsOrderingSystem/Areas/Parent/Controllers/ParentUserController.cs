@@ -13,7 +13,7 @@
 
     [Area(ParentAreaName)]
     [Authorize(Roles = Parent)]
-    [Route("Parent/[controller]/[Action]/{id?}")]
+    [Route("/Parent/[controller]/[Action]/{id?}")]
     public class ParentUserController : ApplicationUserController
     {
         private readonly IParentUserServices parentUserServices;
