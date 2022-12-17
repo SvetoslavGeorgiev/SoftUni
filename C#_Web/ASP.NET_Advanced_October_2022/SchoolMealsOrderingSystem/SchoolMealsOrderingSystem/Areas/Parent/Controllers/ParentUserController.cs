@@ -7,7 +7,6 @@
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using SchoolMealsOrderingSystem.Controllers;
-    using SchoolMealsOrderingSystem.Core.Services;
     using static Data.Constants.GeneralConstants;
     using static Data.Constants.ParentUserConstants;
     using static Data.Constants.RoleConstants;

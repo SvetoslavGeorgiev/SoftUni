@@ -94,20 +94,21 @@
 
             var result = child
                 .Menus
+                .OrderBy(x => ((int)x.Name + 6) % 7)
                 .Select(m => new DailyMenuViewModel()
                 {
                     Id = m.Id,
-                    Name = m.Name.ToString() == "Monday" ? "Понеделник" : 
-                           m.Name.ToString() == "Tuesday" ? "Вторник" : 
-                           m.Name.ToString() == "Wednesday" ? "Сряда" : 
-                           m.Name.ToString() == "Thursday" ? "Четвъртък" : 
+                    Name = m.Name.ToString() == "Monday" ? "Понеделник" :
+                           m.Name.ToString() == "Tuesday" ? "Вторник" :
+                           m.Name.ToString() == "Wednesday" ? "Сряда" :
+                           m.Name.ToString() == "Thursday" ? "Четвъртък" :
                            "Петък",
                     Dessert = m.Dessert,
                     Soup = m.Soup,
                     MainDish = m.MainDish,
                 });
 
-            return result.OrderBy(x => x.Name);
+            return result;
         }
 
         public async Task<MealsForParentToChooseViewModel> GetMealsForParentsToChoose(Guid id)
