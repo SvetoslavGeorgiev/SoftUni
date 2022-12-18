@@ -335,6 +335,7 @@
                     Email = "test@test.bg",
                     SchoolName = "Ima",
                     UserName = "test@test.bg",
+                    IsSchool = true,
                     Soups = new List<Soup>()
                     {
                         new Soup()
