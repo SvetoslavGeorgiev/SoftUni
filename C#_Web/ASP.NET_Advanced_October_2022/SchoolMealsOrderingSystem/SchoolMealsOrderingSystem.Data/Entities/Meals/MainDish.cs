@@ -13,6 +13,7 @@
         {
             IsDeleted = false;
             Id = Guid.NewGuid();
+            IsSelected = false;
         }
 
         [Key]

@@ -1,15 +1,8 @@
 namespace SchoolMealsOrderingSystem.Tests.Services
 {
-    using Microsoft.EntityFrameworkCore;
-    using SchoolMealsOrderingSystem.Core.Models.Child;
-    using SchoolMealsOrderingSystem.Core.Services;
-    using SchoolMealsOrderingSystem.Data.Entities;
-    using SchoolMealsOrderingSystem.Tests.Mocks;
-    using static Data.Constants.ParentUserConstants;
-    using static Data.Constants.ChildConstants;
-
+    
     [TestFixture]
-    public class TeChildServicesTestssts
+    public class ChildServicesTests
     {
 
         [Test]

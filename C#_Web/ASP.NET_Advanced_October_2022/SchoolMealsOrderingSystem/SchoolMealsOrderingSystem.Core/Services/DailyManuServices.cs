@@ -6,6 +6,7 @@
     using SchoolMealsOrderingSystem.Data;
     using static Data.Constants.GeneralConstants;
     using static Data.Constants.ChildConstants;
+    using static Data.Constants.SchoolUserConstants;
     using SchoolMealsOrderingSystem.Data.Entities.Menu;
     using System.Collections.Generic;
     using SchoolMealsOrderingSystem.Core.Models.DailyMenu;
@@ -31,13 +32,13 @@
 
             if (child == null)
             {
-                throw new ArithmeticException(InvalidChildUserId);
+                throw new ArgumentException(InvalidChildUserId);
             }
 
             if (child.Menus.Any(m => m.Name.ToString() == model.DayOfTheWeek.ToString()))
             {
 
-                throw new ArithmeticException("Меню за този ден вече съществива");
+                throw new ArgumentException("Меню за този ден вече съществива");
             }
 
             var dailyMenu = new DailyMenu()
@@ -89,7 +90,7 @@
 
             if (child == null)
             {
-                throw new ArithmeticException(InvalidChildUserId);
+                throw new ArgumentException(InvalidChildUserId);
             }
 
             var result = child
@@ -116,10 +117,35 @@
             var child = await schoolMealsOrderingSystemDbContext
                 .Children
                 .Where(c => c.Id == id && !c.IsDeleted)
-                .Include(c => c.SchoolUser.Soups.Where(s => s.IsSelected && !s.IsDeleted))
-                .Include(c => c.SchoolUser.MainDishes.Where(s => s.IsSelected && !s.IsDeleted))
-                .Include(c => c.SchoolUser.Desserts.Where(s => s.IsSelected && !s.IsDeleted))
+                .Include(c => c.SchoolUser.Soups)
+                .Include(c => c.SchoolUser.MainDishes)
+                .Include(c => c.SchoolUser.Desserts)
                 .FirstOrDefaultAsync();
+
+            if (child == null)
+            {
+                throw new ArgumentException(InvalidChildUserId);
+            }
+
+            if (child.SchoolUser == null)
+            {
+                throw new ArgumentException(InvalidSchoolUserId);
+            }
+
+            //var soups = await schoolMealsOrderingSystemDbContext
+            //    .Soups
+            //    .Where(s => s.SchoolUserId == child.SchoolUserId && s.IsSelected == true && !s.IsDeleted)
+            //    .ToListAsync();
+
+            //var mainDishes = await schoolMealsOrderingSystemDbContext
+            //    .MainDishes
+            //    .Where(m => m.IsSelected == true && !m.IsDeleted)
+            //    .ToListAsync();
+
+            //var desserts = await schoolMealsOrderingSystemDbContext
+            //    .Desserts
+            //    .Where(d => d.SchoolUserId == child.SchoolUserId && d.IsSelected == true && !d.IsDeleted)
+            //    .ToListAsync();
 
             if (child.SchoolUser.Soups == null ||
                 child.SchoolUser.MainDishes == null ||
@@ -131,9 +157,12 @@
             var model = new MealsForParentToChooseViewModel()
             {
                 ChildId = child.Id,
-                Soups = child.SchoolUser.Soups,
-                MainDishes = child.SchoolUser.MainDishes,
-                Desserts = child.SchoolUser.Desserts,
+                Soups = child.SchoolUser.Soups.Where(s => s.IsSelected == true && !s.IsDeleted),
+                //Soups = soups,
+                MainDishes = child.SchoolUser.MainDishes.Where(s => s.IsSelected == true && !s.IsDeleted),
+                //MainDishes = mainDishes,
+                Desserts = child.SchoolUser.Desserts.Where(s => s.IsSelected == true && !s.IsDeleted),
+                //Desserts = desserts,
                 SchoolId = child.SchoolUserId
             };
 
