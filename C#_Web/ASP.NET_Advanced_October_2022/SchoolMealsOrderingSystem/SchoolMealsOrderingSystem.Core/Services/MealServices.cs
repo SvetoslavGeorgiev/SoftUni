@@ -168,8 +168,6 @@
 
             await GetRestOfMealsUnselected(selectedIdList, user.Id);
 
-            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
-
         }
 
         public async Task GetRestOfMealsUnselected(List<Guid> selectedIdList, string id)
@@ -201,6 +199,8 @@
                     dessert.IsSelected = false;
                 }
             }
+
+            await schoolMealsOrderingSystemDbContext.SaveChangesAsync();
         }
 
         public async Task<MainDish> FindMainDishAsync(Guid Id)
@@ -244,7 +244,7 @@
 
             if (schoolUser == null)
             {
-                throw new ArgumentException(InvalidMainDishId);
+                throw new ArgumentException(InvalidSchoolUserId);
             }
 
             var soup = new Soup()
@@ -279,7 +279,7 @@
 
             if (schoolUser == null)
             {
-                throw new ArgumentException(InvalidMainDishId);
+                throw new ArgumentException(InvalidSchoolUserId);
             }
 
             var mainDish = new MainDish()
@@ -313,7 +313,7 @@
 
             if (schoolUser == null)
             {
-                throw new ArgumentException(InvalidMainDishId);
+                throw new ArgumentException(InvalidSchoolUserId);
             }
 
             var dessert = new Dessert()
