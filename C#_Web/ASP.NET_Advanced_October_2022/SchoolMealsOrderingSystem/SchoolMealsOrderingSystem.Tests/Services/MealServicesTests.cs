@@ -1,7 +1,6 @@
 ﻿namespace SchoolMealsOrderingSystem.Tests.Services
 {
     using Moq;
-    using SchoolMealsOrderingSystem.Core.Contracts;
     using SchoolMealsOrderingSystem.Core.Services;
     using SchoolMealsOrderingSystem.Data.Entities;
     using SchoolMealsOrderingSystem.Data.Entities.Meals;

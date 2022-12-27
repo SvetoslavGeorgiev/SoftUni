@@ -13,6 +13,9 @@
             : base()
         {
             SchoolChildren = new HashSet<Child>();
+            Soups = new HashSet<Soup>();
+            MainDishes = new HashSet<MainDish>();
+            Desserts = new HashSet<Dessert>();
         }
 
         [MaxLength(SchoolNameMaxLength)]

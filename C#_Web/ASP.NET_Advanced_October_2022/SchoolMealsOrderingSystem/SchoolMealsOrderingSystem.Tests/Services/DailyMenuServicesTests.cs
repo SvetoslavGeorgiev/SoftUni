@@ -263,6 +263,7 @@
                 ParentsChildren = new List<ParentChild>()
             });
 
+
             await data.AddRangeAsync(new List<DailyMenu>()
             {
                 new DailyMenu()
@@ -531,34 +532,6 @@
             Assert.ThrowsAsync<ArgumentException>(async () => await dailyManuServices.GetMealsForParentsToChoose(Guid.Parse("a58ec3e3998541eaa545949b804af7a9")), InvalidChildUserId);
 
         }
-
-        //[Test]
-        //public async Task GetMealsForParentsToChooseShouldthrownewArgumentExceptionIfSchoolUserIsNull()
-        //{
-
-        //    using var data = DatabaseMock.Instance;
-
-        //    await data.Children.AddAsync(new Child()
-        //    {
-        //        Id = Guid.Parse("45145b93b0064424b0f6601b73837184"),
-        //        FirstName = "dsfg",
-        //        LastName = "Goshov",
-        //        Birthday = DateTime.Today.Date,
-        //        YearInSchool = "3b",
-        //        SchoolUserId = "hjgadvfdaf",
-        //        ParentChildRelation = "Father",
-        //        ParentsChildren = new List<ParentChild>(),
-        //    });
-
-        //    await data.SaveChangesAsync();
-
-        //    var dailyManuServices = new DailyManuServices(data);
-
-        //    Assert.That(data.Children.Count(), Is.EqualTo(1));
-
-        //    Assert.ThrowsAsync<ArgumentException>(async () => await dailyManuServices.GetMealsForParentsToChoose(Guid.Parse("45145b93b0064424b0f6601b73837184")), InvalidSchoolUserId);
-
-        //}
 
     }
 }

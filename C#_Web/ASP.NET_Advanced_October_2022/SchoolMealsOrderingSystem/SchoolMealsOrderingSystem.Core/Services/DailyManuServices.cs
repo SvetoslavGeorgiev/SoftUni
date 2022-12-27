@@ -114,6 +114,7 @@
 
         public async Task<MealsForParentToChooseViewModel> GetMealsForParentsToChoose(Guid id)
         {
+
             var child = await schoolMealsOrderingSystemDbContext
                 .Children
                 .Where(c => c.Id == id && !c.IsDeleted)
@@ -125,11 +126,6 @@
             if (child == null)
             {
                 throw new ArgumentException(InvalidChildUserId);
-            }
-
-            if (child.SchoolUser == null)
-            {
-                throw new ArgumentException(InvalidSchoolUserId);
             }
 
             //var soups = await schoolMealsOrderingSystemDbContext
@@ -147,12 +143,6 @@
             //    .Where(d => d.SchoolUserId == child.SchoolUserId && d.IsSelected == true && !d.IsDeleted)
             //    .ToListAsync();
 
-            if (child.SchoolUser.Soups == null ||
-                child.SchoolUser.MainDishes == null ||
-                child.SchoolUser.Desserts == null)
-            {
-                throw new ArgumentException(InvalidMenu);
-            }
 
             var model = new MealsForParentToChooseViewModel()
             {
