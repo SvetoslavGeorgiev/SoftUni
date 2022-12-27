@@ -1050,7 +1050,8 @@
   <summary>
 👈🏻 &#160;&#160;Web Exams
   </summary>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1 - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022/E01_Library">E01_Library</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1 - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022/E01_Library">E01_Library</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2 - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Advanced_October_2022/SchoolMealsOrderingSystem">E02_SchoolMealsOrderingSystem -> Final Exam own project </a>
 </details>
 
 ## EXAMS Practice
