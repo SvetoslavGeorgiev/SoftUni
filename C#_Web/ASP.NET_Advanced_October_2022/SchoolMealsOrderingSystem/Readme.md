@@ -43,17 +43,29 @@ School Meal Ordering System is Bulgarian School-Parent relation system for order
 ### School Area
 
 #### • SignUp/SignIn Pages
+
+<!--
 ![school register page](https://user-images.githubusercontent.com/54979873/212572260-a06ebaab-92af-441f-8c3a-f2d8c54b6f0d.png)
 ![login for schools](https://user-images.githubusercontent.com/54979873/212572243-9dda8807-2887-4702-ba48-7737caaa80f4.png)
+-->
 
-
+<p align="left">
+<img height="350em" src="https://user-images.githubusercontent.com/54979873/212572260-a06ebaab-92af-441f-8c3a-f2d8c54b6f0d.png" align = "center"/>
+<img height="350em" src="https://user-images.githubusercontent.com/54979873/212572243-9dda8807-2887-4702-ba48-7737caaa80f4.png" align = "center"/>
+</p>
 
 ### Parent Area
 
 #### • SignUp/SignIn Pages
+<!--
 ![Parent register page](https://user-images.githubusercontent.com/54979873/212572265-ef644f0c-20b9-4183-af05-19c2f7a779d4.png)
 ![login for parents](https://user-images.githubusercontent.com/54979873/212572279-406b14d8-404a-45c5-b583-cfe650aac68b.png)
+-->
 
+<p align="left">
+<img height="350em" src="https://user-images.githubusercontent.com/54979873/212572265-ef644f0c-20b9-4183-af05-19c2f7a779d4.png" align = "center"/>
+<img height="350em" src="https://user-images.githubusercontent.com/54979873/212572279-406b14d8-404a-45c5-b583-cfe650aac68b.png" align = "center"/>
+</p>
 
 
 ## Author
