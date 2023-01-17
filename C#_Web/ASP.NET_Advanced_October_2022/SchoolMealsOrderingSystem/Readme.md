@@ -67,6 +67,20 @@ School Meal Ordering System is Bulgarian School-Parent relation system for order
 <img height="350em" src="https://user-images.githubusercontent.com/54979873/212572279-406b14d8-404a-45c5-b583-cfe650aac68b.png" align = "center"/>
 </p>
 
+#### • Parent area home page
+When is hovered "MY PROFILE(МОЯТ ПРОФИЛ)" is getting solid blue
+<p align="left">
+<img height="350em" width="500em" margin-bottom: 7px src="https://user-images.githubusercontent.com/54979873/213015576-9586587f-9418-45e4-8cb1-d44cacc2d380.jpeg" align = "center"/>
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213015641-a5d934fd-263a-439d-be96-b1d96fd2df6a.png" align = "center"/>
+</p>
+
+#### • Parent area "ADD CHILD(ДОБАВИ ДЕТЕ)" page
+In the addChildViewModel all school names are loaded to the dropdown menu for the parent to choose in which of them is his child
+<p align="left">
+<img height="350em" width="400em" src="https://user-images.githubusercontent.com/54979873/213022476-442ef023-929f-4f98-802c-e5e1b5bdd417.png" align = "center"/>
+<img height="350em" width="300em" src="https://user-images.githubusercontent.com/54979873/213019998-cd715fd8-2d14-4250-8223-f295d5173498.png" align = "center"/>
+<img height="350em" width="300em" src="https://user-images.githubusercontent.com/54979873/213024230-95a77252-c0a2-4e2a-91e1-0497bc6bbb79.jpeg" align = "center"/>
+
 
 ## Author
 Svetoslav Georgiev
