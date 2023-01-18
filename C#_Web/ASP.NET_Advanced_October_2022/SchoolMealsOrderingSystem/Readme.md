@@ -69,9 +69,10 @@ School Meal Ordering System is Bulgarian School-Parent relation system for order
 
 #### • Parent area home page
 When is hovered "MY PROFILE(МОЯТ ПРОФИЛ)" is getting solid blue
+
 <p align="left">
-<img height="350em" width="500em" margin-bottom: 7px src="https://user-images.githubusercontent.com/54979873/213015576-9586587f-9418-45e4-8cb1-d44cacc2d380.jpeg" align = "center"/>
-<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213015641-a5d934fd-263a-439d-be96-b1d96fd2df6a.png" align = "center"/>
+<img height="350em" width="500em" margin-bottom: 7px src="https://user-images.githubusercontent.com/54979873/213030720-248fb3e1-510b-4ff6-938f-f64f7658b92f.png" align = "center"/>
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213030958-c13a1e93-8e47-4960-a70b-1231ea233f38.jpeg" align = "center"/>
 </p>
 
 #### • Parent area "ADD CHILD(ДОБАВИ ДЕТЕ)" page
@@ -80,6 +81,44 @@ In the addChildViewModel all school names are loaded to the dropdown menu for th
 <img height="350em" width="400em" src="https://user-images.githubusercontent.com/54979873/213022476-442ef023-929f-4f98-802c-e5e1b5bdd417.png" align = "center"/>
 <img height="350em" width="300em" src="https://user-images.githubusercontent.com/54979873/213019998-cd715fd8-2d14-4250-8223-f295d5173498.png" align = "center"/>
 <img height="350em" width="300em" src="https://user-images.githubusercontent.com/54979873/213024230-95a77252-c0a2-4e2a-91e1-0497bc6bbb79.jpeg" align = "center"/>
+</p>
+
+#### • Parent area "MY CHILDREN(МОИТЕ ДЕЦА)" page
+In "MY CHILDREN(МОИТЕ ДЕЦА)" page it can be found all childer added by current user. Each child view card contains: name, years and months old, school and grade of the child. Also there are 3 buttons for: editing, select menu and see choosen menus.
+
+<p align="left">
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213031053-a79b2ca6-58c1-40b0-bb5e-7ffc049dcafc.png" align = "center"/>
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213032072-57ff4446-46b4-42cd-81d1-9f949992b6b9.png" align = "center"/>
+</p>
+
+#### • Parent area "EDIT CHILD(РЕДАКЦИЯ НА ДЕТЕ)" page
+In "EDIT CHILD(РЕДАКЦИЯ НА ДЕТЕ)" page is edit form of the child and two buttons blue one for confirm and red for deleting. Also in the dropdown menu all school names a loaded if child is swiching schools.
+<p align="left">
+<img height="350em" width="400em" src="https://user-images.githubusercontent.com/54979873/213033770-75384aae-2ba3-4c25-bf16-de10abe4b4a3.jpeg" align = "center"/>
+<img height="350em" width="300em" src="https://user-images.githubusercontent.com/54979873/213033884-0855094f-2000-4816-bf7d-62824731a947.png" align = "center"/>
+<img height="350em" width="300em" src="https://user-images.githubusercontent.com/54979873/213033912-adb008dc-8475-4c39-bb18-eec73f9b059a.jpeg" align = "center"/>
+</p>
+
+ • For Deleting the child is popping up a window for confirmation or cancel
+<p align="left">
+<img height="350em" src="https://user-images.githubusercontent.com/54979873/213033925-9d14e77d-59a0-46b7-b3f5-f48a43f8b976.png" align = "center"/>
+</p>
+
+#### • Parent area "SELECT MENU(ИЗБЕРИ МЕНЮ)" page
+In "SELECT MENU(ИЗБЕРИ МЕНЮ)" page is form for coosing a menu of soup, main dish and dessert for selected day of the week. Menu for each day of the week can be selected just once. If the parent decide someting else for already choosen day that menu can be deleted and re-selected again if the day is not come yet. Also in the form the parent can select from only 3 options for each dish which is been pre selected from the child's school.
+
+<p align="left">
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213038199-1a62fc85-795d-4f61-895e-752b82867425.jpeg" align = "center"/>
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213038248-38ae5be6-7ff6-45b9-8549-2ba88219cbb2.png" align = "center"/>
+</p>
+<p align="left">
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213039408-621a6680-bccf-4444-83e8-4ea1dd388ab0.jpeg" align = "center"/>
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213039416-6a2f1f6a-e8d6-4c88-9f20-6bdfcf80e551.jpeg" align = "center"/>
+</p>
+<p align="left">
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213039430-2e71ffea-bedd-4fdb-9aeb-ce30720bdd39.jpeg" align = "center"/>
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213039437-885f02d3-64e8-409a-a7cb-305bdc231ab3.jpeg" align = "center"/>
+</p>
 
 
 ## Author
