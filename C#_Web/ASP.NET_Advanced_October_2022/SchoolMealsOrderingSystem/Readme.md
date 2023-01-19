@@ -120,6 +120,17 @@ In "SELECT MENU(ИЗБЕРИ МЕНЮ)" page is form for coosing a menu of soup,
 <img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213039437-885f02d3-64e8-409a-a7cb-305bdc231ab3.jpeg" align = "center"/>
 </p>
 
+#### • Parent area "SEE CHOSEN MENU(ВИЖ ИЗБРАНО МЕНЮ)" page
+In "SEE CHOSEN MENU(ВИЖ ИЗБРАНО МЕНЮ)" page you can see for which day and what the parent is choosen for his child and can deleted if want.
+
+<p align="left">
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213559811-59d897ce-eee0-4f85-9076-21a7fbbbc000.jpeg" align = "center"/>
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213559870-27a1f0e0-6710-4846-985e-81584de95125.png" align = "center"/>
+</p>
+<p align="left">
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213559910-8cb98447-7058-41f4-8144-cf6143e933e7.png" align = "center"/>
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213559963-998b8ec8-0d81-4c5e-a168-199dd0f5dddb.png" align = "center"/>
+</p>
 
 ## Author
 Svetoslav Georgiev
