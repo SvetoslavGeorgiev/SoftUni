@@ -55,14 +55,19 @@ School Meal Ordering System is Bulgarian School-Parent relation system for order
 </p>
 
 #### • School Area "ALL CHILDREN(ДЕЦАТА В УЧИЛИЩЕ)" page
-In "ALL CHILDREN" page can be find the list if all children in that school for all parents users.
-
-![click children in school]()
-![all children in that school]()
+In "ALL CHILDREN" page can be find the list of all children in that school for all parents users.
 
 <p align="left">
 <img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213566974-6c71ce79-55cc-481a-9719-2c8f542d7aa2.png" align = "center"/>
 <img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213567025-9cb488a8-beda-4bb0-b093-e1124a4e1a7a.png" align = "center"/>
+</p>
+
+#### • School Area "MENU(МЕНЮ)" page
+In "MENU(МЕНЮ)" page can be found the week lunch menu for the current child what it's parent have chosen, but can be only seen not deleted.
+
+<p align="left">
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213568632-cf99c081-b9a5-446e-a74e-cc5242c65cbe.jpeg" align = "center"/>
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213569197-0c7cceea-a264-4391-84dd-ca33aed419b6.png" align = "center"/>
 </p>
 
 
