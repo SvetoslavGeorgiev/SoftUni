@@ -54,6 +54,18 @@ School Meal Ordering System is Bulgarian School-Parent relation system for order
 <img height="350em" src="https://user-images.githubusercontent.com/54979873/212572243-9dda8807-2887-4702-ba48-7737caaa80f4.png" align = "center"/>
 </p>
 
+#### • School Area "ALL CHILDREN(ДЕЦАТА В УЧИЛИЩЕ)" page
+In "ALL CHILDREN" page can be find the list if all children in that school for all parents users.
+
+![click children in school]()
+![all children in that school]()
+
+<p align="left">
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213566974-6c71ce79-55cc-481a-9719-2c8f542d7aa2.png" align = "center"/>
+<img height="350em" width="500em" src="https://user-images.githubusercontent.com/54979873/213567025-9cb488a8-beda-4bb0-b093-e1124a4e1a7a.png" align = "center"/>
+</p>
+
+
 ### Parent Area
 
 #### • SignUp/SignIn Pages
