@@ -2,10 +2,11 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     public class Tree<T> : IAbstractTree<T>
     {
-        private readonly List<Tree<T>> children;
+        private List<Tree<T>> children;
         private T value;
         private Tree<T> parent;
 
@@ -31,7 +32,7 @@
 
         public void AddChild(T parentKey, Tree<T> child)
         {
-            var parentNode = this.FindNodeWithBfs(parentKey);
+            var parentNode = FindNodeWithBfs(parentKey);
 
             if (parentNode != null)
             {
@@ -112,7 +113,22 @@
 
         public void RemoveNode(T nodeKey)
         {
-            throw new NotImplementedException();
+
+            var nodeForRemoval = FindNodeWithBfs(nodeKey);
+
+            if (nodeForRemoval == null)
+            {
+                throw new ArgumentNullException();
+            }
+            else if (nodeForRemoval.parent == null)
+            {
+                throw new ArgumentException("Root can't be removed");
+            }
+
+            var nodeForRemovalParent = nodeForRemoval.parent;
+
+            nodeForRemovalParent.children = nodeForRemovalParent.children.Where(x => !x.value.Equals(nodeKey)).ToList();
+            nodeForRemoval.parent = null;
         }
 
         public void Swap(T firstKey, T secondKey)
