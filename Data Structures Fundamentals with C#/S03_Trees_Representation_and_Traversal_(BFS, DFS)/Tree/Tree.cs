@@ -133,7 +133,32 @@
 
         public void Swap(T firstKey, T secondKey)
         {
-            throw new NotImplementedException();
+            var firstNode = FindNodeWithBfs(firstKey);
+            var secondNode = FindNodeWithBfs(secondKey);
+
+            if (firstNode == null || secondNode == null)
+            {
+                throw new ArgumentNullException();
+            }
+            else if (firstNode.parent == null || secondNode.parent == null)
+            {
+                throw new ArgumentException();
+            }
+
+            var firstParent = firstNode.parent;
+            var secondParent = secondNode.parent;
+
+
+            var indexOfTheFristKey = firstParent.children.IndexOf(firstNode);
+            var indexOfTheSecondKey = secondParent.children.IndexOf(secondNode);
+
+            firstParent.children[indexOfTheFristKey] = secondNode;
+            secondNode.parent = firstParent;
+
+            secondParent.children[indexOfTheSecondKey] = firstNode;
+            firstNode.parent = secondParent;
+            
+
         }
     }
 }
