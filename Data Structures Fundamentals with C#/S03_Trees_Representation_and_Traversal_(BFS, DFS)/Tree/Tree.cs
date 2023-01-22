@@ -31,7 +31,7 @@
 
         public void AddChild(T parentKey, Tree<T> child)
         {
-            throw new NotImplementedException();
+            
         }
 
         public IEnumerable<T> OrderBfs()
