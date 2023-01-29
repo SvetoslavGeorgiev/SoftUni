@@ -1,6 +1,7 @@
 ﻿namespace Tree
 {
     using System;
+    using System.Collections;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Linq;
@@ -8,7 +9,7 @@
 
     public class Tree<T> : IAbstractTree<T>
     {
-        private readonly ICollection<Tree<T>> children;
+        protected readonly ICollection<Tree<T>> children;
 
         public Tree(T key, params Tree<T>[] _children)
         {
@@ -61,13 +62,13 @@
 
         public IEnumerable<T> GetInternalKeys()
         {
-            return BfsWithResultKeys(tree => tree.children.Count != 0 && tree.Parent != null)
+            return BfsWithResultNodes(tree => tree.children.Count != 0 && tree.Parent != null)
                 .Select(tree => tree.Key);
         }
 
         public IEnumerable<T> GetLeafKeys()
         {
-            return BfsWithResultKeys(tree => tree.children.Count == 0)
+            return BfsWithResultNodes(tree => tree.children.Count == 0)
                 .Select(tree => tree.Key);
         }
 
@@ -76,9 +77,14 @@
             return GetDeepestNode().Key;
         }
 
+        protected IEnumerable<Tree<T>> GetLeafNodes()
+        {
+            return BfsWithResultNodes(tree => tree.children.Count == 0);
+        }
+
         private Tree<T> GetDeepestNode()
         {
-            var leafs = BfsWithResultKeys(tree => tree.children.Count == 0);
+            var leafs = BfsWithResultNodes(tree => tree.children.Count == 0);
 
             Tree<T> deepestNode = null;
             var maxDepth = int.MinValue;
@@ -114,10 +120,25 @@
 
         public IEnumerable<T> GetLongestPath()
         {
-            throw new NotImplementedException();
+            var deepestNode = GetDeepestNode();
+
+            var longestSequence = new Stack<T>();
+
+            var curentNode = deepestNode;
+
+            while (curentNode != null) 
+            { 
+
+                longestSequence.Push(curentNode.Key);
+
+                curentNode = curentNode.Parent;
+            }
+
+            return longestSequence;
+            
         }
 
-        private IEnumerable<Tree<T>> BfsWithResultKeys(Predicate<Tree<T>> predicate)
+        protected IEnumerable<Tree<T>> BfsWithResultNodes(Predicate<Tree<T>> predicate)
         {
             var result = new List<Tree<T>>();
             var queue = new Queue<Tree<T>>();
