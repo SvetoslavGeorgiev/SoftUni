@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using System.Linq;
     using System.Text;
 
     public class Tree<T> : IAbstractTree<T>
@@ -60,12 +61,65 @@
 
         public IEnumerable<T> GetInternalKeys()
         {
-            throw new NotImplementedException();
+            return BfsWithResultKeys(tree => tree.children.Count != 0 && tree.Parent != null)
+                .Select(tree => tree.Key);
         }
 
         public IEnumerable<T> GetLeafKeys()
         {
-            var result = new List<T>();
+            return BfsWithResultKeys(tree => tree.children.Count == 0)
+                .Select(tree => tree.Key);
+        }
+
+        public T GetDeepestKey()
+        {
+            return GetDeepestNode().Key;
+        }
+
+        private Tree<T> GetDeepestNode()
+        {
+            var leafs = BfsWithResultKeys(tree => tree.children.Count == 0);
+
+            Tree<T> deepestNode = null;
+            var maxDepth = int.MinValue;
+
+            foreach (var leaf in leafs)
+            {
+                var depth = GetDepth(leaf);
+
+                if (depth > maxDepth)
+                {
+                    maxDepth = depth;
+                    deepestNode = leaf;
+                }
+            }
+
+            return deepestNode;
+        }
+
+        private int GetDepth(Tree<T> leaf)
+        {
+            var depth = int.MinValue;
+
+            var tree = leaf;
+
+            while (tree.Parent != null)
+            {
+                depth++;
+                tree = tree.Parent;
+            }
+
+            return depth;
+        }
+
+        public IEnumerable<T> GetLongestPath()
+        {
+            throw new NotImplementedException();
+        }
+
+        private IEnumerable<Tree<T>> BfsWithResultKeys(Predicate<Tree<T>> predicate)
+        {
+            var result = new List<Tree<T>>();
             var queue = new Queue<Tree<T>>();
 
             queue.Enqueue(this);
@@ -74,9 +128,9 @@
             {
                 var curruentSubTree = queue.Dequeue();
 
-                if (curruentSubTree.children.Count == 0)
+                if (predicate.Invoke(curruentSubTree))
                 {
-                    result.Add(curruentSubTree.Key);
+                    result.Add(curruentSubTree);
                 }
 
                 foreach (var child in curruentSubTree.children)
@@ -86,16 +140,6 @@
             }
 
             return result;
-        }
-
-        public T GetDeepestKey()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<T> GetLongestPath()
-        {
-            throw new NotImplementedException();
         }
     }
 }
