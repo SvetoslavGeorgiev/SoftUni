@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\01.BinarySearchTree\01.BinarySearchTree.csproj" />
+    <ProjectReference Include="..\02.LowestCommonAncestor\02.LowestCommonAncestor.csproj" />
+    <ProjectReference Include="..\03.MinHeap\03.MinHeap.csproj" />
+    <ProjectReference Include="..\04.CookiesProblem\04.CookiesProblem.csproj" />
+    <ProjectReference Include="..\05.TopView\05.TopView.csproj" />
+  </ItemGroup>
+</Project>
