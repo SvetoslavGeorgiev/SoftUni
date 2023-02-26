@@ -1,21 +1,17 @@
 ﻿namespace P01_StudentSystem.Data.Models
 {
-    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class Student
     {
 
         public Student()
         {
-            HomeworkSubmissions = new HashSet<Homework>();
-            CourseEnrollments = new HashSet<StudentCourse>();
+            Homeworks = new HashSet<Homework>();
+            StudentsCourses = new HashSet<StudentCourse>();
         }
 
         public int StudentId { get; set; }
@@ -33,9 +29,9 @@
         public DateTime? Birthday  { get; set; }
 
 
-        public ICollection<Homework> HomeworkSubmissions { get; set; }
+        public ICollection<Homework> Homeworks { get; set; }
 
-        public ICollection<StudentCourse> CourseEnrollments { get; set; }
+        public ICollection<StudentCourse> StudentsCourses { get; set; }
 
 
     }

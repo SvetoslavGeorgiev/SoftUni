@@ -1,14 +1,7 @@
 ﻿namespace P01_StudentSystem.Data
 {
     using Microsoft.EntityFrameworkCore;
-    using Microsoft.EntityFrameworkCore.ChangeTracking;
     using P01_StudentSystem.Data.Models;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Net;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public class StudentSystemContext : DbContext
     {
@@ -26,13 +19,13 @@
 
         public DbSet<Course> Courses { get; set; }
 
-        public DbSet<Homework> HomeworkSubmissions { get; set; }
+        public DbSet<Homework> Homeworks { get; set; }
 
         public DbSet<Resource> Resources { get; set; }
 
         public DbSet<Student> Students { get; set; }
 
-        public DbSet<StudentCourse> StudentCourses { get; set; }
+        public DbSet<StudentCourse> StudentsCourses { get; set; }
 
 
 
