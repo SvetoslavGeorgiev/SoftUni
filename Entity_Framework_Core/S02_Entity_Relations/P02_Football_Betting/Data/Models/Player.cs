@@ -1,4 +1,4 @@
-﻿namespace P03_FootballBetting.Data.Models
+﻿namespace P02_FootballBetting.Data.Models
 {
     using System;
     using System.Collections.Generic;
@@ -9,8 +9,8 @@
     {
         public Player()
         {
-            
-            PlayerStatistics = new HashSet<PlayerStatistic>();
+
+            PlayersStatistics = new HashSet<PlayerStatistic>();
 
         }
 
@@ -34,7 +34,7 @@
         public bool IsInjured { get; set; }
 
 
-        public ICollection<PlayerStatistic> PlayerStatistics { get; set; }
+        public ICollection<PlayerStatistic> PlayersStatistics { get; set; }
 
 
     }

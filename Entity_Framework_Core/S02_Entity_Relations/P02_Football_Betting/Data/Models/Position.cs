@@ -1,4 +1,4 @@
-﻿namespace P03_FootballBetting.Data.Models
+﻿namespace P02_FootballBetting.Data.Models
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;

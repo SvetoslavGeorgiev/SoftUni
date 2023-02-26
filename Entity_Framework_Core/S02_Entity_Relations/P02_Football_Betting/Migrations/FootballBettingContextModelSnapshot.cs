@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using P03_FootballBetting.Data;
+using P02_FootballBetting.Data;
 
-namespace P03_FootballBetting.Migrations
+namespace P02_FootballBetting.Migrations
 {
     [DbContext(typeof(FootballBettingContext))]
     partial class FootballBettingContextModelSnapshot : ModelSnapshot

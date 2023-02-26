@@ -1,7 +1,7 @@
-﻿namespace P03_FootballBetting.Data
+﻿namespace P02_FootballBetting.Data
 {
     using Microsoft.EntityFrameworkCore;
-    using P03_FootballBetting.Data.Models;
+    using P02_FootballBetting.Data.Models;
     using System;
     using System.Collections.Generic;
     using System.Text;
@@ -31,7 +31,7 @@
 
         public DbSet<Player> Players { get; set; }
 
-        public DbSet<PlayerStatistic> PlayerStatistics { get; set; }
+        public DbSet<PlayerStatistic> PlayersStatistics { get; set; }
 
         public DbSet<Position> Positions { get; set; }
 
@@ -80,7 +80,7 @@
 
             modelBuilder.Entity<PlayerStatistic>()
                 .HasOne(ps => ps.Player)
-                .WithMany(p => p.PlayerStatistics)
+                .WithMany(p => p.PlayersStatistics)
                 .HasForeignKey(ps => ps.PlayerId)
                 .OnDelete(DeleteBehavior.Restrict)
                 .HasConstraintName("FK_playerStatistics_Players_PlayerId");

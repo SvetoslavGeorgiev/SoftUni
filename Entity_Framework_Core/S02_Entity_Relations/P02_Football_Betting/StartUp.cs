@@ -1,6 +1,6 @@
-﻿namespace P03_FootballBetting
+﻿namespace P02_FootballBetting
 {
-    using P03_FootballBetting.Data;
+    using P02_FootballBetting.Data;
     using System;
 
     public class StartUp

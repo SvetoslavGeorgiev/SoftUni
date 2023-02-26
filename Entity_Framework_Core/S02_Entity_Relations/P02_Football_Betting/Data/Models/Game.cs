@@ -1,4 +1,4 @@
-﻿namespace P03_FootballBetting.Data.Models
+﻿namespace P02_FootballBetting.Data.Models
 {
     using System;
     using System.Collections.Generic;
@@ -8,7 +8,7 @@
     {
         public Game()
         {
-            PlayerStatistics = new HashSet<PlayerStatistic>();
+            PlayersStatistics = new HashSet<PlayerStatistic>();
             Bets = new HashSet<Bet>();
         }
         public int GameId { get; set; }
@@ -37,7 +37,7 @@
 
 
         [InverseProperty(nameof(PlayerStatistic.Game))]
-        public ICollection<PlayerStatistic> PlayerStatistics { get; set; }
+        public ICollection<PlayerStatistic> PlayersStatistics { get; set; }
 
         public ICollection<Bet> Bets { get; set; }
 

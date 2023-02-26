@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace P03_FootballBetting.Migrations
+namespace P02_FootballBetting.Migrations
 {
     public partial class InitialCreate : Migration
     {
