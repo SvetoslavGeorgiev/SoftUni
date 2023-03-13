@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using AutoMapper;
+﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
 using ProductShop.Data;
 using ProductShop.DTOs.Category;
 using ProductShop.DTOs.CategoryProduct;
 using ProductShop.DTOs.Product;
 using ProductShop.DTOs.User;
 using ProductShop.Models;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace ProductShop
 {
