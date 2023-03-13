@@ -22,18 +22,22 @@
 
         public DbSet<User> Users { get; set; }
 
-        public DbSet<CategoryProduct> CategoryProducts { get; set; }
+        public DbSet<CategoryProduct> CategoriesProducts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(Configuration.ConnectionString);
+                
             }
+
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
             modelBuilder.Entity<CategoryProduct>(entity =>
             {
                 entity.HasKey(x => new { x.CategoryId, x.ProductId});

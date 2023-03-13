@@ -6,7 +6,7 @@
     {
         public Product()
         {
-            this.CategoryProducts = new List<CategoryProduct>();
+            this.CategoriesProducts = new List<CategoryProduct>();
         }
 
         public int Id { get; set; }
@@ -21,6 +21,6 @@
         public int? BuyerId { get; set; }
         public User Buyer { get; set; }
 
-        public ICollection<CategoryProduct> CategoryProducts { get; set; }
+        public ICollection<CategoryProduct> CategoriesProducts { get; set; }
     }
 }

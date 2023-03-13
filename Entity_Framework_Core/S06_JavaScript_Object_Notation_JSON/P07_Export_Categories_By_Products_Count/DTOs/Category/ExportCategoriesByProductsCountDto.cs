@@ -15,11 +15,11 @@
 
 
         [JsonProperty("averagePrice")]
-        public string AvgPrice { get; set; }
+        public double AvgPrice { get; set; }
 
 
         [JsonProperty("totalRevenue")]
-        public string TotalPrice { get; set; }
+        public double TotalPrice { get; set; }
 
 
     }

@@ -4,6 +4,7 @@ using ProductShop.DTOs.CategoryProduct;
 using ProductShop.DTOs.Product;
 using ProductShop.DTOs.User;
 using ProductShop.Models;
+using System;
 using System.Linq;
 
 namespace ProductShop
@@ -34,9 +35,9 @@ namespace ProductShop
 
 
             this.CreateMap<Category, ExportCategoriesByProductsCountDto>()
-                .ForMember(d => d.ProductsCount, mo => mo.MapFrom(s => s.CategoryProducts.Count))
-                .ForMember(d => d.AvgPrice, mo => mo.MapFrom(s => s.CategoryProducts.Average(p => p.Product.Price).ToString("F2")))
-                .ForMember(d => d.TotalPrice, mo => mo.MapFrom(s => s.CategoryProducts.Sum(p => p.Product.Price).ToString("F2")));
+                .ForMember(d => d.ProductsCount, mo => mo.MapFrom(s => s.CategoriesProducts.Count))
+                .ForMember(d => d.AvgPrice, mo => mo.MapFrom(s => Math.Round((double)s.CategoriesProducts.Average(p => p.Product.Price), 2)))
+                .ForMember(d => d.TotalPrice, mo => mo.MapFrom(s => Math.Round((double)s.CategoriesProducts.Sum(p => p.Product.Price), 2)));
 
             //CategoryProduct
             this.CreateMap<ImportCategoryProductDto, CategoryProduct>();
