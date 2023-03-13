@@ -16,7 +16,7 @@ namespace ProductShop
 
         public static void Main(string[] args)
         {
-            Mapper.Initialize(cfg => cfg.AddProfile(typeof(ProductShopProfile)));
+            
 
             using ProductShopContext dBcontext = new ProductShopContext();
 
@@ -34,13 +34,18 @@ namespace ProductShop
         public static string ImportUsers(ProductShopContext context, string inputJson)
         {
 
+            var mapper = new Mapper(new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile<ProductShopProfile>();
+            }));
+
             ImportUserDto[] userDtos = JsonConvert.DeserializeObject<ImportUserDto[]>(inputJson);
 
             ICollection<User> users = new List<User>();
 
             foreach (var dto in userDtos)
             {
-                users.Add(Mapper.Map<User>(dto));
+                users.Add(mapper.Map<User>(dto));
             }
 
 
