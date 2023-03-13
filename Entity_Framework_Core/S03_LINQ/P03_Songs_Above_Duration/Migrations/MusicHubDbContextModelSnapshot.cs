@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MusicHub.Data;
 
+#nullable disable
+
 namespace MusicHub.Migrations
 {
     [DbContext(typeof(MusicHubDbContext))]
@@ -15,23 +17,25 @@ namespace MusicHub.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.3")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("ProductVersion", "6.0.11")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("MusicHub.Data.Models.Album", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(40)")
-                        .HasMaxLength(40);
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
 
-                    b.Property<int>("ProducerId")
+                    b.Property<int?>("ProducerId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("ReleaseDate")
@@ -41,48 +45,50 @@ namespace MusicHub.Migrations
 
                     b.HasIndex("ProducerId");
 
-                    b.ToTable("Album");
+                    b.ToTable("Albums");
                 });
 
             modelBuilder.Entity("MusicHub.Data.Models.Performer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(20)")
-                        .HasMaxLength(20);
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(20)")
-                        .HasMaxLength(20);
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<decimal>("NetWorth")
                         .HasColumnType("money");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Performer");
+                    b.ToTable("Performers");
                 });
 
             modelBuilder.Entity("MusicHub.Data.Models.Producer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(30)")
-                        .HasMaxLength(30);
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
 
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
@@ -92,15 +98,16 @@ namespace MusicHub.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Producer");
+                    b.ToTable("Producers");
                 });
 
             modelBuilder.Entity("MusicHub.Data.Models.Song", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int?>("AlbumId")
                         .HasColumnType("int");
@@ -116,8 +123,8 @@ namespace MusicHub.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(20)")
-                        .HasMaxLength(20);
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("money");
@@ -131,7 +138,7 @@ namespace MusicHub.Migrations
 
                     b.HasIndex("WriterId");
 
-                    b.ToTable("Song");
+                    b.ToTable("Songs");
                 });
 
             modelBuilder.Entity("MusicHub.Data.Models.SongPerformer", b =>
@@ -146,36 +153,37 @@ namespace MusicHub.Migrations
 
                     b.HasIndex("PerformerId");
 
-                    b.ToTable("SongPerformer");
+                    b.ToTable("SongsPerformers");
                 });
 
             modelBuilder.Entity("MusicHub.Data.Models.Writer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(20)")
-                        .HasMaxLength(20);
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("Pseudonym")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Writer");
+                    b.ToTable("Writers");
                 });
 
             modelBuilder.Entity("MusicHub.Data.Models.Album", b =>
                 {
                     b.HasOne("MusicHub.Data.Models.Producer", "Producer")
                         .WithMany("Albums")
-                        .HasForeignKey("ProducerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ProducerId");
+
+                    b.Navigation("Producer");
                 });
 
             modelBuilder.Entity("MusicHub.Data.Models.Song", b =>
@@ -189,6 +197,10 @@ namespace MusicHub.Migrations
                         .HasForeignKey("WriterId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Album");
+
+                    b.Navigation("Writer");
                 });
 
             modelBuilder.Entity("MusicHub.Data.Models.SongPerformer", b =>
@@ -204,6 +216,35 @@ namespace MusicHub.Migrations
                         .HasForeignKey("SongId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Performer");
+
+                    b.Navigation("Song");
+                });
+
+            modelBuilder.Entity("MusicHub.Data.Models.Album", b =>
+                {
+                    b.Navigation("Songs");
+                });
+
+            modelBuilder.Entity("MusicHub.Data.Models.Performer", b =>
+                {
+                    b.Navigation("PerformerSongs");
+                });
+
+            modelBuilder.Entity("MusicHub.Data.Models.Producer", b =>
+                {
+                    b.Navigation("Albums");
+                });
+
+            modelBuilder.Entity("MusicHub.Data.Models.Song", b =>
+                {
+                    b.Navigation("SongPerformers");
+                });
+
+            modelBuilder.Entity("MusicHub.Data.Models.Writer", b =>
+                {
+                    b.Navigation("Songs");
                 });
 #pragma warning restore 612, 618
         }

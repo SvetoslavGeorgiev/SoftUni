@@ -14,7 +14,7 @@
 
     public class DbInitializer
     {
-        [Obsolete]
+
         public static void ResetDatabase(MusicHubDbContext context)
         {
             context.Database.EnsureDeleted();
@@ -25,7 +25,6 @@
             Seed(context);
         }
 
-        [Obsolete]
         private static void Seed(MusicHubDbContext context)
         {
             var datasetsJson =
@@ -47,14 +46,14 @@
 
                     if (entityType != typeof(SongPerformer))
                     {
-                        context.Database.ExecuteSqlCommand("SET IDENTITY_INSERT " + entityName + " ON;");
+                        context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT " + entityName + " ON;");
                     }
 
                     context.SaveChanges();
 
                     if (entityType != typeof(SongPerformer))
                     {
-                        context.Database.ExecuteSqlCommand("SET IDENTITY_INSERT " + entityName + "  OFF;");
+                        context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT " + entityName + "  OFF;");
                     }
                     transaction.Commit();
                 }

@@ -21,7 +21,7 @@
             var album = ExportSongsAboveDuration(context, 4);
 
             Console.WriteLine(album);
-            
+
         }
 
         public static string ExportSongsAboveDuration(MusicHubDbContext context, int duration)
@@ -42,16 +42,19 @@
                 {
                     s.Name,
                     WriterName = s.Writer.Name,
-                    Performer = s.SongPerformers
+                    Performers = s.SongPerformers
                          .Select(sp => $"{sp.Performer.FirstName} {sp.Performer.LastName}")
-                         .FirstOrDefault(),
+                         .ToList(),
                     ProduserName = s.Album.Producer.Name,
                     Duration = s.Duration.ToString("c")
                 })
                 .OrderBy(s => s.Name)
                 .ThenBy(s => s.WriterName)
-                .ThenBy(s => s.Performer)
                 .ToList();
+
+
+            
+            
 
             var counter = 0;
 
@@ -59,12 +62,48 @@
             {
                 counter++;
 
-                sb.AppendLine($"-Song #{counter}")
+                var allPerformersForCurrentSong = new StringBuilder();
+
+                if (!s.Performers.Any())
+                {
+                    allPerformersForCurrentSong.AppendLine(string.Empty);
+
+                    sb.AppendLine($"-Song #{counter}")
                     .AppendLine($"---SongName: {s.Name}")
                     .AppendLine($"---Writer: {s.WriterName}")
-                    .AppendLine($"---Performer: {s.Performer}")
                     .AppendLine($"---AlbumProducer: {s.ProduserName}")
                     .AppendLine($"---Duration: {s.Duration}");
+                }
+                else
+                {
+                    foreach (var performer in s.Performers.OrderBy(p => p))
+                    {
+                        allPerformersForCurrentSong.AppendLine(($"---Performer: {performer}"));
+
+                    }
+
+                    var allPerformersForCurrentSongString = allPerformersForCurrentSong.ToString().Trim();
+
+                    sb.AppendLine($"-Song #{counter}")
+                    .AppendLine($"---SongName: {s.Name}")
+                    .AppendLine($"---Writer: {s.WriterName}")
+                    .AppendLine(allPerformersForCurrentSongString)
+                    .AppendLine($"---AlbumProducer: {s.ProduserName}")
+                    .AppendLine($"---Duration: {s.Duration}");
+                }
+
+                //var allPerformersForCurrentSongString = allPerformersForCurrentSong.ToString().Trim();
+
+                //sb.AppendLine($"-Song #{counter}")
+                //.AppendLine($"---SongName: {s.Name}")
+                //.AppendLine($"---Writer: {s.WriterName}");
+
+                //sb.AppendLine(allPerformersForCurrentSongString == string.Empty ? null : $"---Performer: {allPerformersForCurrentSongString}");
+
+                //sb.AppendLine($"---AlbumProducer: {s.ProduserName}")
+                //.AppendLine($"---Duration: {s.Duration}");
+
+
             }
 
 

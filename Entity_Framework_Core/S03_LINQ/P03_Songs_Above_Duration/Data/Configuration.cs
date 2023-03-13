@@ -3,6 +3,6 @@
    public static class Configuration
     {
         public static string ConnectionString =
-            "Server=SGEORGIEV\\SQLEXPRESS;Database=MusicHub;Integrated Security=True;";
+            "Server=.\\SQLEXPRESS;Database=MusicHub;Integrated Security=True;";
     }
 }
