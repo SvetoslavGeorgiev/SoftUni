@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01_Recursive_Array_Sum", "P01_Recursive_Array_Sum\P01_Recursive_Array_Sum.csproj", "{92EF26FA-891B-487C-A809-D68E0F1331AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01_Recursive_Array_Sum", "P01_Recursive_Array_Sum\P01_Recursive_Array_Sum.csproj", "{92EF26FA-891B-487C-A809-D68E0F1331AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02_Recursive_Drawing", "P02_Recursive_Drawing\P02_Recursive_Drawing.csproj", "{1F13415E-F18C-4B2F-A3D8-CCEDF0A26120}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02_Recursive_Drawing", "P02_Recursive_Drawing\P02_Recursive_Drawing.csproj", "{1F13415E-F18C-4B2F-A3D8-CCEDF0A26120}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_Generating_0_1_Vectors", "P03_Generating_0_1_Vectors\P03_Generating_0_1_Vectors.csproj", "{88433CE7-08D1-4C26-BD9B-471A449040FB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04_Recursive_Factorial", "P04_Recursive_Factorial\P04_Recursive_Factorial.csproj", "{98A49A41-C3E4-447C-A345-F12FFFA7E553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Paths_in_Labyrinth", "P05_Paths_in_Labyrinth\P05_Paths_in_Labyrinth.csproj", "{177A9653-D3DA-4207-8319-F6A9C50B7C63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{1F13415E-F18C-4B2F-A3D8-CCEDF0A26120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F13415E-F18C-4B2F-A3D8-CCEDF0A26120}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F13415E-F18C-4B2F-A3D8-CCEDF0A26120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88433CE7-08D1-4C26-BD9B-471A449040FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88433CE7-08D1-4C26-BD9B-471A449040FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88433CE7-08D1-4C26-BD9B-471A449040FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88433CE7-08D1-4C26-BD9B-471A449040FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98A49A41-C3E4-447C-A345-F12FFFA7E553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98A49A41-C3E4-447C-A345-F12FFFA7E553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98A49A41-C3E4-447C-A345-F12FFFA7E553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98A49A41-C3E4-447C-A345-F12FFFA7E553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{177A9653-D3DA-4207-8319-F6A9C50B7C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{177A9653-D3DA-4207-8319-F6A9C50B7C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{177A9653-D3DA-4207-8319-F6A9C50B7C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{177A9653-D3DA-4207-8319-F6A9C50B7C63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
