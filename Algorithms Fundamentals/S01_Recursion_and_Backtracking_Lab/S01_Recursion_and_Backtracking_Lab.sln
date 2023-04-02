@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03_Generating_0_1_Vectors"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04_Recursive_Factorial", "P04_Recursive_Factorial\P04_Recursive_Factorial.csproj", "{98A49A41-C3E4-447C-A345-F12FFFA7E553}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05_Paths_in_Labyrinth", "P05_Paths_in_Labyrinth\P05_Paths_in_Labyrinth.csproj", "{177A9653-D3DA-4207-8319-F6A9C50B7C63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05_Paths_in_Labyrinth", "P05_Paths_in_Labyrinth\P05_Paths_in_Labyrinth.csproj", "{177A9653-D3DA-4207-8319-F6A9C50B7C63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P07_Recursive_Fibonacci", "P07_Recursive_Fibonacci\P07_Recursive_Fibonacci.csproj", "{2D1DAC51-38E3-4ECD-B86F-D826E0134575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06_8_Queens_Puzzle", "P06_8_Queens_Puzzle\P06_8_Queens_Puzzle.csproj", "{A2F7BE8B-52B8-432A-8C1B-2ED6436B2EAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{177A9653-D3DA-4207-8319-F6A9C50B7C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{177A9653-D3DA-4207-8319-F6A9C50B7C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{177A9653-D3DA-4207-8319-F6A9C50B7C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D1DAC51-38E3-4ECD-B86F-D826E0134575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1DAC51-38E3-4ECD-B86F-D826E0134575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1DAC51-38E3-4ECD-B86F-D826E0134575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1DAC51-38E3-4ECD-B86F-D826E0134575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2F7BE8B-52B8-432A-8C1B-2ED6436B2EAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2F7BE8B-52B8-432A-8C1B-2ED6436B2EAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2F7BE8B-52B8-432A-8C1B-2ED6436B2EAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2F7BE8B-52B8-432A-8C1B-2ED6436B2EAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
