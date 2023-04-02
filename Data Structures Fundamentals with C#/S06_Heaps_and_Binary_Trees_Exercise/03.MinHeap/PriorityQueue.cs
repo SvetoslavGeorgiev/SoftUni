@@ -12,17 +12,20 @@ namespace _03.MinHeap
 
         public void Enqueue(T element)
         {
-            throw new NotImplementedException();
+            elements.Add(element);
+            HeapifyUp(Count - 1);
         }
 
         public T Dequeue()
         {
-            throw new NotImplementedException();
+            return ExtractMin();
         }
 
         public void DecreaseKey(T key)
         {
-            throw new NotImplementedException();
+            var index = elements.IndexOf(key);
+
+            HeapifyUp(index);
         }
     }
 }
