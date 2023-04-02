@@ -2,7 +2,9 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Drawing;
     using System.IO;
+    using System.Xml.Linq;
 
     public class BinarySearchTree<T> : IBinarySearchTree<T> where T : IComparable
     {
@@ -13,7 +15,7 @@
                 this.Value = value;
             }
 
-            public T Value { get;}
+            public T Value { get; set; }
             public Node Left { get; set; }
             public Node Right { get; set; }
         }
@@ -51,22 +53,6 @@
             Node current = this.FindElement(element);
 
             return new BinarySearchTree<T>(current);
-        }
-
-        public void Delete(T element)
-        {
-            //var node = FindElement(element);
-
-            //if (node == null)
-            //{
-            //    throw new InvalidOperationException();
-            //}
-
-            //node.Left = null;
-            //node.Right = null;
-            //node = null;
-
-            throw new NotImplementedException();
         }
 
         public void DeleteMax()
@@ -296,6 +282,64 @@
             this.EachInOrder(node.Left, action);
             action(node.Value);
             this.EachInOrder(node.Right, action);
+        }
+
+        public void Delete(T element)
+        {
+            if (root == null)
+            {
+                throw new InvalidOperationException();
+            }
+
+            this.root = Delete(this.root, element);
+        }
+
+        private Node Delete(Node node, T element)
+        {
+            if (node == null)
+            {
+                return null;
+            }
+
+            int compare = element.CompareTo(node.Value);
+
+            if (compare < 0)
+            {
+                node.Left = Delete(node.Left, element);
+            }
+            else if (compare > 0)
+            {
+                node.Right = Delete(node.Right, element);
+            }
+            else
+            {
+                if (node.Left == null)
+                {
+                    return node.Right;
+                }
+                else if (node.Right == null)
+                {
+                    return node.Left;
+                }
+                else
+                {
+                    Node successor = FindMin(node.Right);
+                    node.Value = successor.Value;
+                    node.Right = Delete(node.Right, successor.Value);
+                }
+            }
+
+            return node;
+        }
+
+        private Node FindMin(Node node)
+        {
+            while (node.Left != null)
+            {
+                node = node.Left;
+            }
+
+            return node;
         }
     }
 }
