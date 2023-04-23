@@ -1,23 +1,17 @@
-function solve(n, k){
+function solve(n, k) {
 
-    let arr = [];
-    arr.length = Number(n);
-    arr[0] = 1
+    let finalArray = [1];
 
-
-    for (let index = 1; index < arr.length; index++) {
-        let currentSum = 0;
-
-        for (let j = 0 - Number(k); j < index; j++) {
-            currentSum += Number(arr[j]) || 0;
-        }
-
-        arr[index] = currentSum;
+    for (let i = 1; i < n; i++) {
+        
+        let start = i - k < 0 
+        ? 0 
+        : i - k;
+        finalArray.push(finalArray.slice(start).reduce((acc, num) => acc + num));
     }
 
-    console.log(arr.join(', '));
-
+    return finalArray;
 }
 
-solve(6, 3)
-solve(8, 2)
+console.log(solve(6, 3));
+console.log(solve(8, 2));
