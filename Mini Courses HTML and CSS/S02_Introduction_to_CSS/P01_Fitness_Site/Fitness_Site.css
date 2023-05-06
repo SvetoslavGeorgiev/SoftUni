@@ -1,0 +1,120 @@
+body {
+    font-family: "Helvetica",sans-serif;  
+    width: 1180px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 16px;
+    background: #F0F1F5;  
+  }
+  
+  header section:nth-child(1) { 
+    color: #f9690e;  
+  }
+  
+  header section:nth-child(1) i {
+    font-size: 30px;
+    padding-right: 5px;
+    vertical-align: middle;
+  }
+
+  nav {
+    display: inline-block;
+    width: 675px;
+  }
+  
+  nav ul {
+    text-align: right; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    display: inline-block;   
+  }
+  
+  ul li:not(:last-child) {
+    padding-right: 20px;
+  }
+
+  nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #f9690e;  
+  }
+  
+  header section:nth-child(1) p {
+    width: 500px;
+    display: inline-block;
+  }
+  
+  header section:nth-child(2) {
+    background: url("./Images/picture.jpg");
+    background-size: cover;
+    height: 350px;
+    text-align: center;
+    padding-top: 250px;  
+  }
+  
+  header section:nth-child(2) p{
+    width: 65%;
+    margin: 0 auto;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  header section:nth-child(2) span {
+    color: #f9690e;
+  }
+
+  header section:nth-child(2) button {
+    margin-top: 50px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: #f9690e;
+    border: none;
+  }
+  
+  header section:nth-child(2) button:hover {
+    background: white;
+    color: #f9690e;
+    cursor: pointer;
+  }
+
+  main article {
+    width: 270px;   
+    display: inline-block;
+    padding: 30px 60px;
+    background: #f9690e;
+    color: white;
+  }
+  
+  main article h3 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 15px;
+  }
+  
+  footer {
+    margin: 0;
+    padding: 30px 0 10px 0; 
+  }
+
+  footer p {
+    width:730px;
+    display: inline-block;
+  }
+  
+  footer ul {
+    width: 400px;
+    display: inline-block;
+    text-align: right;
+  }
+  
+  footer a i {
+    color: black;
+  }
