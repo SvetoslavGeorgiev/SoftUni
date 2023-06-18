@@ -1,0 +1,55 @@
+﻿@model AddEventViewModel;
+
+@{
+    ViewBag.Title = "Create a New Event";
+}
+
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<hr />
+
+<div class="row">
+    <div class="col-sm-12 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6">
+        <form asp-action="Add" method="post">
+            <div class="mb-3">
+                <label asp-for="@Model.Name" class="form-label-add-edit">Name</label>
+                <input asp-for="@Model.Name" class="form-control" aria-required="true" />
+                <span asp-validation-for="@Model.Name" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.Description" class="form-label-add-edit">Description</label>
+                <textarea asp-for="@Model.Description" class="form-control" aria-required="true" rows="5"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.Start" class="form-label-add-edit">Start</label>
+                <input asp-for="@Model.Start" class="form-control" aria-required="true" value="@DateTime.Now.ToString("yyyy-MM-dd H:mm")" />
+                <span asp-validation-for="@Model.Start" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.End" class="form-label-add-edit">End</label>
+                <input asp-for="@Model.End" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd H:mm")" />
+                <span asp-validation-for="@Model.End" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.TypeId" class="form-label-add-edit">Type of event</label>
+                <select asp-for="@Model.TypeId" class="form-control" aria-required="true">
+                    @foreach (var type in Model.Types)
+                    {
+                        <option value="@type.Id">@type.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="@Model.TypeId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <input class="btn btn-warning mb-2 w-100 p-3 fw-bold" type="submit" value="Add" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

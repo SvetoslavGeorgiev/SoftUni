@@ -1,0 +1,29 @@
+﻿h1, h2, hr, footer > div{
+    color: white;
+}
+
+.index-page-greeting {
+    font-weight: 700;
+}
+
+.index-page-greeting-p {
+    color: white;
+}
+
+header{
+    background-color: #FFC107;
+    color: white;
+}
+
+.form-label-add-edit {
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+section, section > div > p > a, section > form > div > p > a {
+    color: white;
+}
+
+.form-floating {
+    color: grey;
+}
