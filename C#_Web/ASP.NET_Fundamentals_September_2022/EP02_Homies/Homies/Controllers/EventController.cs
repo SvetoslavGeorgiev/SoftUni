@@ -50,20 +50,19 @@
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var events = await this.dbContext.EventParticipants
+            var events = await dbContext
+                .EventParticipants
                 .Where(ep => ep.HelperId == userId)
                 .Select(ep => new EventViewModel
             {
                 Name = ep.Event.Name,
-                Start = ep.Event.Start.ToString("u"),
+                Start = ep.Event.Start.ToString("dd/MM/yyyy H:mm"),
                 Type = ep.Event.Type.Name,
                 Id = ep.Event.Id
             }).ToListAsync();
 
 
-
             return View(events);
-
         }
 
         [HttpPost]
@@ -72,15 +71,15 @@
 
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var eventToLeave = await this.dbContext.
-                EventParticipants
+            var eventToLeave = await dbContext
+                .EventParticipants
                 .FirstOrDefaultAsync(ep => ep.EventId == Id && ep.HelperId == userId);
 
             if (eventToLeave != null)
             {
-                this.dbContext.EventParticipants.Remove(eventToLeave);
+                dbContext.EventParticipants.Remove(eventToLeave);
 
-                await this.dbContext.SaveChangesAsync();
+                await dbContext.SaveChangesAsync();
             }
 
             return RedirectToAction(nameof(All));
