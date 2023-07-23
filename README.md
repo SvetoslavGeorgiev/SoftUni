@@ -4,6 +4,8 @@
 #### Here i have all solutions from my time as student <a href="https://softuni.bg">@SoftUni.bg</a>
 
 
+# Software Engineer Program
+
 ## Basics Curriculum List
 
 
@@ -978,6 +980,30 @@
   </details>
 </details>
 
+## JavaScript Advanced
+
+
+<details>
+  <summary>
+👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/JS_Advanced">JavaScript_Advanced</a>
+  </summary>
+  <details>
+  <summary>
+👈🏻 I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/JS_Advanced/S01_Syntax_Functions_and_Statements_Lab">S01_Syntax_Functions_and_Statements_Lab</a> - First lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/JS_Advanced/S01_Syntax_Functions_and_Statements_Lab/P01_Echo_Function/Echo_Function.js">P01_Echo_Function</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/JS_Advanced/S01_Syntax_Functions_and_Statements_Lab/P02_String_Length/String_Length.js">P02_String_Length</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/JS_Advanced/S01_Syntax_Functions_and_Statements_Lab/P03_Largest_Number/P03_Largest_Number.js">P03_Largest_Number</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/JS_Advanced/S01_Syntax_Functions_and_Statements_Lab/P04_Circle_Area/Circle_Area.js">P04_Circle_Area</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/JS_Advanced/S01_Syntax_Functions_and_Statements_Lab/P05_Math_Operations/Math_Operations.js">P05_Math_Operations</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/JS_Advanced/S01_Syntax_Functions_and_Statements_Lab/P06_Sum_of_Numbers_N%E2%80%A6M/Sum_of_Numbers_N%E2%80%A6M.js">P06_Sum_of_Numbers_N%E2%80%A6M</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/JS_Advanced/S01_Syntax_Functions_and_Statements_Lab/P07_Day_of_Week/Day_of_Week.js">P07_Day_of_Week</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/JS_Advanced/S01_Syntax_Functions_and_Statements_Lab/P08_Days_in_a_month/Days_in_a_month.js">P08_Days_in_a_month</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/JS_Advanced/S01_Syntax_Functions_and_Statements_Lab/P09_Square_of_Stars/Square_of_Stars.js">P09_Square_of_Stars</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;10. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/blob/master/JS_Advanced/S01_Syntax_Functions_and_Statements_Lab/P10_Aggregate_Elements/Aggregate_Elements.js">P10_Aggregate_Elements</a>
+  </details>
+</details>
+
 
 ## EXAMS
 
@@ -1216,4 +1242,45 @@
 👈🏻 &#160;&#160;Web Exams
   </summary>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1 - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022/EP01_Watchlist">EP01_Watchlist</a>
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2 - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/C%23_Web/ASP.NET_Fundamentals_September_2022/EP02_Homies">EP02_Homies</a>
 </details>
+
+
+# Open Courses
+
+## Data Structures Fundamentals
+
+
+<details>
+  <summary>
+👈🏻 &#160;&#160;<a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23">Data_Structures_Fundamentals_with_C#</a>
+  </summary>
+  <details>
+  <summary>
+👈🏻 I - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S01_Linear%20Data%20Structures">S01_Linear_Data_Structures</a> - First lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;0. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S01_Linear%20Data%20Structures/Demo">P00_Demo</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S01_Linear%20Data%20Structures/Problem01.List">P01_List</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1.1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S01_Linear%20Data%20Structures/Problem01.List.Tests">P01.1_List_Tests</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S01_Linear%20Data%20Structures/Problem02.Stack">P02_Stack</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2.1 <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S01_Linear%20Data%20Structures/Problem02.Stack.Tests">P02.1_Stack_Tests</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S01_Linear%20Data%20Structures/Problem03.Queue">P03_Queue</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3.1 <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S01_Linear%20Data%20Structures/Problem03.Queue.Tests">P03.1_Queue_Tests</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S01_Linear%20Data%20Structures/Problem04.SinglyLinkedList">P04_SinglyLinkedList</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4.1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S01_Linear%20Data%20Structures/SinglyLinkedList.Tests">P04.1_SinglyLinkedList_Tests</a>
+  </details>
+<details>
+  <summary>
+👈🏻 II - <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S02_Linear_Data_Structures_Exercise">S02_Linear_Data_Structures_Exercise</a> - Second lecture
+  </summary>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S02_Linear_Data_Structures_Exercise/01.FasterQueue">P01_FasterQueue</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1.1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S02_Linear_Data_Structures_Exercise/01.FasterQueue.Tests">P01.1_FasterQueue_Tests</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S02_Linear_Data_Structures_Exercise/02.DoublyLinkedList">P02_DoublyLinkedList</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2.1 <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S02_Linear_Data_Structures_Exercise/02.DoublyLinkedList.Tests">P02.1_DoublyLinkedList_Tests</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S02_Linear_Data_Structures_Exercise/03.ReversedList">P03_ReversedList</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3.1 <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S02_Linear_Data_Structures_Exercise/03.ReversedList.Tests">P03.1_ReversedList_Tests</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S02_Linear_Data_Structures_Exercise/04.BalancedParentheses">P04_BalancedParentheses</a>
+<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4.1. <a href="https://github.com/SvetoslavGeorgiev/SoftUni/tree/master/Data%20Structures%20Fundamentals%20with%20C%23/S02_Linear_Data_Structures_Exercise/04.BP.Tests">P04.1_BalancedParentheses_Tests</a>
+  </details>
+</details>
+
