@@ -4,22 +4,22 @@
     ViewBag.Title = "Моите деца";
 }
 
-<style> 
+<style>
 .light-blue-element {
-  background-color: cyan;
+    background-color: cyan;
 }
 .light-blue-element:hover {
-  background-color: blue;
-  color: wheat;
+    background-color: blue;
+    color: wheat;
 }
 
 .hoverme{
-  background-color: limegreen;
+    background-color: limegreen;
 }
 
 .hoverme:hover{
-  background-color: lime;
-  color: red;
+    background-color: lime;
+    color: red;
 }
 </style>
 
@@ -46,9 +46,9 @@
                 <p class="mb-0" style="color: darkblue">Клас в училище: @child.YearInSchool</p>
             </div>
             <div class="mb-3">
-                 <a asp-controller="Child" asp-action="Edit" asp-route-childId="@child.Id" class="fs-6 btn light-blue-element mb-3 p-2">Редактирай</a>
-                 <a asp-controller="DailyMenu" asp-action="GetMealsForParentsToChoose" asp-route-childId="@child.Id" class="fs-6 btn hoverme mb-3 p-2">Избери меню</a>
-                 <a asp-controller="DailyMenu" asp-action="All" asp-route-childId="@child.Id" class="fs-6 btn btn-outline-warning mb-3 p-2">Виж избрано меню</a>
+                <a asp-controller="Child" asp-action="Edit" asp-route-childId="@child.Id" class="fs-6 btn light-blue-element mb-3 p-2">Редактирай</a>
+                <a asp-controller="DailyMenu" asp-action="GetMealsForParentsToChoose" asp-route-childId="@child.Id" class="fs-6 btn hoverme mb-3 p-2">Избери меню</a>
+                <a asp-controller="DailyMenu" asp-action="All" asp-route-childId="@child.Id" class="fs-6 btn btn-outline-warning mb-3 p-2">Виж избрано меню</a>
             </div>
         </div>
     }
