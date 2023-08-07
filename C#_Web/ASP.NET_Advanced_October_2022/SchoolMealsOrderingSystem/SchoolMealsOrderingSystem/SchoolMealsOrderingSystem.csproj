@@ -27,10 +27,4 @@
     <Folder Include="Areas\School\Models\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Update="Resources\Areas\School\Views\Shared\_SchoolLayout.bg.resx">
-      <Generator></Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-
 </Project>

@@ -117,34 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="addChild" xml:space="preserve">
-    <value>Добави дете</value>
-  </data>
-  <data name="Bg" xml:space="preserve">
-    <value>Български</value>
-  </data>
-  <data name="children" xml:space="preserve">
-    <value>Моите деца</value>
-  </data>
-  <data name="childrenInSchool" xml:space="preserve">
-    <value>Децата в училище</value>
-  </data>
-  <data name="chooseLang" xml:space="preserve">
-    <value>Изберете език на сайта</value>
-  </data>
-  <data name="chooseWeeklyMenu" xml:space="preserve">
-    <value>Избери седмично меню</value>
-  </data>
-  <data name="En" xml:space="preserve">
-    <value>Английски</value>
-  </data>
-  <data name="home" xml:space="preserve">
-    <value>Начало</value>
-  </data>
-  <data name="index" xml:space="preserve">
-    <value>Система за поръчки на училищен обяд</value>
-  </data>
-  <data name="title" xml:space="preserve">
-    <value>СистемаЗаПоръчкиНаУчилищенОбяд</value>
+  <data name="homePage" xml:space="preserve">
+    <value>Начална Страница</value>
   </data>
 </root>

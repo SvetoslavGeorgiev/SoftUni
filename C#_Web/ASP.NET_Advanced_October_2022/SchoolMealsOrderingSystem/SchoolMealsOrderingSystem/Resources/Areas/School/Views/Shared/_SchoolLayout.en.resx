@@ -135,17 +135,26 @@
   <data name="allMeals" xml:space="preserve">
     <value>All Meals</value>
   </data>
+  <data name="bg" xml:space="preserve">
+    <value>Bulgarian</value>
+  </data>
   <data name="children" xml:space="preserve">
     <value>Children</value>
   </data>
   <data name="childrenInSchool" xml:space="preserve">
     <value>Children In School</value>
   </data>
+  <data name="chooseLang" xml:space="preserve">
+    <value>Choose site language</value>
+  </data>
   <data name="chooseWeeklyMenu" xml:space="preserve">
     <value>Choose Weekly Menu</value>
   </data>
   <data name="desserts" xml:space="preserve">
     <value>Desserts</value>
+  </data>
+  <data name="en" xml:space="preserve">
+    <value>English</value>
   </data>
   <data name="home" xml:space="preserve">
     <value>Home</value>
@@ -158,5 +167,8 @@
   </data>
   <data name="soups" xml:space="preserve">
     <value>Soups</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>SchoolMealsOrderingSystem</value>
   </data>
 </root>
