@@ -8,7 +8,7 @@
     <li class="nav-item">
         @if (User.Identity.IsAuthenticated && User.IsInRole(Parent))
         {
-             <a asp-area="Parent" asp-controller="ParentUser" asp-action="EditParentProfile" asp-route-id="@UserManager.GetUserId(User)" class="fs-6 btn btn-outline-primary">Моят профил</a>
+                <a asp-area="Parent" asp-controller="ParentUser" asp-action="EditParentProfile" asp-route-id="@UserManager.GetUserId(User)" class="fs-6 btn btn-outline-primary">@Localizer["profile"]</a>
              
         }
         else
@@ -21,13 +21,13 @@
         @if (User.Identity.IsAuthenticated && User.IsInRole(Parent))
         {
             <form  class="form-inline" asp-area="Parent" asp-controller="ParentUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
-                <button  type="submit" class="nav-link btn btn-link text-dark">Изход</button>
+                    <button type="submit" class="nav-link btn btn-link text-dark">@Localizer["logout"]</button>
             </form>
         }
         else
         {
             <form  class="form-inline" asp-area="School" asp-controller="SchoolUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
-                <button  type="submit" class="nav-link btn btn-link text-dark">Изход</button>
+                    <button type="submit" class="nav-link btn btn-link text-dark">@Localizer["logout"]</button>
             </form>
         }
     </li>
@@ -35,10 +35,10 @@
 else
 {
     <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Identity" asp-action="Register">Регистрация</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Identity" asp-action="Register">@Localizer["signUp"]</a>
     </li>
     <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Identity" asp-action="Login">Вход</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Identity" asp-action="Login">@Localizer["login"]</a>
     </li>
 }
 </ul>
