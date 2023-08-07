@@ -10,10 +10,10 @@
         public const string PasswordRequired = "Полето \"Парола\" е задължително";
         public const string PasswordConfirmRequired = "Полето \"Потвърждаване на парола\" е задължително";
         public const string EmailRequired = "Полето \"Email\" е задължително";
-        public const string ParentChildRelationRequired = "Полето \"Връзката ви с детето\" е задължително";
-        public const string BirthDayRequired = "Полето \"Дата на раждане\" е задължително";
-        public const string YearInSchoolRequired = "Полето \"Дата на раждане\" е задължително";
-        public const string SchoolNameRequired = "Полето \"Име на училище\" е задължително";
+        public const string ParentChildRelationRequired = "RelationToChild_Required";
+        public const string BirthDayRequired = "Birthday_Required";
+        public const string YearInSchoolRequired = "YearInSchool_Required";
+        public const string SchoolNameRequired = "SchoolUserId_Required";
         public const string DescriptionRequired = "Полето \"Описание\" е задължително";
         public const string IngredientsRequired = "Полето \"Съставки\" е задължително";
         public const string AllergensRequired = "Полето \"Алергени\" е задължително";
@@ -60,6 +60,16 @@
         public const string LayoutMainDishesString = "mainDishes";
         public const string LayoutDessertsString = "desserts";
 
+
+        //constants for child/add
+
+        public const string Name = "name";
+        public const string LastName = "lastName";
+        public const string RelationToCild = "relationToChild";
+        public const string Birthday = "birthday";
+        public const string ChooseSchool = "chooseSchool";
+        public const string YearInSchool = "yearInSchool";
+        public const string Add = "add";
 
 
 
