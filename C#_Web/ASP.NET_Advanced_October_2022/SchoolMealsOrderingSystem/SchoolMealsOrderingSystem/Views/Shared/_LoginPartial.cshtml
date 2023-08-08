@@ -3,43 +3,82 @@
 @inject UserManager<ApplicationUser> UserManager
 
 <ul class="navbar-nav align-items-center">
-@if (SignInManager.IsSignedIn(User))
-{
-    <li class="nav-item">
-        @if (User.Identity.IsAuthenticated && User.IsInRole(Parent))
-        {
-                <a asp-area="Parent" asp-controller="ParentUser" asp-action="EditParentProfile" asp-route-id="@UserManager.GetUserId(User)" class="fs-6 btn btn-outline-primary">@Localizer["profile"]</a>
-             
-        }
-        else
-        {
-             <a asp-area="School" asp-controller="SchoolUser" asp-action="EditSchoolProfile" asp-route-id="@UserManager.GetUserId(User)" class="fs-6 btn btn-outline-warning">@User.Identity?.Name!</a>
-             
-        }
+
+
+    <li class="nav-item dropdown">
+        <button type="button" class="btn btn-outline-success my-2 my-sm-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            @Localizer[LayoutChooseLangString]
+        </button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="/Lang/ChangeLanguage?culture=bg">@Localizer[LayoutBulgarianLangString]</a>
+            <a class="dropdown-item" href="/Lang/ChangeLanguage?culture=en">@Localizer[LayoutEnglishLangString]</a>
+        </div>
     </li>
-    <li class="nav-item">
-        @if (User.Identity.IsAuthenticated && User.IsInRole(Parent))
-        {
-            <form  class="form-inline" asp-area="Parent" asp-controller="ParentUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
-                    <button type="submit" class="nav-link btn btn-link text-dark">@Localizer["logout"]</button>
-            </form>
-        }
-        else
-        {
-            <form  class="form-inline" asp-area="School" asp-controller="SchoolUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
-                    <button type="submit" class="nav-link btn btn-link text-dark">@Localizer["logout"]</button>
-            </form>
-        }
-    </li>
-}
-else
-{
-    <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Identity" asp-action="Register">@Localizer["signUp"]</a>
-    </li>
-    <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Identity" asp-action="Login">@Localizer["login"]</a>
-    </li>
-}
+    @if (SignInManager.IsSignedIn(User))
+    {
+
+        <li class="nav-item">
+
+            <div class="btn-group" role="group" aria-label="Basic example">
+                @if (User.Identity.IsAuthenticated && User.IsInRole(Parent))
+                {
+                    <form class="d-flex" asp-area="Parent" asp-controller="ParentUser" method="get" asp-action="EditParentProfile" asp-route-id="@UserManager.GetUserId(User)">
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">@Localizer["profile"]</button>
+                    </form>
+                }
+                else
+                {
+                    <form class="d-flex" asp-area="School" asp-controller="SchoolUser" method="get" asp-action="EditSchoolProfile" asp-route-id="@UserManager.GetUserId(User)">
+                        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">@User.Identity?.Name!</button>
+                    </form>
+                }
+                @if (User.Identity.IsAuthenticated && User.IsInRole(Parent))
+                {
+                    <form class="d-flex" asp-area="Parent" asp-controller="ParentUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">@Localizer["logout"]</button>
+                    </form>
+                }
+                else
+                {
+                    <form class="d-flex" asp-area="School" asp-controller="SchoolUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">@Localizer["logout"]</button>
+                    </form>
+                }
+
+            </div>
+        </li>
+    }
+    else
+    {
+
+        <li class="nav-item">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-outline-info" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @Localizer["signUp"]
+                </button>
+                <div class="dropdown-menu">
+                        <form class="dropdown-item" asp-area="Parent" method="get" asp-controller="ParentUser" asp-action="Register">
+                            <button class="btn btn-outline-primary" type="submit">За Родители</button>
+                        </form>
+                        <form class="dropdown-item" asp-area="School" method="get" asp-controller="SchoolUser" asp-action="Register">
+                            <button class="btn btn-outline-success" type="submit">За Училища</button>
+                        </form>
+                </div>
+                <div>
+                <button type="button" class="btn btn-outline-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @Localizer["login"]
+                </button>
+                <div class="dropdown-menu">
+                    <form class="dropdown-item" asp-area="Parent" method="get" asp-controller="ParentUser" asp-action="Login">
+                        <button class="btn btn-outline-dark" type="submit">За Родители</button>
+                    </form>
+                    <form class="dropdown-item" asp-area="School" method="get" asp-controller="SchoolUser" asp-action="Login">
+                        <button class="btn btn-outline-warning" type="submit">За Училища</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </li>
+    }
 </ul>
 

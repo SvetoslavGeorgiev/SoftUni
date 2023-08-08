@@ -135,26 +135,17 @@
   <data name="allMeals" xml:space="preserve">
     <value>Всички ястия</value>
   </data>
-  <data name="bg" xml:space="preserve">
-    <value>Български</value>
-  </data>
   <data name="children" xml:space="preserve">
     <value>Моите деца</value>
   </data>
   <data name="childrenInSchool" xml:space="preserve">
     <value>Децата в училище</value>
   </data>
-  <data name="chooseLang" xml:space="preserve">
-    <value>Изберете език на сайта</value>
-  </data>
   <data name="chooseWeeklyMenu" xml:space="preserve">
     <value>Избери седмично меню</value>
   </data>
   <data name="desserts" xml:space="preserve">
     <value>Десерти</value>
-  </data>
-  <data name="en" xml:space="preserve">
-    <value>Английси</value>
   </data>
   <data name="home" xml:space="preserve">
     <value>Начало</value>
