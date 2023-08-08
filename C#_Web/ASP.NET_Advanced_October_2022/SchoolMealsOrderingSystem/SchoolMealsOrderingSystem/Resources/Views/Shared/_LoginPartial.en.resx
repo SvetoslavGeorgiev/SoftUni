@@ -129,6 +129,12 @@
   <data name="login" xml:space="preserve">
     <value>Login</value>
   </data>
+  <data name="loginForParents" xml:space="preserve">
+    <value>For Parents</value>
+  </data>
+  <data name="loginForSchools" xml:space="preserve">
+    <value>School Login</value>
+  </data>
   <data name="logout" xml:space="preserve">
     <value>Logout</value>
   </data>
@@ -137,5 +143,11 @@
   </data>
   <data name="signUp" xml:space="preserve">
     <value>Sign Up</value>
+  </data>
+  <data name="SignUpForParents" xml:space="preserve">
+    <value>For Parents</value>
+  </data>
+  <data name="SignUpForSchools" xml:space="preserve">
+    <value>School Sign Up </value>
   </data>
 </root>

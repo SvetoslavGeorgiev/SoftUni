@@ -129,6 +129,12 @@
   <data name="login" xml:space="preserve">
     <value>Вход</value>
   </data>
+  <data name="loginForParents" xml:space="preserve">
+    <value>За Родители</value>
+  </data>
+  <data name="loginForSchools" xml:space="preserve">
+    <value>За Училища</value>
+  </data>
   <data name="logout" xml:space="preserve">
     <value>Изход</value>
   </data>
@@ -137,5 +143,11 @@
   </data>
   <data name="signUp" xml:space="preserve">
     <value>Регистрация</value>
+  </data>
+  <data name="SignUpForParents" xml:space="preserve">
+    <value>За Родители</value>
+  </data>
+  <data name="SignUpForSchools" xml:space="preserve">
+    <value>За Училища</value>
   </data>
 </root>

@@ -23,7 +23,7 @@
                 @if (User.Identity.IsAuthenticated && User.IsInRole(Parent))
                 {
                     <form class="d-flex" asp-area="Parent" asp-controller="ParentUser" method="get" asp-action="EditParentProfile" asp-route-id="@UserManager.GetUserId(User)">
-                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">@Localizer["profile"]</button>
+                        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">@Localizer[LoginPartialProfile]</button>
                     </form>
                 }
                 else
@@ -35,13 +35,13 @@
                 @if (User.Identity.IsAuthenticated && User.IsInRole(Parent))
                 {
                     <form class="d-flex" asp-area="Parent" asp-controller="ParentUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">@Localizer["logout"]</button>
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">@Localizer[LoginPartialLogout]</button>
                     </form>
                 }
                 else
                 {
                     <form class="d-flex" asp-area="School" asp-controller="SchoolUser" asp-action="Logout" asp-route-id="@UserManager.GetUserId(User)">
-                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">@Localizer["logout"]</button>
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">@Localizer[LoginPartialLogout]</button>
                     </form>
                 }
 
@@ -54,26 +54,26 @@
         <li class="nav-item">
             <div class="btn-group" role="group" aria-label="Basic example">
                 <button type="button" class="btn btn-outline-info" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    @Localizer["signUp"]
+                    @Localizer[LoginPartialSignUp]
                 </button>
                 <div class="dropdown-menu">
                     <form class="dropdown-item" asp-area="Parent" method="get" asp-controller="ParentUser" asp-action="Register">
-                        <button class="btn btn-outline-primary" type="submit">За Родители</button>
+                        <button class="btn btn-outline-primary" type="submit">@Localizer[LoginPartialSignUpForParents]</button>
                     </form>
                     <form class="dropdown-item" asp-area="School" method="get" asp-controller="SchoolUser" asp-action="Register">
-                        <button class="btn btn-outline-success" type="submit">За Училища</button>
+                        <button class="btn btn-outline-success" type="submit">@Localizer[LoginPartialSignUpForSchools]</button>
                     </form>
                 </div>
                 <div>
                     <button type="button" class="btn btn-outline-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        @Localizer["login"]
+                        @Localizer[LoginPartialLogin]
                     </button>
                     <div class="dropdown-menu">
                         <form class="dropdown-item" asp-area="Parent" method="get" asp-controller="ParentUser" asp-action="Login">
-                            <button class="btn btn-outline-dark" type="submit">За Родители</button>
+                            <button class="btn btn-outline-dark" type="submit">@Localizer[LoginPartialForParents]</button>
                         </form>
                         <form class="dropdown-item" asp-area="School" method="get" asp-controller="SchoolUser" asp-action="Login">
-                            <button class="btn btn-outline-warning" type="submit">За Училища</button>
+                            <button class="btn btn-outline-warning" type="submit">@Localizer[LoginPartialForSchools]</button>
                         </form>
                     </div>
                 </div>

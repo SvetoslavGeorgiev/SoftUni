@@ -21,7 +21,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto">
-                        
+
                         @if (User.Identity?.IsAuthenticated ?? false)
                         {
                             <li class="nav-item">
@@ -31,7 +31,10 @@
                                 <a class="nav-link" asp-area="" asp-controller="Meal" asp-action="AddMealsToSchoolList">@Localizer[LayoutChooseWeeklyMenuString]</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @*<button type="button" class="btn btn dropdown-toggle" style="background-color:coral; vertical-align:central; color:azure" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            @Localizer[LayoutAddDishString]
+                            </button>*@
+                                <a class="nav-link dropdown-toggle" href="#" role="button" style="color:whitesmoke" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     @Localizer[LayoutAddDishString]
                                 </a>
                                 <div class="dropdown-menu">
@@ -41,7 +44,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" style="color:whitesmoke" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     @Localizer[LayoutAllMealsString]
                                 </a>
                                 <div class="dropdown-menu">

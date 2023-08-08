@@ -32,6 +32,7 @@
         public const string Hidden = "hidden";
         public const string HomePage = "homePage";
 
+        //Layaut constants
 
         public const string LayoutTitleName = "title";
         public const string LayoutTitleString = "Title";
@@ -59,6 +60,20 @@
         public const string LayoutSoupsString = "soups";
         public const string LayoutMainDishesString = "mainDishes";
         public const string LayoutDessertsString = "desserts";
+
+        //LoginPartial constansts
+
+        public const string LoginPartialProfile = "profile";
+        public const string LoginPartialLogout = "logout";
+        public const string LoginPartialSignUp = "signUp";
+        public const string LoginPartialLogin = "login";
+        public const string LoginPartialForParents = "loginForParents";
+        public const string LoginPartialForSchools = "loginForSchools";
+        public const string LoginPartialSignUpForSchools = "SignUpForSchools";
+        public const string LoginPartialSignUpForParents = "SignUpForParents";
+
+
+
 
 
         //constants for child/add
