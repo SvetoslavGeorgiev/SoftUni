@@ -17,7 +17,7 @@
                     <option value="">-- Избери супа --</option>
                     @foreach (Soup soup in Model.Soups)
                     {
-                         <option value="@soup.Id">@soup.Name</option>
+                        <option value="@soup.Id">@soup.Name</option>
                     }
                 </select>
                 <span asp-validation-for="FirstSoupId" class="text-danger"></span>
@@ -28,7 +28,7 @@
                     <option value="">-- Избери супа --</option>
                     @foreach (Soup soup in Model.Soups)
                     {
-                         <option value="@soup.Id">@soup.Name</option>
+                        <option value="@soup.Id">@soup.Name</option>
                     }
                 </select>
                 <span asp-validation-for="SecondSoupId" class="text-danger"></span>
@@ -39,7 +39,7 @@
                     <option value="">-- Избери супа --</option>
                     @foreach (Soup soup in Model.Soups)
                     {
-                         <option value="@soup.Id">@soup.Name</option>
+                        <option value="@soup.Id">@soup.Name</option>
                     }
                 </select>
                 <span asp-validation-for="ThirdSoupId" class="text-danger"></span>
@@ -50,7 +50,7 @@
                     <option value="">-- Избери основно ястие --</option>
                     @foreach (MainDish mainDish in Model.MainDishes)
                     {
-                         <option value="@mainDish.Id">@mainDish.Name</option>
+                        <option value="@mainDish.Id">@mainDish.Name</option>
                     }
                 </select>
                 <span asp-validation-for="FirstMainDishId" class="text-danger"></span>
@@ -61,7 +61,7 @@
                     <option value="">-- Избери основно ястие --</option>
                     @foreach (MainDish mainDish in Model.MainDishes)
                     {
-                         <option value="@mainDish.Id">@mainDish.Name</option>
+                        <option value="@mainDish.Id">@mainDish.Name</option>
                     }
                 </select>
                 <span asp-validation-for="SecondMainDishId" class="text-danger"></span>
@@ -72,7 +72,7 @@
                     <option value="">-- Избери основно ястие --</option>
                     @foreach (MainDish mainDish in Model.MainDishes)
                     {
-                          <option value="@mainDish.Id">@mainDish.Name</option>
+                        <option value="@mainDish.Id">@mainDish.Name</option>
                     }
                 </select>
                 <span asp-validation-for="ThirdMainDishId" class="text-danger"></span>
@@ -83,7 +83,7 @@
                     <option value="">-- Избери десерт --</option>
                     @foreach (Dessert dessert in Model.Desserts)
                     {
-                          <option value="@dessert.Id">@dessert.Name</option>
+                        <option value="@dessert.Id">@dessert.Name</option>
                     }
                 </select>
                 <span asp-validation-for="FirstDessertsId" class="text-danger"></span>
@@ -94,7 +94,7 @@
                     <option value="">-- Избери десерт --</option>
                     @foreach (Dessert dessert in Model.Desserts)
                     {
-                          <option value="@dessert.Id">@dessert.Name</option>
+                        <option value="@dessert.Id">@dessert.Name</option>
                     }
                 </select>
                 <span asp-validation-for="SecondDessertsId" class="text-danger"></span>
@@ -105,7 +105,7 @@
                     <option value="">-- Избери десерт --</option>
                     @foreach (Dessert dessert in Model.Desserts)
                     {
-                             <option value="@dessert.Id">@dessert.Name</option>
+                        <option value="@dessert.Id">@dessert.Name</option>
                     }
                 </select>
                 <span asp-validation-for="ThirdDessertsId" class="text-danger"></span>
@@ -119,5 +119,5 @@
 
 
 @section Scripts {
-            <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial" />
 }

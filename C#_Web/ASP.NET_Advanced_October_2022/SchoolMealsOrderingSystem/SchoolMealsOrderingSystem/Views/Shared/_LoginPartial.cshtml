@@ -5,7 +5,7 @@
 <ul class="navbar-nav align-items-center">
 
 
-    <li class="nav-item dropdown">
+    <li class="nav-item dropdown" style="padding-right: 10px">
         <button type="button" class="btn btn-outline-success my-2 my-sm-0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             @Localizer[LayoutChooseLangString]
         </button>
@@ -64,19 +64,17 @@
                         <button class="btn btn-outline-success" type="submit">@Localizer[LoginPartialSignUpForSchools]</button>
                     </form>
                 </div>
-                <div>
-                    <button type="button" class="btn btn-outline-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        @Localizer[LoginPartialLogin]
-                    </button>
-                    <div class="dropdown-menu">
-                        <form class="dropdown-item" asp-area="Parent" method="get" asp-controller="ParentUser" asp-action="Login">
-                            <button class="btn btn-outline-dark" type="submit">@Localizer[LoginPartialForParents]</button>
-                        </form>
-                        <form class="dropdown-item" asp-area="School" method="get" asp-controller="SchoolUser" asp-action="Login">
-                            <button class="btn btn-outline-warning" type="submit">@Localizer[LoginPartialForSchools]</button>
-                        </form>
-                    </div>
+                <div class="dropdown-menu">
+                    <form class="dropdown-item" asp-area="Parent" method="get" asp-controller="ParentUser" asp-action="Login">
+                        <button class="btn btn-outline-danger" style="background-color:#DE506B" type="submit">@Localizer[LoginPartialForParents]</button>
+                    </form>
+                    <form class="dropdown-item" asp-area="School" method="get" asp-controller="SchoolUser" asp-action="Login">
+                        <button class="btn btn-outline-warning" style="background-color:#FFAB5C" type="submit">@Localizer[LoginPartialForSchools]</button>
+                    </form>
                 </div>
+                <button type="button" class="btn btn-secondary" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @Localizer[LoginPartialLogin]
+                </button>
             </div>
         </li>
     }

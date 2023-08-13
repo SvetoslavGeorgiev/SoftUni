@@ -11,23 +11,23 @@
 <div class="text-center row">
     @foreach (var child in Model)
     {
-            <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px; background-color: honeydew">
-                <div class="card-body">
-                    <h5 class="card-title mt-1" style="color: darkgreen">@child.FirstName @child.LastName</h5>
+        <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px; background-color: honeydew">
+            <div class="card-body">
+                <h5 class="card-title mt-1" style="color: darkgreen">@child.FirstName @child.LastName</h5>
                 @if (@child.MonthsOld != 0)
                 {
-                    <p class= "mb-2" style="color: darkviolet">Години: @child.YearsOld години и @child.MonthsOld месеца</p>
+                    <p class="mb-2" style="color: darkviolet">Години: @child.YearsOld години и @child.MonthsOld месеца</p>
                 }
                 else
                 {
                     <p class="mb-2" style="color: darkviolet">Години: @child.YearsOld</p>
                 }
-                    <p class="mb-0" style="color: coral">Училище: @child.School</p>
-                    <p class="mb-0" style="color: darkblue">Клас в училище: @child.YearInSchool</p>
-                </div>
-                <div class="mb-3">
-                     <a asp-controller="DailyMenu" asp-action="All" asp-route-childId="@child.Id" class="fs-6 btn btn-outline-primary mb-3 p-2">Виж избрано меню</a>
-                </div>
+                <p class="mb-0" style="color: coral">Училище: @child.School</p>
+                <p class="mb-0" style="color: darkblue">Клас в училище: @child.YearInSchool</p>
             </div>
+            <div class="mb-3">
+                <a asp-controller="DailyMenu" asp-action="All" asp-route-childId="@child.Id" class="fs-6 btn btn-outline-primary mb-3 p-2">Виж избрано меню</a>
+            </div>
+        </div>
     }
 </div>

@@ -41,39 +41,15 @@
             </div>
         </form>
         <form asp-controller="Meal" asp-action="DeleteSoup" asp-route-soupId="@Model.Id">
-        <div>
-             <input type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-danger" />
-        </div>
-    </form>
+            <div>
+                <input type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-danger" />
+            </div>
+        </form>
     </div>
 </div>
 
 @section Scripts {
-            <partial name="_ValidationScriptsPartial" />
-                <script>
-                    function myConfirm(e) {
-                        e.preventDefault();
-                        Swal.fire({
-                            title: 'Сигурни ли сте?',
-                            text: "Това е необратим процес!",
-                            icon: 'warning',
-                            showCancelButton: true,
-                            cancelButtonText: 'Отмени',
-                            confirmButtonColor: '#3085d6',
-                            cancelButtonColor: '#d33',
-                            confirmButtonText: 'Да, премахни!'
-                        }).then((result) => {
-                            if (result.isConfirmed) {
-                                Swal.fire(
-                                    'Премахнато!',
-                                    'Супата беше изтрита.',
-                                    'Изтрито'
-                                ).then((resultDeleted) => {
-                                    e.target.parentElement.parentElement.submit();
-                                })
-                            }
-                        })
-                    }
-                </script>
+    <partial name="_ValidationScriptsPartial" />
+    <partial name="_DeleteScriptPartial" />
 }
 

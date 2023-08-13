@@ -18,11 +18,11 @@
                 <label asp-for="@Model.DayOfTheWeek" class="form-label">Ден</label>
                 <select asp-for="@Model.DayOfTheWeek" class="form-control">
                     <option value="">-- Избери денят на менюто --</option>
-                     <option value="@DayOfWeek.Monday">Понеделник</option>
-                     <option value="@DayOfWeek.Tuesday">Вторник</option>
-                     <option value="@DayOfWeek.Wednesday">Сряда</option>
-                     <option value="@DayOfWeek.Thursday">Четвъртък</option>
-                     <option value="@DayOfWeek.Friday">Петък</option>
+                    <option value="@DayOfWeek.Monday">Понеделник</option>
+                    <option value="@DayOfWeek.Tuesday">Вторник</option>
+                    <option value="@DayOfWeek.Wednesday">Сряда</option>
+                    <option value="@DayOfWeek.Thursday">Четвъртък</option>
+                    <option value="@DayOfWeek.Friday">Петък</option>
                 </select>
                 <span asp-validation-for="DayOfTheWeek" class="text-danger"></span>
             </div>
@@ -54,7 +54,7 @@
                     <option value="">-- Избери десерт --</option>
                     @foreach (Dessert dessert in Model.Desserts)
                     {
-                         <option value="@dessert.Id">@dessert.Name</option>
+                        <option value="@dessert.Id">@dessert.Name</option>
                     }
                 </select>
                 <span asp-validation-for="DessertsId" class="text-danger"></span>
@@ -64,15 +64,15 @@
             </div>
         </form>
         <div class="mb-3">
-               <a class="btn btn-outline-success" asp-area="" asp-controller="Meal" asp-action="AllSoups" asp-route-schoolId="@Model.SchoolId">Виж супи</a>
-               <a class="btn btn-outline-warning" asp-area="" asp-controller="Meal" asp-action="AllMainDishes" asp-route-schoolId="@Model.SchoolId">Виж основни ястия</a>
-               <a class="btn btn-outline-danger" asp-area="" asp-controller="Meal" asp-action="AllDesserts" asp-route-schoolId="@Model.SchoolId">Виж десерти</a>
+            <a class="btn btn-outline-success" asp-area="" asp-controller="Meal" asp-action="AllSoups" asp-route-schoolId="@Model.SchoolId">Виж супи</a>
+            <a class="btn btn-outline-warning" asp-area="" asp-controller="Meal" asp-action="AllMainDishes" asp-route-schoolId="@Model.SchoolId">Виж основни ястия</a>
+            <a class="btn btn-outline-danger" asp-area="" asp-controller="Meal" asp-action="AllDesserts" asp-route-schoolId="@Model.SchoolId">Виж десерти</a>
         </div>
     </div>
-    
+
 </div>
 
 
 @section Scripts {
-                <partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial" />
 }

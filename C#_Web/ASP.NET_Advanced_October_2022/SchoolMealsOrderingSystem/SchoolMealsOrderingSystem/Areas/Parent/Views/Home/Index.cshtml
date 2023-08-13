@@ -9,3 +9,37 @@ body {
 
 </style>*@
 
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="padding-top: 50px; padding-right: 50px; padding-left: 50px;">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active c-item" data-bs-interval="2000">
+            <img src="~/images/students-having-lunch-canteen_2.jpg" class="d-block w-100 c-img" alt="kids">
+
+        </div>
+        <div class="carousel-item c-item" data-bs-interval="2000">
+            <img src="~/images/flat-lay-batch-cooking-meals-arrangement.jpg" class="d-block w-100 c-img" alt="kids1">
+
+        </div>
+        <div class="carousel-item c-item" data-bs-interval="2000">
+            <img src="~/images/annie-spratt-NAt6a3c3nz0-unsplash.jpg" class="d-block w-100 c-img" alt="kids2">
+
+        </div>
+    </div>
+    <button class="carousel-control-prev" style="padding-top: 50px; padding-left: 50px;" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" style="padding-top: 50px; padding-right: 50px;" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+@section Scripts {
+    <partial name="_RemoveContainerClassDivPartial" />
+}

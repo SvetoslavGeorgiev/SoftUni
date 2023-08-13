@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -25,6 +25,22 @@
   <ItemGroup>
     <Folder Include="Areas\Parent\Models\" />
     <Folder Include="Areas\School\Models\" />
+    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\new\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="wwwroot\images\annie-spratt-NAt6a3c3nz0-unsplash.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\flat-lay-batch-cooking-meals-arrangement.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\students-having-lunch-canteen_2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\js\deleteItem.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

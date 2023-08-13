@@ -5,14 +5,14 @@
 }
 
 <style>
-.hoverme{
-  background-color: limegreen;
-}
+    .hoverme {
+        background-color: limegreen;
+    }
 
-.hoverme:hover{
-  background-color: lime;
-  color: red;
-}
+        .hoverme:hover {
+            background-color: lime;
+            color: red;
+        }
 </style>
 
 <h2 class="text-center">@ViewBag.Title</h2>
@@ -21,20 +21,20 @@
 <div class="text-center row">
     @foreach (var mainDish in Model)
     {
-            <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px;">
-                <img class="card-img-top" style="width: 18rem;"
+        <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px;">
+            <img class="card-img-top" style="width: 18rem;"
                  src="@mainDish.ImageUrl" alt="Book Image">
-                <div class="card-body">
-                    <h5 class="card-Name mt-1">@mainDish.Name</h5>
-                    <p class="mb-0">Ingredients: @mainDish.Ingredients</p>
-                    <p class="mb-0">Allergens: @mainDish.Allergens</p>
-                </div>
+            <div class="card-body">
+                <h5 class="card-Name mt-1">@mainDish.Name</h5>
+                <p class="mb-0">Ingredients: @mainDish.Ingredients</p>
+                <p class="mb-0">Allergens: @mainDish.Allergens</p>
+            </div>
             @if (User.IsInRole(School))
             {
                 <div class="mb-3">
-                     <a asp-controller="Meal" asp-action="EditMainDish" asp-route-mainDishId="@mainDish.Id" class="fs-6 btn  hoverme mb-3 p-2">Редактирай</a>
-               </div>
+                    <a asp-controller="Meal" asp-action="EditMainDish" asp-route-mainDishId="@mainDish.Id" class="fs-6 btn  hoverme mb-3 p-2">Редактирай</a>
+                </div>
             }
-            </div>
+        </div>
     }
 </div>

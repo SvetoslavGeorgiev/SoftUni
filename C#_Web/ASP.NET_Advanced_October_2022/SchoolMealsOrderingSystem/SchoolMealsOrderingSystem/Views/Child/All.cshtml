@@ -5,22 +5,23 @@
 }
 
 <style>
-.light-blue-element {
-    background-color: cyan;
-}
-.light-blue-element:hover {
-    background-color: blue;
-    color: wheat;
-}
+    .light-blue-element {
+        background-color: cyan;
+    }
 
-.hoverme{
-    background-color: limegreen;
-}
+        .light-blue-element:hover {
+            background-color: blue;
+            color: wheat;
+        }
 
-.hoverme:hover{
-    background-color: lime;
-    color: red;
-}
+    .hoverme {
+        background-color: limegreen;
+    }
+
+        .hoverme:hover {
+            background-color: lime;
+            color: red;
+        }
 </style>
 
 
@@ -35,7 +36,7 @@
                 <h5 class="card-title mt-1" style="color: darkgreen">@child.FirstName @child.LastName</h5>
                 @if (@child.MonthsOld != 0)
                 {
-                    <p class= "mb-2" style="color: darkviolet">Години: @child.YearsOld години и @child.MonthsOld месеца</p>
+                    <p class="mb-2" style="color: darkviolet">Години: @child.YearsOld години и @child.MonthsOld месеца</p>
 
                 }
                 else

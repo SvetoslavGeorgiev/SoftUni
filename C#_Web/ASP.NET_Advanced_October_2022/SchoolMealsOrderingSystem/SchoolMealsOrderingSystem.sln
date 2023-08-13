@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolMealsOrderingSystem.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolMealsOrderingSystem.Data", "SchoolMealsOrderingSystem.Data\SchoolMealsOrderingSystem.Data.csproj", "{317EAF13-F7B7-46BC-B34A-80EE64E882C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolMealsOrderingSystem.Tests", "SchoolMealsOrderingSystem.Tests\SchoolMealsOrderingSystem.Tests.csproj", "{A38A38F7-8A7E-4F85-BA91-79F61B60F7F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolMealsOrderingSystem.Tests", "SchoolMealsOrderingSystem.Tests\SchoolMealsOrderingSystem.Tests.csproj", "{A38A38F7-8A7E-4F85-BA91-79F61B60F7F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
