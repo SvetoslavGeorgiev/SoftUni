@@ -117,14 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="add" xml:space="preserve">
-    <value>Добави</value>
+  <data name="changes" xml:space="preserve">
+    <value>Запази Промените</value>
   </data>
-  <data name="birthday" xml:space="preserve">
-    <value>Дата на раждане</value>
+  <data name="delete" xml:space="preserve">
+    <value>Премахни Профила</value>
   </data>
-  <data name="chooseSchool" xml:space="preserve">
-    <value>Избери училище</value>
+  <data name="email" xml:space="preserve">
+    <value>Eлектронна поща(Email)</value>
   </data>
   <data name="lastName" xml:space="preserve">
     <value>Фамилия</value>
@@ -132,16 +132,16 @@
   <data name="name" xml:space="preserve">
     <value>Име</value>
   </data>
-  <data name="relationToChild" xml:space="preserve">
-    <value>Връзката ви с детето</value>
+  <data name="password" xml:space="preserve">
+    <value>Парола</value>
   </data>
-  <data name="School" xml:space="preserve">
-    <value>Училище</value>
+  <data name="passwordConfirmation" xml:space="preserve">
+    <value>Потвърждаване на паролата</value>
   </data>
   <data name="title" xml:space="preserve">
-    <value>Добави дете</value>
+    <value>Редакция на вашият профил</value>
   </data>
-  <data name="yearInSchool" xml:space="preserve">
-    <value>Клас в училището</value>
+  <data name="userName" xml:space="preserve">
+    <value>Потребителско име</value>
   </data>
 </root>

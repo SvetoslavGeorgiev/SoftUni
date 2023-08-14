@@ -135,7 +135,7 @@
   <data name="relationToChild" xml:space="preserve">
     <value>Relation to the child</value>
   </data>
-  <data name="school" xml:space="preserve">
+  <data name="School" xml:space="preserve">
     <value>School</value>
   </data>
   <data name="title" xml:space="preserve">

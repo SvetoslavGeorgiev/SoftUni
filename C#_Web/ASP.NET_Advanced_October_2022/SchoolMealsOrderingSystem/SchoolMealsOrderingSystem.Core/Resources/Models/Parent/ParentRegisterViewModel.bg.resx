@@ -117,31 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="add" xml:space="preserve">
-    <value>Добави</value>
+  <data name="ConfirmPassword_Compare" xml:space="preserve">
+    <value>Полетата "Паролата" и "Потвърждаване на паролата" не съвпадат</value>
   </data>
-  <data name="birthday" xml:space="preserve">
-    <value>Дата на раждане</value>
+  <data name="ConfirmPassword_Required" xml:space="preserve">
+    <value>Полето "Потвърждаване на парола" е задължително</value>
   </data>
-  <data name="chooseSchool" xml:space="preserve">
-    <value>Избери училище</value>
+  <data name="Email_EmailAddress" xml:space="preserve">
+    <value>Невалиден Email</value>
   </data>
-  <data name="lastName" xml:space="preserve">
-    <value>Фамилия</value>
+  <data name="Email_Required" xml:space="preserve">
+    <value>Полето "Email" е задължително</value>
   </data>
-  <data name="name" xml:space="preserve">
-    <value>Име</value>
+  <data name="FirstName_Required" xml:space="preserve">
+    <value>Полето "Име" е задължително</value>
   </data>
-  <data name="relationToChild" xml:space="preserve">
-    <value>Връзката ви с детето</value>
+  <data name="FirstName_StringLength" xml:space="preserve">
+    <value>Полето трябва да е между {2} и {1} символа</value>
   </data>
-  <data name="School" xml:space="preserve">
-    <value>Училище</value>
+  <data name="LastName_Required" xml:space="preserve">
+    <value>Полето "Фамилия" е задължително</value>
   </data>
-  <data name="title" xml:space="preserve">
-    <value>Добави дете</value>
+  <data name="Password_Required" xml:space="preserve">
+    <value>Полето "Парола" е задължително</value>
   </data>
-  <data name="yearInSchool" xml:space="preserve">
-    <value>Клас в училището</value>
+  <data name="UserName_Required" xml:space="preserve">
+    <value>Полето "Потребителско Име" е задължително</value>
   </data>
 </root>

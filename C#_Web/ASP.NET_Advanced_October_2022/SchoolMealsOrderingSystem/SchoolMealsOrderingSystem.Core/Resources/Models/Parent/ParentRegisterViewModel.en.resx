@@ -117,31 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="add" xml:space="preserve">
-    <value>Добави</value>
+  <data name="ConfirmPassword_Compare" xml:space="preserve">
+    <value>The "Password" and "Confirm Password" fields do not match</value>
   </data>
-  <data name="birthday" xml:space="preserve">
-    <value>Дата на раждане</value>
+  <data name="ConfirmPassword_Required" xml:space="preserve">
+    <value>The field  "Confirm Password" is required</value>
   </data>
-  <data name="chooseSchool" xml:space="preserve">
-    <value>Избери училище</value>
+  <data name="Email_EmailAddress" xml:space="preserve">
+    <value>Invalid Email</value>
   </data>
-  <data name="lastName" xml:space="preserve">
-    <value>Фамилия</value>
+  <data name="Email_Required" xml:space="preserve">
+    <value>The field is required</value>
   </data>
-  <data name="name" xml:space="preserve">
-    <value>Име</value>
+  <data name="FirstName_Required" xml:space="preserve">
+    <value>The field  "First Name" is required</value>
   </data>
-  <data name="relationToChild" xml:space="preserve">
-    <value>Връзката ви с детето</value>
+  <data name="FirstName_StringLength" xml:space="preserve">
+    <value>The field must be between {2} and {1} characters long</value>
   </data>
-  <data name="School" xml:space="preserve">
-    <value>Училище</value>
+  <data name="LastName_Required" xml:space="preserve">
+    <value>The field  "Last Name" is required</value>
   </data>
-  <data name="title" xml:space="preserve">
-    <value>Добави дете</value>
+  <data name="Password_Required" xml:space="preserve">
+    <value>The field  "Password" is required</value>
   </data>
-  <data name="yearInSchool" xml:space="preserve">
-    <value>Клас в училището</value>
+  <data name="UserName_Required" xml:space="preserve">
+    <value>The field "User Name" is required</value>
   </data>
 </root>

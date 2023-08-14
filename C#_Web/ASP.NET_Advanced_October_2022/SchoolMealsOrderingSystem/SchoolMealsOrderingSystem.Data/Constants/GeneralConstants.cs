@@ -4,12 +4,12 @@
     public class GeneralConstants
     {
 
-        public const string UsernameRequired = "Полето \"Потребителско Име\" е задължително";
+        public const string UsernameRequired = "UserName_Required";
         public const string NameRequired = "FirstName_Required";
         public const string LastNameRequired = "LastName_Required";
-        public const string PasswordRequired = "Полето \"Парола\" е задължително";
-        public const string PasswordConfirmRequired = "Полето \"Потвърждаване на парола\" е задължително";
-        public const string EmailRequired = "Полето \"Email\" е задължително";
+        public const string PasswordRequired = "Password_Required";
+        public const string PasswordConfirmRequired = "ConfirmPassword_Required";
+        public const string EmailRequired = "Email_Required";
         public const string ParentChildRelationRequired = "RelationToChild_Required";
         public const string BirthDayRequired = "Birthday_Required";
         public const string YearInSchoolRequired = "YearInSchool_Required";
@@ -19,12 +19,12 @@
         public const string AllergensRequired = "Полето \"Алергени\" е задължително";
         public const string UrlRequired = "Полето \"Линк към снимката\" е задължително";
 
-        public const string PasswordAndConfirmPasswordEquality = "\"Паролата\" и \"Потвърждаване на паролата\" не съвпадат";
+        public const string PasswordAndConfirmPasswordEquality = "ConfirmPassword_Compare";
 
         public const string FieldSymbolsLength = "FirstName_StringLength";
         public const string EmailAddress = "Моля въведете Email адрес на училището";
         public const string InvalidMenu = "Менюто още не е налично";
-        public const string InvalidEmail = "Невалиден Email";
+        public const string InvalidEmail = "Email_EmailAddress";
         public const string InvalidUser = "Невалиден потребител";
         public const string ErrorMessage = "Нещо се обърка. Моля опитайте отново!";
 
@@ -97,5 +97,9 @@
         public const string ParentLogin = "parentLogin";
         public const string Login = "login";
 
+        //constants for Area/Parent/Views/ParenUser/EditParentProfile
+
+        public const string Changes = "changes";
+        public const string Delete = "delete";
     }
 }

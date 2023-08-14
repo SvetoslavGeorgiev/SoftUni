@@ -20,7 +20,6 @@
 
         [Required(ErrorMessage = EmailRequired)]
         [EmailAddress(ErrorMessage = InvalidEmail)]
-        [StringLength(EmailMaxLength, MinimumLength = EmailMinLength, ErrorMessage = FieldSymbolsLength)]
         public string Email { get; set; } = null!;
 
         [Required(ErrorMessage = PasswordRequired)]
