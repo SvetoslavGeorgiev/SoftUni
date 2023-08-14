@@ -19,12 +19,12 @@
 
 
         public const string InvalidParentUserId = "Invalid Parent Id";
-        public const string InvalidUserName = "Невалидно потребителско име";
+        public const string InvalidUserName = "invalid UserName";
 
         public const string ParentAreaName = "Parent";
 
-        public const string WrongLoginPageForParentIfScholl = "Ако сте регистрирано училище моля влезте от \"Вход за училища\"!";
-        public const string WrongLoginPageForParentNeedUsername = "Ако сте родител веведете \"Потрепителско Име\"";
+        public const string WrongLoginPageForParentIfScholl = "ifSchool";
+        public const string WrongLoginPageForParentNeedUsername = "ifParent";
 
         
     }

@@ -6,10 +6,13 @@
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.AspNetCore.Mvc.Localization;
+    using Microsoft.Extensions.Localization;
     using SchoolMealsOrderingSystem.Controllers;
     using static Data.Constants.GeneralConstants;
     using static Data.Constants.ParentUserConstants;
     using static Data.Constants.RoleConstants;
+    
 
     [Area(ParentAreaName)]
     [Authorize(Roles = Parent)]
@@ -17,16 +20,18 @@
     public class ParentUserController : ApplicationUserController
     {
         private readonly IParentUserServices parentUserServices;
+        private readonly IStringLocalizer stringLocalizer;
 
         public ParentUserController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             RoleManager<IdentityRole> roleManager,
-            IParentUserServices _parentUserServices)
+            IParentUserServices _parentUserServices,
+            IStringLocalizer<ParentUserController> _stringLocalizer)
             : base(userManager, signInManager, roleManager)
         {
             parentUserServices = _parentUserServices;
-
+            stringLocalizer = _stringLocalizer;
         }
 
 
@@ -98,12 +103,13 @@
 
             if (user == null)
             {
-                ModelState.AddModelError(string.Empty, InvalidUserName);
+                ModelState.AddModelError(string.Empty, stringLocalizer[InvalidUserName]);
             }
             else if (model.UserName == user.Email)
             {
-                ModelState.AddModelError(string.Empty, WrongLoginPageForParentIfScholl);
-                ModelState.AddModelError(string.Empty, WrongLoginPageForParentNeedUsername);
+
+                ModelState.AddModelError(string.Empty, stringLocalizer[WrongLoginPageForParentIfScholl]);
+                ModelState.AddModelError(string.Empty, stringLocalizer[WrongLoginPageForParentNeedUsername]);
 
                 return View();
             }
