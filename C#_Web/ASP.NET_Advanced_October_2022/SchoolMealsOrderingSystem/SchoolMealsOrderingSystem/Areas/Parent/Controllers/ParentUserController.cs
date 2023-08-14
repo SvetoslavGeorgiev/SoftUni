@@ -165,7 +165,7 @@
             catch (Exception)
             {
 
-                ModelState.AddModelError(string.Empty, InvalidParentUserId);
+                ModelState.AddModelError(string.Empty, stringLocalizer[InvalidParentUserId]);
 
                 return View(model);
             }

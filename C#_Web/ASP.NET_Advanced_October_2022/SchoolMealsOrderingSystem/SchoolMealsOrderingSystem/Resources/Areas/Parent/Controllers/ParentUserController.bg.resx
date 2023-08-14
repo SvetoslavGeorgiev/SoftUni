@@ -123,6 +123,9 @@
   <data name="ifSchool" xml:space="preserve">
     <value>Ако сте регистрирано училище моля влезте от "Вход" и след това  "За Училища"</value>
   </data>
+  <data name="invalid Parent Id" xml:space="preserve">
+    <value>Невалидно ID на родител</value>
+  </data>
   <data name="invalid UserName" xml:space="preserve">
     <value>Невалидно потребителско име</value>
   </data>

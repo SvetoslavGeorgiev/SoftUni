@@ -117,16 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ifParent" xml:space="preserve">
-    <value>If you are a parent enter "Username"</value>
+  <data name="login" xml:space="preserve">
+    <value>Login</value>
   </data>
-  <data name="ifSchool" xml:space="preserve">
-    <value>If you are a registered school, please log in from "Login" and then "School Login"</value>
+  <data name="parentLogin" xml:space="preserve">
+    <value>Parents Login</value>
   </data>
-  <data name="invalid Parent Id" xml:space="preserve">
-    <value>Invalid Parent Id</value>
+  <data name="password" xml:space="preserve">
+    <value>Password</value>
   </data>
-  <data name="invalid UserName" xml:space="preserve">
-    <value>Invalid UserName</value>
+  <data name="userName" xml:space="preserve">
+    <value>Username</value>
   </data>
 </root>

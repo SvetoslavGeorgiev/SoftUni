@@ -92,5 +92,10 @@
         public const string PasswordConfirmation = "passwordConfirmation";
         public const string Register = "register";
 
+        //constants for Area/Parent/Views/ParenUser/Login
+
+        public const string ParentLogin = "parentLogin";
+        public const string Login = "login";
+
     }
 }

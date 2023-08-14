@@ -18,7 +18,7 @@
         public const int PasswordMinLength = 5;
 
 
-        public const string InvalidParentUserId = "Invalid Parent Id";
+        public const string InvalidParentUserId = "invalid Parent Id";
         public const string InvalidUserName = "invalid UserName";
 
         public const string ParentAreaName = "Parent";
