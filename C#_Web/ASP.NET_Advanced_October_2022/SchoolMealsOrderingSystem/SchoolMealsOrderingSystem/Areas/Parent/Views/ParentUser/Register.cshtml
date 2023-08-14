@@ -1,10 +1,10 @@
 ﻿@model ParentRegisterViewModel
 
 @{
-    ViewData["Title"] = "Регистрация на родители";
+    ViewData[LayoutTitleString] = @Localizer[LayoutTitleName];
 }
 
-<h1 class="text-center">@ViewData["Title"]</h1>
+<h1 class="text-center">@ViewData[LayoutTitleString]</h1>
 
 <div class="row">
     <div class="col-md-4 offset-md-4">
@@ -12,37 +12,37 @@
             <hr />
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="text-center mb-3">
-                <label asp-for="@Model.UserName">Потребителско име</label>
+                <label asp-for="@Model.UserName">@Localizer[UserName]</label>
                 <input class="form-control " autocomplete="username" aria-required="true" asp-for="@Model.UserName" />
                 <span asp-validation-for="@Model.UserName" class="text-danger"></span>
             </div>
             <div class="text-center mb-3">
-                <label asp-for="@Model.FirstName">Име</label>
+                <label asp-for="@Model.FirstName">@Localizer[Name]</label>
                 <input class="form-control " autocomplete="FirstName" aria-required="true" asp-for="@Model.FirstName" />
                 <span asp-validation-for="@Model.FirstName" class="text-danger"></span>
             </div>
             <div class="text-center mb-3">
-                <label asp-for="@Model.LastName">Фамилия</label>
+                <label asp-for="@Model.LastName">@Localizer[LastName]</label>
                 <input class="form-control " autocomplete="LastName" aria-required="true" asp-for="@Model.LastName" />
                 <span asp-validation-for="@Model.LastName" class="text-danger"></span>
             </div>
             <div class="text-center mb-3">
-                <label asp-for="@Model.Email">Email</label>
+                <label asp-for="@Model.Email">@Localizer[Email]</label>
                 <input class="form-control " autocomplete="Email" aria-required="true" asp-for="@Model.Email" />
                 <span asp-validation-for="@Model.Email" class="text-danger"></span>
             </div>
             <div class="text-center mb-3">
-                <label asp-for="@Model.Password">Парола</label>
+                <label asp-for="@Model.Password">@Localizer[Password]</label>
                 <input class="form-control" type="password" autocomplete="new-password" aria-required="true" asp-for="@Model.Password" />
                 <span asp-validation-for="@Model.Password" class="text-danger"></span>
             </div>
             <div class="text-center mb-3">
-                <label asp-for="@Model.ConfirmPassword">Потвърждаване на паролата</label>
+                <label asp-for="@Model.ConfirmPassword">@Localizer[PasswordConfirmation]</label>
                 <input class="form-control" type="password" autocomplete="new-password" aria-required="true" asp-for="@Model.ConfirmPassword" />
                 <span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
             </div>
             <div class="text-center">
-                <button id="registerSubmit" type="submit" class="btn btn-primary">Регистрация</button>
+                <button id="registerSubmit" type="submit" class="btn btn-primary">@Localizer[Register]</button>
             </div>
         </form>
     </div>

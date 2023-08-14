@@ -73,9 +73,6 @@
         public const string LoginPartialSignUpForParents = "SignUpForParents";
 
 
-
-
-
         //constants for child/add
 
         public const string Name = "name";
@@ -87,6 +84,13 @@
         public const string Add = "add";
 
 
+        //constants for Area/Parent/Views/ParenUser/Register
+
+        public const string UserName = "userName";
+        public const string Email = "email";
+        public const string Password = "password";
+        public const string PasswordConfirmation = "passwordConfirmation";
+        public const string Register = "register";
 
     }
 }
