@@ -117,19 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="emailNeeded" xml:space="preserve">
+    <value>Ако сте регистриранo училище моля въведете Електронна Поща(Email)</value>
+  </data>
   <data name="errorMessage" xml:space="preserve">
-    <value>Something went wrong. Please, try again!</value>
+    <value>Нещо се обърка. Моля опитайте отново!</value>
   </data>
   <data name="ifParent" xml:space="preserve">
-    <value>If you are a parent enter "Username"</value>
+    <value>Ако сте регистриран родител моля влезте от "Вход" и след това"За родители"</value>
   </data>
-  <data name="ifSchool" xml:space="preserve">
-    <value>If you are a registered school, please log in from "Login" and then "School Login"</value>
+  <data name="invalid School Id" xml:space="preserve">
+    <value>Невалидно ID на Scool</value>
   </data>
-  <data name="invalid Parent Id" xml:space="preserve">
-    <value>Invalid Parent Id</value>
-  </data>
-  <data name="invalid UserName" xml:space="preserve">
-    <value>Invalid UserName</value>
+  <data name="invalidEmail" xml:space="preserve">
+    <value>Невалидна Електронна Поща(Email)</value>
   </data>
 </root>

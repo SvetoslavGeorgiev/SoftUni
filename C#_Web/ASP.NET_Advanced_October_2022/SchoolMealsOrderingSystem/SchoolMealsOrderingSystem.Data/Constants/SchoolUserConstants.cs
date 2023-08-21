@@ -17,8 +17,8 @@
         public const string SchoolAreaName = "School";
 
 
-        public const string WrongLoginPageForSchoolIfParent = "Ако сте регистриран родител моля влезте от \"Вход за родители\"!";
-        public const string WrongLoginPageForSchoolNeedEmail = "Ако сте регистриранo училище моля въведете Email!";
+        public const string WrongLoginPageForSchoolIfParent = "ifParent";
+        public const string WrongLoginPageForSchoolNeedEmail = "emailNeeded";
 
     }
 }

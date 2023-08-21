@@ -11,6 +11,7 @@
     using static Data.Constants.RoleConstants;
     using static Data.Constants.SchoolUserConstants;
     using SchoolMealsOrderingSystem.Core.Services;
+    using Microsoft.Extensions.Localization;
 
     [Area(SchoolAreaName)]
     [Authorize(Roles = School)]
@@ -19,16 +20,19 @@
     {
 
         private readonly ISchoolUserServices schoolUserServices;
+        private readonly IStringLocalizer stringLocalizer;
 
         public SchoolUserController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             RoleManager<IdentityRole> roleManager,
-            ISchoolUserServices _schoolUserServices)
+            ISchoolUserServices _schoolUserServices,
+            IStringLocalizer<SchoolUserController> _stringLocalizer)
             : base(userManager, signInManager, roleManager)
         {
 
             schoolUserServices = _schoolUserServices;
+            stringLocalizer = _stringLocalizer;
 
         }
 
@@ -101,12 +105,16 @@
 
             if (user == null)
             {
-                ModelState.AddModelError(string.Empty, InvalidEmail);
+                ModelState.AddModelError(string.Empty, stringLocalizer[ErrorMessage]);
+                ModelState.AddModelError(string.Empty, stringLocalizer[SchoolInvalidEmail]);
+                ModelState.AddModelError(string.Empty, stringLocalizer[WrongLoginPageForSchoolIfParent]);
+                ModelState.AddModelError(string.Empty, stringLocalizer[WrongLoginPageForSchoolNeedEmail]);
+                return View();
             }
             else if (model.Email != user.UserName)
             {
-                ModelState.AddModelError(string.Empty, WrongLoginPageForSchoolIfParent);
-                ModelState.AddModelError(string.Empty, WrongLoginPageForSchoolNeedEmail);
+                ModelState.AddModelError(string.Empty, stringLocalizer[WrongLoginPageForSchoolIfParent]);
+                ModelState.AddModelError(string.Empty, stringLocalizer[WrongLoginPageForSchoolNeedEmail]);
                 return View();
             }
 
@@ -120,8 +128,6 @@
                     return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
                 }
             }
-
-            ModelState.AddModelError(string.Empty, ErrorMessage);
 
             return View(model);
 

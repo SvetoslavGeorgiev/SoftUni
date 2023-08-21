@@ -103,6 +103,7 @@
 
             if (user == null)
             {
+                ModelState.AddModelError(string.Empty, stringLocalizer[ErrorMessage]);
                 ModelState.AddModelError(string.Empty, stringLocalizer[InvalidUserName]);
             }
             else if (model.UserName == user.Email)
@@ -123,8 +124,6 @@
                     return RedirectToAction("Index", "Home", new { area = ParentAreaName });
                 }
             }
-
-            ModelState.AddModelError(string.Empty, ErrorMessage);
 
             return View(model);
         }

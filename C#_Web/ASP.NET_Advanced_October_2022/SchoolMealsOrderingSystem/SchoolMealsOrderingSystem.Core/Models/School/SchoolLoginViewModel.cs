@@ -6,10 +6,9 @@
     public class SchoolLoginViewModel
     {
         [Required(ErrorMessage = EmailRequired)]
-        [EmailAddress(ErrorMessage = EmailAddress)]
         public string Email { get; set; } = null!;
 
-        [Required]
+        [Required(ErrorMessage = PasswordRequired)]
         [DataType(DataType.Password)]
         public string Password { get; set; } = null!;
     }

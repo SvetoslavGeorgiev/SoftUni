@@ -26,7 +26,7 @@
         public const string InvalidMenu = "Менюто още не е налично";
         public const string InvalidEmail = "Email_EmailAddress";
         public const string InvalidUser = "Невалиден потребител";
-        public const string ErrorMessage = "Нещо се обърка. Моля опитайте отново!";
+        public const string ErrorMessage = "errorMessage";
 
         public const string AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+ чявертъуиопшщасдфгхйклюзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЮЗЬЦЖБНМ";
         public const string Hidden = "hidden";
@@ -101,5 +101,10 @@
 
         public const string Changes = "changes";
         public const string Delete = "delete";
+
+        //constants for Area/Parent/Views/SchoolUser/Register
+
+        public const string SchoolInvalidEmail = "invalidEmail";
+
     }
 }

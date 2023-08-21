@@ -117,19 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="errorMessage" xml:space="preserve">
-    <value>Something went wrong. Please, try again!</value>
+  <data name="Password_Required" xml:space="preserve">
+    <value>Полето "Парола" е задължително</value>
   </data>
-  <data name="ifParent" xml:space="preserve">
-    <value>If you are a parent enter "Username"</value>
-  </data>
-  <data name="ifSchool" xml:space="preserve">
-    <value>If you are a registered school, please log in from "Login" and then "School Login"</value>
-  </data>
-  <data name="invalid Parent Id" xml:space="preserve">
-    <value>Invalid Parent Id</value>
-  </data>
-  <data name="invalid UserName" xml:space="preserve">
-    <value>Invalid UserName</value>
+  <data name="UserName_Required" xml:space="preserve">
+    <value>Полето "Потребителско Име" е задължително</value>
   </data>
 </root>
