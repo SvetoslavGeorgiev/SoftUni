@@ -117,19 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="emailNeeded" xml:space="preserve">
-    <value>Ако сте регистриранo училище моля въведете Електронна Поща(Email)</value>
+  <data name="changes" xml:space="preserve">
+    <value>Запази Промените</value>
   </data>
-  <data name="errorMessage" xml:space="preserve">
-    <value>Нещо се обърка. Моля опитайте отново!</value>
+  <data name="delete" xml:space="preserve">
+    <value>Премахни Профила</value>
   </data>
-  <data name="ifParent" xml:space="preserve">
-    <value>Ако сте регистриран родител моля влезте от "Вход" и след това "За родители"</value>
+  <data name="email" xml:space="preserve">
+    <value>Eлектронна поща(Email)</value>
   </data>
-  <data name="invalid School Id" xml:space="preserve">
-    <value>Невалидно ID на Scool</value>
+  <data name="lastName" xml:space="preserve">
+    <value>Фамилия</value>
   </data>
-  <data name="invalidEmail" xml:space="preserve">
-    <value>Невалидна Електронна Поща(Email)</value>
+  <data name="name" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Парола</value>
+  </data>
+  <data name="passwordConfirmation" xml:space="preserve">
+    <value>Потвърждаване на паролата</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Редакция на вашият профил</value>
+  </data>
+  <data name="userName" xml:space="preserve">
+    <value>Потребителско име</value>
   </data>
 </root>

@@ -2,15 +2,12 @@
 {
     using Microsoft.EntityFrameworkCore;
     using SchoolMealsOrderingSystem.Core.Contracts;
+    using SchoolMealsOrderingSystem.Core.Models.DailyMenu;
     using SchoolMealsOrderingSystem.Core.Models.Meal;
     using SchoolMealsOrderingSystem.Data;
-    using static Data.Constants.GeneralConstants;
-    using static Data.Constants.ChildConstants;
-    using static Data.Constants.SchoolUserConstants;
     using SchoolMealsOrderingSystem.Data.Entities.Menu;
     using System.Collections.Generic;
-    using SchoolMealsOrderingSystem.Core.Models.DailyMenu;
-    using SchoolMealsOrderingSystem.Data.Entities;
+    using static Data.Constants.ChildConstants;
 
     public class DailyManuServices : IDailyMenuServices
     {
@@ -105,7 +102,7 @@
                            m.Name.ToString() == "Thursday" ? "Четвъртък" :
                            "Петък",
                     Dessert = m.Dessert,
-                    Soup = m.Soup,
+                    Soup = m.Soup!,
                     MainDish = m.MainDish,
                 });
 
@@ -118,9 +115,9 @@
             var child = await schoolMealsOrderingSystemDbContext
                 .Children
                 .Where(c => c.Id == id && !c.IsDeleted)
-                .Include(c => c.SchoolUser.Soups)
-                .Include(c => c.SchoolUser.MainDishes)
-                .Include(c => c.SchoolUser.Desserts)
+                .Include(c => c.SchoolUser!.Soups)
+                .Include(c => c.SchoolUser!.MainDishes)
+                .Include(c => c.SchoolUser!.Desserts)
                 .FirstOrDefaultAsync();
 
             if (child == null)
@@ -147,7 +144,7 @@
             var model = new MealsForParentToChooseViewModel()
             {
                 ChildId = child.Id,
-                Soups = child.SchoolUser.Soups.Where(s => s.IsSelected == true && !s.IsDeleted),
+                Soups = child.SchoolUser!.Soups.Where(s => s.IsSelected == true && !s.IsDeleted),
                 //Soups = soups,
                 MainDishes = child.SchoolUser.MainDishes.Where(s => s.IsSelected == true && !s.IsDeleted),
                 //MainDishes = mainDishes,

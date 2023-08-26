@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="emailNeeded" xml:space="preserve">
-    <value>If you are a registered school, please enter your Email</value>
+    <value>If you are a registered school, please enter the School Email</value>
   </data>
   <data name="errorMessage" xml:space="preserve">
     <value>Something went wrong. Please, try again!</value>

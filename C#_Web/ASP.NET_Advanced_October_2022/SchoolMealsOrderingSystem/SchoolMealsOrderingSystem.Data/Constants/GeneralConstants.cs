@@ -105,6 +105,7 @@
         //constants for Area/Parent/Views/SchoolUser/Register
 
         public const string SchoolInvalidEmail = "invalidEmail";
+        public const string SchoolName = "schoolName";
 
     }
 }
