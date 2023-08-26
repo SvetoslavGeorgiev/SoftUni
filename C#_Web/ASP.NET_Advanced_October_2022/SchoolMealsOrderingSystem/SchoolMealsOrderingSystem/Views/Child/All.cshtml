@@ -1,56 +1,59 @@
 ﻿@model IEnumerable<ChildViewModel>
 
+
+
 @{
     ViewBag.Title = "Моите деца";
 }
 
-<style>
-    .light-blue-element {
-        background-color: cyan;
-    }
-
-        .light-blue-element:hover {
-            background-color: blue;
-            color: wheat;
-        }
-
-    .hoverme {
-        background-color: limegreen;
-    }
-
-        .hoverme:hover {
-            background-color: lime;
-            color: red;
-        }
-</style>
-
-
-<h2 class="text-center">@ViewBag.Title</h2>
+<h2 class="title text-center">@ViewBag.Title</h2>
 <hr />
 
-<div class="text-center row">
-    @foreach (var child in Model)
-    {
-        <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px; background-color: honeydew">
-            <div class="card-body">
-                <h5 class="card-title mt-1" style="color: darkgreen">@child.FirstName @child.LastName</h5>
-                @if (@child.MonthsOld != 0)
-                {
-                    <p class="mb-2" style="color: darkviolet">Години: @child.YearsOld години и @child.MonthsOld месеца</p>
+<div class="slide-container swiper">
+    <div class="slide-content">
+        <div class="card-wrapper swiper-wrapper">
+            @foreach (var child in Model)
+            {
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
 
-                }
-                else
-                {
-                    <p class="mb-2" style="color: darkviolet">Години: @child.YearsOld</p>
-                }
-                <p class="mb-0" style="color: coral">Училище: @child.School</p>
-                <p class="mb-0" style="color: darkblue">Клас в училище: @child.YearInSchool</p>
-            </div>
-            <div class="mb-3">
-                <a asp-controller="Child" asp-action="Edit" asp-route-childId="@child.Id" class="fs-6 btn light-blue-element mb-3 p-2">Редактирай</a>
-                <a asp-controller="DailyMenu" asp-action="GetMealsForParentsToChoose" asp-route-childId="@child.Id" class="fs-6 btn hoverme mb-3 p-2">Избери меню</a>
-                <a asp-controller="DailyMenu" asp-action="All" asp-route-childId="@child.Id" class="fs-6 btn btn-outline-warning mb-3 p-2">Виж избрано меню</a>
-            </div>
+                        <div class="card-image">
+                            <img src="~/images/ben-white-qDY9ahp0Mto-unsplash.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <span class="name">@child.FirstName @child.LastName</span>
+                        @if (@child.MonthsOld != 0)
+                        {
+                            <span class="years">Години: @child.YearsOld години и @child.MonthsOld месеца</span>
+
+                        }
+                        else
+                        {
+                            <span class="years">Години: @child.YearsOld</span>
+                        }
+                        <p class="schoolParagraph mb-0">Училище: @child.School</p>
+                        <p class="grade mb-0">Клас в училище: @child.YearInSchool</p>
+                        <div class="div__btns mb-3" style="padding-top: 3px">
+                            <a asp-controller="Child" asp-action="Edit" asp-route-childId="@child.Id" class="fs-6 btn light-blue-element mb-3 p-2">Редактирай</a>
+                            <a asp-controller="DailyMenu" asp-action="GetMealsForParentsToChoose" asp-route-childId="@child.Id" class="fs-6 btn hoverme mb-3 p-2">Избери меню</a>
+                        </div>
+                        <a asp-controller="DailyMenu" asp-action="All" asp-route-childId="@child.Id" class="fs-6 btn btn-outline-warning mb-3 p-2">Виж избрано меню</a>
+                    </div>
+                </div>
+            }
         </div>
-    }
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
 </div>
+
+
+@section Scripts {
+    <partial name="_SwiperScriptPartial" />
+    <partial name="_RemoveContainerClassDivPartial" />
+}

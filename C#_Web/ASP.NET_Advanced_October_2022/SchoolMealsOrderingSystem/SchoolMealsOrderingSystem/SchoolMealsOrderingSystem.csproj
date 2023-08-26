@@ -25,7 +25,6 @@
   <ItemGroup>
     <Folder Include="Areas\Parent\Models\" />
     <Folder Include="Areas\School\Models\" />
-    <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\new\" />
   </ItemGroup>
   <ItemGroup>

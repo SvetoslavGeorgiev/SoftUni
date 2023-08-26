@@ -1,0 +1,159 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.light-blue-element {
+    background-color: bl;
+    margin: 14px;
+}
+
+.light-blue-element:hover {
+    background-color: blue;
+    color: wheat;
+}
+
+.hoverme {
+    background-color: limegreen;
+    margin: 14px;
+}
+
+.hoverme:hover {
+    background-color: lime;
+    color: red;
+}
+
+
+.title{
+    margin-top: 25px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070F4;
+}
+
+.card {
+    width: 320px;
+    border-radius: 25px;
+    background: #FFF;
+}
+
+.slide-container {
+    max-width: 90%;
+    max-height: 90%;
+    padding: 40px 0;
+}
+
+.slide-content {
+    margin: 0 40px;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #4070F4;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070F4;
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    text-align: center;
+    color: #707070;
+}
+
+.card-btn {
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-btn:hover {
+    background: #265DF2;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+    filter: blur(7px);
+}
+
+.div__btns{
+    width: 100%;
+}
+
+.schoolParagraph {
+    text-align: center;
+    margin: 10px;
+    color: coral
+}
+
+.years {
+    text-align: center;
+    margin: 10px;
+}
+
+.grade {
+    text-align: center;
+    margin: 10px;
+    color: darkblue;
+}
+
