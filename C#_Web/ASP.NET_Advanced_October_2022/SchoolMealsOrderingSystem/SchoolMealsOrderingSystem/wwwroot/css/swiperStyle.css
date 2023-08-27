@@ -1,26 +1,5 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-.light-blue-element {
-    background-color: bl;
-    margin: 14px;
-}
-
-.light-blue-element:hover {
-    background-color: blue;
-    color: wheat;
-}
-
-.hoverme {
-    background-color: limegreen;
-    margin: 14px;
-}
-
-.hoverme:hover {
-    background-color: lime;
-    color: red;
-}
-
-
 .title{
     margin-top: 25px;
 }

@@ -35,3 +35,43 @@ body {
     overflow: hidden;
 }
 
+.myCrad_img{
+    padding: 35px 10px 10px 10px;
+    
+    max-height: 200px
+}
+
+.DemoUserLogin_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.light-blue-element {
+    background-color: cyan;
+    margin: 14px;
+}
+
+.light-blue-element:hover {
+    background-color: blue;
+    color: wheat;
+}
+
+.orange-element {
+    background-color: #FFC107;
+}
+
+.orange-element:hover {
+    background-color: orangered;
+    color: wheat;
+}
+
+.hoverme {
+    background-color: limegreen;
+    margin: 14px;
+}
+
+.hoverme:hover {
+    background-color: lime;
+}

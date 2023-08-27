@@ -129,6 +129,27 @@
         }
 
         [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> DemoUserLogin()
+        {
+
+            var user = await UserManager.FindByNameAsync("Iveto");
+
+
+            if (user != null && await UserManager.IsInRoleAsync(user, ParentAreaName))
+            {
+                var result = await SignInManager.PasswordSignInAsync(user, "YvHedbJZnPTav9F@", false, false);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home", new { area = ParentAreaName });
+                }
+            }
+
+            return View();
+        }
+
+        [HttpGet]
         public async Task<IActionResult> EditParentProfile(string id)
         {
 

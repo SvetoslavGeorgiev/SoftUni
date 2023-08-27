@@ -134,6 +134,27 @@
         }
 
         [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> DemoUserLogin()
+        {
+
+            var user = await UserManager.FindByEmailAsync("otec_paisiy@abv.bg");
+
+
+            if (user != null && await UserManager.IsInRoleAsync(user, SchoolAreaName))
+            {
+                var result = await SignInManager.PasswordSignInAsync(user, "TpVnzNTcqR4XtES@", false, false);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Home", new { area = SchoolAreaName });
+                }
+            }
+
+            return View();
+        }
+
+        [HttpGet]
         public async Task<IActionResult> EditSchoolProfile(string id)
         {
 
