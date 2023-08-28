@@ -1,53 +1,87 @@
-﻿@model IEnumerable<DailyMenuViewModel>
+﻿@model MultipleDailyMenuViewModel
 
 @{
     ViewBag.Title = "Меню";
 }
-<style> 
-.light-blue-element {
-  background-color: cyan;
-}
-.light-blue-element:hover {
-  background-color: blue;
-  color: wheat;
-}
-
-.hoverme{
-  background-color: limegreen;
-}
-
-.hoverme:hover{
-  background-color: lime;
-  color: red;
-}
-</style>
 
 <h2 class="text-center">@ViewBag.Title</h2>
 <hr />
 
-<div class="text-center row">
-    @foreach (var dailyMenu in Model)
-    {
-            <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px; background-color: honeydew">
-                <div class="card-body">
-                <h5 class="card-title mt-1" style="color: darkgreen">@dailyMenu.Name</h5>
-                <p class= "mb-0" style="text-align: left">Супа: @dailyMenu.Soup.Name</p>
-                    <p class="mb-0" style="text-align: left">Основно ястие: @dailyMenu.MainDish.Name</p>
-                    <p class="mb-0" style="text-align: left">Десерт: @dailyMenu.Dessert.Name</p>
+<div class="parent">
+    <div class="child text-center row">
+        <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px; background-color: honeydew">
+            <div class="image-content" style="padding: 15px">
+                <div class="card-image">
+                    <img src="~/images/ben-white-qDY9ahp0Mto-unsplash.jpg" alt="" class="card-img" style="padding: 2px">
                 </div>
+            </div>
+            <div class="card-body" style="padding: 10px">
+
+                <h5 class="card-title mt-1" style="color: darkgreen">@Model.ChildViewModel.FirstName @Model.ChildViewModel.LastName</h5>
+                @if (@Model.ChildViewModel.MonthsOld != 0)
+                {
+                    <p class="mb-2" style="color: darkviolet">Години: @Model.ChildViewModel.YearsOld години и @Model.ChildViewModel.MonthsOld месеца</p>
+                }
+                else
+                {
+                    <p class="mb-2" style="color: darkviolet">Години: @Model.ChildViewModel.YearsOld</p>
+                }
+                <p class="mb-0" style="color: coral">Училище: @Model.ChildViewModel.School</p>
+                <p class="mb-0" style="color: darkblue">Клас в училище: @Model.ChildViewModel.YearInSchool</p>
+            </div>
             @if (User.IsInRole(Parent))
             {
-                <form asp-controller="DailyMenu" asp-action="Delete" asp-route-id="@dailyMenu.Id">
-                     <div>
-                            <input style="margin-bottom: 10px" type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-danger" />
-                     </div>
-                 </form>
+                <div class="mb-3">
+                    <a asp-controller="DailyMenu" asp-action="GetMealsForParentsToChoose" asp-route-childId="@Model.ChildViewModel.Id" class="fs-6 btn btn-outline-success mb-3 p-2">Избери Меню</a>
+                </div>
             }
-                
-            </div>
-    }
+        </div>
+    </div>
+
+    <div class="child text-center row">
+        @if (!Model.DailyMenus.Any())
+        {
+            <h3>Няма избрани менюта все още!</h3>
+        }
+        else
+        {
+            @foreach (var dailyMenu in Model.DailyMenus)
+            {
+                <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px; background-color: honeydew">
+                    <div class="card-body">
+                        <h5 class="card-title mt-1" style="color: darkgreen">@dailyMenu.Name</h5>
+                        <p class="mb-0" style="text-align: left">Супа: @dailyMenu.Soup.Name</p>
+                        <p class="mb-0" style="text-align: left">Основно ястие: @dailyMenu.MainDish.Name</p>
+                        <p class="mb-0" style="text-align: left">Десерт: @dailyMenu.Dessert.Name</p>
+                    </div>
+                    @if (User.IsInRole(Parent))
+                    {
+                        <form asp-controller="DailyMenu" asp-action="Delete" asp-route-id="@dailyMenu.Id">
+                            <div>
+                                <input style="margin-bottom: 10px" type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-outline-danger" />
+                            </div>
+                        </form>
+                    }
+
+                </div>
+            }
+        }
+    </div>
 </div>
 
 @section Scripts {
     <partial name="_DeleteScriptPartial" />
+    <partial name="_RemoveContainerClassDivPartial" />
+    <script>
+        // Get the footer element
+        let footer = document.querySelector('footer');
+
+        // Check if the footer should be removed (based on some condition)
+        let shouldRemoveFooter = true; // Change this to your condition
+
+        // Remove the footer if the condition is met
+        if (shouldRemoveFooter) {
+            footer.style.display = 'none';
+        }
+    </script>
 }

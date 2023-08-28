@@ -75,3 +75,23 @@ body {
 .hoverme:hover {
     background-color: lime;
 }
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding: 50px;
+}
+
+.child {
+    flex:inherit;
+    min-width: 200px; /* Set a minimum width for the boxes */
+    max-width: calc(50% - 20px); /* Maximum width for each box, considering margin */
+    
+    
+    margin: 10px;
+
+    justify-content: center;
+}
+

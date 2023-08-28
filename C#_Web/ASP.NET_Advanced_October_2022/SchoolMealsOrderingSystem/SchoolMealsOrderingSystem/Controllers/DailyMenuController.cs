@@ -4,7 +4,7 @@
     using Microsoft.AspNetCore.Mvc;
     using SchoolMealsOrderingSystem.Core.Contracts;
     using SchoolMealsOrderingSystem.Core.Models.Meal;
-    using SchoolMealsOrderingSystem.Core.Services;
+    using SchoolMealsOrderingSystem.Core.Models.DailyMenu;
     using static Data.Constants.RoleConstants;
 
 
@@ -12,10 +12,12 @@
     public class DailyMenuController : Controller
     {
         private readonly IDailyMenuServices menuServices;
+        private readonly IChildServices childServices;
 
-        public DailyMenuController(IDailyMenuServices _menuServices)
+        public DailyMenuController(IDailyMenuServices _menuServices, IChildServices _childServices)
         {
             menuServices = _menuServices;
+            childServices = _childServices;
         }
 
 
@@ -72,7 +74,13 @@
         public async Task<IActionResult> All(Guid childId)
         {
 
-            var model = await menuServices.GetAllDailyMenusAsync(childId);
+            var model = new MultipleDailyMenuViewModel();
+            
+            var menues = await menuServices.GetAllDailyMenusAsync(childId);
+            var child = await childServices.GetChildByIdAsync(childId);
+
+            model.DailyMenus = menues;
+            model.ChildViewModel = child;
 
             return View(model);
         }

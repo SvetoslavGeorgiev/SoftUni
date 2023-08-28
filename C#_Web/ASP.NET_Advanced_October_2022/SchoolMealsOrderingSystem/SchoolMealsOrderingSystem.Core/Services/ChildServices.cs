@@ -118,11 +118,32 @@
                     YearsOld = pc.Child.YearsOld,
                     MonthsOld = pc.Child.Months == 12 ? 0 : pc.Child.Months,
                     YearInSchool = pc.Child.YearInSchool,
-                    School = pc.Child.SchoolUser.SchoolName == string.Empty ? DeletedSchoolUser :pc.Child.SchoolUser.SchoolName
+                    School = pc.Child.SchoolUser!.SchoolName == string.Empty ? DeletedSchoolUser : pc.Child.SchoolUser.SchoolName
                 });
 
 
             return result;
+        }
+
+        public async Task<ChildViewModel> GetChildByIdAsync(Guid childId)
+        {
+            var child = await schoolMealsOrderingSystemDbContext
+                .Children
+                .Where(c => c.Id.Equals(childId) && !c.IsDeleted)
+                .Select(c => new ChildViewModel
+                {
+                    Id = c.Id,
+                    FirstName = c.FirstName,
+                    LastName = c.LastName,
+                    YearsOld = c.YearsOld,
+                    MonthsOld = c.Months == 12 ? 0 : c.Months,
+                    YearInSchool = c.YearInSchool,
+                    School = c.SchoolUser!.SchoolName == string.Empty ? DeletedSchoolUser : c.SchoolUser.SchoolName
+
+                }).FirstOrDefaultAsync();
+
+
+            return child!;
         }
 
         public async Task<EditChildViewModel> GetChildModelForEditAsync(Guid childId)

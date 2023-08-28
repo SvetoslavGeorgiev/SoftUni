@@ -118,6 +118,7 @@
                 .Include(c => c.SchoolUser!.Soups)
                 .Include(c => c.SchoolUser!.MainDishes)
                 .Include(c => c.SchoolUser!.Desserts)
+                .Include(c => c.Menus)
                 .FirstOrDefaultAsync();
 
             if (child == null)
@@ -150,7 +151,8 @@
                 //MainDishes = mainDishes,
                 Desserts = child.SchoolUser.Desserts.Where(s => s.IsSelected == true && !s.IsDeleted),
                 //Desserts = desserts,
-                SchoolId = child.SchoolUserId
+                SchoolId = child.SchoolUserId,
+                DailyMenus = child.Menus
             };
 
             return model;

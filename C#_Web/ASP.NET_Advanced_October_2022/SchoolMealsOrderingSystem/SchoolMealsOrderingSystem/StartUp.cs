@@ -6,8 +6,6 @@ using SchoolMealsOrderingSystem.Core.Contracts;
 using SchoolMealsOrderingSystem.Core.Services;
 using SchoolMealsOrderingSystem.Data;
 using SchoolMealsOrderingSystem.Data.Entities;
-using System.Globalization;
-using Microsoft.AspNetCore.Localization;
 using static SchoolMealsOrderingSystem.Data.Constants.GeneralConstants;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -98,6 +96,5 @@ app.UseEndpoints(endpoints =>
     endpoints.MapDefaultControllerRoute();
 });
 
-//app.MapRazorPages();
 
 app.Run();

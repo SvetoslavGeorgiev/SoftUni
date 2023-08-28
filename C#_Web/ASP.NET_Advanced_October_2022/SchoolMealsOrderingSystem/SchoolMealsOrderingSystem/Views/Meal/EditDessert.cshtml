@@ -37,12 +37,12 @@
                 <span asp-validation-for="Allergens" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <input class="btn btn-primary" type="submit" value="Потвърди" />
+                <input class="btn btn-outline-primary" type="submit" value="Потвърди" />
             </div>
         </form>
         <form asp-controller="Meal" asp-action="DeleteDessert" asp-route-dessertId="@Model.Id">
             <div>
-                <input type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-danger" />
+                <input type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-outline-danger" />
             </div>
         </form>
     </div>

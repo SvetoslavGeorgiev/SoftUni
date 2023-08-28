@@ -2,6 +2,7 @@
 {
     
     using SchoolMealsOrderingSystem.Data.Entities.Meals;
+    using SchoolMealsOrderingSystem.Data.Entities.Menu;
     using System.ComponentModel.DataAnnotations;
     using static Data.Constants.GeneralConstants;
 
@@ -12,6 +13,7 @@
             Soups = new List<Soup>();
             MainDishes = new List<MainDish>();
             Desserts= new List<Dessert>();
+            DailyMenus = new List<DailyMenu>();
         }
 
         public DayOfWeek DayOfTheWeek { get; set; }
@@ -26,6 +28,7 @@
         public IEnumerable<Soup> Soups { get; set; }
         public IEnumerable<MainDish> MainDishes { get; set; }
         public IEnumerable<Dessert> Desserts { get; set; }
+        public IEnumerable<DailyMenu> DailyMenus { get; set; }
 
     }
 }

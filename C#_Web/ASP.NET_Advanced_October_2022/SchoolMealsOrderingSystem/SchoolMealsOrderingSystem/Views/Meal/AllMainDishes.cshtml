@@ -4,16 +4,6 @@
     ViewBag.Title = "Основни Ястия";
 }
 
-<style>
-    .hoverme {
-        background-color: limegreen;
-    }
-
-        .hoverme:hover {
-            background-color: lime;
-            color: red;
-        }
-</style>
 
 <h2 class="text-center">@ViewBag.Title</h2>
 <hr />
@@ -32,7 +22,7 @@
             @if (User.IsInRole(School))
             {
                 <div class="mb-3">
-                    <a asp-controller="Meal" asp-action="EditMainDish" asp-route-mainDishId="@mainDish.Id" class="fs-6 btn  hoverme mb-3 p-2">Редактирай</a>
+                    <a asp-controller="Meal" asp-action="EditMainDish" asp-route-mainDishId="@mainDish.Id" class="btn btn-outline-warning mb-3 p-2">Редактирай</a>
                 </div>
             }
         </div>

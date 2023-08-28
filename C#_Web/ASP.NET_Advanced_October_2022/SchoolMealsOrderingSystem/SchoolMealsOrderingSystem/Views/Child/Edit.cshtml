@@ -48,12 +48,12 @@
             <span asp-validation-for="YearInSchool" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <input class="btn btn-primary" type="submit" value="Потвърди" />
+            <input class="btn btn-outline-primary" type="submit" value="Потвърди" />
         </div>
     </form>
     <form asp-controller="Child" asp-action="Delete" asp-route-id="@Model.Id">
         <div>
-            <input type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-danger" />
+            <input type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-outline-danger" />
         </div>
     </form>
 </div>
