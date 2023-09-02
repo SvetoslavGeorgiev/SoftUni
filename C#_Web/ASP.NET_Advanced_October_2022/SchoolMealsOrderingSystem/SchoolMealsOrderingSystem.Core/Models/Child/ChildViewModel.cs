@@ -15,6 +15,8 @@
 
         public int MonthsOld { get; set; }
 
+        public string ImageUrl { get; set; } = null!;
+
         public string YearInSchool { get; set; } = null!;
 
         public string School { get; set; } = null!;

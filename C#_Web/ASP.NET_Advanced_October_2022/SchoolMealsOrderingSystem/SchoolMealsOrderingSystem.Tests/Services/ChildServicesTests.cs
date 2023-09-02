@@ -37,7 +37,7 @@ namespace SchoolMealsOrderingSystem.Tests.Services
 
             var childServices = new ChildServices(data);
 
-            await childServices.AddChildAsync(child, "hgagfjsdhjdghfdshf");
+            await childServices.AddChildAsync(child, "hgagfjsdhjdghfdshf", "\thttps://dummy.restapiexample.com");
 
 
             Assert.That(data.Children.Count(), Is.EqualTo(1));
@@ -77,7 +77,7 @@ namespace SchoolMealsOrderingSystem.Tests.Services
 
             var childServices = new ChildServices(data);
 
-            Assert.ThrowsAsync<ArgumentException>(async () => await childServices.AddChildAsync(child, "dsgfdsgfd"), InvalidParentUserId);
+            Assert.ThrowsAsync<ArgumentException>(async () => await childServices.AddChildAsync(child, "dsgfdsgfd", "\thttps://dummy.restapiexample.com"), InvalidParentUserId);
 
 
         }
@@ -97,9 +97,10 @@ namespace SchoolMealsOrderingSystem.Tests.Services
                 LastName = "Goshov",
                 SchoolUserId = "khgdfhjadssa",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father"
-            }); ;
+            }); 
 
             await data.SaveChangesAsync();
 
@@ -127,10 +128,11 @@ namespace SchoolMealsOrderingSystem.Tests.Services
                 FirstName = "Pesho",
                 LastName = "Goshov",
                 SchoolUserId = "khgdfhjadssa",
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 Birthday = DateTime.Today.Date,
                 YearInSchool = "3b",
                 ParentChildRelation = "Father"
-            }); ;
+            }); 
 
             await data.SaveChangesAsync();
 
@@ -141,6 +143,7 @@ namespace SchoolMealsOrderingSystem.Tests.Services
                 Id = Guid.Parse(id),
                 FirstName = "Gosho",
                 LastName = "Peshov",
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 SchoolUserId = "jdkhsgfjksdhf",
                 Birthday = DateTime.Today.AddDays(1).Date,
                 YearInSchool = "5a",
@@ -156,6 +159,8 @@ namespace SchoolMealsOrderingSystem.Tests.Services
                 Assert.That(child?.Id.ToString(), Is.EqualTo(id));
                 Assert.That(child?.FirstName, Is.EqualTo("Gosho"));
                 Assert.That(child?.LastName, Is.EqualTo("Peshov"));
+                Assert.That(child?.IsDeleted, Is.False);
+                Assert.That(child?.ImageUrl, Is.EqualTo("\thttps://dummy.restapiexample.com"));
                 Assert.That(child?.Birthday, Is.EqualTo(DateTime.Today.AddDays(1).Date));
                 Assert.That(child?.YearInSchool, Is.EqualTo("5a"));
                 Assert.That(child?.ParentChildRelation, Is.EqualTo("Mother"));
@@ -211,6 +216,7 @@ namespace SchoolMealsOrderingSystem.Tests.Services
                     FirstName = "dsfg",
                     LastName = "Goshov",
                     SchoolUserId = "fdsfdsf",
+                    ImageUrl = "\thttps://dummy.restapiexample.com",
                     Birthday = DateTime.Today.Date,
                     YearInSchool = "3b",
                     ParentChildRelation = "Father",
@@ -230,6 +236,7 @@ namespace SchoolMealsOrderingSystem.Tests.Services
                     FirstName = "Pesho",
                     LastName = "Goshfdov",
                     SchoolUserId = "fdsfdsf",
+                    ImageUrl = "\thttps://dummy.restapiexample.com",
                     Birthday = DateTime.Today.Date,
                     YearInSchool = "1b",
                     ParentChildRelation = "Father",
@@ -248,6 +255,7 @@ namespace SchoolMealsOrderingSystem.Tests.Services
                     FirstName = "Pesho",
                     LastName = "Goshfdsov",
                     SchoolUserId = "fdsfdsf",
+                    ImageUrl = "\thttps://dummy.restapiexample.com",
                     Birthday = DateTime.Today.Date,
                     YearInSchool = "4b",
                     ParentChildRelation = "Father",
@@ -341,6 +349,7 @@ namespace SchoolMealsOrderingSystem.Tests.Services
 
                 },
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father"
             });
@@ -359,6 +368,7 @@ namespace SchoolMealsOrderingSystem.Tests.Services
                 Assert.That(child?.FirstName, Is.EqualTo("Pesho"));
                 Assert.That(child?.LastName, Is.EqualTo("Goshov"));
                 Assert.That(child?.Birthday, Is.EqualTo(DateTime.Today));
+                Assert.That(child?.ImageUrl, Is.EqualTo("\thttps://dummy.restapiexample.com"));
                 Assert.That(child?.YearInSchool, Is.EqualTo("3b"));
                 Assert.That(child?.RelationToChild, Is.EqualTo("Father"));
             });
@@ -387,6 +397,7 @@ namespace SchoolMealsOrderingSystem.Tests.Services
 
                 },
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father"
             });

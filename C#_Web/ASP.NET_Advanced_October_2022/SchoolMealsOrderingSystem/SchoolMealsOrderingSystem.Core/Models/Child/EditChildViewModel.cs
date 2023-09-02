@@ -25,6 +25,10 @@
         [StringLength(RelationToChildMaxLength, MinimumLength = RelationToChildMinLength, ErrorMessage = FieldSymbolsLength)]
         public string RelationToChild { get; set; } = null!;
 
+        [Required(ErrorMessage = ImageUrlRequired)]
+        [StringLength(ImageUrlMaxLength, MinimumLength = ImageUrlMinLength, ErrorMessage = FieldSymbolsLength)]
+        public string ImageUrl { get; set; } = null!;
+
         [Required(ErrorMessage = BirthDayRequired)]
         [DataType(DataType.Date)]
         public DateTime Birthday { get; set; }

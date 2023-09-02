@@ -14,12 +14,17 @@
         public const int YearInSchoolMaxLength = 25;
         public const int YearInSchoolMinLength = 2;
 
+        public const int ImageUrlMaxLength = 400;
+        public const int ImageUrlMinLength = 5;
+
         public const string InvalidBook = "Въвели сте неправилна информация за детето!";
 
         public const string DeletedSchoolUser = "Моля редактирайте и изберете училище!";
 
         
         public const string InvalidChildUserId = "Invalid Child Id";
+
+        public const string InvalidChildImageSize = "Invalid Image Size";
 
         public const string BirthdayTypeFormat = "date";
     }

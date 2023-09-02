@@ -27,9 +27,10 @@
                 LastName = "Goshov",
                 SchoolUserId = "hgagfjsdhjdghfdshf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father"
-            });
+            }); ;
 
             await data.Children.AddAsync(new Child
             {
@@ -38,6 +39,7 @@
                 LastName = "Goshov",
                 SchoolUserId = "hgagfjsdhjdghfdshf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father"
             });
@@ -48,6 +50,7 @@
                 FirstName = "pesh",
                 LastName = "Goshov",
                 SchoolUserId = "hgagfjsdhjdghfdshf",
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 Birthday = DateTime.Today.Date,
                 YearInSchool = "3b",
                 ParentChildRelation = "Father"
@@ -62,6 +65,7 @@
                 LastName = "Goshfdsov",
                 SchoolUserId = "fdsfdsf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "4b",
                 ParentChildRelation = "Father"
             });
@@ -73,6 +77,7 @@
                 LastName = "Goshfdov",
                 SchoolUserId = "fdsfdsf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "1b",
                 ParentChildRelation = "Father"
             });

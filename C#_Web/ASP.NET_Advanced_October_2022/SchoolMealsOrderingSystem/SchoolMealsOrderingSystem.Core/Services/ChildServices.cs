@@ -19,7 +19,7 @@
             schoolMealsOrderingSystemDbContext = _schoolMealsOrderingSystemDbContext;
         }
 
-        public async Task AddChildAsync(AddChildViewModel addChildViewModel, string userId)
+        public async Task AddChildAsync(AddChildViewModel addChildViewModel, string userId, string imageUrl)
         {
             var user = await schoolMealsOrderingSystemDbContext
                 .ParentUsers
@@ -41,6 +41,7 @@
                 Birthday = addChildViewModel.Birthday,
                 SchoolUserId = addChildViewModel.SchoolUserId,
                 ParentChildRelation = addChildViewModel.RelationToChild,
+                ImageUrl = imageUrl,
                 YearInSchool = addChildViewModel.YearInSchool
             };
 
@@ -117,6 +118,7 @@
                     LastName = pc.Child.LastName,
                     YearsOld = pc.Child.YearsOld,
                     MonthsOld = pc.Child.Months == 12 ? 0 : pc.Child.Months,
+                    ImageUrl = pc.Child.ImageUrl,
                     YearInSchool = pc.Child.YearInSchool,
                     School = pc.Child.SchoolUser!.SchoolName == string.Empty ? DeletedSchoolUser : pc.Child.SchoolUser.SchoolName
                 });
@@ -136,6 +138,7 @@
                     FirstName = c.FirstName,
                     LastName = c.LastName,
                     YearsOld = c.YearsOld,
+                    ImageUrl= c.ImageUrl,
                     MonthsOld = c.Months == 12 ? 0 : c.Months,
                     YearInSchool = c.YearInSchool,
                     School = c.SchoolUser!.SchoolName == string.Empty ? DeletedSchoolUser : c.SchoolUser.SchoolName
@@ -158,6 +161,7 @@
                     FirstName = c.FirstName,
                     LastName = c.LastName,
                     Birthday = c.Birthday,
+                    ImageUrl = c.ImageUrl,
                     RelationToChild = c.ParentChildRelation,
                     YearInSchool = c.YearInSchool
                 })

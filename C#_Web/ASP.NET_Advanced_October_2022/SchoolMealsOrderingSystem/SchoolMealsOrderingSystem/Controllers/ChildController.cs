@@ -15,11 +15,13 @@
 
         private readonly ISchoolServices schoolServices;
         private readonly IChildServices childServices;
+        private readonly IImageService imageService;
 
-        public ChildController(ISchoolServices _schoolServices, IChildServices _childServices)
+        public ChildController(ISchoolServices _schoolServices, IChildServices _childServices, IImageService _imageService)
         {
             schoolServices = _schoolServices;
             childServices = _childServices;
+            imageService = _imageService;
         }
 
         [HttpGet]
@@ -62,13 +64,28 @@
                 return View(model);
             }
 
+            var file = model.ImageUrl;
+
+            var maxSize = 3.2 * 1024 * 1024;
+
+            if (file.Length > maxSize)
+            {
+                ModelState.AddModelError(string.Empty, InvalidChildImageSize);
+
+                return View(model);
+            }
             try
             {
+                
+                var name = $"{model.FirstName}_{model.LastName}";
+
+                var imageUrl = await imageService.UploadImageToAwsS3(name, file);
+
 
                 string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
 
-                await childServices.AddChildAsync(model, userId);
+                await childServices.AddChildAsync(model, userId, imageUrl);
 
 
                 return RedirectToAction(nameof(All));

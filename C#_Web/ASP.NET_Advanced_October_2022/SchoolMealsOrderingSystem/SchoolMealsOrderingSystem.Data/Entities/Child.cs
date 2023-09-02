@@ -29,6 +29,9 @@
         public string LastName { get; set; } = null!;
 
         [Required]
+        public string ImageUrl { get; set; }
+
+        [Required]
         [Column(TypeName = BirthdayTypeFormat)]
         public DateTime Birthday { get; set; }
 

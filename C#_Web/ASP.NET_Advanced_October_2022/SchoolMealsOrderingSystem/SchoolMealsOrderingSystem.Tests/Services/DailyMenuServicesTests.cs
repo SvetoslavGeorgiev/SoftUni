@@ -19,6 +19,7 @@
                 LastName = "Goshov",
                 SchoolUserId = "fdsfdsf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father",
                 ParentsChildren = new List<ParentChild>()
@@ -59,6 +60,7 @@
                 LastName = "Goshov",
                 SchoolUserId = "fdsfdsf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father",
                 ParentsChildren = new List<ParentChild>()
@@ -96,6 +98,7 @@
                 LastName = "Goshov",
                 SchoolUserId = "fdsfdsf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father",
                 ParentsChildren = new List<ParentChild>()
@@ -146,6 +149,7 @@
                 LastName = "Goshov",
                 SchoolUserId = "fdsfdsf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father",
                 ParentsChildren = new List<ParentChild>()
@@ -192,6 +196,7 @@
                 LastName = "Goshov",
                 SchoolUserId = "fdsfdsf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father",
                 ParentsChildren = new List<ParentChild>()
@@ -258,6 +263,7 @@
                 LastName = "Goshov",
                 SchoolUserId = "fdsfdsf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father",
                 ParentsChildren = new List<ParentChild>()
@@ -323,6 +329,7 @@
                 LastName = "Goshov",
                 SchoolUserId = "fdsfdsf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father",
                 ParentsChildren = new List<ParentChild>()
@@ -518,6 +525,7 @@
                 LastName = "Goshov",
                 SchoolUserId = "fdsfdsf",
                 Birthday = DateTime.Today.Date,
+                ImageUrl = "\thttps://dummy.restapiexample.com",
                 YearInSchool = "3b",
                 ParentChildRelation = "Father",
                 ParentsChildren = new List<ParentChild>()

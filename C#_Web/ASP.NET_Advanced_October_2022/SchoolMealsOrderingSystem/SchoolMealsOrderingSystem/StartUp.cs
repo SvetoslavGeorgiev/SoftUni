@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Amazon.S3;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
@@ -53,6 +54,9 @@ builder.Services.AddScoped<IParentUserServices, ParentUserServices>();
 builder.Services.AddScoped<ISchoolUserServices, SchoolUserServices>();
 builder.Services.AddScoped<IMealServices, MealServices>();
 builder.Services.AddScoped<IDailyMenuServices, DailyManuServices>();
+builder.Services.AddScoped<IImageService, ImageService>();
+builder.Services.AddSingleton<IAmazonS3, AmazonS3Client>();
+builder.Services.AddAWSService<IAmazonS3>();
 
 
 var app = builder.Build();

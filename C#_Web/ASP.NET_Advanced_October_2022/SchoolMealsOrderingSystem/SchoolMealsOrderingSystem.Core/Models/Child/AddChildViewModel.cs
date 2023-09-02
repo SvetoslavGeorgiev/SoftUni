@@ -1,9 +1,11 @@
 ﻿namespace SchoolMealsOrderingSystem.Core.Models.Child
 {
     using Data.Entities;
+    using System.IO;
     using System.ComponentModel.DataAnnotations;
     using static Data.Constants.ChildConstants;
     using static Data.Constants.GeneralConstants;
+    using Microsoft.AspNetCore.Http;
 
     public class AddChildViewModel
     {
@@ -18,6 +20,8 @@
         [Required(ErrorMessage = ParentChildRelationRequired)]
         [StringLength(RelationToChildMaxLength, MinimumLength = RelationToChildMinLength, ErrorMessage = FieldSymbolsLength)]
         public string RelationToChild { get; set; } = null!;
+        
+        public IFormFile ImageUrl { get; set; } = null!;
 
         [Required(ErrorMessage = BirthDayRequired)]
         [DataType(DataType.Date)]

@@ -11,6 +11,7 @@
         public const string PasswordConfirmRequired = "ConfirmPassword_Required";
         public const string EmailRequired = "Email_Required";
         public const string ParentChildRelationRequired = "RelationToChild_Required";
+        public const string ImageUrlRequired = "ImageUrl_Required";
         public const string BirthDayRequired = "Birthday_Required";
         public const string YearInSchoolRequired = "YearInSchool_Required";
         public const string SchoolNameRequired = "SchoolUserId_Required";

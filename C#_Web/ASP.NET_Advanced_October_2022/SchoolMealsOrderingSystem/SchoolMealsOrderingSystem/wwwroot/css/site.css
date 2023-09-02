@@ -95,3 +95,6 @@ body {
     justify-content: center;
 }
 
+.avoid-clicks {
+    pointer-events: none;
+}

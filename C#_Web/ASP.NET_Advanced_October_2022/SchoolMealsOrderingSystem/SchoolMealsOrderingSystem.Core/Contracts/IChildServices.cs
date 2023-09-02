@@ -10,7 +10,7 @@
 
         Task<IEnumerable<ChildViewModel>> GetAllMyChildrenAsync(string userId);
 
-        Task AddChildAsync(AddChildViewModel addChildViewModel, string userId);
+        Task AddChildAsync(AddChildViewModel addChildViewModel, string userId, string imageUrl);
         Task EditChildAsync(EditChildViewModel editChildViewModel);
 
         Task<EditChildViewModel> GetChildModelForEditAsync(Guid childId);

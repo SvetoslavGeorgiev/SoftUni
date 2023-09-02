@@ -31,6 +31,7 @@
                                                    FirstName = c.FirstName,
                                                    LastName = c.LastName,
                                                    YearsOld = c.YearsOld,
+                                                   ImageUrl = c.ImageUrl,
                                                    YearInSchool= c.YearInSchool,
                                                    MonthsOld = c.Months == 12 ? 0 : c.Months,
                                                    School = c.SchoolUser.SchoolName
