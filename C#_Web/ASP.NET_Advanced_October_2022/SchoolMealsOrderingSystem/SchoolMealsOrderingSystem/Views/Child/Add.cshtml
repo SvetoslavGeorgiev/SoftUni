@@ -13,7 +13,7 @@
         <form asp-controller="Child" asp-action="Add" enctype="multipart/form-data" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="mb-3">
-                <label asp-for="@Model.ImageUrl" class="form-label">@Localizer[Name]</label>
+                <label asp-for="@Model.ImageUrl" class="form-label">@Localizer[Image]</label>
                 <input asp-for="@Model.ImageUrl" id="file" type="file" onchange="checkFileSize()" accept=".jpg, .jpeg, .png" class="form-control" aria-required="true" />
                 <span id="error" asp-validation-for="ImageUrl" class="text-danger"></span>
                 
@@ -35,7 +35,7 @@
             </div>
             <div class="mb-3">
                 <label asp-for="@Model.Birthday" class="form-label">@Localizer[Birthday]</label>
-                <input asp-for="@Model.Birthday" type="date" min="1997-01-01" max="2030-12-31" class="form-control" aria-required="true" />
+                <input asp-for="@Model.Birthday" type="date" min="1997-01-01" max="2030-12-31" value="2000-01-01" class="form-control" aria-required="true" />
                 <span asp-validation-for="Birthday" class="text-danger"></span>
             </div>
             <div class="mb-3">
@@ -56,7 +56,7 @@
                 <span asp-validation-for="YearInSchool" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <input class="btn btn-primary" type="submit" value="@Localizer[Add]" />
+                <input class="btn btn-outline-success" type="submit" value="@Localizer[Add]" />
             </div>
         </form>
     </div>

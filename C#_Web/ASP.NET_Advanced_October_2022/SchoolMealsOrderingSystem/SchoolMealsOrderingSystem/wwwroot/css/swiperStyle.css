@@ -86,6 +86,7 @@
 }
 
 .name {
+    padding: 20px;
     font-size: 25px;
     font-weight: 500;
     color: #333;
@@ -115,9 +116,8 @@
     filter: blur(7px);
 }
 
-.div__btns{
-    width: 100%;
-}
+
+
 
 .schoolParagraph {
     text-align: center;

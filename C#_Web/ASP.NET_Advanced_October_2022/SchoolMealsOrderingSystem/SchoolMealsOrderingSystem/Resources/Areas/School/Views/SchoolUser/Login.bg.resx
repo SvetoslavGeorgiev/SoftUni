@@ -129,4 +129,7 @@
   <data name="title" xml:space="preserve">
     <value>Вход за училища</value>
   </data>
+  <data name="useDemoUser" xml:space="preserve">
+    <value>Влез с Училище за Демонстрация</value>
+  </data>
 </root>

@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Email addresses are not allowed as UserNames" xml:space="preserve">
+    <value>Email addresses are not allowed as UserNames</value>
+  </data>
   <data name="errorMessage" xml:space="preserve">
     <value>Something went wrong. Please, try again!</value>
   </data>

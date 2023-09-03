@@ -3,7 +3,7 @@
 
 
 @{
-    ViewBag.Title = "Моите деца";
+    ViewBag.Title = Localizer[LayoutTitleName];
 }
 
 <h2 class="title text-center">@ViewBag.Title</h2>
@@ -27,20 +27,20 @@
                         <span class="name">@child.FirstName @child.LastName</span>
                         @if (@child.MonthsOld != 0)
                         {
-                            <span class="years">Години: @child.YearsOld години и @child.MonthsOld месеца</span>
+                            <span class="years">@Localizer[Age]: @child.YearsOld @Localizer[YearsOfTheChild] @Localizer[And] @child.MonthsOld @Localizer[MonthsOfTheChild]</span>
 
                         }
                         else
                         {
-                            <span class="years">Години: @child.YearsOld</span>
+                            <span class="years">@Localizer[Age]: @child.YearsOld @Localizer[YearsOfTheChild]</span>
                         }
-                        <p class="schoolParagraph mb-0">Училище: @child.School</p>
-                        <p class="grade mb-0">Клас в училище: @child.YearInSchool</p>
+                        <p class="schoolParagraph mb-0">@Localizer[SchoolName]: @child.School</p>
+                        <p class="grade mb-0">@Localizer[YearInSchool]: @child.YearInSchool</p>
                         <div class="div__btns mb-3" style="padding-top: 3px">
-                            <a asp-controller="Child" asp-action="Edit" asp-route-childId="@child.Id" class="fs-6 btn light-blue-element mb-3 p-2">Редактирай</a>
-                            <a asp-controller="DailyMenu" asp-action="GetMealsForParentsToChoose" asp-route-childId="@child.Id" class="fs-6 btn hoverme mb-3 p-2">Избери меню</a>
+                            <a asp-controller="Child" asp-action="Edit" asp-route-childId="@child.Id" class="fs-6 btn light-blue-element mb-3 p-2">@Localizer[Edit]</a>
+                            <a asp-controller="DailyMenu" asp-action="GetMealsForParentsToChoose" asp-route-childId="@child.Id" class="fs-6 btn hoverme mb-3 p-2">@Localizer[ChooseMenu]</a>
                         </div>
-                        <a asp-controller="DailyMenu" asp-action="All" asp-route-childId="@child.Id" class="fs-6 btn orange-element mb-3 p-2">Виж избрано меню</a>
+                        <a asp-controller="DailyMenu" asp-action="All" asp-route-childId="@child.Id" class="fs-6 btn orange-element mb-3 p-2">@Localizer[SeeChosenMenu]</a>
                     </div>
                 </div>
             }

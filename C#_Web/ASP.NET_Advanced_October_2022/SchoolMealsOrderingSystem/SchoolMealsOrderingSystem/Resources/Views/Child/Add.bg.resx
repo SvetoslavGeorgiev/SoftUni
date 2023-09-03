@@ -126,6 +126,9 @@
   <data name="chooseSchool" xml:space="preserve">
     <value>Избери училище</value>
   </data>
+  <data name="image" xml:space="preserve">
+    <value>Снимка на детето</value>
+  </data>
   <data name="lastName" xml:space="preserve">
     <value>Фамилия</value>
   </data>

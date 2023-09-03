@@ -117,34 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="add" xml:space="preserve">
-    <value>Add</value>
+  <data name="age" xml:space="preserve">
+    <value>Възраст</value>
   </data>
-  <data name="birthday" xml:space="preserve">
-    <value>Birthday</value>
+  <data name="and" xml:space="preserve">
+    <value>и</value>
   </data>
-  <data name="chooseSchool" xml:space="preserve">
-    <value>Choose School</value>
+  <data name="chooseMenu" xml:space="preserve">
+    <value>Избери меню</value>
   </data>
-  <data name="image" xml:space="preserve">
-    <value>Photo of the child</value>
+  <data name="edit" xml:space="preserve">
+    <value>Редактирай</value>
   </data>
-  <data name="lastName" xml:space="preserve">
-    <value>Last Name</value>
+  <data name="monthsOfTheChild" xml:space="preserve">
+    <value>месеца</value>
   </data>
-  <data name="name" xml:space="preserve">
-    <value>First Name</value>
+  <data name="schoolName" xml:space="preserve">
+    <value>Училище</value>
   </data>
-  <data name="relationToChild" xml:space="preserve">
-    <value>Relation to the child</value>
-  </data>
-  <data name="School" xml:space="preserve">
-    <value>School</value>
+  <data name="seeChosenMenu" xml:space="preserve">
+    <value>Виж избрано меню</value>
   </data>
   <data name="title" xml:space="preserve">
-    <value>Add child</value>
+    <value>Моите деца</value>
   </data>
   <data name="yearInSchool" xml:space="preserve">
-    <value>Year In School</value>
+    <value>Клас в училище</value>
+  </data>
+  <data name="yearsOfTheChild" xml:space="preserve">
+    <value>години</value>
   </data>
 </root>

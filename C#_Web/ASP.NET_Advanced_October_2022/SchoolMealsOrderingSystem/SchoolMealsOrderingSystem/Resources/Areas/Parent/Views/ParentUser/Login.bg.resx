@@ -126,6 +126,9 @@
   <data name="password" xml:space="preserve">
     <value>Парола</value>
   </data>
+  <data name="useDemoUser" xml:space="preserve">
+    <value>Влез с Родител за Демонстрация</value>
+  </data>
   <data name="userName" xml:space="preserve">
     <value>Потребителско име</value>
   </data>

@@ -14,7 +14,7 @@
                 <div class="text-center mb-3">
                     <label asp-for="@Model.UserName" class="form-label">@Localizer[UserName]</label>
                     <input asp-for="@Model.UserName" class="form-control" autocomplete="username" aria-required="true" />
-                    <span asp-validation-for="UserName" class="text-danger"></span>
+                    <span asp-validation-for="@Model.UserName" class="text-danger"></span>
                 </div>
                 <div class="text-center mb-3">
                     <label asp-for="@Model.Password" class="form-label">@Localizer[Password]</label>
@@ -27,7 +27,7 @@
             </form>
         </section>
         <div class="DemoUserLogin_btn">
-            <a class="btn btn-outline-warning" asp-area="Parent" asp-action="DemoUserLogin" asp-controller="ParentUser">Use Demo Parent</a>
+            <a class="btn btn-outline-warning" asp-area="Parent" asp-action="DemoUserLogin" asp-controller="ParentUser">@Localizer[UseDemoUser]</a>
         </div>
     </div>
 </div>

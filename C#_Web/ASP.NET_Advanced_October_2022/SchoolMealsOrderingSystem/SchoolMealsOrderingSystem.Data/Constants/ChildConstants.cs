@@ -27,5 +27,16 @@
         public const string InvalidChildImageSize = "Invalid Image Size";
 
         public const string BirthdayTypeFormat = "date";
+
+        //constants for ~/Views/Child/All
+
+        public const string Age = "age";
+        public const string And = "and";
+        public const string YearsOfTheChild = "yearsOfTheChild";
+        public const string MonthsOfTheChild = "monthsOfTheChild";
+        public const string Edit = "edit";
+        public const string ChooseMenu = "chooseMenu";
+        public const string SeeChosenMenu = "seeChosenMenu";
+
     }
 }

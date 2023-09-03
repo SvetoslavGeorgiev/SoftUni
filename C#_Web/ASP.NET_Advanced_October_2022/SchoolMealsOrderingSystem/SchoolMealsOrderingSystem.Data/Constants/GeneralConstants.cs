@@ -83,6 +83,7 @@
         public const string ChooseSchool = "chooseSchool";
         public const string YearInSchool = "yearInSchool";
         public const string Add = "add";
+        public const string Image = "image";
 
 
         //constants for Area/Parent/Views/ParenUser/Register
@@ -97,6 +98,7 @@
 
         public const string ParentLogin = "parentLogin";
         public const string Login = "login";
+        public const string UseDemoUser = "useDemoUser";
 
         //constants for Area/Parent/Views/ParenUser/EditParentProfile
 
