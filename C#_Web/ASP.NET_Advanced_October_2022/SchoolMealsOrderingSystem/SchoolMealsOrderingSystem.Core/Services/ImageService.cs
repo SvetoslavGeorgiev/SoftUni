@@ -21,9 +21,8 @@
 
         public async Task<string> UploadImageToAwsS3(string childFullName, IFormFile formFile)
         {
-
-            string accessKeyId = configuration["AWS:AccessKeyId"];
-            string secretAccessKey = configuration["AWS:SecretAccessKey"];
+            var accessKeyId = configuration.GetConnectionString("AWS:AccessKeyId");
+            var secretAccessKey = configuration.GetConnectionString("AWS:SecretAccessKey");
             string bucketName = "schoolmealsorderingsystem-bucket";
 
             var credentials = new BasicAWSCredentials(accessKeyId, secretAccessKey);

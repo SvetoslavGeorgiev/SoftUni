@@ -74,6 +74,21 @@
 
                 return View(model);
             }
+
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+                ModelState.AddModelError(string.Empty, InvalidChildUserId);
+
+                return View(model);
+            }
+
+
+
+
             try
             {
                 
