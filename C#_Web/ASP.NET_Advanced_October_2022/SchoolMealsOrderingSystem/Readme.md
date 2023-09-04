@@ -3,8 +3,8 @@
 ## Table of Contents
 
 - [Project Description](#pencil-project-description)
-- [Database Diagram](#floppy_disk-database-diagram)
 - [Used Technologies](#hammer-used-technologies)
+- [Database Diagram](#floppy_disk-database-diagram)
 - [Images](#images)
 - [Author](#author)
 - [Feedback](#v-show-your-support)
@@ -14,10 +14,6 @@
 The School Meal Ordering System is an English/Bulgarian Parent-School relationship system designed for ordering school lunches for children.
 
 [Explore the SchoolMealOrderingSystem](https://schoolmealsorderingsystem20230902164724.azurewebsites.net/)
-
-## :floppy_disk: Database Diagram
-
-![Database Diagram](https://user-images.githubusercontent.com/54979873/212569224-b6b2ecea-f099-4be5-8627-4d31fcfa2d3c.png)
 
 ## :hammer: Used Technologies
 
@@ -39,33 +35,44 @@ The School Meal Ordering System is an English/Bulgarian Parent-School relationsh
 - [SOLID PRINCIPLES](https://learn.microsoft.com/en-us/shows/visual-studio-toolbox/solid-design-patterns)
 - [MVC DESIGN PATTERN](https://dotnet.microsoft.com/en-us/apps/aspnet/mvc)
 
+## :floppy_disk: Database Diagram
+
+![Database Diagram](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/3c4eb79a-effd-4f06-b1d5-1584ecd7cb4c)
+
 ## Images
 
-### Home Page for All Users
+### Click in "Home" or "School Meal Ordering System" to be redirected to the Home Page for All Users
+![Home_Page](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/2eb4b989-438f-4bce-b4ee-563966652fd6)
 
-![Home Page](https://user-images.githubusercontent.com/54979873/212572043-f803b4e5-1f4c-4846-8336-d33d1c26e19e.png)
+### Use "Login" Dropdown to Choose to Login as a Parent or School Representative
 
-### Login Home Page to Choose to Login as a Parent or School Representative
+![login_dropdown](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/0c14325e-f0fa-4e6c-932a-446bbb549193)
 
-![Choose Login Page](https://user-images.githubusercontent.com/54979873/212572181-81ded331-c180-49dd-8822-4616ee7cdd41.png)
+### Use "Sign Up" Dropdown to Choose to Register as a Parent or School Representative
 
-### Register Home Page to Choose to Register as a Parent or School Representative
+![SignUp_dorpdown](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/f05794d4-4080-44d8-b34e-12cf8690e743)
 
-![Choose Register Page](https://user-images.githubusercontent.com/54979873/212572189-215940a7-1234-45b1-9194-12dba73da092.png)
+### Use "Choose site language" Dropdown to Choose Bulgarian or English language of the website
+
+![language_dropdown](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/e759e5e2-2807-4a3c-b67c-a2e28ca51f0e)
 
 ### School Area
 
-#### SignUp/SignIn Pages
+#### Sign Up/Login Pages
 
-![School Register Page](https://user-images.githubusercontent.com/54979873/212572260-a06ebaab-92af-441f-8c3a-f2d8c54b6f0d.png)
+![SignUp_for_Schools](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/cdb6b55f-d3db-4250-8c2d-0db4ad05e0f6)
 
-![Login for Schools](https://user-images.githubusercontent.com/54979873/212572243-9dda8807-2887-4702-ba48-7737caaa80f4.png)
+#### Also on the Login Page it can be click "Login with Demo School" to login with demonstrational School User
 
+![School_Login](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/4899f2a5-8aa2-4b39-91bb-b780aceb699b)
+
+<!--- 
 #### School Area "ALL CHILDREN(ДЕЦАТА В УЧИЛИЩЕ)" Page
 
 ![All Children Page](https://user-images.githubusercontent.com/54979873/213566974-6c71ce79-55cc-481a-9719-2c8f542d7aa2.png)
 
-![All Children Page 2](https://user-images.githubusercontent.com/54979873/213567025-9cb488a8-beda-4bb0-b093-e1124a4e1a7a.png)
+![All Children Page 2](https://user-images.githubusercontent.com/54979873/213567025-9cb488a8-beda-4bb0-b093-e1124a4e1a7a.png)](url)
+
 
 #### School Area "MENU(МЕНЮ)" Page
 
@@ -73,45 +80,48 @@ The School Meal Ordering System is an English/Bulgarian Parent-School relationsh
 
 ![Menu Page 2](https://user-images.githubusercontent.com/54979873/213569197-0c7cceea-a264-4391-84dd-ca33aed419b6.png)
 
+--->
+
 ### Parent Area
 
 #### SignUp/SignIn Pages
 
-![Parent Register Page](https://user-images.githubusercontent.com/54979873/212572265-ef644f0c-20b9-4183-af05-19c2f7a779d4.png)
+![Parents_SignUp](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/32069e87-ecba-454a-9567-22b1bcf17d53)
 
-![Login for Parents](https://user-images.githubusercontent.com/54979873/212572279-406b14d8-404a-45c5-b583-cfe650aac68b.png)
+#### Also on the Login Page it can be click "Login with Demo Parent" to login with demonstrational Parent User
+
+![parent_Login](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/ed74d908-bc93-44f2-a868-6424b9f67763)
+
 
 #### Parent Area Home Page
 
-![Parent Area Home Page](https://user-images.githubusercontent.com/54979873/213030720-248fb3e1-510b-4ff6-938f-f64f7658b92f.png)
+![parents_HomePage](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/2b8597b0-893a-4d87-9ad0-8a03dcd86297)
 
-#### Parent Area "ADD CHILD(ДОБАВИ ДЕТЕ)" Page
 
-![Add Child Page](https://user-images.githubusercontent.com/54979873/213022476-442ef023-929f-4f98-802c-e5e1b5bdd417.png)
+#### Parent Area "Add Child" Page
 
-![Add Child Page 2](https://user-images.githubusercontent.com/54979873/213019998-cd715fd8-2d14-4250-8223-f295d5173498.png)
+![Add_Child_page](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/0131b38b-3122-458a-a27f-ac25b151699f)
 
-![Add Child Page 3](https://user-images.githubusercontent.com/54979873/213024230-95a77252-c0a2-4e2a-91e1-0497bc6bbb79.jpeg)
+#### Parent Area "Children" Page
 
-#### Parent Area "MY CHILDREN(МОИТЕ ДЕЦА)" Page
+![myChildren_pahe](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/f7beefe1-8972-49ac-bd33-17f7ae902e13)
 
-![My Children Page](https://user-images.githubusercontent.com/54979873/213031053-a79b2ca6-58c1-40b0-bb5e-7ffc049dcafc.png)
+#### Parent Area "EDIT CHILD" Page
 
-![My Children Page 2](https://user-images.githubusercontent.com/54979873/213032072-57ff4446-46b4-42cd-81d1-9f949992b6b9.png)
+![edit_Child_page](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/19af1747-49e2-4225-b1d6-f336b8c31fda)
 
-#### Parent Area "EDIT CHILD(РЕДАКЦИЯ НА ДЕТЕ)" Page
+#### Deleting a Child, sweetalert popup
 
-![Edit Child Page](https://user-images.githubusercontent.com/54979873/213033770-75384aae-2ba3-4c25-bf16-de10abe4b4a3.jpeg)
+![delete_sweetalert_popup](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/9301e7d1-a722-4d38-a605-8b396aa56a82)
 
-![Edit Child Page 2](https://user-images.githubusercontent.com/54979873/213033884-0855094f-2000-4816-bf7d-62824731a947.png)
+##### And the confirmation after clicking "Yes, delete it!"
 
-![Edit Child Page 3](https://user-images.githubusercontent.com/54979873/213033912-adb008dc-8475-4c39-bb18-eec73f9b059a.jpeg)
+![confirmation_popup](https://github.com/SvetoslavGeorgiev/SoftUni/assets/54979873/5a822a0e-3b48-41ba-a553-7b798253cf94)
 
-#### Deleting a Child
+#### More images to come, stay tuned....
 
-![Delete Child](https://user-images.githubusercontent.com/54979873/213033925-9d14e77d-59a0-46b7-b3f5-f48a43f8b976.png)
-
-#### Parent Area "SELECT MENU(ИЗБЕРИ МЕНЮ)" Page
+<!--
+#### Parent Area "SELECT MENU" Page
 
 ![Select Menu Page](https://user-images.githubusercontent.com/54979873/213038199-1a62fc85-795d-4f61-895e-752b82867425.jpeg)
 
@@ -134,7 +144,7 @@ The School Meal Ordering System is an English/Bulgarian Parent-School relationsh
 ![See Chosen Menu Page 3](https://user-images.githubusercontent.com/54979873/213559910-8cb98447-7058-41f4-8144-cf6143e933e7.png)
 
 ![See Chosen Menu Page 4](https://user-images.githubusercontent.com/54979873/213559963-998b8ec8-0d81-4c5e-a168-199dd0f5dddb.png)
-
+-->
 ## Author
 
 Svetoslav Georgiev

@@ -110,6 +110,6 @@ body {
     color: #333;
 }
 
-h2 {
+h2, h1 {
     padding-top: 30px;
 }
