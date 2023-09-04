@@ -109,3 +109,7 @@ body {
     font-weight: 500;
     color: #333;
 }
+
+h2 {
+    padding-top: 30px;
+}

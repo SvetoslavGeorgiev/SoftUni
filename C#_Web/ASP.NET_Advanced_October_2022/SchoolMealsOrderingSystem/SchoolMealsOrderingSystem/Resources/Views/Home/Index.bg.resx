@@ -120,4 +120,7 @@
   <data name="homePage" xml:space="preserve">
     <value>Начална Страница</value>
   </data>
+  <data name="message" xml:space="preserve">
+    <value>Този уебсайт е в процес на превод. Все още не всички страници поддържат и двата езика.</value>
+  </data>
 </root>

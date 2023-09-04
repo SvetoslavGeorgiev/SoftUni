@@ -1,7 +1,7 @@
 ﻿@model EditChildViewModel
 
 @{
-    ViewBag.Title = "Редакция на детето";
+    ViewBag.Title = Localizer[LayoutTitleName];
 }
 
 <h2 class="text-center">@ViewBag.Title</h2>
@@ -11,30 +11,30 @@
     <form asp-controller="Child" asp-action="Edit" method="post">
         <input type="hidden" asp-for="@Model.Id" />
         <div class="mb-3">
-            <label asp-for="@Model.FirstName" class="form-label">Име</label>
+            <label asp-for="@Model.FirstName" class="form-label">@Localizer[Name]</label>
             <input asp-for="@Model.FirstName" class="form-control" aria-required="true" />
             <span asp-validation-for="FirstName" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <label asp-for="@Model.LastName" class="form-label">Фамилия</label>
+            <label asp-for="@Model.LastName" class="form-label">@Localizer[LastName]</label>
             <input asp-for="@Model.LastName" class="form-control" aria-required="true" />
             <span asp-validation-for="LastName" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <label asp-for="@Model.RelationToChild" class="form-label">Връзката ви с детето</label>
+            <label asp-for="@Model.RelationToChild" class="form-label">@Localizer[RelationToCild]</label>
             <input asp-for="@Model.RelationToChild" class="form-control" aria-required="true" />
             <span asp-validation-for="RelationToChild" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <label asp-for="@Model.Birthday" class="form-label">Дата на раждане</label>
+            <label asp-for="@Model.Birthday" class="form-label">@Localizer[Birthday]</label>
             <input asp-for="@Model.Birthday" type="date" min="1997-01-01" max="2030-12-31" class="form-control" aria-required="true" />
             <span asp-validation-for="Birthday" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <label asp-for="@Model.SchoolUserId" class="form-label">Училищe</label>
+            <label asp-for="@Model.SchoolUserId" class="form-label">@Localizer[School]</label>
 
             <select asp-for="@Model.SchoolUserId" class="form-control">
-                <option value="">-- Избери училище --</option>
+                <option value="">-- @Localizer[ChooseSchool] --</option>
                 @foreach (SchoolUser school in Model.Schools)
                 {
                     <option value="@school.Id">@school.SchoolName</option>
@@ -43,17 +43,17 @@
             <span asp-validation-for="SchoolUserId" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <label asp-for="@Model.YearInSchool" class="form-label">Клас в училището</label>
+            <label asp-for="@Model.YearInSchool" class="form-label">@Localizer[YearInSchool]</label>
             <input asp-for="@Model.YearInSchool" class="form-control" aria-required="true" />
             <span asp-validation-for="YearInSchool" class="text-danger"></span>
         </div>
         <div class="mb-3">
-            <input class="btn btn-outline-primary" type="submit" value="Потвърди" />
+            <input class="btn btn-outline-primary" type="submit" value="@Localizer[Confirm]" />
         </div>
     </form>
     <form asp-controller="Child" asp-action="Delete" asp-route-id="@Model.Id">
         <div>
-            <input type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-outline-danger" />
+            <input type="submit" onclick="myConfirm(event)" value="@Localizer[Delete]" class="btn btn-outline-danger" />
         </div>
     </form>
 </div>

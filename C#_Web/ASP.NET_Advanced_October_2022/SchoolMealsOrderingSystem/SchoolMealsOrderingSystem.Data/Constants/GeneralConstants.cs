@@ -83,6 +83,7 @@
         public const string ChooseSchool = "chooseSchool";
         public const string YearInSchool = "yearInSchool";
         public const string Add = "add";
+        public const string Confirm = "confirm";
         public const string Image = "image";
 
 
@@ -109,6 +110,11 @@
 
         public const string SchoolInvalidEmail = "invalidEmail";
         public const string SchoolName = "schoolName";
+
+        //constants for all Home/Index pages
+
+        public const string TranslationMessage = "message";
+
 
     }
 }
