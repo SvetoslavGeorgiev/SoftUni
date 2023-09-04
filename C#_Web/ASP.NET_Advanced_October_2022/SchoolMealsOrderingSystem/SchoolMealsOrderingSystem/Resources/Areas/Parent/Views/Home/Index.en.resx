@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="message" xml:space="preserve">
-    <value>This website is under translation. Not all pages support the both languages yet.</value>
+    <value>This website is under translation. Not all pages support both languages yet.</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Home Page</value>

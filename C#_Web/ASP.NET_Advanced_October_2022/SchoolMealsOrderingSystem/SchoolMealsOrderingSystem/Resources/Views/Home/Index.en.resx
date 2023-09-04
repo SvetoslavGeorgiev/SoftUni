@@ -121,6 +121,6 @@
     <value>Home Page</value>
   </data>
   <data name="message" xml:space="preserve">
-    <value>This website is under translation. Not all pages support the both languages yet.</value>
+    <value>This website is under translation. Not all pages support both languages yet.</value>
   </data>
 </root>
