@@ -1,5 +1,6 @@
 ﻿namespace SchoolMealsOrderingSystem.Data.Constants
 {
+    using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
     public class GeneralConstants
     {
@@ -114,6 +115,23 @@
         //constants for all Home/Index pages
 
         public const string TranslationMessage = "message";
+
+        //constants for all DailyMenu/GetMealsForParentsToChoose
+
+        public const string Day = "day";
+        public const string YouHaveChosenAMenuForEveryDay = "youHaveChosenAMenuForEveryDay";
+        public const string ChooseTheDayOfTheMenu = "chooseTheDayOfTheMenu";
+        public const string ChooseSoup = "chooseSoup";
+        public const string ChooseAMainDish = "chooseAMainDish";
+        public const string ChooseADessert = "chooseADessert";
+        public const string SeeSoups = "seeSoups";
+        public const string SeeMainDishes = "seeMainDishes";
+        public const string SeeDesserts = "seeDesserts";
+        public const string Monday = "monday";
+        public const string Tuesday = "tuesday";
+        public const string Wednesday = "wednesday";
+        public const string Thursday = "thursday";
+        public const string Friday = "friday";
 
 
     }
