@@ -21,9 +21,6 @@
         [StringLength(LastNameMaxLength, MinimumLength = LastNameMinLength, ErrorMessage = FieldSymbolsLength)]
         public string LastName { get; set; } = null!;
 
-        
-        [EmailAddress(ErrorMessage = InvalidEmail)]
-        [StringLength(EmailMaxLength, MinimumLength = EmailMinLength, ErrorMessage = FieldSymbolsLength)]
         public string Email { get; set; } = null!;
 
         [Required(ErrorMessage = PasswordRequired)]
