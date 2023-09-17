@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<ChildViewModel>
 
 @{
-    ViewBag.Title = "Лист с децата в училище";
+    ViewBag.Title = Localizer[LayoutTitleName];
 }
 
 
@@ -22,17 +22,17 @@
                 <h5 class="card-title mt-1" style="color: darkgreen">@child.FirstName @child.LastName</h5>
                 @if (@child.MonthsOld != 0)
                 {
-                    <p class="mb-2" style="color: darkviolet">Години: @child.YearsOld години и @child.MonthsOld месеца</p>
+                    <p class="mb-2" style="color: darkviolet">@Localizer[Age]: @child.YearsOld @Localizer[YearsOfTheChild] @Localizer[And] @child.MonthsOld @Localizer[MonthsOfTheChild]</p>
                 }
                 else
                 {
-                    <p class="mb-2" style="color: darkviolet">Години: @child.YearsOld</p>
+                    <p class="mb-2" style="color: darkviolet">@Localizer[Age]: @child.YearsOld @Localizer[YearsOfTheChild]</p>
                 }
-                <p class="mb-0" style="color: coral">Училище: @child.School</p>
-                <p class="mb-0" style="color: darkblue">Клас в училище: @child.YearInSchool</p>
+                <p class="mb-0" style="color: coral">@Localizer[SchoolName]: @child.School</p>
+                <p class="mb-0" style="color: darkblue">@Localizer[YearInSchool]: @child.YearInSchool</p>
             </div>
             <div class="mb-3">
-                <a asp-controller="DailyMenu" asp-action="All" asp-route-childId="@child.Id" class="fs-6 btn btn-outline-primary mb-3 p-2">Виж избрано меню</a>
+                <a asp-controller="DailyMenu" asp-action="All" asp-route-childId="@child.Id" class="fs-6 btn btn-outline-primary mb-3 p-2">@Localizer[SeeChosenMenu]</a>
             </div>
         </div>
     }

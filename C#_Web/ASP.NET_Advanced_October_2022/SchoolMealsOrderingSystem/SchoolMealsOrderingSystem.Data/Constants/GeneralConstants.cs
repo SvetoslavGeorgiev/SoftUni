@@ -139,5 +139,10 @@
         public const string SoupString = "soup";
         public const string MainDishString = "mainDish";
         public const string DessertString = "dessert";
+
+        //constants for all School/AllChildrenInSchool
+
+        public const string AllChildrenInSchool = "allChildrenInSchool";
+
     }
 }
