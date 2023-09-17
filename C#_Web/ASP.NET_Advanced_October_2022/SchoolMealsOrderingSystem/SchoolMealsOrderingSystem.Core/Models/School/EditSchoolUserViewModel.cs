@@ -23,8 +23,9 @@
         [DataType(DataType.Password)]
         public string Password { get; set; } = null!;
 
-        [Compare(nameof(Password))]
+        [Compare(nameof(Password), ErrorMessage = PasswordAndConfirmPasswordEquality)]
         [DataType(DataType.Password)]
+        [Required(ErrorMessage = PasswordConfirmRequired)]
         public string ConfirmPassword { get; set; } = null!;
 
 

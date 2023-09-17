@@ -21,8 +21,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Resources\Constants\" />
-  </ItemGroup>
-
 </Project>
