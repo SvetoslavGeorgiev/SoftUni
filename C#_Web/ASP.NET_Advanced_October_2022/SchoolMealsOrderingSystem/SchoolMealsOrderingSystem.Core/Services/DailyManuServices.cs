@@ -96,11 +96,7 @@
                 .Select(m => new DailyMenuViewModel()
                 {
                     Id = m.Id,
-                    Name = m.Name.ToString() == "Monday" ? "Понеделник" :
-                           m.Name.ToString() == "Tuesday" ? "Вторник" :
-                           m.Name.ToString() == "Wednesday" ? "Сряда" :
-                           m.Name.ToString() == "Thursday" ? "Четвъртък" :
-                           "Петък",
+                    Name = m.Name.ToString(),
                     Dessert = m.Dessert,
                     Soup = m.Soup!,
                     MainDish = m.MainDish,

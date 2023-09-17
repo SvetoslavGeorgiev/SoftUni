@@ -133,6 +133,11 @@
         public const string Thursday = "thursday";
         public const string Friday = "friday";
 
+        //constants for all DailyMenu/All
 
+        public const string NoSelectedMenusYet = "noSelectedMenusYet";
+        public const string SoupString = "soup";
+        public const string MainDishString = "mainDish";
+        public const string DessertString = "dessert";
     }
 }

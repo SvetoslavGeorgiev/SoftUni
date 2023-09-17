@@ -1,7 +1,7 @@
 ﻿@model MultipleDailyMenuViewModel
 
 @{
-    ViewBag.Title = "Меню";
+    ViewBag.Title = @Localizer[LayoutTitleName];
 }
 
 <h2 class="text-center">@ViewBag.Title</h2>
@@ -20,19 +20,19 @@
                 <h5 class="card-title mt-1" style="color: darkgreen">@Model.ChildViewModel.FirstName @Model.ChildViewModel.LastName</h5>
                 @if (@Model.ChildViewModel.MonthsOld != 0)
                 {
-                    <p class="mb-2" style="color: darkviolet">Години: @Model.ChildViewModel.YearsOld години и @Model.ChildViewModel.MonthsOld месеца</p>
+                    <p class="mb-2" style="color: darkviolet">@Localizer[Age]: @Model.ChildViewModel.YearsOld @Localizer[YearsOfTheChild] @Localizer[And] @Model.ChildViewModel.MonthsOld @Localizer[MonthsOfTheChild]</p>
                 }
                 else
                 {
-                    <p class="mb-2" style="color: darkviolet">Години: @Model.ChildViewModel.YearsOld</p>
+                    <p class="mb-2" style="color: darkviolet">@Localizer[Age]: @Model.ChildViewModel.YearsOld @Localizer[YearsOfTheChild]</p>
                 }
-                <p class="mb-0" style="color: coral">Училище: @Model.ChildViewModel.School</p>
-                <p class="mb-0" style="color: darkblue">Клас в училище: @Model.ChildViewModel.YearInSchool</p>
+                <p class="mb-0" style="color: coral">@Localizer[SchoolName]: @Model.ChildViewModel.School</p>
+                <p class="mb-0" style="color: darkblue">@Localizer[YearInSchool]: @Model.ChildViewModel.YearInSchool</p>
             </div>
             @if (User.IsInRole(Parent))
             {
                 <div class="mb-3">
-                    <a asp-controller="DailyMenu" asp-action="GetMealsForParentsToChoose" asp-route-childId="@Model.ChildViewModel.Id" class="fs-6 btn btn-outline-success mb-3 p-2">Избери Меню</a>
+                    <a asp-controller="DailyMenu" asp-action="GetMealsForParentsToChoose" asp-route-childId="@Model.ChildViewModel.Id" class="fs-6 btn btn-outline-success mb-3 p-2">@Localizer[ChooseMenu]</a>
                 </div>
             }
         </div>
@@ -41,7 +41,7 @@
     <div class="child text-center row">
         @if (!Model.DailyMenus.Any())
         {
-            <h3>Няма избрани менюта все още!</h3>
+            <h3>@Localizer[NoSelectedMenusYet]</h3>
         }
         else
         {
@@ -49,16 +49,35 @@
             {
                 <div class="card col-4" style="width: 20rem; margin-right: 7px; margin-bottom: 7px; background-color: honeydew">
                     <div class="card-body">
-                        <h5 class="card-title mt-1" style="color: darkgreen">@dailyMenu.Name</h5>
-                        <p class="mb-0" style="text-align: left">Супа: @dailyMenu.Soup.Name</p>
-                        <p class="mb-0" style="text-align: left">Основно ястие: @dailyMenu.MainDish.Name</p>
-                        <p class="mb-0" style="text-align: left">Десерт: @dailyMenu.Dessert.Name</p>
+                        @if (dailyMenu.Name.Equals(DayOfWeek.Monday.ToString()))
+                        {
+                            <h5 class="card-title mt-1" style="color: darkgreen">@Localizer[Monday]</h5>
+                        }
+                        else if (dailyMenu.Name.Equals(DayOfWeek.Tuesday.ToString()))
+                        {
+                            <h5 class="card-title mt-1" style="color: darkgreen">@Localizer[Tuesday]</h5>
+                        }
+                        else if (dailyMenu.Name.Equals(DayOfWeek.Wednesday.ToString()))
+                        {
+                            <h5 class="card-title mt-1" style="color: darkgreen">@Localizer[Wednesday]</h5>
+                        }
+                        else if (dailyMenu.Name.Equals(DayOfWeek.Thursday.ToString()))
+                        {
+                            <h5 class="card-title mt-1" style="color: darkgreen">@Localizer[Thursday]</h5>
+                        }
+                        else if (dailyMenu.Name.Equals(DayOfWeek.Friday.ToString()))
+                        {
+                            <h5 class="card-title mt-1" style="color: darkgreen">@Localizer[Friday]</h5>
+                        }
+                        <p class="mb-0" style="text-align: left">@Localizer[SoupString]: @dailyMenu.Soup.Name</p>
+                        <p class="mb-0" style="text-align: left">@Localizer[MainDishString]: @dailyMenu.MainDish.Name</p>
+                        <p class="mb-0" style="text-align: left">@Localizer[DessertString]: @dailyMenu.Dessert.Name</p>
                     </div>
                     @if (User.IsInRole(Parent))
                     {
                         <form asp-controller="DailyMenu" asp-action="Delete" asp-route-id="@dailyMenu.Id">
                             <div>
-                                <input style="margin-bottom: 10px" type="submit" onclick="myConfirm(event)" value="Премахни" class="btn btn-outline-danger" />
+                                <input style="margin-bottom: 10px" type="submit" onclick="myConfirm(event)" value="@Localizer[Delete]" class="btn btn-outline-danger" />
                             </div>
                         </form>
                     }
@@ -73,13 +92,10 @@
     <partial name="_DeleteScriptPartial" />
     <partial name="_RemoveContainerClassDivPartial" />
     <script>
-        // Get the footer element
         let footer = document.querySelector('footer');
 
-        // Check if the footer should be removed (based on some condition)
-        let shouldRemoveFooter = true; // Change this to your condition
+        let shouldRemoveFooter = true; 
 
-        // Remove the footer if the condition is met
         if (shouldRemoveFooter) {
             footer.style.display = 'none';
         }
