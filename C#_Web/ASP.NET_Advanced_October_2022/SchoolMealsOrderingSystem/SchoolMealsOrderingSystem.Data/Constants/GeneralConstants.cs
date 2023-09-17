@@ -17,10 +17,9 @@
         public const string BirthDayRequired = "Birthday_Required";
         public const string YearInSchoolRequired = "YearInSchool_Required";
         public const string SchoolNameRequired = "SchoolUserId_Required";
-        public const string DescriptionRequired = "Полето \"Описание\" е задължително";
-        public const string IngredientsRequired = "Полето \"Съставки\" е задължително";
-        public const string AllergensRequired = "Полето \"Алергени\" е задължително";
-        public const string UrlRequired = "Полето \"Линк към снимката\" е задължително";
+        public const string IngredientsRequired = "Ingredients_Required";
+        public const string AllergensRequired = "Allergens_Required";
+        public const string UrlRequired = "ImageUrl_Required";
 
         public const string PasswordAndConfirmPasswordEquality = "ConfirmPassword_Compare";
 
@@ -152,6 +151,14 @@
         public const string DessertFirstChoice = "dessertFirstChoice";
         public const string DessertSecondChoice = "dessertSecondChoice";
         public const string DessertThirdChoice = "dessertThirdChoice";
+
+        //constants for all Meal/AddSoup
+
+        public const string Description = "description";
+        public const string Ingredients = "ingredients";
+        public const string ImageUrl = "imageUrl";
+        public const string Allergens = "allergens";
+
 
     }
 }

@@ -1,7 +1,7 @@
 ﻿@model AddSoupViewModel
 
 @{
-    ViewBag.Title = "Добави супа";
+    ViewBag.Title = @Localizer[LayoutTitleName];
 }
 
 
@@ -12,32 +12,32 @@
     <div class="col-sm-12 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6">
         <form asp-controller="Meal" asp-action="AddSoup" method="post">
             <div class="mb-3">
-                <label asp-for="@Model.Name" class="form-label">Име/вид на супата</label>
+                <label asp-for="@Model.Name" class="form-label">@Localizer[Name]</label>
                 <input asp-for="@Model.Name" class="form-control" aria-required="true" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="@Model.Description" class="form-label">Описание</label>
-                <textarea asp-for="@Model.Description" class="form-control" aria-required="true" rows="5"></textarea>
+                <label asp-for="@Model.Description" class="form-label">@Localizer[Description]</label>
+                <textarea asp-for="@Model.Description" class="form-control" aria-required="true" rows="3"></textarea>
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="@Model.Ingredients" class="form-label">Съставки</label>
-                <textarea asp-for="@Model.Ingredients" class="form-control" aria-required="true" rows="5"></textarea>
+                <label asp-for="@Model.Ingredients" class="form-label">@Localizer[Ingredients]</label>
+                <textarea asp-for="@Model.Ingredients" class="form-control" aria-required="true" rows="3"></textarea>
                 <span asp-validation-for="Ingredients" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="@Model.ImageUrl" class="form-label">Линк към снимка на супата</label>
+                <label asp-for="@Model.ImageUrl" class="form-label">@Localizer[ImageUrl]</label>
                 <input asp-for="@Model.ImageUrl" class="form-control" aria-required="true" />
                 <span asp-validation-for="ImageUrl" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <label asp-for="@Model.Allergens" class="form-label">Алергени</label>
-                <textarea asp-for="@Model.Allergens" class="form-control" aria-required="true" rows="5"></textarea>
+                <label asp-for="@Model.Allergens" class="form-label">@Localizer[Allergens]</label>
+                <textarea asp-for="@Model.Allergens" class="form-control" aria-required="true" rows="3"></textarea>
                 <span asp-validation-for="Allergens" class="text-danger"></span>
             </div>
             <div class="mb-3">
-                <input class="btn btn-outline-success" type="submit" value="Добави супа" />
+                <input class="btn btn-outline-success" type="submit" value="@Localizer[Add]" />
             </div>
         </form>
     </div>
