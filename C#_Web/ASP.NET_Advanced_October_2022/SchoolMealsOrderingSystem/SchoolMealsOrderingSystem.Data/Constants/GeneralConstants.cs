@@ -1,5 +1,6 @@
 ﻿namespace SchoolMealsOrderingSystem.Data.Constants
 {
+    using System.Collections.Generic;
     using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
     public class GeneralConstants
@@ -140,9 +141,17 @@
         public const string MainDishString = "mainDish";
         public const string DessertString = "dessert";
 
-        //constants for all School/AllChildrenInSchool
+        //constants for all Meal/AddMealsToSchoolList
 
-        public const string AllChildrenInSchool = "allChildrenInSchool";
+        public const string SoupFirstChoice = "soupFirstChoice";
+        public const string SoupSecondChoice = "soupSecondChoice";
+        public const string SoupThirdChoice = "soupThirdChoice";
+        public const string MainDishFirstChoice = "mainDishFirstChoice";
+        public const string MainDishSecondChoice = "mainDishSecondChoice";
+        public const string MainDishThirdChoice = "mainDishThirdChoice";
+        public const string DessertFirstChoice = "dessertFirstChoice";
+        public const string DessertSecondChoice = "dessertSecondChoice";
+        public const string DessertThirdChoice = "dessertThirdChoice";
 
     }
 }
