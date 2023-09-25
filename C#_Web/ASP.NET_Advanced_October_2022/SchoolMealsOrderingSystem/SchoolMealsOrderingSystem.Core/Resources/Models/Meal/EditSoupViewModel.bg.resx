@@ -117,37 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="birthday" xml:space="preserve">
-    <value>Дата на раждане</value>
+  <data name="Allergens_Required" xml:space="preserve">
+    <value>Полето "Алергени" е задължително</value>
   </data>
-  <data name="chooseSchool" xml:space="preserve">
-    <value>Избери училище</value>
+  <data name="FirstName_Required" xml:space="preserve">
+    <value>Полето "Име/вид на супата" е задължително</value>
   </data>
-  <data name="confirm" xml:space="preserve">
-    <value>Потвърди</value>
+  <data name="FirstName_StringLength" xml:space="preserve">
+    <value>Полето трябва да е между {2} и {1} символа</value>
   </data>
-  <data name="delete" xml:space="preserve">
-    <value>Изтрий</value>
+  <data name="ImageUrl_Required" xml:space="preserve">
+    <value>Полето "Линк към снимка на супата" е задължително</value>
   </data>
-  <data name="image" xml:space="preserve">
-    <value>Снимка на детето</value>
-  </data>
-  <data name="lastName" xml:space="preserve">
-    <value>Фамилия</value>
-  </data>
-  <data name="name" xml:space="preserve">
-    <value>Име</value>
-  </data>
-  <data name="relationToChild" xml:space="preserve">
-    <value>Връзката ви с детето</value>
-  </data>
-  <data name="School" xml:space="preserve">
-    <value>Училище</value>
-  </data>
-  <data name="title" xml:space="preserve">
-    <value>Редактиране на детето</value>
-  </data>
-  <data name="yearInSchool" xml:space="preserve">
-    <value>Клас в училището</value>
+  <data name="Ingredients_Required" xml:space="preserve">
+    <value>Полето "Съставки" е задължително</value>
   </data>
 </root>

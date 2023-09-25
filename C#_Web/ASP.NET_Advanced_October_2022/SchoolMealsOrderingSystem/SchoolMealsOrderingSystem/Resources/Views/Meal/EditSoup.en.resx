@@ -117,37 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="birthday" xml:space="preserve">
-    <value>Дата на раждане</value>
-  </data>
-  <data name="chooseSchool" xml:space="preserve">
-    <value>Избери училище</value>
+  <data name="allergens" xml:space="preserve">
+    <value>Allergens</value>
   </data>
   <data name="confirm" xml:space="preserve">
-    <value>Потвърди</value>
+    <value>Confirm</value>
   </data>
   <data name="delete" xml:space="preserve">
-    <value>Изтрий</value>
+    <value>Delete</value>
   </data>
-  <data name="image" xml:space="preserve">
-    <value>Снимка на детето</value>
+  <data name="description" xml:space="preserve">
+    <value>Description</value>
   </data>
-  <data name="lastName" xml:space="preserve">
-    <value>Фамилия</value>
+  <data name="imageUrl" xml:space="preserve">
+    <value>Link to a photo of the soup</value>
+  </data>
+  <data name="ingredients" xml:space="preserve">
+    <value>Ingredients</value>
   </data>
   <data name="name" xml:space="preserve">
-    <value>Име</value>
-  </data>
-  <data name="relationToChild" xml:space="preserve">
-    <value>Връзката ви с детето</value>
-  </data>
-  <data name="School" xml:space="preserve">
-    <value>Училище</value>
+    <value>Name/kind of the soup</value>
   </data>
   <data name="title" xml:space="preserve">
-    <value>Редактиране на детето</value>
-  </data>
-  <data name="yearInSchool" xml:space="preserve">
-    <value>Клас в училището</value>
+    <value>Soup edit</value>
   </data>
 </root>
