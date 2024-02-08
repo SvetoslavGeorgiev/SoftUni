@@ -161,7 +161,6 @@
                     FirstName = c.FirstName,
                     LastName = c.LastName,
                     Birthday = c.Birthday,
-                    ImageUrl = c.ImageUrl,
                     RelationToChild = c.ParentChildRelation,
                     YearInSchool = c.YearInSchool
                 })

@@ -143,7 +143,6 @@ namespace SchoolMealsOrderingSystem.Tests.Services
                 Id = Guid.Parse(id),
                 FirstName = "Gosho",
                 LastName = "Peshov",
-                ImageUrl = "\thttps://dummy.restapiexample.com",
                 SchoolUserId = "jdkhsgfjksdhf",
                 Birthday = DateTime.Today.AddDays(1).Date,
                 YearInSchool = "5a",
@@ -368,7 +367,6 @@ namespace SchoolMealsOrderingSystem.Tests.Services
                 Assert.That(child?.FirstName, Is.EqualTo("Pesho"));
                 Assert.That(child?.LastName, Is.EqualTo("Goshov"));
                 Assert.That(child?.Birthday, Is.EqualTo(DateTime.Today));
-                Assert.That(child?.ImageUrl, Is.EqualTo("\thttps://dummy.restapiexample.com"));
                 Assert.That(child?.YearInSchool, Is.EqualTo("3b"));
                 Assert.That(child?.RelationToChild, Is.EqualTo("Father"));
             });

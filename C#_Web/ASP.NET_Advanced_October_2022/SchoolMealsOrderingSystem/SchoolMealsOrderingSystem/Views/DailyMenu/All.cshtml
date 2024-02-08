@@ -70,8 +70,8 @@
                             <h5 class="card-title mt-1" style="color: darkgreen">@Localizer[Friday]</h5>
                         }
                         <p class="mb-0" style="text-align: left">@Localizer[SoupString]: @dailyMenu.Soup.Name</p>
-                        <p class="mb-0" style="text-align: left">@Localizer[MainDishString]: @dailyMenu.MainDish.Name</p>
-                        <p class="mb-0" style="text-align: left">@Localizer[DessertString]: @dailyMenu.Dessert.Name</p>
+                        <p class="mb-0" style="text-align: left">@Localizer[MainDishString]: @dailyMenu.MainDish!.Name</p>
+                        <p class="mb-0" style="text-align: left">@Localizer[DessertString]: @dailyMenu.Dessert!.Name</p>
                     </div>
                     @if (User.IsInRole(Parent))
                     {
