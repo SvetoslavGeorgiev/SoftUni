@@ -12,7 +12,7 @@ function solve(area, vol, input) {
             area: area.call(x),
             volume: vol.call(x)
         })));
-}
+};
 
 console.log(solve(area, vol, `[
     {"x":"10","y":"-22","z":"10"},
@@ -21,5 +21,5 @@ console.log(solve(area, vol, `[
     {"x":"100","y":"100","z":"100"},
     {"x":"55","y":"80","z":"250"}
     ]`
-    ));
+));
 
